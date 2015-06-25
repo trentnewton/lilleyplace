@@ -27,16 +27,26 @@
  
 # ignore everything in the "wp-content" directory, except:
 # mu-plugins, plugins, and themes directories
-wp-content/*
+#wp-content/*
 !wp-content/mu-plugins/
 !wp-content/plugins/
 !wp-content/themes/
+
+# default plugins and themes
+wp-content/index.php
+wp-content/themes/index.php
+wp-content/themes/twentyfifteen
+wp-content/themes/twentyfourteen
+wp-content/themes/twentythirteen
+wp-content/plugins/akismet
+wp-content/plugins/hello.php
+wp-content/plugins/index.php
  
 # ignore all mu-plugins, plugins, and themes
 # unless explicitly whitelisted at the end of this file
-wp-content/mu-plugins/*
-wp-content/plugins/*
-wp-content/themes/*
+!wp-content/mu-plugins/*
+!wp-content/plugins/*
+!wp-content/themes/*
  
 # ignore all files starting with . or ~
 .*
