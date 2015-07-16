@@ -1324,7 +1324,7 @@ $table-even-row-bg: scale-color($tertiary-color, $lightness: 90%);
 
 // These control the table cell border style
 // $table-border-style: solid;
-// $table-border-size: 1px;
+$table-border-size: 0;
 // $table-border-color: $gainsboro;
 
 // These control the table head styles
