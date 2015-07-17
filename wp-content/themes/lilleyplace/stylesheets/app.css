@@ -6848,29 +6848,21 @@ li.email {
 
 .four-o-four-text {
   color: #d4d6db;
-  text-shadow: 1px 1px white, -1px -1px #444;
+  position: relative;
   font-size: 12.5rem;
   padding: 1.25rem 0; }
-
-.depth {
-  color: #d4d6db;
-  position: relative;
-  font-size: 12.5rem; }
-
-.depth:before, .depth:after {
-  content: attr(title);
-  color: rgba(255, 255, 255, 0.1);
-  position: absolute; }
-
-.depth:before {
-  top: 1px;
-  left: -142px;
-  margin-left: 50%; }
-
-.depth:after {
-  top: 2px;
-  left: -141px;
-  margin-left: 50%; }
+  .four-o-four-text:before, .four-o-four-text:after {
+    content: attr(title);
+    color: rgba(255, 255, 255, 0.2);
+    position: absolute; }
+  .four-o-four-text:before {
+    top: 0.0625rem;
+    left: -8.875rem;
+    margin-left: 50%; }
+  .four-o-four-text :after {
+    top: 0.125rem;
+    left: -8.8125rem;
+    margin-left: 50%; }
 
 /* FRONT WIDGETS */
 #front-widgets {
