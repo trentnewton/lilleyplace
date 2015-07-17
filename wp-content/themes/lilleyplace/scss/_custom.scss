@@ -921,19 +921,18 @@ li.email {
 }
 .depth:before, .depth:after {
     content: attr(title);
-    // color: rgba($white, 0.1);
+    color: rgba($white, 0.1);
     position: absolute;
 }
 .depth:before {
 	top: 1px;
-	left: -100px;
+	left: -142px;
 	margin-left: 50%;
-	color: rgba(green, .9);
 }
 .depth:after {
 	top: 2px;
-	left: 2px;
-	color: rgba(pink, .9);
+	left: -141px;
+	margin-left: 50%;
 }
 
 /* FRONT WIDGETS */
