@@ -363,11 +363,11 @@ footer h4 {
 
 	&.grey-top {
 		top: 2px;
-		height: rem-calc(250);
+		height: 100%;
 		background: linear-gradient(
 		rgba(scale-color($tertiary-color, $lightness: 50%), 1) 0%,
-		rgba(scale-color($tertiary-color, $lightness: 80%), 1) 17%,
-		rgba(scale-color($tertiary-color, $lightness: 80%), 1) 100%);
+		rgba(scale-color($tertiary-color, $lightness: 90%), 1) 17%,
+		rgba(scale-color($tertiary-color, $lightness: 90%), 1) 100%);
 	}
 
 	&.white-top {
@@ -457,7 +457,7 @@ footer h4 {
 	// background: scale-color($tertiary-color, $lightness: 70%);
 	background-image: linear-gradient(to bottom , scale-color($tertiary-color, $lightness: 60%), scale-color($tertiary-color, $lightness: 90%));
 	border-bottom: 1px solid scale-color($tertiary-color, $lightness: 80%);
-	box-shadow: 0px 0px 4px scale-color($tertiary-color, $lightness: 50%);
+	box-shadow: 0px 0px 4px scale-color($tertiary-color, $lightness: 0%);
 	// border-bottom: solid 2px scale-color($tertiary-color, $lightness: 70%);
 	
 	p {
