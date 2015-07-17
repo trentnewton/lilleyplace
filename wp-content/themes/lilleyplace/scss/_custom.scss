@@ -859,6 +859,7 @@ li.email {
 	border-top: 1px solid scale-color($tertiary-color, $lightness: 80%);
 	box-shadow: 0px 0px 4px scale-color($tertiary-color, $lightness: 50%);
 	background-image: linear-gradient(to bottom , scale-color($tertiary-color, $lightness: 90%), scale-color($tertiary-color, $lightness: 70%));
+	text-shadow: 1px 1px 2px $white;
 
 	img {
 		width: rem-calc(120);
