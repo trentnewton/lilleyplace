@@ -626,7 +626,7 @@ tr th {
 
 .member-list {
 	list-style: none;
-	margin: 0;
+	margin-left: 0;
 	padding: 0;
 }
 
@@ -835,6 +835,14 @@ ul.accordion {
     	width: 100%;
 	}
 
+}
+
+#SGM {
+	width: 100%;
+	height: 260px;
+	border: 5px solid $white;
+	box-shadow: 0 0 2px #666;
+	margin-bottom: rem-calc(30);
 }
 
 li.email {
