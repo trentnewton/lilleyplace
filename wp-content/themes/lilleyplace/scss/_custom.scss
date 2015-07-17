@@ -917,7 +917,7 @@ li.email {
     &:before,
     &:after {
 	    content: attr(title);
-	    color: rgba($white, 0.2);
+	    color: rgba($white, 0.3);
 	    position: absolute;
 	}
 
@@ -928,8 +928,8 @@ li.email {
 	}
 
 	&:after {
-		top: rem-calc(2);
-		left: rem-calc(-141);
+		top: rem-calc(3);
+		left: rem-calc(-140);
 		margin-left: 50%;
 	}
 	
