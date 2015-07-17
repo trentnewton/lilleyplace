@@ -6566,8 +6566,10 @@ footer h4 {
     z-index: -1; }
 
 #front-quote {
-  background: #e2e4e7;
-  border-bottom: solid 2px #d4d6db; }
+  background-image: -webkit-linear-gradient(top, #c5c9cf, #f1f1f3);
+  background-image: linear-gradient(to bottom, #c5c9cf, #f1f1f3);
+  border-bottom: 1px solid #e2e4e7;
+  box-shadow: 0px 0px 4px #b7bbc2; }
   #front-quote p {
     color: #513567; }
 
@@ -6643,9 +6645,6 @@ footer h4 {
     font-size: 0.875rem;
     -webkit-transition: all 0.15s linear;
             transition: all 0.15s linear; }
-
-.page-content {
-  background: #FFFFFF; }
 
 .tt-contentbox,
 table {
@@ -6805,7 +6804,8 @@ ul.accordion {
   .contact-sidebar .vcard {
     padding: 0.9375rem;
     border-radius: 4px;
-    background: #e2e4e7;
+    background-image: -webkit-linear-gradient(top, #f1f1f3, #e2e4e7);
+    background-image: linear-gradient(to bottom, #f1f1f3, #e2e4e7);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
     width: 100%; }
 
@@ -6821,9 +6821,11 @@ li.email {
 
 /* FRONT WIDGETS */
 #front-widgets {
-  background: #e2e4e7;
   text-align: center;
-  border-top: solid 2px #d4d6db; }
+  border-top: 1px solid #e2e4e7;
+  box-shadow: 0px 0px 4px #b7bbc2;
+  background-image: -webkit-linear-gradient(top, #f1f1f3, #d4d6db);
+  background-image: linear-gradient(to bottom, #f1f1f3, #d4d6db); }
   #front-widgets img {
     width: 7.5rem;
     margin-bottom: 1.25rem; }
