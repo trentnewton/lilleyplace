@@ -6855,8 +6855,8 @@ li.email {
     color: rgba(255, 255, 255, 0.3);
     position: absolute; }
   .four-o-four-text:before {
-    top: 0.0625rem;
-    left: -8.875rem;
+    top: 0.125rem;
+    left: -8.8125rem;
     margin-left: 50%; }
   .four-o-four-text:after {
     top: 0.1875rem;
