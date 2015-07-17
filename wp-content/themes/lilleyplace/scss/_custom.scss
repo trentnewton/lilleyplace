@@ -927,7 +927,7 @@ li.email {
 		margin-left: 50%;
 	}
 
-	:after {
+	&:after {
 		top: rem-calc(2);
 		left: rem-calc(-141);
 		margin-left: 50%;
