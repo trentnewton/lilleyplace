@@ -6829,10 +6829,9 @@ li.email {
 
 /* 404 */
 .four-o-four-container .sidebar-bg:before {
-  width: 100%;
-  height: 145%;
+  height: 125%;
   background-size: 10% 100%;
-  top: -10%; }
+  top: -5%; }
   @media only screen and (max-width: 40em) {
     .four-o-four-container .sidebar-bg:before {
       top: 0;
