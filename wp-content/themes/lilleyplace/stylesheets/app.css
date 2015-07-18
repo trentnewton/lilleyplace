@@ -6345,8 +6345,7 @@ p.no-space {
   margin-top: 1.875rem; }
 
 .mar-b-30, .member-list,
-.member-frame,
-ul.accordion, .sidebar .business-hours {
+.member-frame, .sidebar .business-hours {
   margin-bottom: 1.875rem; }
 
 .v-align-container {
@@ -6939,7 +6938,7 @@ footer {
   .footer-copyright a {
     color: #FFFFFF; }
     .footer-copyright a:hover {
-      text-decoration: underline; }
+      color: #75b302; }
   @media only screen and (max-width: 40em) {
     .footer-copyright {
       background-size: 150% 70%; } }
