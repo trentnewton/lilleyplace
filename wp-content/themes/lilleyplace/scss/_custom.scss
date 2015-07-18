@@ -931,6 +931,7 @@ li.email {
  	color: scale-color($tertiary-color, $lightness: 70%);
     position: relative;
     font-size: rem-calc(200);
+    font-weight: $font-weight-bold;
 
     &:before,
     &:after {
@@ -941,13 +942,13 @@ li.email {
 
 	&:before {
 		top: rem-calc(2);
-		left: rem-calc(-141);
+		left: rem-calc(-154);
 		margin-left: 50%;
 	}
 
 	&:after {
 		top: rem-calc(3);
-		left: rem-calc(-140);
+		left: rem-calc(-153);
 		margin-left: 50%;
 	}
 	

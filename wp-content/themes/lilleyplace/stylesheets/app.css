@@ -4126,18 +4126,19 @@ li.email {
 .four-o-four-text {
   color: #d4d6db;
   position: relative;
-  font-size: 12.5rem; }
+  font-size: 12.5rem;
+  font-weight: bold; }
   .four-o-four-text:before, .four-o-four-text:after {
     content: attr(title);
     color: rgba(255, 255, 255, 0.3);
     position: absolute; }
   .four-o-four-text:before {
     top: 0.125rem;
-    left: -8.8125rem;
+    left: -9.625rem;
     margin-left: 50%; }
   .four-o-four-text:after {
     top: 0.1875rem;
-    left: -8.75rem;
+    left: -9.5625rem;
     margin-left: 50%; }
 
 /* front widgets */
