@@ -4204,6 +4204,9 @@ footer {
     .social-icons a.rss:hover {
       background: #f5844e; }
 
+.affiliates img {
+  width: 100%; }
+
 .footer-copyright {
   padding: 0.9375rem 0;
   background: -webkit-radial-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 70%);

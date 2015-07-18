@@ -294,7 +294,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 748605,
+		"initialSize": 695174,
 		"inputAbbreviatedPath": "\/assets\/img\/images\/4507253146_8f724909b8_o.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/images\/4507253146_8f724909b8_o.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -341,28 +341,6 @@
 		"initialSize": 176492,
 		"inputAbbreviatedPath": "\/assets\/img\/images\/front-about-img.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/images\/front-about-img.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/images\/Lilleyplace_Logo.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 25505,
-		"inputAbbreviatedPath": "\/assets\/img\/images\/Lilleyplace_Logo.png",
-		"outputAbbreviatedPath": "\/assets\/img\/images\/Lilleyplace_Logo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/images\/lilypad-287519.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.34898e+06,
-		"inputAbbreviatedPath": "\/assets\/img\/images\/lilypad-287519.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/images\/lilypad-287519.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -613,7 +591,7 @@
 		},
 	"\/bower_components\/foundation\/js\/foundation\/foundation.accordion.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/foundation\/js\/foundation\/foundation.accordion.js",
 		"outputAbbreviatedPath": "\/bower_components\/foundation\/js\/foundation\/min\/foundation.accordion-min.js",
@@ -646,7 +624,7 @@
 		},
 	"\/bower_components\/foundation\/js\/foundation\/foundation.dropdown.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/foundation\/js\/foundation\/foundation.dropdown.js",
 		"outputAbbreviatedPath": "\/bower_components\/foundation\/js\/foundation\/min\/foundation.dropdown-min.js",
@@ -690,7 +668,7 @@
 		},
 	"\/bower_components\/foundation\/js\/foundation\/foundation.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/foundation\/js\/foundation\/foundation.js",
 		"outputAbbreviatedPath": "\/bower_components\/foundation\/js\/foundation\/min\/foundation-min.js",
@@ -778,7 +756,7 @@
 		},
 	"\/bower_components\/foundation\/js\/foundation\/foundation.topbar.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/foundation\/js\/foundation\/foundation.topbar.js",
 		"outputAbbreviatedPath": "\/bower_components\/foundation\/js\/foundation\/min\/foundation.topbar-min.js",
@@ -4647,6 +4625,32 @@
 	],
 "lastSavedByUser": "Trent Newton",
 "manualImportLinks": {
+	"\/js\/app.js": [
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation\/js\/foundation\/foundation.js",
+			"position": 0,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation\/js\/foundation\/foundation.accordion.js",
+			"position": 1,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation\/js\/foundation\/foundation.dropdown.js",
+			"position": 2,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation\/js\/foundation\/foundation.topbar.js",
+			"position": 3,
+			"type": 0
+			}
+		]
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
