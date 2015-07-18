@@ -6906,7 +6906,8 @@ footer {
     margin-right: 0; }
 .social-icons a {
   padding: 0.625rem 0.625rem 0.125rem;
-  border-radius: 4px; }
+  border-radius: 4px;
+  color: #FFFFFF; }
   .social-icons a.facebook {
     background: #3b5998; }
     .social-icons a.facebook:hover {
