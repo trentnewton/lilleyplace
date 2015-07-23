@@ -12,34 +12,24 @@
  */
 
 get_header(); ?>
-
-<div class="row">
-	<div class="small-12 large-8 columns" role="main">
-
-	<?php do_action( 'lilleyplace_before_content' ); ?>
-
-	<?php while ( have_posts() ) : the_post(); ?>
-		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			<header>
-				<h1 class="entry-title"><?php the_title(); ?></h1>
-			</header>
-			<?php do_action( 'lilleyplace_page_before_entry_content' ); ?>
-			<div class="entry-content">
-				<?php the_content(); ?>
-			</div>
-			<footer>
-				<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'lilleyplace' ), 'after' => '</p></nav>' ) ); ?>
-				<p><?php the_tags(); ?></p>
-			</footer>
-			<?php do_action( 'lilleyplace_page_before_comments' ); ?>
-			<?php comments_template(); ?>
-			<?php do_action( 'lilleyplace_page_after_comments' ); ?>
-		</article>
-	<?php endwhile;?>
-
-	<?php do_action( 'lilleyplace_after_content' ); ?>
-
+<?php do_action( 'lilleyplace_before_content' ); ?>
+<?php while ( have_posts() ) : the_post(); ?>
+<?php get_template_part( 'parts/banner' ); ?>
+<article <?php post_class('page-content') ?> id="post-<?php the_ID(); ?>">
+	<?php if ( is_page() && $post->post_parent > 0 ) { ?>
+   	<div class="row">
+	   	<div class="columns">
+	   		<?php if (function_exists('sitebreadcrumbs')) sitebreadcrumbs(); ?>
+	   	</div>
+   	</div>
+	<?php } ?>
+<?php do_action( 'lilleyplace_page_before_entry_content' ); ?>
+	<div class="entry-content">
+		<?php the_content(); ?>
 	</div>
-	<?php get_sidebar(); ?>
-</div>
+<?php do_action( 'lilleyplace_page_after_entry_content' ); ?>
+  <div class="shadow white-top"></div>
+</article>
+<?php endwhile;?>
+<?php do_action( 'lilleyplace_after_content' ); ?>
 <?php get_footer(); ?>

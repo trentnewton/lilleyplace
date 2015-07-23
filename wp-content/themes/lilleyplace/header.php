@@ -15,39 +15,32 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-		<link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/favicon.ico" type="image/x-icon">
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/apple-touch-icon-144x144-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/apple-touch-icon-114x114-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/apple-touch-icon-72x72-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/apple-touch-icon-precomposed.png">
-		
+		<meta name="application-name" content="<?php bloginfo( 'name' ); ?>">
+	    <meta name="msapplication-TileImage" content="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/apple-touch-icon-114x114.png">
+	    <meta name="msapplication-TileColor" content="#ffffff">
+	    <link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/favicon.ico" type="image/x-icon">
+	    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/apple-touch-icon-144x144.png">
+	    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/apple-touch-icon-114x114.png">
+	    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/apple-touch-icon-72x72.png">
+	    <link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/apple-touch-icon-precomposed.png">
 		<?php wp_head(); ?>
+		<script src="//use.typekit.net/glx7jkt.js"></script>
+    	<script>try{Typekit.load();}catch(e){}</script>
 	</head>
 	<body <?php body_class(); ?>>
 	<?php do_action( 'lilleyplace_after_body' ); ?>
-	
-	<div class="off-canvas-wrap" data-offcanvas>
-	<div class="inner-wrap">
-	
+	<?php get_template_part( 'parts/svg_icons' ); ?>
+		<header id="main-nav">
+			<div class="row">
+				<div id="medium-up-logo" class="columns small-12">
+					<a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/images/Lilleyplace_Logo.png" width="313" height="121" alt="<?php bloginfo( 'name' ); ?>" /></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="columns small-12">
+					<?php get_template_part( 'parts/top-bar' ); ?>
+				</div>
+			</div>
+		</header>
 	<?php do_action( 'lilleyplace_layout_start' ); ?>
-	
-	<nav class="tab-bar">
-		<section class="left-small">
-			<a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-		</section>
-		<section class="middle tab-bar-section">
-			
-			<h1 class="title">
-				<?php bloginfo( 'name' ); ?>
-			</h1>
-
-		</section>
-	</nav>
-
-	<?php get_template_part( 'parts/off-canvas-menu' ); ?>
-
-	<?php get_template_part( 'parts/top-bar' ); ?>
-
-<section class="container" role="document">
 	<?php do_action( 'lilleyplace_after_header' ); ?>

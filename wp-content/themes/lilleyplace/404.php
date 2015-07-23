@@ -8,28 +8,29 @@
  */
 
 get_header(); ?>
-
-<div class="row">
-	<div class="small-12 large-8 columns" role="main">
-
-		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			<header>
-				<h1 class="entry-title"><?php _e( 'File Not Found', 'lilleyplace' ); ?></h1>
-			</header>
-			<div class="entry-content">
-				<div class="error">
-					<p class="bottom"><?php _e( 'The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.', 'lilleyplace' ); ?></p>
+<?php get_template_part( 'parts/banner' ); ?>
+<article <?php post_class('page-content') ?> id="post-<?php the_ID(); ?>">
+	<div class="row">
+		<div class="four-o-four-container">
+			<div class="columns small-12 medium-6">
+				<div class="four-o-four-item">
+					<h2 class="four-o-four-text" title="404">404</h2>
 				</div>
-				<p><?php _e( 'Please try the following:', 'lilleyplace' ); ?></p>
-				<ul>
-					<li><?php _e( 'Check your spelling', 'lilleyplace' ); ?></li>
-					<li><?php printf( __( 'Return to the <a href="%s">home page</a>', 'lilleyplace' ), home_url() ); ?></li>
-					<li><?php _e( 'Click the <a href="javascript:history.back()">Back</a> button', 'lilleyplace' ); ?></li>
-				</ul>
 			</div>
-		</article>
-
+			<aside class="columns small-12 medium-6 sidebar-bg">
+				<div class="sidebar-container">
+					<div class="sidebar">
+						<p><strong><?php _e( 'Oops! the page you are looking for could not be found.', 'lilleyplace' ); ?></strong></p>
+						<p><?php _e( 'Here are some links that you might find useful:', 'lilleyplace' ); ?></p>
+						<ul>
+							<li><?php printf( __( '<a href="%s">Home</a>', 'lilleyplace' ), home_url() ); ?></li>
+							<li><a href="<?php printf( home_url('contact') ); ?>"><?php _e( 'Contact Us', 'lilleyplace' ); ?></a></li>
+						</ul>
+					</div>
+				</div>
+			</aside>
+		</div>
 	</div>
-	<?php get_sidebar(); ?>
-</div>
+  <div class="shadow white-top"></div>
+</article>
 <?php get_footer(); ?>

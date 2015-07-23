@@ -18,6 +18,12 @@
 /** Various clean up functions */
 require_once( 'library/cleanup.php' );
 
+/** Load custom post types */
+require_once( 'library/custom_post_types.php' );
+
+/** Load breadcrumbs */
+require_once( 'library/breadcrumbs.php' );
+
 /** Required for Foundation to work properly */
 require_once( 'library/foundation.php' );
 
@@ -26,9 +32,6 @@ require_once( 'library/navigation.php' );
 
 /** Add desktop menu walker */
 require_once( 'library/menu-walker.php' );
-
-/** Add off-canvas menu walker */
-require_once( 'library/offcanvas-walker.php' );
 
 /** Create widget areas in sidebar and footer */
 require_once( 'library/widget-areas.php' );

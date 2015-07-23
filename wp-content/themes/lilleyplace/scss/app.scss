@@ -21,11 +21,11 @@
 //   "foundation/components/labels",
 //   "foundation/components/magellan",
 //   "foundation/components/orbit",
-//   "foundation/components/pagination",
+  "foundation/components/pagination",
 //   "foundation/components/panels",
 //   "foundation/components/pricing-tables",
 //   "foundation/components/progress-bars",
-//   "foundation/components/reveal",
+  "foundation/components/reveal",
 //   "foundation/components/side-nav",
 //   "foundation/components/split-buttons",
 //   "foundation/components/sub-nav",
@@ -38,5 +38,7 @@
   "foundation/components/type",
 //   "foundation/components/offcanvas",
   "foundation/components/visibility";
-
+@import "contact-form-7";
+@import "slick";
+@import "slick-theme";
 @import "custom";

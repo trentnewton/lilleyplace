@@ -9,24 +9,45 @@
  */
 
 register_nav_menus(array(
-	'top-bar-l' => 'Left Top Bar', // Registers the menu in the WordPress admin menu editor.
-	'top-bar-r' => 'Right Top Bar',
-	'mobile-off-canvas' => 'Mobile',
+	'primary' => 'Primary Navigation', // Registers the menu in the WordPress admin menu editor.
+	'secondary' => 'Footer Navigation',
 ));
 
 
 /**
- * Left top bar
+ * Top bar
  * http://codex.wordpress.org/Function_Reference/wp_nav_menu
  */
-if ( ! function_exists( 'lilleyplace_top_bar_l' ) ) {
-	function lilleyplace_top_bar_l() {
+if ( ! function_exists( 'lilleyplace_top_bar' ) ) {
+	function lilleyplace_top_bar() {
+	    wp_nav_menu(array(
+	        'container' => false,                          // Remove nav container
+	        'container_class' => '',                       // Class of container
+	        'menu' => '',                                  // Menu name
+	        'menu_class' => 'center',                      // Adding custom nav class
+	        'theme_location' => 'primary',                 // Where it's located in the theme
+	        'before' => '',                                // Before each link <a>
+	        'after' => '',                                 // After each link </a>
+	        'link_before' => '',                           // Before each link text
+	        'link_after' => '',                            // After each link text
+	        'depth' => 5,                                  // Limit the depth of the nav
+	        'fallback_cb' => false,                        // Fallback function (see below)
+	        'walker' => new Lilleyplace_Top_Bar_Walker(),
+	    ));
+	}
+}
+
+/**
+ * Footer Navigation
+ */
+if ( ! function_exists( 'lilleyplace_secondary' ) ) {
+	function lilleyplace_secondary() {
 	    wp_nav_menu(array(
 	        'container' => false,                           // Remove nav container
 	        'container_class' => '',                        // Class of container
 	        'menu' => '',                                   // Menu name
-	        'menu_class' => 'top-bar-menu left',            // Adding custom nav class
-	        'theme_location' => 'top-bar-l',                // Where it's located in the theme
+	        'menu_class' => 'footer-nav',                   // Adding custom nav class
+	        'theme_location' => 'secondary',                // Where it's located in the theme
 	        'before' => '',                                 // Before each link <a>
 	        'after' => '',                                  // After each link </a>
 	        'link_before' => '',                            // Before each link text
@@ -34,50 +55,6 @@ if ( ! function_exists( 'lilleyplace_top_bar_l' ) ) {
 	        'depth' => 5,                                   // Limit the depth of the nav
 	        'fallback_cb' => false,                         // Fallback function (see below)
 	        'walker' => new Lilleyplace_Top_Bar_Walker(),
-	    ));
-	}
-}
-
-/**
- * Right top bar
- */
-if ( ! function_exists( 'lilleyplace_top_bar_r' ) ) {
-	function lilleyplace_top_bar_r() {
-	    wp_nav_menu(array(
-	        'container' => false,                           // Remove nav container
-	        'container_class' => '',                        // Class of container
-	        'menu' => '',                                   // Menu name
-	        'menu_class' => 'top-bar-menu right',           // Adding custom nav class
-	        'theme_location' => 'top-bar-r',                // Where it's located in the theme
-	        'before' => '',                                 // Before each link <a>
-	        'after' => '',                                  // After each link </a>
-	        'link_before' => '',                            // Before each link text
-	        'link_after' => '',                             // After each link text
-	        'depth' => 5,                                   // Limit the depth of the nav
-	        'fallback_cb' => false,                         // Fallback function (see below)
-	        'walker' => new Lilleyplace_Top_Bar_Walker(),
-	    ));
-	}
-}
-
-/**
- * Mobile off-canvas
- */
-if ( ! function_exists( 'lilleyplace_mobile_off_canvas' ) ) {
-	function lilleyplace_mobile_off_canvas() {
-	    wp_nav_menu(array(
-	        'container' => false,                           // Remove nav container
-	        'container_class' => '',                        // Class of container
-	        'menu' => '',                                   // Menu name
-	        'menu_class' => 'off-canvas-list',              // Adding custom nav class
-	        'theme_location' => 'mobile-off-canvas',        // Where it's located in the theme
-	        'before' => '',                                 // Before each link <a>
-	        'after' => '',                                  // After each link </a>
-	        'link_before' => '',                            // Before each link text
-	        'link_after' => '',                             // After each link text
-	        'depth' => 5,                                   // Limit the depth of the nav
-	        'fallback_cb' => false,                         // Fallback function (see below)
-	        'walker' => new Lilleyplace_Offcanvas_Walker(),
 	    ));
 	}
 }

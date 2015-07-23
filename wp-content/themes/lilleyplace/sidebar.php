@@ -8,8 +8,10 @@
  */
 
 ?>
-<aside id="sidebar" class="small-12 large-4 columns">
-	<?php do_action( 'lilleyplace_before_sidebar' ); ?>
-	<?php dynamic_sidebar( 'sidebar-widgets' ); ?>
-	<?php do_action( 'lilleyplace_after_sidebar' ); ?>
+<aside class="columns small-12 medium-4 sidebar-bg">
+	<div class="sidebar">
+		<?php do_action( 'lilleyplace_before_sidebar' ); ?>
+		<?php dynamic_sidebar( 'sidebar-widgets' ); ?>
+		<?php do_action( 'lilleyplace_after_sidebar' ); ?>
+	</div>
 </aside>

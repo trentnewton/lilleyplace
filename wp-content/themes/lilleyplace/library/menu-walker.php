@@ -22,7 +22,7 @@ class Lilleyplace_Top_Bar_Walker extends Walker_Nav_Menu {
 		$item_html = '';
 		parent::start_el( $item_html, $object, $depth, $args );
 
-		$output .= ( 0 == $depth ) ? '<li class="divider"></li>' : '';
+		$output .= ( 0 == $depth ) ? '' : '';
 
 		$classes = empty( $object->classes ) ? array() : (array) $object->classes;
 
