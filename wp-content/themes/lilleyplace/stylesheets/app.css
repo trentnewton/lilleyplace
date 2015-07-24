@@ -4283,7 +4283,7 @@ ul:not([class]) {
   background-size: cover;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5); }
   #info-boxes h2 {
-    text-shadow: 1px 1px 12px #000000; }
+    text-shadow: 1px 1px 15px #000000; }
 
 .slider-container {
   padding: 0 1.75rem; }
