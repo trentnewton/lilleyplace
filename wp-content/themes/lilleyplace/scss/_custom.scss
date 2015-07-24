@@ -1270,6 +1270,14 @@ footer {
 	font-size: 1rem;
 }
 
+.footer-nav-container {
+
+	@media #{$small-only} {
+		margin-top: rem-calc(15);
+	}
+
+}
+
 ul.footer-nav {
 	margin: 0;
 
@@ -1278,9 +1286,11 @@ ul.footer-nav {
 		padding: rem-calc(0 10);
 		margin: 0;
 		border-right: 1px solid rgba($white, 0.3);
+		margin-left: rem-calc(-3);
 
 		&:first-child {
 			padding-left: 0;
+			margin-left: 0;
 		}
 
 		&:last-child {
@@ -1289,27 +1299,7 @@ ul.footer-nav {
 		}
 
 		@media #{$small-only} {
-			display: block;
-			padding: 0;
-			border-right: none;
-			border-bottom: 1px solid rgba($white, 0.3);
-
-			&:first-child {
-				
-				a {
-					padding-top: 0;
-				}
-
-			}
-
-			&:last-child {
-				border-bottom: none;
-				
-				a {
-					padding-bottom: 0;
-				}
-
-			}
+			padding: rem-calc(0 6);
 
 		}
 
@@ -1330,6 +1320,14 @@ ul.footer-nav {
 			color: $primary-color;
 		}
 
+	}
+
+}
+
+.link-top {
+
+	@media #{$small-only} {
+		padding: rem-calc(10 0)
 	}
 
 }
