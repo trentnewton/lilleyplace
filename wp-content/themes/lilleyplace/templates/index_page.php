@@ -10,7 +10,7 @@ get_header(); ?>
 	<?php $child_pages = $wpdb->get_results("SELECT * FROM $wpdb->posts WHERE post_parent = ".$post->ID." AND post_type = 'page' ORDER BY menu_order DESC", 'OBJECT'); ?>
 		<div class="row">
 			<div class="small-12 columns text-center">
-			<? if($content = $post->post_content ) {
+			<?php if($content = $post->post_content ) {
 				echo "<h4 class=\"mar-b-30\">";
 						echo get_the_content();
 				echo "</h4>";

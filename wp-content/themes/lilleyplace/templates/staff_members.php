@@ -13,7 +13,7 @@ get_header(); ?>
 	   	</div>
    	</div>
 	<?php } ?>
-	<? if($content = $post->post_content ) {
+	<?php if($content = $post->post_content ) {
 	echo "<div class=\"row\">";
 		echo "<div class=\"columns small-12 mar-b-30\">";
 		do_action( 'lilleyplace_page_before_entry_content' );

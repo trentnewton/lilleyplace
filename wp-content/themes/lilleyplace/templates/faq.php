@@ -6,7 +6,7 @@ get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 <?php get_template_part( 'parts/banner' ); ?>
 <article <?php post_class('page-content') ?> id="post-<?php the_ID(); ?>">
-	<? if($content = $post->post_content ) {
+	<?php if($content = $post->post_content ) {
 	echo "<div class=\"row\">";
 		echo "<div class=\"columns small-12 mar-b-30\">";
 		do_action( 'lilleyplace_page_before_entry_content' );
