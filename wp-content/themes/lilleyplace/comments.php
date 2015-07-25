@@ -13,6 +13,7 @@
 if ( have_comments() ) :
 	if ( (is_page() || is_single()) && ( ! is_home() && ! is_front_page()) ) :
 ?>
+	<hr>
 	<section id="comments"><?php
 
 
@@ -55,6 +56,7 @@ endif;
 	defined( 'ABSPATH' ) or die( __( 'Please do not load this page directly. Thanks!', 'lilleyplace' ) );
 
 	if ( post_password_required() ) { ?>
+	<hr>
 	<section id="comments">
 		<div class="notice">
 			<p class="bottom"><?php _e( 'This post is password protected. Enter the password to view comments.', 'lilleyplace' ); ?></p>
@@ -69,6 +71,7 @@ endif;
 if ( comments_open() ) :
 	if ( (is_page() || is_single()) && ( ! is_home() && ! is_front_page()) ) :
 ?>
+<hr>
 <section id="respond">
 	<h3><?php comment_form_title( __( 'Leave a Reply', 'lilleyplace' ), __( 'Leave a Reply to %s', 'lilleyplace' ) ); ?></h3>
 	<p class="cancel-comment-reply"><?php cancel_comment_reply_link(); ?></p>

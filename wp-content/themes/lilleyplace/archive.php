@@ -22,7 +22,9 @@ get_header(); ?>
 	<div class="entry-content">
 		<div class="row">
 			<div class="columns small-12 medium-8" role="main">
-				<?php if (function_exists('breadcrumbs')) breadcrumbs(); ?>
+				<nav class="breadcrumbs-container">
+					<?php if (function_exists('breadcrumbs')) breadcrumbs(); ?>
+				</nav>
 				<?php if ( have_posts() ) : ?>
 					<?php /* Start the Loop */ ?>
 					<?php while ( have_posts() ) : the_post(); ?>

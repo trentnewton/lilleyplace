@@ -95,7 +95,7 @@
 			</section>
 		</footer>
 		<script type="text/javascript">
-	        var templateUrl = '<?php echo get_site_url(); ?>/wp-content/themes/<?php $my_theme = wp_get_theme(); echo $my_theme->get( 'TextDomain' ); ?>';
+	        var templateUrl = '<?php echo get_stylesheet_directory_uri(); ?>';
 	    </script>
 		<?php wp_footer(); ?>
 		<?php do_action( 'lilleyplace_before_closing_body' ); ?>

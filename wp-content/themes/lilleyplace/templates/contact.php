@@ -9,7 +9,9 @@ get_header(); ?>
 	<?php if ( is_page() && $post->post_parent > 0 ) { ?>
    	<div class="row">
 	   	<div class="columns">
-	   		<?php if (function_exists('sitebreadcrumbs')) sitebreadcrumbs(); ?>
+	   		<nav class="breadcrumbs-container">
+				<?php if (function_exists('sitebreadcrumbs')) sitebreadcrumbs(); ?>
+			</nav>
 	   	</div>
    	</div>
 	<?php } ?>

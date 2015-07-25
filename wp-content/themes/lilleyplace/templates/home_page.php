@@ -41,87 +41,89 @@ get_header(); ?>
 	<div class="row">
 		<div class="columns small-12">
 			<h2>How Can Lilley Place Help Me?</h2>
-			<ul class="small-block-grid-1 medium-block-grid-2" data-equalizer="foo" data-options="equalize_on_stack: true;" data-equalizer-mq="medium-up">
-			  	<li>
-					<div class="tt-contentbox-title tt-cb-title-lime-green">
-						<span>Do I need a referral to see a psychologist?</span>
-					</div>
-					<div class="tt-contentbox-content" data-equalizer-watch="foo">
-						<ul>
-					  		<li>No</li>
-					  		<li>However, if you are eligible to claim a Medicare rebate, you will need a written referral from a psychiatrist, paediatrician or GP</li>
-					  		<li>Your GP also needs to complete a Mental Health Care Plan</li>
-					  	</ul>
-					</div>
-			  	</li>
-			  	<li>
-		  			<div class="tt-contentbox-title tt-cb-title-lime-green">
-		  				<span>Would talking to a psychologist be good for me?</span>
-		  			</div>
-		  			<div class="tt-contentbox-content" data-equalizer-watch="foo">
-		  				<ul>
-					  		<li>There are many reasons for talking to a psychologist</li>
-					  		<li>Are you troubled by feelings, behaviours, thoughts or concerns that prevent you from functioning to your full capacity or from feeling happy and fulfilled in your life?</li>
-					  		<li>Do you have concerns about:</li>
-					  	</ul>
-					  	<ul class="small-block-grid-2 medium-block-grid-3 list">
-				  			<li>Relationships</li>
-				  			<li>Life Changes</li>
-				  			<li>Criticism</li>
-				  			<li>Worry</li>
-				  			<li>Energy</li>
-				  			<li>Coping</li>
-				  			<li>Sleep</li>
-				  			<li>Concentration</li>
-				  			<li>Mood</li>
-				  			<li>Food</li>
-				  			<li>Self-Control</li>
-				  			<li>Enjoyment</li>
-				  			<li>Anger</li>
-				  			<li>Confidence</li>
-				  			<li>Emotions</li>
-				  		</ul>
-		  			</div>
-			  	</li>
-		  		<li>
-		  			<div class="tt-contentbox-title tt-cb-title-lime-green">
-		  				<span>How can therapy help me?</span>
-		  			</div>
-		  			<div class="tt-contentbox-content" data-equalizer-watch="foo">
-		  				<ul>
-					  		<li>Seeking help does not mean there is something wrong with you</li>
-					  		<li>Everyone can benefit from talking to someone who has a neutral viewpoint and who is not closely related to you or the situation</li>
-					  		<li>This type of professional relationship can be healthy and beneficial for your growth and future</li>
-					  	</ul>
-		  			</div>
-		  		</li>
-			  	<li>
-		  			<div class="tt-contentbox-title tt-cb-title-lime-green">
-		  				<span>What can I expect at my first appointment?</span>
-		  			</div>
-		  			<div class="tt-contentbox-content" data-equalizer-watch="foo">
-		  				<ul>
-					  		<li>To be treated with respect and compassion</li>
-					  		<li>Therapists will work through any questions you have and discuss confidentiality</li>
-					  		<li>Together with your psychologist you will work towards a shared understanding of what is happening and why</li>
-					  		<li>Therapists will work with you to set goals for therapy</li>
-					  	</ul>
-		  			</div>
-			  	</li>
-			  	<li>
-		  			<div class="tt-contentbox-title tt-cb-title-lime-green">
-		  				<span>How many sessions can I have?</span>
-		  			</div>
-		  			<div class="tt-contentbox-content" data-equalizer-watch="foo">
-		  				<ul>
-					  		<li>There is no limit to the number of sessions you can have</li>
-					  		<li>However, Medicare provides a rebate for a maximum of 10 individual sessions in a year</li>
-					  		<li>If you require more than 10 sessions you can check if your private health insurer offers a rebate on psychology sessions</li>
-					  		<li>You can also talk to your GP about whether you are eligible for 6 sessions under the Chronic Disease Management Plan or whether any other funding options are available</li>
-					  	</ul>
-		  			</div>
-			  	</li>
-			</ul>
+			<div class="info-boxes-list" data-equalizer="foo" data-options="equalize_on_stack: true;" data-equalizer-mq="medium-up">
+				<ul class="small-block-grid-1 medium-block-grid-2" data-equalizer="bar" data-options="equalize_on_stack: true;" data-equalizer-mq="medium-up">
+				  	<li>
+						<div class="tt-contentbox-title tt-cb-title-lime-green" data-equalizer-watch="bar">
+							<span>Do I need a referral to see a psychologist?</span>
+						</div>
+						<div class="tt-contentbox-content" data-equalizer-watch="foo">
+							<ul>
+						  		<li>No</li>
+						  		<li>However, if you are eligible to claim a Medicare rebate, you will need a written referral from a psychiatrist, paediatrician or GP</li>
+						  		<li>Your GP also needs to complete a Mental Health Care Plan</li>
+						  	</ul>
+						</div>
+				  	</li>
+				  	<li>
+			  			<div class="tt-contentbox-title tt-cb-title-lime-green" data-equalizer-watch="bar">
+			  				<span>Would talking to a psychologist be good for me?</span>
+			  			</div>
+			  			<div class="tt-contentbox-content" data-equalizer-watch="foo">
+			  				<ul>
+						  		<li>There are many reasons for talking to a psychologist</li>
+						  		<li>Are you troubled by feelings, behaviours, thoughts or concerns that prevent you from functioning to your full capacity or from feeling happy and fulfilled in your life?</li>
+						  		<li>Do you have concerns about:</li>
+						  	</ul>
+						  	<ul class="small-block-grid-2 medium-block-grid-3 list">
+					  			<li>Relationships</li>
+					  			<li>Life Changes</li>
+					  			<li>Criticism</li>
+					  			<li>Worry</li>
+					  			<li>Energy</li>
+					  			<li>Coping</li>
+					  			<li>Sleep</li>
+					  			<li>Concentration</li>
+					  			<li>Mood</li>
+					  			<li>Food</li>
+					  			<li>Self-Control</li>
+					  			<li>Enjoyment</li>
+					  			<li>Anger</li>
+					  			<li>Confidence</li>
+					  			<li>Emotions</li>
+					  		</ul>
+			  			</div>
+				  	</li>
+			  		<li>
+			  			<div class="tt-contentbox-title tt-cb-title-lime-green" data-equalizer-watch="bar">
+			  				<span>How can therapy help me?</span>
+			  			</div>
+			  			<div class="tt-contentbox-content" data-equalizer-watch="foo">
+			  				<ul>
+						  		<li>Seeking help does not mean there is something wrong with you</li>
+						  		<li>Everyone can benefit from talking to someone who has a neutral viewpoint and who is not closely related to you or the situation</li>
+						  		<li>This type of professional relationship can be healthy and beneficial for your growth and future</li>
+						  	</ul>
+			  			</div>
+			  		</li>
+				  	<li>
+			  			<div class="tt-contentbox-title tt-cb-title-lime-green" data-equalizer-watch="bar">
+			  				<span>What can I expect at my first appointment?</span>
+			  			</div>
+			  			<div class="tt-contentbox-content" data-equalizer-watch="foo">
+			  				<ul>
+						  		<li>To be treated with respect and compassion</li>
+						  		<li>Therapists will work through any questions you have and discuss confidentiality</li>
+						  		<li>Together with your psychologist you will work towards a shared understanding of what is happening and why</li>
+						  		<li>Therapists will work with you to set goals for therapy</li>
+						  	</ul>
+			  			</div>
+				  	</li>
+				  	<li>
+			  			<div class="tt-contentbox-title tt-cb-title-lime-green" data-equalizer-watch="bar">
+			  				<span>How many sessions can I have?</span>
+			  			</div>
+			  			<div class="tt-contentbox-content" data-equalizer-watch="foo">
+			  				<ul>
+						  		<li>There is no limit to the number of sessions you can have</li>
+						  		<li>However, Medicare provides a rebate for a maximum of 10 individual sessions in a year</li>
+						  		<li>If you require more than 10 sessions you can check if your private health insurer offers a rebate on psychology sessions</li>
+						  		<li>You can also talk to your GP about whether you are eligible for 6 sessions under the Chronic Disease Management Plan or whether any other funding options are available</li>
+						  	</ul>
+			  			</div>
+				  	</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </section>

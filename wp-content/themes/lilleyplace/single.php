@@ -33,9 +33,13 @@ get_header(); ?>
 					<?php the_content(); ?>
 				</article>
 				<footer>
+					<?php wp_link_pages(); ?>
 					<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'lilleyplace' ), 'after' => '</p></nav>' ) ); ?>
 					<p><?php the_tags(); ?></p>
 				</footer>
+				<?php do_action( 'lilleyplace_post_before_comments' ); ?>
+				<?php comments_template(); ?>
+				<?php do_action( 'lilleyplace_post_after_comments' ); ?>
 		<?php endwhile;?>
 		<?php do_action( 'lilleyplace_after_content' ); ?>
 		</div>

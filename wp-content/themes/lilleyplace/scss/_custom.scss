@@ -250,8 +250,9 @@ p.no-space {
 /* forms */
 
 button,
-.button {
-	border-radius: $global-radius;
+.button,
+input[type="submit"] {
+	border-radius: $button-radius;
 	text-shadow: 0 1px 0 rgba($white, 0.4);
 	box-shadow: 0 1px 1px rgba($black, 0.08);
 	background: linear-gradient(
@@ -269,6 +270,11 @@ button,
 		border-left: none;
 	}
 
+}
+
+#{text-inputs(all, 'input')},
+select {
+    border-radius: $input-border-radius;
 }
 
 /* main styles / group styles */
@@ -448,7 +454,7 @@ ul:not([class]) {
 
 	&:after {
 		content: "";
-		background: url("../assets/img/images/lilypad-287519.jpg") center no-repeat;
+		background: url("#{$imagePath}/lilypad-287519.jpg") center no-repeat;
 		background-size: cover;
 		// background-attachment: fixed;
 		opacity: 0.2;
@@ -576,6 +582,7 @@ table {
 
 .tt-contentbox {
 	margin-bottom: rem-calc(20);
+	border-radius: 0 0 $global-radius $global-radius;
 }
 
 .tt-contentbox-title {
@@ -990,6 +997,47 @@ div.wpcf7 {
 
 }
 
+@media #{$small-medium-only} {
+
+	.breadcrumbs-container {
+		position: relative;
+	  
+	 	&:after{
+	    	position: absolute;
+	    	width: 15%;
+	    	height: 100%;
+	    	right: 0;
+	    	top: 0;
+	    	content:'';
+			background-image: linear-gradient(to left, $white, $white 30%, rgba($white, 0));
+	    }
+
+	}
+
+	.breadcrumbs {
+		position: relative;
+		width: 100%;
+		white-space: nowrap;
+		overflow-x: scroll; /* has to be scroll, not auto */
+		-webkit-overflow-scrolling: touch;
+
+		> * {
+			float: none;
+		}
+
+		li {
+	    	display: inline-block;
+	 	}
+
+	}
+
+
+}
+
+#respond {
+	// @extend .mar-t-30;
+}
+
 .content-excerpt {
 	@extend .mar-t-15;
 }
@@ -1019,7 +1067,7 @@ footer {
 	background: linear-gradient(
 		rgba($secondary-color, 0.6),
 		rgba($secondary-color, 0.6)),
-		url("../assets/img/images/4507253146_8f724909b8_o.jpg") center no-repeat;
+		url("#{$imagePath}/4507253146_8f724909b8_o.jpg") center no-repeat;
 	background-size: cover;
 	// background-attachment: fixed;
 	text-shadow: 1px 1px 8px rgba($black, 1);

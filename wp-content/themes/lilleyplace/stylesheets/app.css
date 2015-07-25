@@ -3111,7 +3111,7 @@ h6 {
   margin-bottom: 0.5rem; }
 
 hr {
-  border: dotted #b7bbc2;
+  border: dashed #b7bbc2;
   border-width: 1px 0 0;
   clear: both;
   height: 0;
@@ -4124,20 +4124,27 @@ p.no-space {
 
 /* forms */
 button,
-.button {
+.button,
+input[type="submit"] {
   border-radius: 4px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
   background: -webkit-linear-gradient(#cae285 0%, #9ac453 100%);
   background: linear-gradient(#cae285 0%, #9ac453 100%); }
   button:hover,
-  .button:hover {
+  .button:hover,
+  input[type="submit"]:hover {
     background: -webkit-linear-gradient(#9ac453 0%, #9ac453 100%);
     background: linear-gradient(#9ac453 0%, #9ac453 100%);
     border-color: #8BB14D; }
   button.postfix,
-  .button.postfix {
+  .button.postfix,
+  input[type="submit"].postfix {
     border-left: none; }
+
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea,
+select {
+  border-radius: 4px; }
 
 /* main styles / group styles */
 #main-text,
@@ -4345,7 +4352,8 @@ table {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
 
 .tt-contentbox {
-  margin-bottom: 1.25rem; }
+  margin-bottom: 1.25rem;
+  border-radius: 0 0 4px 4px; }
 
 .tt-contentbox-title {
   padding: 0.75rem 1.25rem;
@@ -4604,6 +4612,30 @@ div.wpcf7 img.wpcf7-form-control.wpcf7-captchac {
   .date > time {
     margin-right: 0.625rem; }
 
+@media only screen and (max-width: 64em) {
+  .breadcrumbs-container {
+    position: relative; }
+    .breadcrumbs-container:after {
+      position: absolute;
+      width: 15%;
+      height: 100%;
+      right: 0;
+      top: 0;
+      content: '';
+      background-image: -webkit-linear-gradient(right, #FFFFFF, #FFFFFF 30%, rgba(255, 255, 255, 0));
+      background-image: linear-gradient(to left, #FFFFFF, #FFFFFF 30%, rgba(255, 255, 255, 0)); }
+
+  .breadcrumbs {
+    position: relative;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch; }
+    .breadcrumbs > * {
+      float: none; }
+    .breadcrumbs li {
+      display: inline-block; } }
 /* SEARCH */
 /* footer */
 #bottom-quote {
