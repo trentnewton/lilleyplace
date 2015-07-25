@@ -294,6 +294,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/images\/landscape-nature-forest-trees.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 39403,
+		"inputAbbreviatedPath": "\/assets\/img\/images\/landscape-nature-forest-trees.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/images\/landscape-nature-forest-trees.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/images\/Lilleyplace_Logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -312,28 +323,6 @@
 		"initialSize": 206583,
 		"inputAbbreviatedPath": "\/assets\/img\/images\/lilypad-287519.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/images\/lilypad-287519.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/images\/OQ1.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 27964,
-		"inputAbbreviatedPath": "\/assets\/img\/images\/OQ1.png",
-		"outputAbbreviatedPath": "\/assets\/img\/images\/OQ1.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/images\/OQ2.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 42819,
-		"inputAbbreviatedPath": "\/assets\/img\/images\/OQ2.png",
-		"outputAbbreviatedPath": "\/assets\/img\/images\/OQ2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -4194,6 +4183,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/drafts\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/drafts\/information-sessions.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/drafts\/information-sessions.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

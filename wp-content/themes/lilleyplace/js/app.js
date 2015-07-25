@@ -21,6 +21,7 @@ var _wpcf7 = {"loaderUrl":templateUrl + "/assets/img/images/preloader.gif","send
 
 $('.slider').slick({
   dots: false,
+  centerMode: true,
   infinite: true,
   speed: 1200,
   autoplay: true,
@@ -31,12 +32,14 @@ $('.slider').slick({
       breakpoint: 1024,
       settings: {
         slidesToShow: 4,
+        centerMode: true,
       }
     },
     {
       breakpoint: 640,
       settings: {
         slidesToShow: 4,
+        centerMode: true,
       }
     }
     // You can unslick at a given breakpoint now by adding:
