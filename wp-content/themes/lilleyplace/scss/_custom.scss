@@ -97,6 +97,10 @@ p.no-space {
 	margin-top: rem-calc(60);
 }
 
+.mar-b-15 {
+	margin-bottom: rem-calc(15);
+}
+
 .mar-b-30 {
 	margin-bottom: rem-calc(30);
 }
@@ -1039,8 +1043,56 @@ div.wpcf7 {
 
 }
 
+/* comments */
+
 #respond {
 	// @extend .mar-t-30;
+}
+
+#comments {
+
+	ol {
+		list-style-type: none;
+		margin-left: 0;
+	}
+
+}
+
+.comment-body {
+	@extend .mar-t-60;
+
+	img.avatar {
+		border: 1px solid #ccc;
+		border-color: #f1f1f1 #ddd #bbb #ddd;
+		box-shadow: 1px 1px 2px #ccc;
+		border-radius: $global-radius;
+		margin-bottom: rem-calc(20);
+		padding: rem-calc(3);
+	}
+
+	.vcard {
+		margin-left: rem-calc(30);
+	}
+
+	cite.fn {
+		display: block;
+		font-style: normal;
+	}
+
+	time {
+		font-size: 0.833rem;
+		font-style: italic;
+	}
+
+	.comment {
+		@extend .mar-b-15;
+	}
+
+	.comment,
+	.reply {
+		margin-left: rem-calc(82);
+	}
+
 }
 
 .content-excerpt {

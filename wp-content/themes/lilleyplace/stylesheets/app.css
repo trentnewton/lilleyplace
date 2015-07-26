@@ -3241,7 +3241,7 @@ blockquote p {
     display: block; }
   .vcard .fn {
     font-weight: bold;
-    font-size: 0.9375rem; }
+    font-size: 1rem; }
 
 .vevent .summary {
   font-weight: bold; }
@@ -4066,8 +4066,11 @@ p.no-space {
 .mar-t-30 {
   margin-top: 1.875rem; }
 
-.mar-t-60 {
+.mar-t-60, .comment-body {
   margin-top: 3.75rem; }
+
+.mar-b-15, .comment-body .comment {
+  margin-bottom: 0.9375rem; }
 
 .mar-b-30, div.wpcf7-response-output, img.ajax-loader, .member-list li, .member-frame, .sidebar .business-hours, #SGM, #latest-posts .latest-posts-inner .row div:nth-child(2) {
   margin-bottom: 1.875rem; }
@@ -4640,6 +4643,30 @@ div.wpcf7 img.wpcf7-form-control.wpcf7-captchac {
       float: none; }
     .breadcrumbs li {
       display: inline-block; } }
+/* comments */
+#comments ol {
+  list-style-type: none;
+  margin-left: 0; }
+
+.comment-body img.avatar {
+  border: 1px solid #ccc;
+  border-color: #f1f1f1 #ddd #bbb #ddd;
+  box-shadow: 1px 1px 2px #ccc;
+  border-radius: 4px;
+  margin-bottom: 1.25rem;
+  padding: 0.1875rem; }
+.comment-body .vcard {
+  margin-left: 1.875rem; }
+.comment-body cite.fn {
+  display: block;
+  font-style: normal; }
+.comment-body time {
+  font-size: 0.833rem;
+  font-style: italic; }
+.comment-body .comment,
+.comment-body .reply {
+  margin-left: 5.125rem; }
+
 /* SEARCH */
 /* footer */
 #bottom-quote {
