@@ -16,8 +16,9 @@ div.wpcf7 {
 	img.ajax-loader {
 		border: none;
 		vertical-align: middle;
-		margin-left: 4px;
-		width: 25px;
+		margin-left: rem-calc(4);
+		width: rem-calc(24);
+		margin-bottom: 0;
 	}
 
 	div.ajax-error {

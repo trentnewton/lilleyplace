@@ -1,5 +1,7 @@
 <?php
 
+// Convert strings to be used as classes
+
 function custom_fields_to_classes( $string ){    
     $string = str_replace(" ","-", trim($string));         
     $string = preg_replace("/[^a-zA-Z0-9-]/","", $string);
@@ -7,7 +9,9 @@ function custom_fields_to_classes( $string ){
     return $string;
 }
 
+
 // Get Relevanssi to display excerpts from your custom fields
+
 add_filter('relevanssi_excerpt_content', 'excerpt_function', 10, 3); function excerpt_function($content, $post, $query) {
 
 global $wpdb; $fields = $wpdb->get_col("SELECT DISTINCT(meta_key) FROM $wpdb->postmeta");
@@ -27,6 +31,9 @@ return $content; }
 
 if ( ! function_exists( 'lilleyplace_get_posts_page' ) ) :
 
+
+// Finds out the name and url of the blog page
+
 function lilleyplace_get_posts_page($info) {
 	if( get_option('show_on_front') == 'page') {
 		$posts_page_id = get_option( 'page_for_posts');
@@ -45,5 +52,29 @@ function lilleyplace_get_posts_page($info) {
 	}
 }
 endif;
+
+
+// Ajax contact form
+
+add_action('comment_post', 'ajaxify_comments',20, 2);
+function ajaxify_comments($comment_ID, $comment_status){
+    if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest'){
+    //If AJAX Request Then
+        switch($comment_status){
+            case '0':
+                //notify moderator of unapproved comment
+                wp_notify_moderator($comment_ID);
+            case '1': //Approved comment
+                echo "success";
+                $commentdata=&get_comment($comment_ID, ARRAY_A);
+                $post=&get_post($commentdata['comment_post_ID']);
+                wp_notify_postauthor($comment_ID, $commentdata['comment_type']);
+            break;
+            default:
+                echo "error";
+        }
+        exit;
+    }
+}
 
 ?>

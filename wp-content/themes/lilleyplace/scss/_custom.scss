@@ -72,6 +72,11 @@ section {
 	fill: currentColor;
 }
 
+img.ajax-loader {
+	@extend .mar-b-30;
+	width: rem-calc(24);
+}
+
 .small {
 	font-size: 1rem;
 }

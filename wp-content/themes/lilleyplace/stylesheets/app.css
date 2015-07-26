@@ -3741,8 +3741,9 @@ div.wpcf7 {
   div.wpcf7 img.ajax-loader {
     border: none;
     vertical-align: middle;
-    margin-left: 4px;
-    width: 25px; }
+    margin-left: 0.25rem;
+    width: 1.5rem;
+    margin-bottom: 0; }
   div.wpcf7 div.ajax-error {
     display: none; }
 
@@ -4050,6 +4051,9 @@ section p:last-child {
   height: 1em;
   fill: currentColor; }
 
+img.ajax-loader {
+  width: 1.5rem; }
+
 .small {
   font-size: 1rem; }
 
@@ -4065,7 +4069,7 @@ p.no-space {
 .mar-t-60 {
   margin-top: 3.75rem; }
 
-.mar-b-30, div.wpcf7-response-output, .member-list li, .member-frame, .sidebar .business-hours, #SGM, #latest-posts .latest-posts-inner .row div:nth-child(2) {
+.mar-b-30, div.wpcf7-response-output, img.ajax-loader, .member-list li, .member-frame, .sidebar .business-hours, #SGM, #latest-posts .latest-posts-inner .row div:nth-child(2) {
   margin-bottom: 1.875rem; }
 
 .v-align-container {
