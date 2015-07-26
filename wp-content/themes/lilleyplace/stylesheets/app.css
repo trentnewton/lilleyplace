@@ -2895,7 +2895,7 @@ meta.foundation-mq-topbar {
 .text-right {
   text-align: right !important; }
 
-.text-center {
+.text-center, .four-o-four-item {
   text-align: center !important; }
 
 .text-justify {
@@ -4587,9 +4587,6 @@ div.wpcf7 img.wpcf7-form-control.wpcf7-captchac {
     .four-o-four-container .sidebar {
       padding: 3.75rem 0 0; } }
 
-.four-o-four-item {
-  text-align: center; }
-
 .four-o-four-text {
   color: #d4d6db;
   position: relative;
@@ -4637,12 +4634,31 @@ div.wpcf7 img.wpcf7-form-control.wpcf7-captchac {
     width: 100%;
     white-space: nowrap;
     overflow-x: scroll;
-    /* has to be scroll, not auto */
     -webkit-overflow-scrolling: touch; }
     .breadcrumbs > * {
       float: none; }
     .breadcrumbs li {
       display: inline-block; } }
+.share {
+  font-size: 1px;
+  margin-bottom: 1.8125rem;
+  text-align: left; }
+  .share iframe {
+    height: 21px;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 100px;
+    border: 0; }
+  .share div {
+    display: inline-block;
+    width: 5.4375rem; }
+  .share .google {
+    width: 75px; }
+  .share .facebook div {
+    top: 0.625rem; }
+  .share .pinterest a {
+    top: 0.625rem; }
+
 /* comments */
 #comments ol {
   list-style-type: none;

@@ -948,7 +948,7 @@ div.wpcf7 {
 }
 
 .four-o-four-item {
-	text-align: center;
+	@extend .text-center;
 }
 
 .four-o-four-text {
@@ -1027,7 +1027,7 @@ div.wpcf7 {
 		position: relative;
 		width: 100%;
 		white-space: nowrap;
-		overflow-x: scroll; /* has to be scroll, not auto */
+		overflow-x: scroll;
 		-webkit-overflow-scrolling: touch;
 
 		> * {
@@ -1043,6 +1043,46 @@ div.wpcf7 {
 
 }
 
+.share {
+	font-size: 1px;
+	margin-bottom: rem-calc(29);
+	text-align: left;
+
+	iframe {
+		height: 21px;
+		overflow: hidden;
+		vertical-align: middle;
+		width: 100px;
+		border: 0;
+	}
+
+	div {
+		display: inline-block;
+		width: rem-calc(87);
+	}
+
+	.google {
+		width: 75px;
+	}
+
+	.facebook {
+
+		div {
+			top: rem-calc(10);
+		}
+
+	}
+
+	.pinterest {
+
+		a {
+			top: rem-calc(10);
+		}
+
+	}
+
+}
+
 /* comments */
 
 #respond {
@@ -1055,6 +1095,14 @@ div.wpcf7 {
 		list-style-type: none;
 		margin-left: 0;
 	}
+
+	// li {
+		
+	// 	&:nth-child(odd) {
+	// 	    background: scale-color($tertiary-color, $lightness: 90%);
+	// 	}
+
+	// }
 
 }
 
@@ -1116,8 +1164,7 @@ div.wpcf7 {
 /* footer */
 
 footer {
-	// display: table-row;
-	// height: 1px;
+
 }
 
 #bottom-quote {
@@ -1134,11 +1181,6 @@ footer {
 		text-align: center;
 		margin-bottom: 0;
 	}
-
-	// p {
-	// 	margin-top: rem-calc(20);
-	// 	text-align: right;
-	// }
 
 	.icon-quotes-left,
 	.icon-quotes-right {

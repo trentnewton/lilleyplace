@@ -36,6 +36,7 @@ get_header(); ?>
 					<?php wp_link_pages(); ?>
 					<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'lilleyplace' ), 'after' => '</p></nav>' ) ); ?>
 					<p><?php the_tags(); ?></p>
+					<?php get_template_part( 'parts/social_likes' ); ?>
 				</footer>
 				<?php do_action( 'lilleyplace_post_before_comments' ); ?>
 				<?php comments_template(); ?>

@@ -144,8 +144,7 @@ get_header(); ?>
 						<div class="slider">
 						<?php while(has_sub_field('front_page_image_gallery')): $i++;
 							$front_page_image = get_sub_field('front_page_image');
-							?>
-							<?php
+
 							  	if (isset($_GET['width'])) {
 								    $width = $_GET['width'];
 								    if ($width <= 640) { // small sizes
@@ -161,7 +160,7 @@ get_header(); ?>
 								    echo "</script>\n";
 								    exit();
 								}
-							?>
+						?>
 							<?php if( $front_page_image ): ?>
 							<div style="width:<?php echo $front_page_image_resized; ?>px;">
 								<img src="<?php echo $front_page_image['url']; ?>" width="<?php echo $front_page_image['width']; ?>" height="<?php echo $front_page_image['height']; ?>" alt="<?php echo $front_page_image['alt'] ?>" />

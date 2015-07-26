@@ -40,7 +40,6 @@ if ( ! function_exists( 'lilleyplace_scripts' ) ) :
 	wp_enqueue_script( 'modernizr' );
 	wp_enqueue_script( 'fastclick' );
 	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'foundation' );
 	wp_enqueue_script( 'app-js' );
 
 	}
