@@ -1,1 +1,0 @@
-*·U<?php exit; ?>a:1:{s:7:"content";a:1:{i:4;a:4:{s:8:"seo_rank";s:2:"na";s:5:"title";s:27:"Posts without focus keyword";s:5:"class";s:15:"wpseo-glance-na";s:5:"count";s:1:"3";}}}

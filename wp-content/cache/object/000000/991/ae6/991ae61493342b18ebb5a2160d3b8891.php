@@ -1,8 +1,0 @@
-4¶U<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":24:{s:2:"ID";i:15;s:11:"post_author";s:1:"1";s:9:"post_date";s:19:"2015-07-18 20:15:55";s:13:"post_date_gmt";s:19:"2015-07-18 20:15:55";s:12:"post_content";s:849:"<p>If you have any questions or queries please fill in the form below and one of our team will respond to you as soon as possible. For enquires regarding appointments please <a href="tel:(07) 3378 9130">phone (07) 3378 9130</a>. If your contact is of an urgent clinical nature, please do not wait for a reply, please utilise one of the options listed below</p>
-[contact-form-7 id="25" title="Contact form 1"]
-<p>While every effort is made to respond to emails promptly please do not await a reply if you are in crisis.<br />
-If you have a mental health emergency and require immediate assistance:</p>
-<p>Phone the <a href="tel:000">Ambulance Service</a> &#8211; <strong><a href="tel:000">000</a></strong><br />
-Visit your local hospital emergency department<br />
-Call or visit your local mental health service<br />
-Contact your local GP</p>";s:10:"post_title";s:7:"Contact";s:12:"post_excerpt";s:0:"";s:11:"post_status";s:7:"publish";s:14:"comment_status";s:4:"open";s:11:"ping_status";s:4:"open";s:13:"post_password";s:0:"";s:9:"post_name";s:7:"contact";s:7:"to_ping";s:0:"";s:6:"pinged";s:0:"";s:13:"post_modified";s:19:"2015-07-27 13:05:42";s:17:"post_modified_gmt";s:19:"2015-07-27 03:05:42";s:21:"post_content_filtered";s:0:"";s:11:"post_parent";i:0;s:4:"guid";s:30:"http://lilleyplace/?page_id=15";s:10:"menu_order";i:0;s:9:"post_type";s:4:"page";s:14:"post_mime_type";s:0:"";s:13:"comment_count";s:1:"0";s:6:"filter";s:3:"raw";}}
