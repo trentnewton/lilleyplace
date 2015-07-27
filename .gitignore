@@ -43,15 +43,6 @@ wp-content/themes/twentythirteen
 wp-content/plugins/akismet
 wp-content/plugins/hello.php
 wp-content/plugins/index.php
-
-# disallow these
-wp-content/wordpress-seo/
-wp-content/ewww/
-wp-content/languages/
-
-# allow these
-!wp-content/wp-maintenance-mode.php
-!wp-content/uploads/
  
 # ignore all mu-plugins, plugins, and themes
 # unless explicitly whitelisted at the end of this file
@@ -111,6 +102,16 @@ Thumbs.db
  
 # track these mu-plugins, plugins, and themes
 # add your own entries here
-!wp-content/mu-plugins/example-mu-plugin/
-!wp-content/plugins/example-plugin/
-!wp-content/themes/example-theme/
+!wp-content/wp-maintenance-mode.php
+!wp-content/uploads/
+!wp-content/themes/lilleyplace/
+
+# -------------------------
+# BEGIN Blacklisted Files
+# -------------------------
+
+# disallow these
+wp-content/wordpress-seo/
+wp-content/ewww/
+wp-content/languages/
+wp-content/cache/
