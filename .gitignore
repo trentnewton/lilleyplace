@@ -46,6 +46,7 @@ wp-content/plugins/index.php
 
 # disallow these
 wp-content/wordpress-seo/
+wp-content/ewww/
 
 # allow these
 !wp-content/wp-maintenance-mode.php
