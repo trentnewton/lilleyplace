@@ -111,7 +111,7 @@ Thumbs.db
 # -------------------------
 
 # disallow these
-wp-content/wordpress-seo/
 wp-content/ewww/
 wp-content/languages/
 wp-content/cache/
+wp-content/plugins/ewww-image-optimizer/
