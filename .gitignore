@@ -24,8 +24,6 @@
 # ignore everything in the root except the "wp-content" directory.
 /*
 !wp-content/
-
-!.htaccess
  
 # ignore everything in the "wp-content" directory, except:
 # mu-plugins, plugins, and themes directories
@@ -105,6 +103,7 @@ Thumbs.db
 !wp-content/wp-maintenance-mode.php
 !wp-content/uploads/
 !wp-content/themes/lilleyplace/
+!.htaccess
 
 # -------------------------
 # BEGIN Blacklisted Files
@@ -115,3 +114,8 @@ wp-content/ewww/
 wp-content/languages/
 wp-content/cache/
 wp-content/plugins/ewww-image-optimizer/
+wp-content/plugins/w3-total-cache/
+wp-content/uploads/wpcf7_captcha/
+wp-content/w3tc-config/
+wp-content/advanced-cache.php
+wp-content/object-cache.php
