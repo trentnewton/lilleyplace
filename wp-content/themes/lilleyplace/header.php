@@ -24,8 +24,6 @@
 	    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/apple-touch-icon-72x72.png">
 	    <link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/apple-touch-icon-precomposed.png">
 		<?php wp_head(); ?>
-		<script src="//use.typekit.net/glx7jkt.js"></script>
-    	<script>try{Typekit.load();}catch(e){}</script>
 	</head>
 	<body <?php body_class(); ?>>
 	<?php do_action( 'lilleyplace_after_body' ); ?>
