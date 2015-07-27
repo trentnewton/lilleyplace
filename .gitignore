@@ -44,6 +44,9 @@ wp-content/plugins/akismet
 wp-content/plugins/hello.php
 wp-content/plugins/index.php
 
+# disallow these
+wp-content/wordpress-seo/
+
 # allow these
 !wp-content/wp-maintenance-mode.php
 !wp-content/uploads/
