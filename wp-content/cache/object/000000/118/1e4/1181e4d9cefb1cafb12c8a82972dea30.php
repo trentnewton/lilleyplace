@@ -1,1 +1,1 @@
-×çµU<?php exit; ?>a:1:{s:7:"content";a:2:{s:27:"ewww_image_optimizer_noauto";b:1;s:33:"ewww_image_optimizer_webp_for_cdn";b:1;}}
+ÆòµU<?php exit; ?>a:1:{s:7:"content";a:1:{s:19:"wpseo_taxonomy_meta";b:1;}}

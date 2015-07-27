@@ -1045,40 +1045,35 @@ body.coming-soon {
 
 }
 
-@media #{$small-medium-only} {
+.breadcrumbs-container {
+	position: relative;
+  
+ 	&:after{
+    	position: absolute;
+    	width: 15%;
+    	height: 100%;
+    	right: 0;
+    	top: 0;
+    	content:'';
+		background-image: linear-gradient(to left, $white, $white 30%, rgba($white, 0));
+    }
 
-	.breadcrumbs-container {
-		position: relative;
-	  
-	 	&:after{
-	    	position: absolute;
-	    	width: 15%;
-	    	height: 100%;
-	    	right: 0;
-	    	top: 0;
-	    	content:'';
-			background-image: linear-gradient(to left, $white, $white 30%, rgba($white, 0));
-	    }
+}
 
+.breadcrumbs {
+	position: relative;
+	width: 100%;
+	white-space: nowrap;
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
+
+	> * {
+		float: none;
 	}
 
-	.breadcrumbs {
-		position: relative;
-		width: 100%;
-		white-space: nowrap;
-		overflow-x: scroll;
-		-webkit-overflow-scrolling: touch;
-
-		> * {
-			float: none;
-		}
-
-		li {
-	    	display: inline-block;
-	 	}
-
-	}
-
+	li {
+    	display: inline-block;
+ 	}
 
 }
 
