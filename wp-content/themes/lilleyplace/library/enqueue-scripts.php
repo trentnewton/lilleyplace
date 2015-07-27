@@ -16,7 +16,7 @@ if ( ! function_exists( 'lilleyplace_scripts' ) ) :
 	wp_deregister_style( 'contact-form-7' );
 
 	// Enqueue the main Stylesheet.
-	wp_enqueue_style( 'app', get_stylesheet_directory_uri() . '/stylesheets/app.css' );
+	wp_enqueue_style( 'app', get_stylesheet_directory_uri() . '/assets/css/app.css' );
 
 	// Deregister the jquery version bundled with WordPress.
 	wp_deregister_script( 'jquery' );
@@ -34,7 +34,7 @@ if ( ! function_exists( 'lilleyplace_scripts' ) ) :
 
 	// If you'd like to cherry-pick the foundation components you need in your project, head over to Gruntfile.js and see lines 67-88.
 	// It's a good idea to do this, performance-wise. No need to load everything if you're just going to use the grid anyway, you know :)
-	wp_register_script( 'app-js', get_template_directory_uri() . '/js/min/app-min.js', array('jquery'), '5.5.2', true );
+	wp_register_script( 'app-js', get_template_directory_uri() . '/assets/js/min/app-min.js', array('jquery'), '5.5.2', true );
 
 	// Enqueue all registered scripts.
 	wp_enqueue_script( 'modernizr' );

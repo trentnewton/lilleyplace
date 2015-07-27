@@ -24,6 +24,8 @@
 # ignore everything in the root except the "wp-content" directory.
 /*
 !wp-content/
+
+!.htaccess
  
 # ignore everything in the "wp-content" directory, except:
 # mu-plugins, plugins, and themes directories
@@ -49,7 +51,7 @@ wp-content/plugins/index.php
 !wp-content/plugins/scalable-vector-graphics-svg
 !wp-content/plugins/really-simple-captcha
 !wp-content/plugins/relevanssi
-wp-content/uploads/wpcf7_captcha/
+!wp-content/uploads/wpcf7_captcha/
  
 # ignore all mu-plugins, plugins, and themes
 # unless explicitly whitelisted at the end of this file

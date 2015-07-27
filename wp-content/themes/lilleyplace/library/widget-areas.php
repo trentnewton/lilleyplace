@@ -734,7 +734,7 @@ class google_maps_widget extends WP_Widget {
       <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', 'lilleyplace'); ?>
         <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>"
                name="<?php echo $this->get_field_name('title'); ?>" type="text"
-               value="<?php echo attribute_escape($title); ?>" />
+               value="<?php echo esc_attr($title); ?>" />
       </label>
      </p>
       <!-- Widget Title field END -->
@@ -820,7 +820,7 @@ class google_maps_widget extends WP_Widget {
       <label for="<?php echo $this->get_field_id('address'); ?>"><?php _e('Address:', 'lilleyplace'); ?>
         <input class="widefat" id="<?php echo $this->get_field_id('address'); ?>"
                name="<?php echo $this->get_field_name('address'); ?>" type="text"
-               value="<?php echo attribute_escape($add); ?>" />
+               value="<?php echo esc_attr($add); ?>" />
       </label>
      </p>
       <!-- Address field END -->
@@ -828,7 +828,7 @@ class google_maps_widget extends WP_Widget {
     <!-- PART 6: Information field START -->
      <p>
       <label for="<?php echo $this->get_field_id('information'); ?>"><?php _e('Information:', 'lilleyplace'); ?>
-      	<textarea name="<?php echo $this->get_field_name('information'); ?>" class="widefat" id="<?php echo $this->get_field_id('information'); ?>"><?php echo attribute_escape($info); ?></textarea>
+      	<textarea name="<?php echo $this->get_field_name('information'); ?>" class="widefat" id="<?php echo $this->get_field_id('information'); ?>"><?php echo esc_attr($info); ?></textarea>
       </label>
      </p>
       <!-- Information field END -->

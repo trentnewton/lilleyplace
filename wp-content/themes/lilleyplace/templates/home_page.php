@@ -45,7 +45,7 @@ get_header(); ?>
 				<ul class="small-block-grid-1 medium-block-grid-2" data-equalizer="bar" data-options="equalize_on_stack: true;" data-equalizer-mq="medium-up">
 				  	<li>
 						<div class="tt-contentbox-title tt-cb-title-lime-green" data-equalizer-watch="bar">
-							<span>Do I need a referral to see a psychologist?</span>
+							<h6>Do I need a referral to see a psychologist?</h6>
 						</div>
 						<div class="tt-contentbox-content" data-equalizer-watch="foo">
 							<ul>
@@ -57,7 +57,7 @@ get_header(); ?>
 				  	</li>
 				  	<li>
 			  			<div class="tt-contentbox-title tt-cb-title-lime-green" data-equalizer-watch="bar">
-			  				<span>Would talking to a psychologist be good for me?</span>
+			  				<h6>Would talking to a psychologist be good for me?</h6>
 			  			</div>
 			  			<div class="tt-contentbox-content" data-equalizer-watch="foo">
 			  				<ul>
@@ -86,7 +86,7 @@ get_header(); ?>
 				  	</li>
 			  		<li>
 			  			<div class="tt-contentbox-title tt-cb-title-lime-green" data-equalizer-watch="bar">
-			  				<span>How can therapy help me?</span>
+			  				<h6>How can therapy help me?</h6>
 			  			</div>
 			  			<div class="tt-contentbox-content" data-equalizer-watch="foo">
 			  				<ul>
@@ -98,7 +98,7 @@ get_header(); ?>
 			  		</li>
 				  	<li>
 			  			<div class="tt-contentbox-title tt-cb-title-lime-green" data-equalizer-watch="bar">
-			  				<span>What can I expect at my first appointment?</span>
+			  				<h6>What can I expect at my first appointment?</h6>
 			  			</div>
 			  			<div class="tt-contentbox-content" data-equalizer-watch="foo">
 			  				<ul>
@@ -111,7 +111,7 @@ get_header(); ?>
 				  	</li>
 				  	<li>
 			  			<div class="tt-contentbox-title tt-cb-title-lime-green" data-equalizer-watch="bar">
-			  				<span>How many sessions can I have?</span>
+			  				<h6>How many sessions can I have?</h6>
 			  			</div>
 			  			<div class="tt-contentbox-content" data-equalizer-watch="foo">
 			  				<ul>

@@ -29,6 +29,14 @@ function lilleyplace_theme_support() {
 
 }
 
+/**
+ * Set the content width based on the theme's design and stylesheet.
+ *
+ */
+if ( ! isset( $content_width ) ) {
+	$content_width = 1024;
+}
+
 add_action( 'after_setup_theme', 'lilleyplace_theme_support' );
 endif;
 ?>

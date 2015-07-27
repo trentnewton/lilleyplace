@@ -1,270 +1,495 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: foundationpress-libsass-template 5.4.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-13 17:56+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Project-Id-Version: Lilley Place\n"
+"POT-Creation-Date: 2015-07-27 17:38+1000\n"
+"PO-Revision-Date: 2015-07-27 17:37+1000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 1.8.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: 404.php:8
-msgid "File Not Found"
+#: 404.php:23
+msgid "Oops! the page you are looking for could not be found."
 msgstr ""
 
-#: 404.php:12
-msgid ""
-"The page you are looking for might have been removed, had its name changed, "
-"or is temporarily unavailable."
+#: 404.php:24
+msgid "Here are some links that you might find useful:"
 msgstr ""
 
-#: 404.php:14
-msgid "Please try the following:"
-msgstr ""
-
-#: 404.php:16
-msgid "Check your spelling"
-msgstr ""
-
-#: 404.php:17
+#: 404.php:26
 #, php-format
-msgid "Return to the <a href=\"%s\">home page</a>"
+msgid "<a href=\"%s\">Home</a>"
 msgstr ""
 
-#: 404.php:18
-msgid "Click the <a href=\"javascript:history.back()\">Back</a> button"
+#: 404.php:27
+msgid "Contact Us"
 msgstr ""
 
-#. /previous pages when applicable
-#: archive.php:21 index.php:24 search.php:25
+#: archive.php:42 index.php:40 search.php:34
 msgid "&larr; Older posts"
 msgstr ""
 
-#: archive.php:22 index.php:25 search.php:26
+#: archive.php:43 index.php:41 search.php:35
 msgid "Newer posts &rarr;"
 msgstr ""
 
-#: comments.php:8
-#, php-format
-msgid "<cite class=\"fn\">%s</cite>"
+#: comments.php:28
+msgid "Reply"
 msgstr ""
 
-#: comments.php:9
-#, php-format
-msgid "%1$s"
-msgstr ""
-
-#: comments.php:10
-msgid "(Edit)"
-msgstr ""
-
-#: comments.php:16
+#: comments.php:37
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: comments.php:31
+#: comments.php:56
 msgid "Please do not load this page directly. Thanks!"
 msgstr ""
 
-#: comments.php:36
+#: comments.php:62
 msgid "This post is password protected. Enter the password to view comments."
 msgstr ""
 
-#: comments.php:46
-msgid "No Responses to"
-msgstr ""
-
-#: comments.php:46
-msgid "One Response to"
-msgstr ""
-
-#: comments.php:46
-msgid "% Responses to"
-msgstr ""
-
-#: comments.php:53
-msgid "&larr; Older comments"
-msgstr ""
-
-#: comments.php:54
-msgid "Newer comments &rarr;"
-msgstr ""
-
-#: comments.php:61
+#: comments.php:76
 msgid "Leave a Reply"
 msgstr ""
 
-#: comments.php:61
+#: comments.php:76
 #, php-format
 msgid "Leave a Reply to %s"
 msgstr ""
 
-#: comments.php:64
+#: comments.php:79
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr ""
 
-#: comments.php:68
+#: comments.php:83
 #, php-format
 msgid "Logged in as <a href=\"%s/wp-admin/profile.php\">%s</a>."
 msgstr ""
 
-#: comments.php:68
+#: comments.php:83
 msgid "Log out of this account"
 msgstr ""
 
-#: comments.php:68
+#: comments.php:83
 msgid "Log out &raquo;"
 msgstr ""
 
-#: comments.php:71
+#: comments.php:88
 msgid "Name"
 msgstr ""
 
-#: comments.php:71 comments.php:75
+#: comments.php:88 comments.php:96
 msgid " (required)"
 msgstr ""
 
-#: comments.php:75
+#: comments.php:96
 msgid "Email (will not be published)"
 msgstr ""
 
-#: comments.php:79
+#: comments.php:104
 msgid "Website"
 msgstr ""
 
-#: comments.php:84
+#: comments.php:113
 msgid "Comment"
 msgstr ""
 
-#: comments.php:87
+#: comments.php:120
 msgid "You can use these tags:"
 msgstr ""
 
-#: comments.php:88
+#: comments.php:126
 msgid "Submit Comment"
 msgstr ""
 
-#: content-none.php:11
-msgid "Nothing Found"
+#: footer.php:33
+msgid "Subscribe for more"
 msgstr ""
 
-#: content-none.php:17
+#: footer.php:45
+msgid "Latest Posts from the Blog"
+msgstr ""
+
+#: footer.php:83
+msgid "Copyright"
+msgstr ""
+
+#: footer.php:83
+msgid "All rights reserved."
+msgstr ""
+
+#: footer.php:88
+msgid "Top"
+msgstr ""
+
+#: library/breadcrumbs.php:7 library/breadcrumbs.php:172
 #, php-format
-msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgid "Archive by Category &ldquo;%s&rdquo;"
 msgstr ""
 
-#: content-none.php:21
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
-msgstr ""
-
-#: content-none.php:26
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr ""
-
-#. /archive/search.
-#. *
-#. * @subpackage FoundationPress
-#. * @since FoundationPress 1.0
-#.
-#: content.php:16
-msgid "Continue reading..."
-msgstr ""
-
-#: hero.php:40 kitchen-sink.php:739 page-full.php:19 page-sidebar-left.php:21
-#: page.php:18 single.php:27 woocommerce.php:18
-msgid "Pages:"
-msgstr ""
-
-#: library/entry-meta.php:4
+#: library/breadcrumbs.php:8 library/breadcrumbs.php:173
 #, php-format
-msgid "Posted on %s at %s."
+msgid "&ldquo;%s&rdquo;"
 msgstr ""
 
-#: library/entry-meta.php:5
-msgid "Written by"
+#: library/breadcrumbs.php:9 library/breadcrumbs.php:174
+#, php-format
+msgid "Posts Tagged &ldquo;%s&rdquo;"
 msgstr ""
 
-#: library/foundation.php:16
+#: library/breadcrumbs.php:10 library/breadcrumbs.php:175
+#, php-format
+msgid "Articles Posted by %s"
+msgstr ""
+
+#: library/breadcrumbs.php:11 library/breadcrumbs.php:176
+msgid "Error 404"
+msgstr ""
+
+#: library/breadcrumbs.php:159 library/breadcrumbs.php:310
+#: library/navigation.php:215
+msgid "Page"
+msgstr ""
+
+#: library/breadcrumbs.php:171
+msgid "Home"
+msgstr ""
+
+#: library/foundation.php:25
 msgid "&laquo;"
 msgstr ""
 
-#: library/foundation.php:17
+#: library/foundation.php:26
 msgid "&raquo;"
 msgstr ""
 
-#: library/foundation.php:40
+#: library/foundation.php:54
 #, php-format
 msgid ""
 "Please assign a menu to the primary menu location under %1$s or %2$s the "
 "design."
 msgstr ""
 
-#: library/foundation.php:41
+#: library/foundation.php:55
 #, php-format
 msgid "<a href=\"%s\">Menus</a>"
 msgstr ""
 
-#: library/foundation.php:44
+#: library/foundation.php:58
 #, php-format
 msgid "<a href=\"%s\">Customize</a>"
 msgstr ""
 
-#: library/widget-areas.php:6
+#: library/foundation.php:106
+msgid "No Responses to"
+msgstr ""
+
+#: library/foundation.php:106
+msgid "One Response to"
+msgstr ""
+
+#: library/foundation.php:106
+msgid "% Responses to"
+msgstr ""
+
+#: library/foundation.php:146
+#, php-format
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+#: library/foundation.php:147
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: library/widget-areas.php:14
 msgid "Sidebar widgets"
 msgstr ""
 
-#: library/widget-areas.php:7
+#: library/widget-areas.php:15 library/widget-areas.php:25
+msgid "A sidebar to use on any page. Drag widgets to this sidebar container."
+msgstr ""
+
+#: library/widget-areas.php:24
+msgid "Blog Sidebar"
+msgstr ""
+
+#: library/widget-areas.php:34
+msgid "Search Sidebar"
+msgstr ""
+
+#: library/widget-areas.php:35 library/widget-areas.php:45
 msgid "Drag widgets to this sidebar container."
 msgstr ""
 
-#: library/widget-areas.php:16
-msgid "Footer widgets"
+#: library/widget-areas.php:44
+msgid "Contact Sidebar"
 msgstr ""
 
-#: library/widget-areas.php:17
+#: library/widget-areas.php:54
+msgid "First Footer Column"
+msgstr ""
+
+#: library/widget-areas.php:55 library/widget-areas.php:65
+#: library/widget-areas.php:75
 msgid "Drag widgets to this footer container"
 msgstr ""
 
-#: node_modules/grunt-pot/test/fixtures/some-file.php:3
-msgid "I'm a translatable string."
+#: library/widget-areas.php:64
+msgid "Second Footer Column"
 msgstr ""
 
-#: node_modules/grunt-pot/test/fixtures/some-other-file.php:4
-msgid "Me too"
+#: library/widget-areas.php:74
+msgid "Third Footer Column"
 msgstr ""
 
-#: node_modules/grunt-pot/test/fixtures/some-other-file.php:7
+#: library/widget-areas.php:99
+msgid "Link to your RSS feed and social media accounts."
+msgstr ""
+
+#: library/widget-areas.php:101
+msgid "Social Networks"
+msgstr ""
+
+#: library/widget-areas.php:244
+msgid ""
+"Enter the full URL to each of your social media accounts. Simply leave the "
+"field blank if you wish not to display that social media service."
+msgstr ""
+
+#: library/widget-areas.php:249 library/widget-areas.php:533
+#: library/widget-areas.php:734 library/widget-areas.php:945
+msgid "Title:"
+msgstr ""
+
+#: library/widget-areas.php:262
+msgid "Title link:"
+msgstr ""
+
+#: library/widget-areas.php:268
+msgid "None"
+msgstr ""
+
+#: library/widget-areas.php:274
+msgid "RSS URL: (leave empty for default feed)"
+msgstr ""
+
+#: library/widget-areas.php:280
+msgid "Twitter URL:"
+msgstr ""
+
+#: library/widget-areas.php:293
+msgid "Facebook URL:"
+msgstr ""
+
+#: library/widget-areas.php:304
+msgid "Instagram URL:"
+msgstr ""
+
+#: library/widget-areas.php:316
+msgid "Email Address:"
+msgstr ""
+
+#: library/widget-areas.php:330
+msgid "Flickr URL:"
+msgstr ""
+
+#: library/widget-areas.php:343
+msgid "Youtube URL:"
+msgstr ""
+
+#: library/widget-areas.php:356
+msgid "LinkedIn URL:"
+msgstr ""
+
+#: library/widget-areas.php:369
+msgid "FourSquare URL:"
+msgstr ""
+
+#: library/widget-areas.php:382
+msgid "Delicious URL:"
+msgstr ""
+
+#: library/widget-areas.php:395
+msgid "Digg URL:"
+msgstr ""
+
+#: library/widget-areas.php:408
+msgid "Google + URL:"
+msgstr ""
+
+#: library/widget-areas.php:449
+msgid "Use this widget to display your business hours."
+msgstr ""
+
+#: library/widget-areas.php:458
+msgid "Business Hours"
+msgstr ""
+
+#: library/widget-areas.php:481 library/widget-areas.php:550
+msgid "Monday:"
+msgstr ""
+
+#: library/widget-areas.php:484 library/widget-areas.php:567
+msgid "Tuesday:"
+msgstr ""
+
+#: library/widget-areas.php:487 library/widget-areas.php:584
+msgid "Wednesday:"
+msgstr ""
+
+#: library/widget-areas.php:490 library/widget-areas.php:601
+msgid "Thursday:"
+msgstr ""
+
+#: library/widget-areas.php:493 library/widget-areas.php:618
+msgid "Friday:"
+msgstr ""
+
+#: library/widget-areas.php:496 library/widget-areas.php:635
+msgid "Saturday:"
+msgstr ""
+
+#: library/widget-areas.php:499 library/widget-areas.php:652
+msgid "Sunday:"
+msgstr ""
+
+#: library/widget-areas.php:701 library/widget-areas.php:703
+#: library/widget-areas.php:705
+msgid "Click to open larger map"
+msgstr ""
+
+#: library/widget-areas.php:744
+msgid "Zoom Level:"
+msgstr ""
+
+#: library/widget-areas.php:820
+msgid "Address:"
+msgstr ""
+
+#: library/widget-areas.php:830
+msgid "Information:"
+msgstr ""
+
+#: library/widget-areas.php:874
+msgid "Use this widget to display your contact details."
+msgstr ""
+
+#: library/widget-areas.php:883
+msgid "Contact Details"
+msgstr ""
+
+#: library/widget-areas.php:908
+msgid "phone:"
+msgstr ""
+
+#: library/widget-areas.php:911
+msgid "fax:"
+msgstr ""
+
+#: library/widget-areas.php:914
+msgid "email:"
+msgstr ""
+
+#: library/widget-areas.php:962
+msgid "Street Address:"
+msgstr ""
+
+#: library/widget-areas.php:979
+msgid "City, State, Zipcode:"
+msgstr ""
+
+#: library/widget-areas.php:996
+msgid "Phone:"
+msgstr ""
+
+#: library/widget-areas.php:1013
+msgid "Fax:"
+msgstr ""
+
+#: library/widget-areas.php:1030
+msgid "Email:"
+msgstr ""
+
+#: parts/banner.php:17
+msgid "Search Results"
+msgstr ""
+
+#: parts/banner.php:25
+msgid "Page Not Found"
+msgstr ""
+
+#: parts/banner.php:37
+msgid "Search"
+msgstr ""
+
+#: parts/content-none.php:15
+msgid "Nothing Found"
+msgstr ""
+
+#: parts/content-none.php:20
 #, php-format
-msgid "I have %d apple"
-msgid_plural "I have %d apples"
-msgstr[0] ""
-msgstr[1] ""
-
-#. / TRANSLATORS: This should be translated as a shorthand for YEAR-MONTH-DAY using 4, 2 and 2 digits.
-#: node_modules/grunt-pot/test/fixtures/some-other-file.php:16
-msgid "yyyy-mm-dd"
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: search.php:7
+#: parts/content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: parts/content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: parts/social_likes.php:13
+msgid "Tweet"
+msgstr ""
+
+#: parts/top-bar.php:16
+msgid "Menu"
+msgstr ""
+
+#: search.php:17
 msgid "Search Results for"
 msgstr ""
 
-#: searchform.php:6 searchform.php:10
-msgid "Search"
+#: searchform.php:17
+msgid "Enter your search terms here"
+msgstr ""
+
+#: searchform.php:21
+msgid "Go"
+msgstr ""
+
+#: single.php:45 woocommerce.php:27
+msgid "Pages:"
+msgstr ""
+
+#: templates/staff_members.php:74
+msgid "Read More"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Lilley Place"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Wordpress theme for Lilley Place"
 msgstr ""

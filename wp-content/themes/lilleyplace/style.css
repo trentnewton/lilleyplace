@@ -1,10 +1,11 @@
 /*
 Theme Name:         Lilley Place
-Theme URI:          http://trentnewton.com
+Theme URI:          
 Description:        Wordpress theme for Lilley Place
 Version:            5.5.2
 Author:             
-Author URI:         
+Author URI:
+Tags:               one-column, two-columns, right-sidebar, flexible-width, custom-menu, full-width-template, translation-ready        
 Text Domain:        lilleyplace
 License:            MIT License
 License URI:        http://www.opensource.org/licenses/mit-license.php
@@ -31,3 +32,12 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
   you could just enqueue this file (style.css) to the header and add your styles in this file
 
 ---------------------------------------------------------------------------- */
+
+.wp-caption {}
+.wp-caption-text {}
+.sticky {}
+.gallery-caption {}
+.bypostauthor {}
+.alignright {}
+.alignleft {}
+.aligncenter {}
