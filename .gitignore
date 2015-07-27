@@ -110,12 +110,12 @@ Thumbs.db
 # -------------------------
 
 # disallow these
+wp-content/advanced-cache.php
+wp-content/cache/
 wp-content/ewww/
 wp-content/languages/
-wp-content/cache/
+wp-content/object-cache.php
 wp-content/plugins/ewww-image-optimizer/
 wp-content/plugins/w3-total-cache/
 wp-content/uploads/wpcf7_captcha/
 wp-content/w3tc-config/
-wp-content/advanced-cache.php
-wp-content/object-cache.php
