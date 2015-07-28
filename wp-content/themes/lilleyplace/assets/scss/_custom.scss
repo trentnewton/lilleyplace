@@ -384,24 +384,6 @@ select {
 	justify-content: space-between;
 }
 
-ul {
-
-	&.results {
-		margin-left: 0;
-	}
-
-	&[class*="block-grid-"].list {
-
-		> li {
-			padding: rem-calc(0 29 0); 
-			font-size: 1rem;
-		}
-
-	}
-
-}
-
-
 ul:not([class]),
 ul.blogroll {
 	list-style: none;
@@ -420,6 +402,30 @@ ul.blogroll {
 			background-repeat: no-repeat;
 			background-size: rem-calc(6);
 			background-image: url('data:image/svg+xml;utf8,<svg version="1.1" id="li-bullet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="307.4 0 236.2 360" enable-background="new 307.4 0 236.2 360" xml:space="preserve"><path fill="rgb(183, 187, 194)" d="M307.4,302.6l56.8,56.8L543.6,180L364.2,0.6l-56.8,56.8L430,180L307.4,302.6z"/></svg>');
+		}
+
+	}
+
+}
+
+ul {
+
+	&.results {
+		margin-left: 0;
+	}
+
+	&[class*="block-grid-"].list {
+		margin-left: rem-calc(-4);
+		margin-top: rem-calc(10);
+
+		li {
+			padding: 0; 
+			font-size: 1rem;
+
+			&:before {
+				background: none;
+			}
+
 		}
 
 	}
