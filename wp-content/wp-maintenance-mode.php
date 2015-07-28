@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="application-name" content="Lilley Place">
 		<title>Coming Soon! | Lilley Place</title>
-		<meta name="application-name" content="<?php bloginfo( 'name' ); ?>">
+		<meta name="application-name" content="Lilley Place">
 	    <meta name="msapplication-TileImage" content="https://rawgit.com/trentnewton/lilleyplace/master/wp-content/themes/lilleyplace/assets/img/icons/apple-touch-icon-114x114.png">
 	    <meta name="msapplication-TileColor" content="#ffffff">
 	    <link rel="icon" href="https://rawgit.com/trentnewton/lilleyplace/master/wp-content/themes/lilleyplace/assets/img/icons/favicon.ico" type="image/x-icon">
