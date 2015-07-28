@@ -77,4 +77,36 @@ function ajaxify_comments($comment_ID, $comment_status){
 	}
 }
 
+/**
+ * Adds the individual sections, settings, and controls to the theme customizer
+ */
+function theme_customiser( $wp_customize ) {
+    $wp_customize->add_section(
+        'section_one',
+        array(
+            'title' => 'Footer',
+            'description' => __( 'Change the text of the footer.', 'lilleyplace' ),
+            'priority' => 999,
+        )
+    );
+
+    $wp_customize->add_setting(
+	    'copyright_textbox',
+	    array(
+	        'default' => __( 'Default copyright text', 'lilleyplace' ),
+	    )
+	);
+
+	$wp_customize->add_control(
+	    'copyright_textbox',
+	    array(
+	        'label' => __( 'Copyright Text', 'lilleyplace' ),
+	        'section' => 'section_one',
+	        'type' => 'text',
+	    )
+	);
+}
+
+add_action( 'customize_register', 'theme_customiser' );
+
 ?>

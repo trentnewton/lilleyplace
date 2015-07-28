@@ -80,11 +80,20 @@
 				<div class="footer-copyright">
 					<div class="row">
 						<div class="small-12 medium-6 columns">
-							<p><?php _e('Copyright','lilleyplace');?>&nbsp;&copy;&nbsp;<?php echo date("Y"); ?>&nbsp;<?php bloginfo( 'name' ); ?>.&nbsp;<?php _e('All rights reserved.','lilleyplace');?>&nbsp;Website by Happiness Design.</p>
+							<p>
+							<?php if (get_theme_mod( 'copyright_textbox' ) != '') {?>
+								<?php echo get_theme_mod( 'copyright_textbox', 'No copyright information has been saved yet.' ); ?>
+							<?php } else { ?>
+								<?php _e('Copyright','lilleyplace');?>&nbsp;&copy;&nbsp;<?php echo date("Y"); ?>&nbsp;<?php bloginfo( 'name' ); ?>.&nbsp;<?php _e('All rights reserved.','lilleyplace');?>
+							<?php } ?>
+								&nbsp;Website by Happiness Design.
+							</p>
 						</div>
 						<div class="small-12 medium-6 columns">
 							<div class="footer-nav-container">
-								<?php lilleyplace_secondary(); ?>
+								<nav>
+									<?php lilleyplace_secondary(); ?>
+								</nav>
 								<a href="#" id="top" class="link-top"><svg class="icon icon-arrow-up"><use xlink:href="#icon-arrow-up"></use></svg>&nbsp;<?php _e('Top','lilleyplace');?></a>
 							</div>
 						</div>

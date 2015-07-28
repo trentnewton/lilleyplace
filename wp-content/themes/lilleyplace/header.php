@@ -24,6 +24,13 @@
 	    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/apple-touch-icon-72x72.png">
 	    <link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/apple-touch-icon-precomposed.png">
 		<?php wp_head(); ?>
+		<?php if (get_header_image() != '') {?>
+		<style type="text/css">
+			.main-hero-inner:after {
+				background: url("<?php header_image(); ?>") center no-repeat;
+			}
+		</style>
+		<?php } ?>
 	</head>
 	<body <?php body_class(); ?>>
 	<?php do_action( 'lilleyplace_after_body' ); ?>

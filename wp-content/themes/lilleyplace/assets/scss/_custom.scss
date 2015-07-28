@@ -1151,14 +1151,6 @@ body.coming-soon {
 
 	}
 
-	// li {
-		
-	// 	&:nth-child(odd) {
-	// 	    background: scale-color($tertiary-color, $lightness: 90%);
-	// 	}
-
-	// }
-
 }
 
 .comment-body {
@@ -1478,10 +1470,37 @@ footer {
 		margin-top: rem-calc(15);
 	}
 
+	nav {
+		position: relative;
+	  
+	 	&:after {
+	    	position: absolute;
+	    	width: 15%;
+	    	height: 100%;
+	    	right: 0;
+	    	top: 0;
+	    	content:'';
+		}
+
+	}
+
 }
 
 ul.footer-nav {
 	margin: 0;
+	position: relative;
+	width: rem-calc(340);
+	white-space: nowrap;
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
+
+	@media #{$small-only} {
+		width: rem-calc(240);
+	}
+
+	@media #{$medium-landscape} {
+		width: rem-calc(240);
+	}
 
 	li {
 		display: inline-block;
