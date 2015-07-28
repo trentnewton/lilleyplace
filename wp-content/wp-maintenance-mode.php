@@ -6,14 +6,14 @@
 		<meta name="application-name" content="Lilley Place">
 		<title>Coming Soon! | Lilley Place</title>
 		<meta name="application-name" content="Lilley Place">
-	    <meta name="msapplication-TileImage" content="https://rawgit.com/trentnewton/lilleyplace/master/wp-content/themes/lilleyplace/assets/img/icons/apple-touch-icon-114x114.png">
+	    <meta name="msapplication-TileImage" content="//cdn.rawgit.com/trentnewton/lilleyplace/master/wp-content/themes/lilleyplace/assets/img/icons/apple-touch-icon-114x114.png">
 	    <meta name="msapplication-TileColor" content="#ffffff">
-	    <link rel="icon" href="https://rawgit.com/trentnewton/lilleyplace/master/wp-content/themes/lilleyplace/assets/img/icons/favicon.ico" type="image/x-icon">
-	    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://rawgit.com/trentnewton/lilleyplace/master/wp-content/themes/lilleyplace/assets/img/icons/apple-touch-icon-144x144.png">
-	    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://rawgit.com/trentnewton/lilleyplace/master/wp-content/themes/lilleyplace/assets/img/icons/apple-touch-icon-114x114.png">
-	    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://rawgit.com/trentnewton/lilleyplace/master/wp-content/themes/lilleyplace/assets/img/icons/apple-touch-icon-72x72.png">
-	    <link rel="apple-touch-icon-precomposed" href="https://rawgit.com/trentnewton/lilleyplace/master/wp-content/themes/lilleyplace/assets/img/icons/apple-touch-icon-precomposed.png">
-		<link rel='stylesheet' id='app-css'  href='https://rawgit.com/trentnewton/lilleyplace/master/wp-content/themes/lilleyplace/assets/css/app.css' type='text/css' media='all' />
+	    <link rel="icon" href="//cdn.rawgit.com/trentnewton/lilleyplace/master/wp-content/themes/lilleyplace/assets/img/icons/favicon.ico" type="image/x-icon">
+	    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//cdn.rawgit.com/trentnewton/lilleyplace/master/wp-content/themes/lilleyplace/assets/img/icons/apple-touch-icon-144x144.png">
+	    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="//cdn.rawgit.com/trentnewton/lilleyplace/master/wp-content/themes/lilleyplace/assets/img/icons/apple-touch-icon-114x114.png">
+	    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//cdn.rawgit.com/trentnewton/lilleyplace/master/wp-content/themes/lilleyplace/assets/img/icons/apple-touch-icon-72x72.png">
+	    <link rel="apple-touch-icon-precomposed" href="//cdn.rawgit.com/trentnewton/lilleyplace/master/wp-content/themes/lilleyplace/assets/img/icons/apple-touch-icon-precomposed.png">
+		<link rel='stylesheet' id='app-css'  href='//cdn.rawgit.com/trentnewton/lilleyplace/master/wp-content/themes/lilleyplace/assets/css/app.css' type='text/css' media='all' />
 		<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js'></script>
 	</head>
 	<body class="coming-soon">
@@ -40,6 +40,6 @@
 		</header>
 		<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
       	<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
-      	<script type='text/javascript' src='https://rawgit.com/trentnewton/lilleyplace/master/wp-content/themes/lilleyplace/themes/lilleyplace/assets/js/min/app-min.js'></script>
+      	<script type='text/javascript' src='//cdn.rawgit.com/trentnewton/lilleyplace/master/wp-content/themes/lilleyplace/assets/js/min/app-min.js'></script>
 	</body>
 </html>
