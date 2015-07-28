@@ -625,7 +625,7 @@ class pu_media_upload_widget extends WP_Widget
          echo $before_title . $title . $after_title;
       // Display Opening Hours widget
       ?>
-      <ul class="small-block-grid-2 medium-block-grid-1">
+      <ul class="small-block-grid-2 medium-block-grid-1 affiliates">
          <?php if ($image1) { ?>
          <li><img src="<?php echo $image1; ?>" width="141" height="60" alt="" /></li>
          <?php } ?>
