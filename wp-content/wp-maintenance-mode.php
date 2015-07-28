@@ -19,7 +19,7 @@
 	<body class="coming-soon">
 		<header id="main-nav">
 			<div class="row">
-				<div class="columns small-12 mar-b-30 text-center">
+				<div class="columns small-12 mar-b-30 mar-t-30 text-center">
 					<img src="https://rawgit.com/trentnewton/lilleyplace/master/wp-content/themes/lilleyplace/assets/img/images/Lilleyplace_Logo.png" width="313" height="121" alt="Lilley Place" />
 				</div>
 			</div>
