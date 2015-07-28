@@ -49,6 +49,16 @@ function lilleyplace_sidebar_widgets() {
 	  'after_title' => '</h4>',
 	));
 
+   register_sidebar(array(
+     'id' => 'resources-sidebar',
+     'name' => __( 'Resources Sidebar', 'lilleyplace' ),
+     'description' => __( 'Drag widgets to this sidebar container.', 'lilleyplace' ),
+     'before_widget' => '<div class="tt-contentbox">',
+     'after_widget' => '</div></div>',
+     'before_title' => '<div class="tt-contentbox-title tt-cb-title-lime-green"><h6>',
+     'after_title' => '</h6></div><div class="tt-contentbox-content tt-content-style-lime-green">',
+   ));
+
 	register_sidebar(array(
 	  'id' => 'footer-first-column',
 	  'name' => __( 'First Footer Column', 'lilleyplace' ),

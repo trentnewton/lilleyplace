@@ -402,7 +402,8 @@ ul {
 }
 
 
-ul:not([class]) {
+ul:not([class]),
+ul.blogroll {
 	list-style: none;
 
 	li {
