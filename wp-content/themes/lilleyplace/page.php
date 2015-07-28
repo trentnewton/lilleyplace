@@ -27,7 +27,11 @@ get_header(); ?>
 	<?php } ?>
 <?php do_action( 'lilleyplace_page_before_entry_content' ); ?>
 	<div class="entry-content">
-		<?php the_content(); ?>
+		<div class="row">
+			<div class="columns small-12">
+				<?php the_content(); ?>
+			</div>
+		</div>
 	</div>
 <?php do_action( 'lilleyplace_page_after_entry_content' ); ?>
   <div class="shadow white-top"></div>

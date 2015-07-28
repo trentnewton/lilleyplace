@@ -197,7 +197,7 @@ endif;
 // Wrap images with figure tag - Credit: Robert O'Rourke - http://bit.ly/1q0WHFs .
 if ( ! function_exists( 'img_unauto' ) ) :
 function img_unautop($pee) {
-	$pee = preg_replace( '/<p>\\s*?(<a .*?><img.*?><\\/a>|<img.*?>)?\\s*<\\/p>/s', '<figure>$1</figure>', $pee );
+	$pee = preg_replace( '/<p>\\s*?(<a .*?><img.*?><\\/a>|<img.*?>)?\\s*<\\/p>/s', '$1', $pee );
 	return $pee;
 }
 endif;
@@ -218,5 +218,8 @@ function add_header_styles() {
     </style>
   <?php }
 }
+
+remove_filter( 'the_content', 'wpautop' );
+add_filter( 'the_content', 'wpautop' , 12);
 
 ?>
