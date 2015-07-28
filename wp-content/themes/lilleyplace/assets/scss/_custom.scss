@@ -1011,8 +1011,12 @@ body.coming-soon {
 
 	img {
 
-		@media #{$small-only} {
+		@media #{$small-portrait} {
 			width: 80%;
+		}
+
+		@media #{$small-landscape} {
+			width: 50%;
 		}
 
 	}
