@@ -416,11 +416,11 @@ ul {
 
 	&[class*="block-grid-"].list {
 		margin-left: rem-calc(-4);
-		margin-top: rem-calc(10);
 
 		li {
 			padding: 0; 
 			font-size: 1rem;
+			margin-bottom: 0;
 
 			&:before {
 				background: none;
