@@ -12,7 +12,7 @@
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="post-description">
-		<header class="mar-b-30">
+		<header class="mar-b-15">
 			<h4 class="content-title">
 				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 			</h4>

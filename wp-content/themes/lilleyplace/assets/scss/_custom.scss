@@ -526,7 +526,6 @@ ul {
 
 	h1 {
 		margin-bottom: 0;
-		// font-size: $h2-font-size;
 	}
 
 }
@@ -1126,10 +1125,6 @@ body.coming-soon {
 
 /* comments */
 
-#respond {
-	// @extend .mar-t-30;
-}
-
 #comments {
 
 	ol {
@@ -1201,9 +1196,9 @@ body.coming-soon {
 
 .post-description {
 
-	// h4 {
-	// 	margin-bottom: 0;
-	// }
+	h4 {
+		margin-bottom: 0;
+	}
 
 }
 
