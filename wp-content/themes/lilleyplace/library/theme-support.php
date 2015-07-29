@@ -27,7 +27,10 @@ function lilleyplace_theme_support() {
 	// Add post formarts support: http://codex.wordpress.org/Post_Formats
 	add_theme_support( 'post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat') );
 
+	// Add the Wordpress Link Manager
 	add_filter( 'pre_option_link_manager_enabled', '__return_true' );
+
+	add_filter('the_excerpt', 'do_shortcode', 11);
 
 }
 

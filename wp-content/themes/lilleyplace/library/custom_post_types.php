@@ -94,6 +94,7 @@ function theme_customiser( $wp_customize ) {
 	    'copyright_textbox',
 	    array(
 	        'default' => __( 'Default copyright text', 'lilleyplace' ),
+	        'sanitize_callback' => 'esc_url_raw'
 	    )
 	);
 

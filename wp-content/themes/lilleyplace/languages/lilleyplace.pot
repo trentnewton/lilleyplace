@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Lilley Place\n"
-"POT-Creation-Date: 2015-07-27 17:38+1000\n"
-"PO-Revision-Date: 2015-07-27 17:37+1000\n"
+"POT-Creation-Date: 2015-07-29 13:56+1000\n"
+"PO-Revision-Date: 2015-07-29 13:56+1000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -123,15 +123,15 @@ msgstr ""
 msgid "Latest Posts from the Blog"
 msgstr ""
 
-#: footer.php:83
+#: footer.php:87
 msgid "Copyright"
 msgstr ""
 
-#: footer.php:83
+#: footer.php:87
 msgid "All rights reserved."
 msgstr ""
 
-#: footer.php:88
+#: footer.php:97
 msgid "Top"
 msgstr ""
 
@@ -166,6 +166,18 @@ msgstr ""
 
 #: library/breadcrumbs.php:171
 msgid "Home"
+msgstr ""
+
+#: library/custom_post_types.php:88
+msgid "Change the text of the footer."
+msgstr ""
+
+#: library/custom_post_types.php:96
+msgid "Default copyright text"
+msgstr ""
+
+#: library/custom_post_types.php:104
+msgid "Copyright Text"
 msgstr ""
 
 #: library/foundation.php:25
@@ -232,6 +244,7 @@ msgid "Search Sidebar"
 msgstr ""
 
 #: library/widget-areas.php:35 library/widget-areas.php:45
+#: library/widget-areas.php:55
 msgid "Drag widgets to this sidebar container."
 msgstr ""
 
@@ -240,187 +253,229 @@ msgid "Contact Sidebar"
 msgstr ""
 
 #: library/widget-areas.php:54
-msgid "First Footer Column"
-msgstr ""
-
-#: library/widget-areas.php:55 library/widget-areas.php:65
-#: library/widget-areas.php:75
-msgid "Drag widgets to this footer container"
+msgid "Resources Sidebar"
 msgstr ""
 
 #: library/widget-areas.php:64
-msgid "Second Footer Column"
+msgid "First Footer Column"
+msgstr ""
+
+#: library/widget-areas.php:65 library/widget-areas.php:75
+#: library/widget-areas.php:85
+msgid "Drag widgets to this footer container"
 msgstr ""
 
 #: library/widget-areas.php:74
+msgid "Second Footer Column"
+msgstr ""
+
+#: library/widget-areas.php:84
 msgid "Third Footer Column"
 msgstr ""
 
-#: library/widget-areas.php:99
+#: library/widget-areas.php:109
 msgid "Link to your RSS feed and social media accounts."
 msgstr ""
 
-#: library/widget-areas.php:101
+#: library/widget-areas.php:111
 msgid "Social Networks"
 msgstr ""
 
-#: library/widget-areas.php:244
+#: library/widget-areas.php:254
 msgid ""
 "Enter the full URL to each of your social media accounts. Simply leave the "
 "field blank if you wish not to display that social media service."
 msgstr ""
 
-#: library/widget-areas.php:249 library/widget-areas.php:533
-#: library/widget-areas.php:734 library/widget-areas.php:945
+#: library/widget-areas.php:259 library/widget-areas.php:526
+#: library/widget-areas.php:731 library/widget-areas.php:825
+#: library/widget-areas.php:988
 msgid "Title:"
 msgstr ""
 
-#: library/widget-areas.php:262
+#: library/widget-areas.php:272
 msgid "Title link:"
 msgstr ""
 
-#: library/widget-areas.php:268
+#: library/widget-areas.php:278
 msgid "None"
 msgstr ""
 
-#: library/widget-areas.php:274
+#: library/widget-areas.php:284
 msgid "RSS URL: (leave empty for default feed)"
 msgstr ""
 
-#: library/widget-areas.php:280
+#: library/widget-areas.php:290
 msgid "Twitter URL:"
 msgstr ""
 
-#: library/widget-areas.php:293
+#: library/widget-areas.php:303
 msgid "Facebook URL:"
 msgstr ""
 
-#: library/widget-areas.php:304
+#: library/widget-areas.php:314
 msgid "Instagram URL:"
 msgstr ""
 
-#: library/widget-areas.php:316
+#: library/widget-areas.php:326
 msgid "Email Address:"
 msgstr ""
 
-#: library/widget-areas.php:330
+#: library/widget-areas.php:340
 msgid "Flickr URL:"
 msgstr ""
 
-#: library/widget-areas.php:343
+#: library/widget-areas.php:353
 msgid "Youtube URL:"
 msgstr ""
 
-#: library/widget-areas.php:356
+#: library/widget-areas.php:366
 msgid "LinkedIn URL:"
 msgstr ""
 
-#: library/widget-areas.php:369
+#: library/widget-areas.php:379
 msgid "FourSquare URL:"
 msgstr ""
 
-#: library/widget-areas.php:382
+#: library/widget-areas.php:392
 msgid "Delicious URL:"
 msgstr ""
 
-#: library/widget-areas.php:395
+#: library/widget-areas.php:405
 msgid "Digg URL:"
 msgstr ""
 
-#: library/widget-areas.php:408
+#: library/widget-areas.php:418
 msgid "Google + URL:"
 msgstr ""
 
-#: library/widget-areas.php:449
+#: library/widget-areas.php:459
 msgid "Use this widget to display your business hours."
 msgstr ""
 
-#: library/widget-areas.php:458
+#: library/widget-areas.php:468
 msgid "Business Hours"
 msgstr ""
 
-#: library/widget-areas.php:481 library/widget-areas.php:550
+#: library/widget-areas.php:491 library/widget-areas.php:532
 msgid "Monday:"
 msgstr ""
 
-#: library/widget-areas.php:484 library/widget-areas.php:567
+#: library/widget-areas.php:492 library/widget-areas.php:538
 msgid "Tuesday:"
 msgstr ""
 
-#: library/widget-areas.php:487 library/widget-areas.php:584
+#: library/widget-areas.php:493 library/widget-areas.php:544
 msgid "Wednesday:"
 msgstr ""
 
-#: library/widget-areas.php:490 library/widget-areas.php:601
+#: library/widget-areas.php:494 library/widget-areas.php:550
 msgid "Thursday:"
 msgstr ""
 
-#: library/widget-areas.php:493 library/widget-areas.php:618
+#: library/widget-areas.php:495 library/widget-areas.php:556
 msgid "Friday:"
 msgstr ""
 
-#: library/widget-areas.php:496 library/widget-areas.php:635
+#: library/widget-areas.php:496 library/widget-areas.php:562
 msgid "Saturday:"
 msgstr ""
 
-#: library/widget-areas.php:499 library/widget-areas.php:652
+#: library/widget-areas.php:497 library/widget-areas.php:568
 msgid "Sunday:"
 msgstr ""
 
-#: library/widget-areas.php:701 library/widget-areas.php:703
-#: library/widget-areas.php:705
+#: library/widget-areas.php:595
+msgid "Use this widget to display your affiliate's logos."
+msgstr ""
+
+#: library/widget-areas.php:598 library/widget-areas.php:680
+msgid "Affiliates"
+msgstr ""
+
+#: library/widget-areas.php:736
+msgid "Image 1:"
+msgstr ""
+
+#: library/widget-areas.php:738 library/widget-areas.php:743
+#: library/widget-areas.php:748 library/widget-areas.php:753
+msgid "Upload Image"
+msgstr ""
+
+#: library/widget-areas.php:741
+msgid "Image 2:"
+msgstr ""
+
+#: library/widget-areas.php:746
+msgid "Image 3:"
+msgstr ""
+
+#: library/widget-areas.php:751
+msgid "Image 4:"
+msgstr ""
+
+#: library/widget-areas.php:771
+msgid "Google Maps Widget"
+msgstr ""
+
+#: library/widget-areas.php:792 library/widget-areas.php:794
+#: library/widget-areas.php:796
 msgid "Click to open larger map"
 msgstr ""
 
-#: library/widget-areas.php:744
+#: library/widget-areas.php:833
 msgid "Zoom Level:"
 msgstr ""
 
-#: library/widget-areas.php:820
+#: library/widget-areas.php:836
+msgid "entire world"
+msgstr ""
+
+#: library/widget-areas.php:865
 msgid "Address:"
 msgstr ""
 
-#: library/widget-areas.php:830
+#: library/widget-areas.php:873
 msgid "Information:"
 msgstr ""
 
-#: library/widget-areas.php:874
+#: library/widget-areas.php:917
 msgid "Use this widget to display your contact details."
 msgstr ""
 
-#: library/widget-areas.php:883
+#: library/widget-areas.php:926
 msgid "Contact Details"
 msgstr ""
 
-#: library/widget-areas.php:908
+#: library/widget-areas.php:951
 msgid "phone:"
 msgstr ""
 
-#: library/widget-areas.php:911
+#: library/widget-areas.php:954
 msgid "fax:"
 msgstr ""
 
-#: library/widget-areas.php:914
+#: library/widget-areas.php:957
 msgid "email:"
 msgstr ""
 
-#: library/widget-areas.php:962
+#: library/widget-areas.php:1005
 msgid "Street Address:"
 msgstr ""
 
-#: library/widget-areas.php:979
+#: library/widget-areas.php:1022
 msgid "City, State, Zipcode:"
 msgstr ""
 
-#: library/widget-areas.php:996
+#: library/widget-areas.php:1039
 msgid "Phone:"
 msgstr ""
 
-#: library/widget-areas.php:1013
+#: library/widget-areas.php:1056
 msgid "Fax:"
 msgstr ""
 
-#: library/widget-areas.php:1030
+#: library/widget-areas.php:1073
 msgid "Email:"
 msgstr ""
 

@@ -768,7 +768,7 @@ class google_maps_widget extends WP_Widget {
  
    public function __construct() {
       $widget_ops = array('classname' => 'google_maps_widget', 'description' => 'Displays a Google Maps image when clicked on displays a pop up modal!' );
-      $this->WP_Widget('google_maps_widget', __('Google Map Widget', 'lilleyplace'), $widget_ops);
+      $this->WP_Widget('google_maps_widget', __('Google Maps Widget', 'lilleyplace'), $widget_ops);
    }
  
    function widget($args, $instance) {

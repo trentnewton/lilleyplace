@@ -202,11 +202,13 @@ function img_unautop($pee) {
 }
 endif;
 
+// Remove emojis from the head
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
 remove_action( 'admin_print_styles', 'print_emoji_styles' );
 
+// Get the admin bar to work properly on small screen
 add_action('wp_head', 'add_header_styles');
 
 function add_header_styles() {
@@ -219,7 +221,14 @@ function add_header_styles() {
   <?php }
 }
 
+// Stop <br>s and <p> appearing in shortcodes
 remove_filter( 'the_content', 'wpautop' );
 add_filter( 'the_content', 'wpautop' , 12);
+
+function remove_shortcode_from_excerpt($content) {
+	$content = strip_shortcodes( $content );
+		return $content;//always return $content
+	}
+add_filter('the_excerpt', 'remove_shortcode_from_excerpt');
 
 ?>

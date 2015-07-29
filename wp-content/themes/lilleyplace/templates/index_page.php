@@ -18,7 +18,7 @@ get_header(); ?>
 				<?php if ( $child_pages ) : foreach ( $child_pages as $pageChild ) : setup_postdata( $pageChild ); ?>
 				<article id="post-<?php echo $pageChild->ID; ?>">
 					<div class="post-description">
-						<header class="mar-b-30">
+						<header class="mar-b-15">
 							<h4 class="content-title">
 								<a href="<?php echo get_permalink($pageChild->ID); ?>"><?php echo $pageChild->post_title; ?></a>
 							</h4>
