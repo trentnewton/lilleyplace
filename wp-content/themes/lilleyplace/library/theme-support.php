@@ -30,6 +30,22 @@ function lilleyplace_theme_support() {
 	// Add the Wordpress Link Manager
 	add_filter( 'pre_option_link_manager_enabled', '__return_true' );
 
+	// Display the full TinyMCE text editor
+	function enable_more_buttons($buttons) {
+
+	$buttons[] = 'styleselect';
+	$buttons[] = 'backcolor';
+	$buttons[] = 'newdocument';
+	$buttons[] = 'cut';
+	$buttons[] = 'copy';
+	$buttons[] = 'charmap';
+	$buttons[] = 'visualaid';
+
+	return $buttons;
+	}
+
+	add_filter("mce_buttons_3", "enable_more_buttons");
+
 }
 
 /**
