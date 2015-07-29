@@ -2,6 +2,10 @@
 // Documentation can be found at: http://foundation.zurb.com/docs
 $(document).foundation();
 
+$('#info-box-accordion').on('toggled', function (event, accordion) {
+  $(document).foundation('equalizer', 'reflow');
+});
+
 // Scroll to top thingo
 $('#top').click(function() {
   $('html, body').animate({
@@ -84,4 +88,18 @@ $(document).ready(function($){
       });
       return false;
     });
-  });
+});
+
+$(document).foundation({
+  accordion: {
+    // specify the class used for accordion panels
+    content_class: 'content',
+    // specify the class used for active (or open) accordion panels
+    active_class: 'active',
+    // allow multiple accordion panels to be active at the same time
+    multi_expand: true,
+    // allow accordion panels to be closed by clicking on their headers
+    // setting to false only closes accordion panels when another is opened
+    toggleable: true
+  }
+});

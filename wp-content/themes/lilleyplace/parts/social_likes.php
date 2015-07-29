@@ -26,19 +26,13 @@
     </div>
     <div class="pinterest">    
         <?php if ( '' != get_the_post_thumbnail() ) { ?>
-        <a href="https://www.pinterest.com/pin/create/button/
-            ?url=<?php the_permalink() ?>
-            &media=<?php echo $url ?>
-            &description=<?php the_title(); ?>"
+        <a href="https://www.pinterest.com/pin/create/button/?url=<?php the_permalink() ?>&media=<?php echo $url ?>&description=<?php the_title(); ?>"
             data-pin-do="buttonPin"
             data-pin-config="above">
             <img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" />
         </a>
         <?php } else { ?>
-        <a href="https://www.pinterest.com/pin/create/button/
-            ?url=<?php the_permalink() ?>
-            &media=<?php echo get_template_directory_uri(); ?>/assets/img/images/blog_normal.jpg
-            &description=<?php the_title(); ?>"
+        <a href="https://www.pinterest.com/pin/create/button/?url=<?php the_permalink() ?>&media=<?php echo get_template_directory_uri(); ?>/assets/img/images/blog_normal.jpg&description=<?php the_title(); ?>"
             data-pin-do="buttonPin"
             data-pin-config="above">
             <img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" />

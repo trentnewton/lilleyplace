@@ -347,13 +347,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/images\/link_img.jpg": {
-		"fileType": 16384,
+	"\/assets\/img\/images\/link_img.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 5397,
-		"inputAbbreviatedPath": "\/assets\/img\/images\/link_img.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/images\/link_img.jpg",
+		"initialSize": 14994,
+		"inputAbbreviatedPath": "\/assets\/img\/images\/link_img.png",
+		"outputAbbreviatedPath": "\/assets\/img\/images\/link_img.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

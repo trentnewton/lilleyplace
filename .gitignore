@@ -115,6 +115,7 @@ wp-content/cache/
 wp-content/ewww/
 wp-content/object-cache.php
 wp-content/plugins/ewww-image-optimizer/
+wp-content/plugins/theme-check/
 wp-content/plugins/w3-total-cache/
 wp-content/uploads/wpcf7_captcha/
 wp-content/w3tc-config/

@@ -43,16 +43,14 @@ get_header(); ?>
 		<div class="columns small-12">
 			<h2><?php the_field('info_box_section_title'); ?></h2>
 			<div class="info-boxes-list" data-equalizer="foo" data-options="equalize_on_stack: true;" data-equalizer-mq="medium-up">
-				<ul class="small-block-grid-1 medium-block-grid-2" data-equalizer="bar" data-options="equalize_on_stack: true;" data-equalizer-mq="medium-up">
+				<ul id="info-box-accordion" class="small-block-grid-1 medium-block-grid-2 accordion" data-equalizer="bar" data-accordion data-options="equalize_on_stack: true;" data-equalizer-mq="medium-up">
 				<?php while(has_sub_field('add_a_box')): $i++;
 					$box_title = get_sub_field('box_title');
 					?>
 					<?php if( $box_title ): ?>
-					<li>
-						<div class="tt-contentbox-title tt-cb-title-lime-green" data-equalizer-watch="bar">
-							<h6><?php the_sub_field('box_title'); ?></h6>
-						</div>
-						<div class="tt-contentbox-content" data-equalizer-watch="foo">
+					<li class="accordion-navigation">
+						<a href="#panel-<?php echo $i; ?>" data-equalizer-watch="bar"><?php the_sub_field('box_title'); ?></a>
+						<div id="panel-<?php echo $i; ?>" class="content" data-equalizer-watch="foo">
 							<ul>
 							<?php while(has_sub_field('add_a_list_item')): $i++;
 								$list_item = get_sub_field('list_item');
