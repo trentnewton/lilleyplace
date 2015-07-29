@@ -1,1 +1,0 @@
-Ì6¶U<?php exit; ?>a:1:{s:7:"content";s:265:"<p>CBT or â€œCognitive Behavioural Therapyâ€ is a form of therapy that helps clients to identify and change unhelpful actions (behaviours) and thinking patterns (cognitions). CBT focuses on your present thoughts and behaviours and how they affect how you feel.</p>";}
