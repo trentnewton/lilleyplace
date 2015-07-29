@@ -246,7 +246,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/icons\/apple-touch-icon-114x114.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/icons\/apple-touch-icon-144x144.png": {
 		"fileType": 32768,
@@ -257,7 +257,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/icons\/apple-touch-icon-144x144.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/icons\/apple-touch-icon-72x72.png": {
 		"fileType": 32768,
@@ -268,7 +268,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/icons\/apple-touch-icon-72x72.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/icons\/apple-touch-icon-precomposed.png": {
 		"fileType": 32768,
@@ -279,7 +279,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/icons\/apple-touch-icon-precomposed.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/images\/4507253146_8f724909b8_o.jpg": {
 		"fileType": 16384,
@@ -301,7 +301,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/images\/blog_normal.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/images\/front-about-img.jpg": {
 		"fileType": 16384,
@@ -323,7 +323,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/images\/landscape-nature-forest-trees.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/images\/Lilleyplace_Logo.png": {
 		"fileType": 32768,
@@ -334,7 +334,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/images\/Lilleyplace_Logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/images\/lilypad-287519.jpg": {
 		"fileType": 16384,
@@ -356,7 +356,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/images\/link_img.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/images\/PhotoComing_large.jpg": {
 		"fileType": 16384,
@@ -367,7 +367,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/images\/PhotoComing_large.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/js\/app.js": {
 		"fileType": 64,
@@ -400,7 +400,7 @@
 		"outputAbbreviatedPath": "\/assets\/js\/vendor\/contact-form-7\/jquery-ui\/themes\/smoothness\/images\/ui-bg_flat_0_aaaaaa_40x100.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/js\/vendor\/contact-form-7\/jquery-ui\/themes\/smoothness\/images\/ui-bg_flat_75_ffffff_40x100.png": {
 		"fileType": 32768,
@@ -411,7 +411,7 @@
 		"outputAbbreviatedPath": "\/assets\/js\/vendor\/contact-form-7\/jquery-ui\/themes\/smoothness\/images\/ui-bg_flat_75_ffffff_40x100.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/js\/vendor\/contact-form-7\/jquery-ui\/themes\/smoothness\/images\/ui-bg_glass_55_fbf9ee_1x400.png": {
 		"fileType": 32768,
@@ -422,7 +422,7 @@
 		"outputAbbreviatedPath": "\/assets\/js\/vendor\/contact-form-7\/jquery-ui\/themes\/smoothness\/images\/ui-bg_glass_55_fbf9ee_1x400.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/js\/vendor\/contact-form-7\/jquery-ui\/themes\/smoothness\/images\/ui-bg_glass_65_ffffff_1x400.png": {
 		"fileType": 32768,
@@ -433,7 +433,7 @@
 		"outputAbbreviatedPath": "\/assets\/js\/vendor\/contact-form-7\/jquery-ui\/themes\/smoothness\/images\/ui-bg_glass_65_ffffff_1x400.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/js\/vendor\/contact-form-7\/jquery-ui\/themes\/smoothness\/images\/ui-bg_glass_75_dadada_1x400.png": {
 		"fileType": 32768,
@@ -444,7 +444,7 @@
 		"outputAbbreviatedPath": "\/assets\/js\/vendor\/contact-form-7\/jquery-ui\/themes\/smoothness\/images\/ui-bg_glass_75_dadada_1x400.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/js\/vendor\/contact-form-7\/jquery-ui\/themes\/smoothness\/images\/ui-bg_glass_75_e6e6e6_1x400.png": {
 		"fileType": 32768,
@@ -455,7 +455,7 @@
 		"outputAbbreviatedPath": "\/assets\/js\/vendor\/contact-form-7\/jquery-ui\/themes\/smoothness\/images\/ui-bg_glass_75_e6e6e6_1x400.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/js\/vendor\/contact-form-7\/jquery-ui\/themes\/smoothness\/images\/ui-bg_glass_95_fef1ec_1x400.png": {
 		"fileType": 32768,
@@ -466,7 +466,7 @@
 		"outputAbbreviatedPath": "\/assets\/js\/vendor\/contact-form-7\/jquery-ui\/themes\/smoothness\/images\/ui-bg_glass_95_fef1ec_1x400.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/js\/vendor\/contact-form-7\/jquery-ui\/themes\/smoothness\/images\/ui-bg_highlight-soft_75_cccccc_1x100.png": {
 		"fileType": 32768,
@@ -477,7 +477,7 @@
 		"outputAbbreviatedPath": "\/assets\/js\/vendor\/contact-form-7\/jquery-ui\/themes\/smoothness\/images\/ui-bg_highlight-soft_75_cccccc_1x100.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/js\/vendor\/contact-form-7\/jquery-ui\/themes\/smoothness\/images\/ui-icons_222222_256x240.png": {
 		"fileType": 32768,
@@ -488,7 +488,7 @@
 		"outputAbbreviatedPath": "\/assets\/js\/vendor\/contact-form-7\/jquery-ui\/themes\/smoothness\/images\/ui-icons_222222_256x240.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/js\/vendor\/contact-form-7\/jquery-ui\/themes\/smoothness\/images\/ui-icons_2e83ff_256x240.png": {
 		"fileType": 32768,
@@ -499,7 +499,7 @@
 		"outputAbbreviatedPath": "\/assets\/js\/vendor\/contact-form-7\/jquery-ui\/themes\/smoothness\/images\/ui-icons_2e83ff_256x240.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/js\/vendor\/contact-form-7\/jquery-ui\/themes\/smoothness\/images\/ui-icons_454545_256x240.png": {
 		"fileType": 32768,
@@ -510,7 +510,7 @@
 		"outputAbbreviatedPath": "\/assets\/js\/vendor\/contact-form-7\/jquery-ui\/themes\/smoothness\/images\/ui-icons_454545_256x240.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/js\/vendor\/contact-form-7\/jquery-ui\/themes\/smoothness\/images\/ui-icons_888888_256x240.png": {
 		"fileType": 32768,
@@ -521,7 +521,7 @@
 		"outputAbbreviatedPath": "\/assets\/js\/vendor\/contact-form-7\/jquery-ui\/themes\/smoothness\/images\/ui-icons_888888_256x240.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/js\/vendor\/contact-form-7\/jquery-ui\/themes\/smoothness\/images\/ui-icons_cd0a0a_256x240.png": {
 		"fileType": 32768,
@@ -532,7 +532,7 @@
 		"outputAbbreviatedPath": "\/assets\/js\/vendor\/contact-form-7\/jquery-ui\/themes\/smoothness\/images\/ui-icons_cd0a0a_256x240.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/js\/vendor\/contact-form-7\/jquery-ui\/themes\/smoothness\/jquery-ui.css": {
 		"fileType": 16,
@@ -4035,7 +4035,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/modernizr\/media\/Modernizr 2 Logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/modernizr\/modernizr.js": {
 		"fileType": 64,
@@ -4096,7 +4096,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/modernizr\/test\/caniuse_files\/alpha.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/apng_test.png": {
 		"fileType": 32768,
@@ -4107,7 +4107,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/modernizr\/test\/caniuse_files\/apng_test.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/before-after.png": {
 		"fileType": 32768,
@@ -4118,7 +4118,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/modernizr\/test\/caniuse_files\/before-after.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/form_validation.html": {
 		"fileType": 8192,
@@ -4149,7 +4149,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/modernizr\/test\/caniuse_files\/green5x5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/hashchange.html": {
 		"fileType": 8192,
@@ -4189,7 +4189,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/modernizr\/test\/caniuse_files\/mathml_ref.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/modernizr-1.7.min.js": {
 		"fileType": 64,
@@ -4211,7 +4211,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/modernizr\/test\/caniuse_files\/png_alpha_result.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/pushstate.html": {
 		"fileType": 8192,
@@ -4231,7 +4231,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/modernizr\/test\/caniuse_files\/red30x30.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/ruby.png": {
 		"fileType": 32768,
@@ -4242,7 +4242,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/modernizr\/test\/caniuse_files\/ruby.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/stroked-text.png": {
 		"fileType": 32768,
@@ -4253,7 +4253,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/modernizr\/test\/caniuse_files\/stroked-text.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/style.css": {
 		"fileType": 16,
@@ -4273,7 +4273,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/modernizr\/test\/caniuse_files\/svg-html-blur.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/svg_blur.png": {
 		"fileType": 32768,
@@ -4284,7 +4284,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/modernizr\/test\/caniuse_files\/svg_blur.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/table.png": {
 		"fileType": 32768,
@@ -4295,7 +4295,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/modernizr\/test\/caniuse_files\/table.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/text-shadow1.png": {
 		"fileType": 32768,
@@ -4306,7 +4306,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/modernizr\/test\/caniuse_files\/text-shadow1.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/text-shadow2.png": {
 		"fileType": 32768,
@@ -4317,7 +4317,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/modernizr\/test\/caniuse_files\/text-shadow2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/windsong_font.png": {
 		"fileType": 32768,
@@ -4328,7 +4328,7 @@
 		"outputAbbreviatedPath": "\/bower_components\/modernizr\/test\/caniuse_files\/windsong_font.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/xhtml.html": {
 		"fileType": 8192,
@@ -4879,7 +4879,7 @@
 		"outputAbbreviatedPath": "\/screenshot.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/search.php": {
 		"fileType": 8192,
