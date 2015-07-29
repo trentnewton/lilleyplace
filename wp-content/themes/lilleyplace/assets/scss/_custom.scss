@@ -995,6 +995,10 @@ tr th {
 		outline: none;
 	}
 
+	p {
+		@extend .lead;
+	}
+
 }
 
 li.email {

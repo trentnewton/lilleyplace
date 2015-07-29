@@ -799,7 +799,7 @@ class google_maps_widget extends WP_Widget {
       </a>
 		<div id="google-maps-modal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
 		  <h2><?php echo $title; ?></h2>
-		  <p class="lead"><?php echo $info; ?></p>
+		  <p><?php echo $info; ?></p>
 		  <iframe src="//maps.google.com/maps?hl=en&amp;ie=utf8&amp;output=embed&amp;iwloc=addr&amp;iwd=1&amp;mrt=loc&amp;t=m&amp;q=<?php echo $add; ?>+&amp;z=14" frameborder="0"></iframe>
 		  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 		</div>
