@@ -41,7 +41,7 @@ function h4_subheader_sc( $atts, $content = null ) {
 add_shortcode( 'h4_subheader', 'h4_subheader_sc' );
 
 function p_small_sc( $atts, $content = null ) {
-    return '<p class="small">'.do_shortcode($content).'</p>';
+    return '<p role="note" class="small">'.do_shortcode($content).'</p>';
 }
 add_shortcode( 'p_small', 'p_small_sc' );
 
@@ -64,6 +64,11 @@ function contentbox_content_sc( $atts, $content = null ) {
     return '<div class="tt-contentbox-content">'.do_shortcode($content).'</div>';
 }
 add_shortcode( 'contentbox_content', 'contentbox_content_sc' );
+
+function figure_sc( $atts, $content = null ) {
+    return '<figure>'.do_shortcode($content).'</figure>';
+}
+add_shortcode( 'figure', 'figure_sc' );
 
 function table_sc( $atts, $content = null ) {
     return '<table>'.do_shortcode($content).'</table>';

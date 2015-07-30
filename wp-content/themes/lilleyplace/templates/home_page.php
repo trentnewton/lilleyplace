@@ -29,7 +29,7 @@ get_header(); ?>
 				<svg class="icon icon-quotes-right"><use xlink:href="#icon-quotes-right"></use></svg>
 			</h4>
 			<?php if( get_field('top_citation') ): ?>
-			<p><?php the_field('top_citation'); ?></p>
+			<p role="citation"><?php the_field('top_citation'); ?></p>
 			<?php endif; ?>
 		</div>
 	</div>
@@ -80,11 +80,15 @@ get_header(); ?>
 </section>
 <?php endif; ?>
 <main id="main-text" class="row">
-	<div class="columns">
+	<div class="column">
 	<?php if( get_field('banner_title') ): ?>
-		<h2><?php the_field('banner_title'); ?></h2>
+		<header>
+			<h2><?php the_field('banner_title'); ?></h2>
+		</header>
 		<?php else : ?>
-		<?php the_title(); ?>
+		<header>
+			<?php the_title(); ?>
+		</header>
 	<?php endif; ?>
 	<?php do_action( 'lilleyplace_before_content' ); ?>
 		<article class="entry-content">

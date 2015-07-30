@@ -32,7 +32,7 @@
 		        <?php if( is_search() ): ?>
 		        <?php else : ?>
 				<div class="search-box">
-		            <form method="get" class="searchform" action="<?php echo home_url('/'); ?>">
+		            <form role="search" method="get" class="searchform" action="<?php echo home_url('/'); ?>">
 			            <svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg>
 			            <input name="s" class="s" placeholder="<?php _e( 'Search', 'lilleyplace' ); ?>&hellip;" type="text">
 		            </form>
