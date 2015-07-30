@@ -16,7 +16,7 @@
 
 get_header(); ?>
 <?php get_template_part( 'parts/banner' ); ?>
-<section class="page-content">
+<main class="page-content">
 	<div class="entry-content row">
 		<div class="columns medium-8" role="main">
 			<?php if ( have_posts() ) : ?>
@@ -50,5 +50,5 @@ get_header(); ?>
 		</aside>
 	</div>
   <div class="shadow white-top"></div>
-</section>
+</main>
 <?php get_footer(); ?>

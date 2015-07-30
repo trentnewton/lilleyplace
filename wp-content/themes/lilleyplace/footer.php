@@ -14,7 +14,7 @@
 			<?php if( get_bloginfo( 'description' ) ): ?>
 			<section id="bottom-quote">
 				<div class="row">
-					<div class="columns">
+					<div class="column">
 						<h3>
 							<svg class="icon icon-quotes-left"><use xlink:href="#icon-quotes-left"></use></svg>
 								<?php bloginfo( 'description' ); ?> 
@@ -41,7 +41,7 @@
 			<section id="latest-posts">
 				<div class="row">
 					<div class="latest-posts-inner">
-						<div class="columns">
+						<div class="column">
 							<h3><?php _e( 'Latest Posts from the Blog', 'lilleyplace' ); ?></h3>
 							<div class="row">
 								<?php while( $latest->have_posts() ) : $latest->the_post(); ?>
@@ -80,7 +80,7 @@
 				<div class="footer-copyright">
 					<div class="row">
 						<div class="medium-6 columns">
-							<p>
+							<p role="copyright">
 							<?php if (get_theme_mod( 'copyright_textbox' ) != '') {?>
 								<?php echo get_theme_mod( 'copyright_textbox', 'No copyright information has been saved yet.' ); ?>
 							<?php } else { ?>

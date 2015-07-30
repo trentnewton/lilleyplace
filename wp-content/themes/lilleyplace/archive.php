@@ -18,12 +18,14 @@
 
 get_header(); ?>
 <?php get_template_part( 'parts/banner' ); ?>
-<section class="page-content">
+<main class="page-content">
 	<div class="entry-content row">
 		<div class="columns medium-8" role="main">
-			<nav class="breadcrumbs-container">
-				<?php if (function_exists('breadcrumbs')) breadcrumbs(); ?>
-			</nav>
+			<header>
+		   		<nav class="breadcrumbs-container">
+					<?php if (function_exists('breadcrumbs')) breadcrumbs(); ?>
+				</nav>
+		   	</header>
 			<?php if ( have_posts() ) : ?>
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -50,5 +52,5 @@ get_header(); ?>
 		</aside>
 	</div>
   <div class="shadow white-top"></div>
-</section>
+</main>
 <?php get_footer(); ?>

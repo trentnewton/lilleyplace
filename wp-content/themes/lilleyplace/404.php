@@ -9,15 +9,15 @@
 
 get_header(); ?>
 <?php get_template_part( 'parts/banner' ); ?>
-<article <?php post_class('page-content') ?> id="post-<?php the_ID(); ?>">
+<main <?php post_class('page-content') ?> id="post-<?php the_ID(); ?>">
 	<div class="row">
 		<div class="four-o-four-container">
-			<div class="columns small-12 medium-6">
+			<article class="columns medium-6">
 				<div class="four-o-four-item">
 					<h2 class="four-o-four-text" title="404">404</h2>
 				</div>
-			</div>
-			<aside class="columns small-12 medium-6 sidebar-bg">
+			</article>
+			<aside class="columns medium-6 sidebar-bg">
 				<div class="sidebar-container">
 					<div class="sidebar">
 						<p><strong><?php _e( 'Oops! the page you are looking for could not be found.', 'lilleyplace' ); ?></strong></p>
@@ -32,5 +32,5 @@ get_header(); ?>
 		</div>
 	</div>
   <div class="shadow white-top"></div>
-</article>
+</main>
 <?php get_footer(); ?>

@@ -10,7 +10,7 @@
  */
 
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<main id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="post-description">
 		<header class="mar-b-15">
 			<h4 class="content-title">
@@ -25,16 +25,18 @@
 		<?php if ( has_post_thumbnail() ) : ?>
 		<div class="row">
 			<div class="column">
-				<?php the_post_thumbnail( '', array('class' => 'th') ); ?>
+				<figure>
+					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'medium', array('class' => 'th') ); ?></a>
+				</figure>
 			</div>
 		</div>
 		<?php endif; ?>
-		<div class="post-description-copy">
+		<article class="post-description-copy">
 			<?php the_excerpt(); ?>
-		</div>
+		</article>
 		<footer>
 			<?php $tag = get_the_tags(); if ( $tag ) { ?><p><?php the_tags(); ?></p><?php } ?>
 		</footer>
 	</div>
 	<hr>
-</article>
+</main>

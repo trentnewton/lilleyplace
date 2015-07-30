@@ -6,7 +6,7 @@ function row_sc( $atts, $content = null ) {
 add_shortcode( 'row', 'row_sc' );
 
 function small_12_sc( $atts, $content = null ) {
-    return '<div class="columns">'.do_shortcode($content).'</div>';
+    return '<div class="column">'.do_shortcode($content).'</div>';
 }
 add_shortcode( 'small_12', 'small_12_sc' );
 

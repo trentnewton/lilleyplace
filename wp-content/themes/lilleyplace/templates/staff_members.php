@@ -3,21 +3,29 @@
 Template Name: Staff Members
 */
 get_header(); ?>
+<?php do_action( 'lilleyplace_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 <?php get_template_part( 'parts/banner' ); ?>
-<article <?php post_class('page-content') ?> id="post-<?php the_ID(); ?>">
+<main <?php post_class('page-content') ?> id="post-<?php the_ID(); ?>">
 	<?php if ( is_page() && $post->post_parent > 0 ) { ?>
-   	<div class="row">
-	   	<div class="columns">
+   	<header class="row">
+	   	<div class="column">
 	   		<nav class="breadcrumbs-container">
 				<?php if (function_exists('sitebreadcrumbs')) sitebreadcrumbs(); ?>
 			</nav>
 	   	</div>
-   	</div>
+   	</header>
 	<?php } ?>
+	<?php if ( has_post_thumbnail() ) : ?>
+	<div class="row">
+		<div class="column mar-b-30">
+			<?php the_post_thumbnail( '', array('class' => 'th') ); ?>
+		</div>
+	</div>
+	<?php endif; ?>
 	<?php if($content = $post->post_content ) {
 	echo "<div class=\"row\">";
-		echo "<div class=\"columns mar-b-30\">";
+		echo "<div class=\"column mar-b-30\">";
 		do_action( 'lilleyplace_page_before_entry_content' );
 			echo "<div class=\"entry-content\">";
 				the_content();
@@ -38,7 +46,7 @@ get_header(); ?>
 		$member_photo = get_sub_field('member_photo');
 		?>
 	<?php if( $member_name ): ?>
-	<div class="row">
+	<article class="row">
 		<div class="columns small-6 medium-3">
 			<p class="member-name"><?php echo $member_name ?></p>
 			<p class="member-title"><?php echo $member_title ?></p>
@@ -49,7 +57,9 @@ get_header(); ?>
 				$member_logo= get_sub_field('member_logo');
 				?>
 				<li>
-					<img src="<?php echo $member_logo['url']; ?>" alt="<?php echo $member_logo['alt'] ?>" width="226" height="84" />
+					<figure>
+						<img src="<?php echo $member_logo['url']; ?>" alt="<?php echo $member_logo['alt'] ?>" width="226" height="84" />
+					</figure>
 				</li>
 			<?php endwhile; ?>
 			</ul>
@@ -57,13 +67,13 @@ get_header(); ?>
 		</div>
         <div class="columns small-6 medium-3 medium-push-6">
         	<?php if( $member_photo ): ?>
-			<div class="member-frame">
+			<figure class="member-frame">
 				<img src="<?php echo $member_photo['url']; ?>" width="<?php echo $member_photo['width'] ?>" height="<?php echo $member_photo['height'] ?>" alt="<?php echo $member_name ?>" />
-			</div>
+			</figure>
 			<?php else : ?>
-			<div class="member-frame">
+			<figure class="member-frame">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/images/PhotoComing_large.jpg" alt="<?php echo $member_name ?>" />
-			</div>
+			</figure>
 			<?php endif; ?>
         </div>
 		<div class="columns medium-6 medium-pull-3">
@@ -79,15 +89,15 @@ get_header(); ?>
 			</ul>
 			<?php endif; ?>
 		</div>
-		<div class="columns">
+		<div class="column">
 			<hr>
 		</div>
-	</div>
+	</article>
 	<?php endif; ?>
 	<?php endwhile; ?>
 	<?php endif; ?>
 	<div class="shadow white-top"></div>
-</article>
+</main>
 <?php endwhile;?>
 <?php do_action( 'lilleyplace_after_content' ); ?>
 <?php get_footer(); ?>

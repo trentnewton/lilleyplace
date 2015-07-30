@@ -3,13 +3,12 @@
 Template Name: Home Page
 */
 get_header(); ?>
-<?php do_action( 'lilleyplace_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 <?php if( get_field('title') ): ?>
-<section id="main-hero">
+<header id="main-hero" role="banner">
 	<div class="main-hero-inner">
 		<div class="row">
-			<div class="columns">
+			<div class="column">
 				<h1><?php the_field('title'); ?></h1>
 				<h3><?php the_field('sub-title'); ?></h3>
 				<a href="<?php the_field('call_to_action_link'); ?>" class="button large"><?php the_field('call_to_action_name'); ?></a>
@@ -18,12 +17,12 @@ get_header(); ?>
 	</div>
 	<div class="shadow top"></div>
 	<div class="shadow bottom"></div>
-</section>
+</header>
 <?php endif; ?>
 <?php if( get_field('top_quote') ): ?>
 <section id="top-quote">
 	<div class="row">
-		<div class="small-12 columns">
+		<div class="column">
 			<h4>
 				<svg class="icon icon-quotes-left"><use xlink:href="#icon-quotes-left"></use></svg>
 				<?php the_field('top_quote'); ?>
@@ -40,7 +39,7 @@ get_header(); ?>
 <?php if(get_field('add_a_box')): $i = 0; ?>
 <section id="info-boxes">
 	<div class="row">
-		<div class="columns">
+		<div class="column">
 			<h2><?php the_field('info_box_section_title'); ?></h2>
 			<div class="info-boxes-list" data-equalizer="foo" data-options="equalize_on_stack: true;" data-equalizer-mq="medium-up">
 				<ul id="info-box-accordion" class="small-block-grid-1 medium-block-grid-2 accordion" data-equalizer="bar" data-accordion data-options="equalize_on_stack: true;">
@@ -80,54 +79,52 @@ get_header(); ?>
 	</div>
 </section>
 <?php endif; ?>
-<section id="main-text">
-	<div class="row">
-		<div class="main-text-inner">
-			<div class="columns">
-			<?php if( get_field('banner_title') ): ?>
-				<h2><?php the_field('banner_title'); ?></h2>
-				<?php else : ?>
-				<?php the_title(); ?>
-			<?php endif; ?>
+<main id="main-text" class="row">
+	<div class="columns">
+	<?php if( get_field('banner_title') ): ?>
+		<h2><?php the_field('banner_title'); ?></h2>
+		<?php else : ?>
+		<?php the_title(); ?>
+	<?php endif; ?>
+	<?php do_action( 'lilleyplace_before_content' ); ?>
+		<article class="entry-content">
 			<?php do_action( 'lilleyplace_page_before_entry_content' ); ?>
-				<div class="entry-content">
-					<?php the_content(); ?>
-					<?php if(get_field('front_page_image_gallery')): $i = 0; ?>
-					<div class="slider-container mar-t-60">
-						<div class="slider">
-						<?php while(has_sub_field('front_page_image_gallery')): $i++;
-							$front_page_image = get_sub_field('front_page_image');
-
-							  	if (isset($_GET['width'])) {
-								    $width = $_GET['width'];
-								    if ($width <= 640) { // small sizes
-								      	$front_page_image_resized = ($front_page_image['width'] / 4);
-								    } elseif ($width <= 1024){ // medium sizes
-								      	$front_page_image_resized = ($front_page_image['width'] / 2);
-								    } else { // large sizes
-								      	$front_page_image_resized = ($front_page_image['width'] / 2);
-								    }
-								} else {
-								    echo "<script>\n";
-								    echo "  location.href=\"?&width=\" + screen.width; \n";
-								    echo "</script>\n";
-								    exit();
-								}
-						?>
-							<?php if( $front_page_image ): ?>
-							<div style="width:<?php echo $front_page_image_resized; ?>px;">
-								<img src="<?php echo $front_page_image['url']; ?>" width="<?php echo $front_page_image['width']; ?>" height="<?php echo $front_page_image['height']; ?>" alt="<?php echo $front_page_image['alt'] ?>" />
-							</div>
-					 		<?php endif; ?>
-						<?php endwhile; ?>
-						</div>
-					</div>
-					<?php endif; ?>
-				</div>
+			<?php the_content(); ?>
 			<?php do_action( 'lilleyplace_page_after_entry_content' ); ?>
+			<?php if(get_field('front_page_image_gallery')): $i = 0; ?>
+			<div class="slider-container mar-t-60">
+				<div class="slider">
+				<?php while(has_sub_field('front_page_image_gallery')): $i++;
+					$front_page_image = get_sub_field('front_page_image');
+
+					  	if (isset($_GET['width'])) {
+						    $width = $_GET['width'];
+						    if ($width <= 640) { // small sizes
+						      	$front_page_image_resized = ($front_page_image['width'] / 4);
+						    } elseif ($width <= 1024){ // medium sizes
+						      	$front_page_image_resized = ($front_page_image['width'] / 2);
+						    } else { // large sizes
+						      	$front_page_image_resized = ($front_page_image['width'] / 2);
+						    }
+						} else {
+						    echo "<script>\n";
+						    echo "  location.href=\"?&width=\" + screen.width; \n";
+						    echo "</script>\n";
+						    exit();
+						}
+				?>
+					<?php if( $front_page_image ): ?>
+					<figure style="width:<?php echo $front_page_image_resized; ?>px;">
+						<img src="<?php echo $front_page_image['url']; ?>" width="<?php echo $front_page_image['width']; ?>" height="<?php echo $front_page_image['height']; ?>" alt="<?php echo $front_page_image['alt'] ?>" />
+					</figure>
+			 		<?php endif; ?>
+				<?php endwhile; ?>
+				</div>
 			</div>
-		</div>
+			<?php endif; ?>
+		</article>
+		<?php do_action( 'lilleyplace_after_content' ); ?>
 	</div>
-</section>
+</main>
 <?php endwhile;?>
 <?php get_footer(); ?>

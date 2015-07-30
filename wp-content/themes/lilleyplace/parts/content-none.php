@@ -14,7 +14,7 @@
 <header class="page-header">
 	<h2 class="page-title"><?php _e( 'Nothing Found', 'lilleyplace' ); ?></h2>
 </header>
-<div>
+<article>
 	<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
 	<p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'lilleyplace' ), admin_url( 'post-new.php' ) ); ?></p>
@@ -28,4 +28,4 @@
 	<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'lilleyplace' ); ?></p>
 
 	<?php endif; ?>
-</div>
+</article>

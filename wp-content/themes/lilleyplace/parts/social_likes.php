@@ -5,7 +5,7 @@
  */
 ?>
 <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID, 'thumbnail') ); ?>
-<div class="share">
+<footer class="share">
     <div class="facebook">
         <div class="fb-like" data-href="<?php the_permalink() ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
     </div>
@@ -49,4 +49,4 @@
         }(document));
         </script>
     </div>
-</div>
+</footer>

@@ -8,9 +8,9 @@
  */
 
 ?>
-<header id="small-banner">
+<header id="small-banner" role="banner">
     <div class="row">
-	    <div class="columns">
+	    <div class="column">
 	        <div class="small-banner-container">
 		        <h1 class="entry-title">
 				<?php if( is_search() ) : ?>

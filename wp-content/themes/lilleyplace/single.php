@@ -17,12 +17,14 @@ get_header(); ?>
 	fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <?php get_template_part( 'parts/banner' ); ?>
-<section class="page-content">
+<main class="page-content">
 	<div class="row">
 		<div class="columns medium-8" role="main">
-			<nav class="breadcrumbs-container">
-				<?php if (function_exists('breadcrumbs')) breadcrumbs(); ?>
-			</nav>
+			<header>
+		   		<nav class="breadcrumbs-container">
+					<?php if (function_exists('breadcrumbs')) breadcrumbs(); ?>
+				</nav>
+		   	</header>
 		<?php do_action( 'lilleyplace_before_content' ); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 				<article <?php post_class('entry-content') ?> id="post-<?php the_ID(); ?>">
@@ -34,7 +36,7 @@ get_header(); ?>
 					<?php if ( has_post_thumbnail() ) : ?>
 						<div class="row">
 							<div class="column mar-b-30">
-								<?php the_post_thumbnail( '', array('class' => 'th') ); ?>
+								<?php the_post_thumbnail( '', array('class' => 'th image-frame') ); ?>
 							</div>
 						</div>
 					<?php endif; ?>
@@ -59,5 +61,5 @@ get_header(); ?>
 		</aside>
 	</div>
   <div class="shadow white-top"></div>
-</section>
+</main>
 <?php get_footer(); ?>
