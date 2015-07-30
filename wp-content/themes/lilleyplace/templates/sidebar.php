@@ -8,7 +8,7 @@ get_header(); ?>
 <?php get_template_part( 'parts/banner' ); ?>
 <article <?php post_class('page-content') ?> id="post-<?php the_ID(); ?>">
 	<div class="row">
-        <div class="columns small-12 medium-8" role="main">
+        <div class="columns medium-8" role="main">
 			<?php do_action( 'lilleyplace_page_before_entry_content' ); ?>
 				<div class="entry-content">
 					<?php the_content(); ?>

@@ -96,7 +96,7 @@ if ( comments_open() ) :
 					_e( 'Email (will not be published)', 'lilleyplace' ); if ( $req ) { _e( ' (required)', 'lilleyplace' ); }
 				?>
 			</label>
-			<input type="text" class="five" name="email" id="email" value="<?php echo esc_attr( $comment_author_email ); ?>" size="22" tabindex="2" <?php if ( $req ) { echo "aria-required='true'"; } ?>>
+			<input type="email" class="five" name="email" id="email" value="<?php echo esc_attr( $comment_author_email ); ?>" size="22" tabindex="2" <?php if ( $req ) { echo "aria-required='true'"; } ?>>
 		</p>
 		<p>
 			<label for="url">
@@ -104,7 +104,7 @@ if ( comments_open() ) :
 					_e( 'Website', 'lilleyplace' );
 				?>
 			</label>
-			<input type="text" class="five" name="url" id="url" value="<?php echo esc_attr( $comment_author_url ); ?>" size="22" tabindex="3">
+			<input type="url" class="five" name="url" id="url" value="<?php echo esc_attr( $comment_author_url ); ?>" size="22" tabindex="3">
 		</p>
 		<?php endif; ?>
 		<p>

@@ -17,7 +17,7 @@ get_header(); ?>
 	<?php } ?>
 	<?php if($content = $post->post_content ) {
 	echo "<div class=\"row\">";
-		echo "<div class=\"columns small-12 mar-b-30\">";
+		echo "<div class=\"columns mar-b-30\">";
 		do_action( 'lilleyplace_page_before_entry_content' );
 			echo "<div class=\"entry-content\">";
 				the_content();
@@ -28,7 +28,7 @@ get_header(); ?>
 	} ?>
 	<?php if( have_rows('add_a_faq_section') ): ?>
 	<div class="row">
-		<div class="columns small-12" role="main">
+		<div class="columns" role="main">
 		<?php while( have_rows('add_a_faq_section') ): the_row();
 		// vars
 		$faq_section_title = get_sub_field('faq_section_title');
@@ -37,7 +37,6 @@ get_header(); ?>
 			<?php if( $faq_section_title ): ?>
 			<h2><?php echo $faq_section_title ?></h2>
 			<?php endif; ?>
-
 			<?php if( get_sub_field('add_a_faq') ): ?>
 			<ul class="accordion" data-accordion>
 			<?php while(has_sub_field('add_a_faq')): $i++; 
@@ -58,7 +57,6 @@ get_header(); ?>
 			<?php endwhile; ?>
 			</ul>
 			<?php endif; ?>
-
 		<?php endwhile; ?>	
 		</div>
  	</div>

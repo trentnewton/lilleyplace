@@ -9,7 +9,7 @@ get_header(); ?>
 <section id="main-hero">
 	<div class="main-hero-inner">
 		<div class="row">
-			<div class="small-12 columns">
+			<div class="columns">
 				<h1><?php the_field('title'); ?></h1>
 				<h3><?php the_field('sub-title'); ?></h3>
 				<a href="<?php the_field('call_to_action_link'); ?>" class="button large"><?php the_field('call_to_action_name'); ?></a>
@@ -40,7 +40,7 @@ get_header(); ?>
 <?php if(get_field('add_a_box')): $i = 0; ?>
 <section id="info-boxes">
 	<div class="row">
-		<div class="columns small-12">
+		<div class="columns">
 			<h2><?php the_field('info_box_section_title'); ?></h2>
 			<div class="info-boxes-list" data-equalizer="foo" data-options="equalize_on_stack: true;" data-equalizer-mq="medium-up">
 				<ul id="info-box-accordion" class="small-block-grid-1 medium-block-grid-2 accordion" data-equalizer="bar" data-accordion data-options="equalize_on_stack: true;">
@@ -83,7 +83,7 @@ get_header(); ?>
 <section id="main-text">
 	<div class="row">
 		<div class="main-text-inner">
-			<div class="columns small-12">
+			<div class="columns">
 			<?php if( get_field('banner_title') ): ?>
 				<h2><?php the_field('banner_title'); ?></h2>
 				<?php else : ?>

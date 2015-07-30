@@ -14,7 +14,7 @@
 			<?php if( get_bloginfo( 'description' ) ): ?>
 			<section id="bottom-quote">
 				<div class="row">
-					<div class="columns small-12">
+					<div class="columns">
 						<h3>
 							<svg class="icon icon-quotes-left"><use xlink:href="#icon-quotes-left"></use></svg>
 								<?php bloginfo( 'description' ); ?> 
@@ -41,7 +41,7 @@
 			<section id="latest-posts">
 				<div class="row">
 					<div class="latest-posts-inner">
-						<div class="small-12 columns">
+						<div class="columns">
 							<h3><?php _e( 'Latest Posts from the Blog', 'lilleyplace' ); ?></h3>
 							<div class="row">
 								<?php while( $latest->have_posts() ) : $latest->the_post(); ?>
@@ -66,20 +66,20 @@
 			<section class="footer-display">
 				<div class="row">
 					<div class="footer-content">
-						<div class="small-12 medium-5 large-6 columns">
+						<div class="medium-5 large-6 columns">
 							<?php dynamic_sidebar("First Footer Column"); ?>
 						</div>
-						<div class="small-12 medium-5 large-4 columns">
+						<div class="medium-5 large-4 columns">
 							<?php dynamic_sidebar("Second Footer Column"); ?>
 						</div>
-						<div class="small-12 medium-2 columns">
+						<div class="medium-2 columns">
 							<?php dynamic_sidebar("Third Footer Column"); ?>
 						</div>
 					</div>
 				</div>
 				<div class="footer-copyright">
 					<div class="row">
-						<div class="small-12 medium-6 columns">
+						<div class="medium-6 columns">
 							<p>
 							<?php if (get_theme_mod( 'copyright_textbox' ) != '') {?>
 								<?php echo get_theme_mod( 'copyright_textbox', 'No copyright information has been saved yet.' ); ?>
@@ -89,7 +89,7 @@
 								&nbsp;Website by Happiness Design.
 							</p>
 						</div>
-						<div class="small-12 medium-6 columns">
+						<div class="medium-6 columns">
 							<div class="footer-nav-container">
 								<nav>
 									<?php lilleyplace_secondary(); ?>

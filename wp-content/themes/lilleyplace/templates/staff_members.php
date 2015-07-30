@@ -17,7 +17,7 @@ get_header(); ?>
 	<?php } ?>
 	<?php if($content = $post->post_content ) {
 	echo "<div class=\"row\">";
-		echo "<div class=\"columns small-12 mar-b-30\">";
+		echo "<div class=\"columns mar-b-30\">";
 		do_action( 'lilleyplace_page_before_entry_content' );
 			echo "<div class=\"entry-content\">";
 				the_content();
@@ -66,7 +66,7 @@ get_header(); ?>
 			</div>
 			<?php endif; ?>
         </div>
-		<div class="columns small-12 medium-6 medium-pull-3">
+		<div class="columns medium-6 medium-pull-3">
 			<p><?php echo $member_bio ?></p>
 			<?php if( $member_bio_more ): ?>
 			<ul class="accordion" data-accordion>
@@ -79,7 +79,7 @@ get_header(); ?>
 			</ul>
 			<?php endif; ?>
 		</div>
-		<div class="columns small-12">
+		<div class="columns">
 			<hr>
 		</div>
 	</div>

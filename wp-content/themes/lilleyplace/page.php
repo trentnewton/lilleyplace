@@ -26,15 +26,13 @@ get_header(); ?>
    	</div>
 	<?php } ?>
 <?php do_action( 'lilleyplace_page_before_entry_content' ); ?>
-	<div class="entry-content">
-		<div class="row">
-			<div class="columns small-12">
-				<?php the_content(); ?>
-			</div>
+	<div class="entry-content row">
+		<div class="columns">
+			<?php the_content(); ?>
 		</div>
 	</div>
 <?php do_action( 'lilleyplace_page_after_entry_content' ); ?>
-  <div class="shadow white-top"></div>
+	<div class="shadow white-top"></div>
 </article>
 <?php endwhile;?>
 <?php do_action( 'lilleyplace_after_content' ); ?>

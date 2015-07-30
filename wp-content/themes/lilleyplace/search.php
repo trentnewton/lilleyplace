@@ -11,7 +11,7 @@ get_header(); ?>
 <?php get_template_part( 'parts/banner' ); ?>
 <section class="page-content">
 	<div class="row">
-		<div class="columns small-12 medium-8">
+		<div class="columns medium-8">
 			<?php do_action( 'lilleyplace_before_content' ); ?>
 			<?php get_search_form(); ?>
 			<p><?php _e( 'Search Results for', 'lilleyplace' ); ?>&nbsp;<strong><?php echo get_search_query(); ?></strong></p>
@@ -38,7 +38,7 @@ get_header(); ?>
 			</ul>
 			<?php do_action( 'lilleyplace_after_content' ); ?>
 		</div>
-		<aside class="columns small-12 medium-4 sidebar-bg">
+		<aside class="columns medium-4 sidebar-bg">
 			<div class="sidebar">
 				<?php dynamic_sidebar("Search Sidebar"); ?>
 			</div>

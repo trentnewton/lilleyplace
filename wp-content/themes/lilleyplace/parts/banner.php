@@ -10,7 +10,7 @@
 ?>
 <header id="small-banner">
     <div class="row">
-	    <div class="small-12 columns">
+	    <div class="columns">
 	        <div class="small-banner-container">
 		        <h1 class="entry-title">
 				<?php if( is_search() ) : ?>

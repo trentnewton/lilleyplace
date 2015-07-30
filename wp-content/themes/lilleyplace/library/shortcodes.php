@@ -6,19 +6,19 @@ function row_sc( $atts, $content = null ) {
 add_shortcode( 'row', 'row_sc' );
 
 function small_12_sc( $atts, $content = null ) {
-    return '<div class="columns small-12">'.do_shortcode($content).'</div>';
+    return '<div class="columns">'.do_shortcode($content).'</div>';
 }
 add_shortcode( 'small_12', 'small_12_sc' );
 
-function small_12_medium_6_sc( $atts, $content = null ) {
-    return '<div class="columns small-12 medium-6">'.do_shortcode($content).'</div>';
+function medium_6_sc( $atts, $content = null ) {
+    return '<div class="columns medium-6">'.do_shortcode($content).'</div>';
 }
-add_shortcode( 'small_12_medium_6', 'small_12_medium_6_sc' );
+add_shortcode( 'medium_6', 'medium_6_sc' );
 
-function small_12_medium_6_mar_t_30_sc( $atts, $content = null ) {
-    return '<div class="columns small-12 medium-6 mar-t-30">'.do_shortcode($content).'</div>';
+function medium_6_mar_t_30_sc( $atts, $content = null ) {
+    return '<div class="columns medium-6 mar-t-30">'.do_shortcode($content).'</div>';
 }
-add_shortcode( 'small_12_medium_6_mar_t_30', 'small_12_medium_6_mar_t_30_sc' );
+add_shortcode( 'medium_6_mar_t_30', 'medium_6_mar_t_30_sc' );
 
 function small_10_medium_11_mar_b_30_sc( $atts, $content = null ) {
     return '<div class="columns small-10 medium-11 mar-b-30">'.do_shortcode($content).'</div>';
@@ -26,7 +26,7 @@ function small_10_medium_11_mar_b_30_sc( $atts, $content = null ) {
 add_shortcode( 'small_10_medium_11_mar_b_30', 'small_10_medium_11_mar_b_30_sc' );
 
 function small_12_mar_b_30_sc( $atts, $content = null ) {
-    return '<div class="columns small-12 mar-b-30">'.do_shortcode($content).'</div>';
+    return '<div class="columns mar-b-30">'.do_shortcode($content).'</div>';
 }
 add_shortcode( 'small_12_mar_b_30', 'small_12_mar_b_30_sc' );
 

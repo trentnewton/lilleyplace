@@ -10,7 +10,7 @@
 do_action( 'lilleyplace_before_searchform' ); ?>
 <form role="search" method="get" id="searchform" action="<?php echo home_url('/'); ?>">
 	<div class="row">
-		<div class="small-12 columns">
+		<div class="columns">
 			<div class="row collapse postfix-radius">
 				<?php do_action( 'lilleyplace_searchform_top' ); ?>
 				<div class="small-8 medium-10 columns">

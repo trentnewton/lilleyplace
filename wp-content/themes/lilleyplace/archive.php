@@ -19,37 +19,35 @@
 get_header(); ?>
 <?php get_template_part( 'parts/banner' ); ?>
 <section class="page-content">
-	<div class="entry-content">
-		<div class="row">
-			<div class="columns small-12 medium-8" role="main">
-				<nav class="breadcrumbs-container">
-					<?php if (function_exists('breadcrumbs')) breadcrumbs(); ?>
-				</nav>
-				<?php if ( have_posts() ) : ?>
-					<?php /* Start the Loop */ ?>
-					<?php while ( have_posts() ) : the_post(); ?>
-						<?php get_template_part( 'parts/content', get_post_format() ); ?>
-					<?php endwhile; ?>
+	<div class="entry-content row">
+		<div class="columns medium-8" role="main">
+			<nav class="breadcrumbs-container">
+				<?php if (function_exists('breadcrumbs')) breadcrumbs(); ?>
+			</nav>
+			<?php if ( have_posts() ) : ?>
+				<?php /* Start the Loop */ ?>
+				<?php while ( have_posts() ) : the_post(); ?>
+					<?php get_template_part( 'parts/content', get_post_format() ); ?>
+				<?php endwhile; ?>
 
-					<?php else : ?>
-						<?php get_template_part( 'parts/content', 'none' ); ?>
+				<?php else : ?>
+					<?php get_template_part( 'parts/content', 'none' ); ?>
 
-					<?php endif; // End have_posts() check. ?>
+				<?php endif; // End have_posts() check. ?>
 
-					<?php /* Display navigation to next/previous pages when applicable */ ?>
-					<?php if ( function_exists( 'lilleyplace_pagination' ) ) { lilleyplace_pagination(); } else if ( is_paged() ) { ?>
-						<nav id="post-nav">
-							<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'lilleyplace' ) ); ?></div>
-							<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'lilleyplace' ) ); ?></div>
-						</nav>
-				<?php } ?>
-			</div>
-			<aside class="columns small-12 medium-4 sidebar-bg">
-				<div class="sidebar">
-					<?php dynamic_sidebar("Blog Sidebar"); ?>
-				</div>
-			</aside>
+				<?php /* Display navigation to next/previous pages when applicable */ ?>
+				<?php if ( function_exists( 'lilleyplace_pagination' ) ) { lilleyplace_pagination(); } else if ( is_paged() ) { ?>
+					<nav id="post-nav">
+						<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'lilleyplace' ) ); ?></div>
+						<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'lilleyplace' ) ); ?></div>
+					</nav>
+			<?php } ?>
 		</div>
+		<aside class="columns medium-4 sidebar-bg">
+			<div class="sidebar">
+				<?php dynamic_sidebar("Blog Sidebar"); ?>
+			</div>
+		</aside>
 	</div>
   <div class="shadow white-top"></div>
 </section>

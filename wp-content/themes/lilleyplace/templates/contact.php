@@ -16,14 +16,14 @@ get_header(); ?>
    	</div>
 	<?php } ?>
 	<div class="row">
-        <div class="columns small-12 medium-8" role="main">
+        <div class="columns medium-8" role="main">
 			<?php do_action( 'lilleyplace_page_before_entry_content' ); ?>
 				<div class="entry-content">
 					<?php the_content(); ?>
 				</div>
 			<?php do_action( 'lilleyplace_page_after_entry_content' ); ?>
 		</div>
-		<aside class="columns small-12 medium-4 sidebar-bg">
+		<aside class="columns medium-4 sidebar-bg">
 			<div class="sidebar">
 				<?php dynamic_sidebar("Contact Sidebar"); ?>
 			</div>

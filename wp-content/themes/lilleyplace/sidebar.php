@@ -8,7 +8,7 @@
  */
 
 ?>
-<aside class="columns small-12 medium-4 sidebar-bg">
+<aside class="columns medium-4 sidebar-bg">
 	<div class="sidebar">
 		<?php do_action( 'lilleyplace_before_sidebar' ); ?>
 		<?php dynamic_sidebar( 'sidebar-widgets' ); ?>

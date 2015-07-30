@@ -19,7 +19,7 @@ get_header(); ?>
 <?php get_template_part( 'parts/banner' ); ?>
 <section class="page-content">
 	<div class="row">
-		<div class="columns small-12 medium-8" role="main">
+		<div class="columns medium-8" role="main">
 			<nav class="breadcrumbs-container">
 				<?php if (function_exists('breadcrumbs')) breadcrumbs(); ?>
 			</nav>
@@ -52,7 +52,7 @@ get_header(); ?>
 		<?php endwhile;?>
 		<?php do_action( 'lilleyplace_after_content' ); ?>
 		</div>
-		<aside class="columns small-12 medium-4 sidebar-bg">
+		<aside class="columns medium-4 sidebar-bg">
 			<div class="sidebar">
 				<?php dynamic_sidebar("Blog Sidebar"); ?>
 			</div>
