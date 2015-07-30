@@ -11,7 +11,7 @@ get_header(); ?>
 		<div class="row">
 			<div class="small-12 columns">
 				<h1><?php the_field('title'); ?></h1>
-				<p><?php the_field('sub-title'); ?></p>
+				<h3><?php the_field('sub-title'); ?></h3>
 				<a href="<?php the_field('call_to_action_link'); ?>" class="button large"><?php the_field('call_to_action_name'); ?></a>
 			</div>
 		</div>
@@ -43,7 +43,7 @@ get_header(); ?>
 		<div class="columns small-12">
 			<h2><?php the_field('info_box_section_title'); ?></h2>
 			<div class="info-boxes-list" data-equalizer="foo" data-options="equalize_on_stack: true;" data-equalizer-mq="medium-up">
-				<ul id="info-box-accordion" class="small-block-grid-1 medium-block-grid-2 accordion" data-equalizer="bar" data-accordion data-options="equalize_on_stack: true;" data-equalizer-mq="medium-up">
+				<ul id="info-box-accordion" class="small-block-grid-1 medium-block-grid-2 accordion" data-equalizer="bar" data-accordion data-options="equalize_on_stack: true;">
 				<?php while(has_sub_field('add_a_box')): $i++;
 					$box_title = get_sub_field('box_title');
 					?>
