@@ -49,7 +49,7 @@ get_header(); ?>
 				$member_logo= get_sub_field('member_logo');
 				?>
 				<li>
-					<img src="<?php echo $member_logo['url']; ?>" alt="<?php echo $member_logo['alt'] ?>" />
+					<img src="<?php echo $member_logo['url']; ?>" alt="<?php echo $member_logo['alt'] ?>" width="226" height="84" />
 				</li>
 			<?php endwhile; ?>
 			</ul>

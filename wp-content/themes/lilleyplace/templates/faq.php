@@ -26,29 +26,43 @@ get_header(); ?>
 		echo "</div>";
 	echo "</div>";
 	} ?>
-	<?php if(get_field('add_a_faq')): $i = 0; ?>
+	<?php if( have_rows('add_a_faq_section') ): ?>
 	<div class="row">
 		<div class="columns small-12" role="main">
+		<?php while( have_rows('add_a_faq_section') ): the_row();
+		// vars
+		$faq_section_title = get_sub_field('faq_section_title');
+		$add_a_faq = get_sub_field('add_a_faq');
+		?>
+			<?php if( $faq_section_title ): ?>
+			<h2><?php echo $faq_section_title ?></h2>
+			<?php endif; ?>
+
+			<?php if( get_sub_field('add_a_faq') ): ?>
 			<ul class="accordion" data-accordion>
-			<?php while(has_sub_field('add_a_faq')): $i++;
+			<?php while(has_sub_field('add_a_faq')): $i++; 
+				// vars
 				$faq_question = get_sub_field('faq_question');
 				$faq_answer = get_sub_field('faq_answer');
 				?>
 				<?php if( $faq_question ): ?>
 				<li class="accordion-navigation">
 					<a href="#faq-<?php echo $i; ?>">
-						<?php the_sub_field('faq_question'); ?>
+						<?php echo $faq_question; ?>
 					</a>
 					<div id="faq-<?php echo $i; ?>" class="content">
-						<?php the_sub_field('faq_answer'); ?>
+						<?php echo $faq_answer; ?>
 					</div>
 				</li>
-		 		<?php endif; ?>
+				<?php endif; ?>
 			<?php endwhile; ?>
 			</ul>
+			<?php endif; ?>
+
+		<?php endwhile; ?>	
 		</div>
  	</div>
-	<?php endif; ?>
+ 	<?php endif; ?>
 	<div class="shadow white-top"></div>
 </article>
 <?php endwhile;?>

@@ -810,6 +810,10 @@ tr th {
 		@extend .mar-b-30;
 	}
 
+	img {
+		width: 100%;
+	}
+
 }
 
 .member-frame {
@@ -923,6 +927,14 @@ tr th {
 /* FAQ */
 
 .page-template-faq {
+
+	h2 {
+
+		&:not(:first-child) {
+			margin-top: rem-calc(45);
+		}
+
+	}
 
 	.accordion-navigation {
 
