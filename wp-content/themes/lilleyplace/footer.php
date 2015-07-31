@@ -50,7 +50,7 @@
 								</div>
 								<div class="columns small-10 medium-5">
 									<a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
-									<span class="date entry-meta"><svg class="icon icon-calendar"><use xlink:href="#icon-calendar"></use></svg>&nbsp;<?php the_time( get_option( 'date_format' ) ); ?></span>
+									<time class="date entry-meta"><svg class="icon icon-calendar"><use xlink:href="#icon-calendar"></use></svg>&nbsp;<?php the_time( get_option( 'date_format' ) ); ?></time>
 									<div class="content-excerpt">
 										<?php echo substr(get_the_excerpt(),0,170); ?>&hellip;
 									</div>
