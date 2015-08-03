@@ -61,7 +61,7 @@ ul {
 			&:before {
 				content: '\203A';
 				position: absolute;
-				top: rem-calc(-6);
+				top: rem-calc(-7);
 				left: rem-calc(-17);
 				font-size: rem-calc(25);
 				font-weight: $font-weight-bold;
@@ -74,6 +74,7 @@ ul {
 
 	&[class*="block-grid-"].list {
 		margin-left: 0;
+		margin-top: rem-calc(5);
 
 		li {
 			padding: 0; 
@@ -81,7 +82,7 @@ ul {
 			margin-bottom: 0;
 
 			&:before {
-				background: none;
+				content: '';
 			}
 
 		}
