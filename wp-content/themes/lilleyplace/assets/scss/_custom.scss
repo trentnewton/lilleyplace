@@ -663,6 +663,10 @@ a {
 		left: 0;
 		width: 100%;
 
+		@media #{$small-only} {
+			background-attachment: scroll;
+		}
+
 	}
 
 	h2 {
