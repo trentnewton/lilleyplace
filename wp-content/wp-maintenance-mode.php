@@ -25,12 +25,12 @@
 			</header>
 			<section id="small-banner">
 				<div class="row">
-				  <div class="small-12 columns">
-				      <div class="small-banner-inner">
-				        <h1 class="entry-title">Coming Soon&hellip;</h1>
-				      </div>
-				  </div>
-				</div>
+						<div class="small-12 columns">
+						    <div class="small-banner-inner text-center">
+						    	<h1 class="entry-title">Coming Soon&hellip;</h1>
+						    </div>
+						</div>
+					</div>
 				<div class="shadow top"></div>
 				<div class="shadow bottom"></div>
 			</section>
