@@ -15,10 +15,11 @@
  */
 
 get_header(); ?>
-<?php get_template_part( 'parts/banner' ); ?>
+	<?php get_template_part( 'parts/banner' ); ?>
+</header>
 <main class="page-content">
 	<div class="entry-content row">
-		<div class="columns medium-8" role="main">
+		<div class="columns medium-8">
 			<?php if ( have_posts() ) : ?>
 
 				<?php do_action( 'lilleyplace_before_content' ); ?>

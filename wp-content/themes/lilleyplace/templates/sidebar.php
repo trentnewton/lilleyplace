@@ -3,12 +3,13 @@
 Template Name: Sidebar
 */
 get_header(); ?>
+	<?php get_template_part( 'parts/banner' ); ?>
+</header>
 <?php while ( have_posts() ) : the_post(); ?>
-<?php get_template_part( 'parts/banner' ); ?>
 <main <?php post_class('page-content') ?> id="post-<?php the_ID(); ?>">
 	<div class="row">
 		<?php do_action( 'lilleyplace_before_content' ); ?>
-        <article class="columns medium-8" role="main">
+        <article class="columns medium-8">
         	<?php if ( is_page() && $post->post_parent > 0 ) { ?>
 	   		<nav class="breadcrumbs-container">
 				<?php if (function_exists('site_breadcrumbs')) site_breadcrumbs(); ?>

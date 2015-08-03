@@ -41,7 +41,7 @@ table {
 }
 
 section,
-figure {
+.footer-copyright {
 
 	p {
 
@@ -460,7 +460,7 @@ select {
 	width: 100%;
 }
 
-.small-banner-container,
+.small-banner-inner,
 .footer-nav-container {
 	display: flex;
 	justify-content: space-between;
@@ -725,7 +725,7 @@ a {
 
 }
 
-.small-banner-container {
+.small-banner-inner {
 	align-items: center;
 	
 	form {
@@ -1211,7 +1211,7 @@ body.coming-soon {
 		@extend .mar-b-30, ;
 	}
 
-	.small-banner-container {
+	.small-banner-inner {
 	    justify-content: center;
 	    width: 100%;
 	}

@@ -12,17 +12,18 @@
  */
 
 get_header(); ?>
+	<?php get_template_part( 'parts/banner' ); ?>
+</header>
 <?php while ( have_posts() ) : the_post(); ?>
-<?php get_template_part( 'parts/banner' ); ?>
 <main <?php post_class('page-content') ?> id="post-<?php the_ID(); ?>">
 	<?php if ( is_page() && $post->post_parent > 0 ) { ?>
-   	<header class="row">
+   	<div class="row">
 	   	<div class="column">
 	   		<nav class="breadcrumbs-container">
 				<?php if (function_exists('site_breadcrumbs')) site_breadcrumbs(); ?>
 			</nav>
 	   	</div>
-   	</header>
+   	</div>
 	<?php } ?>
 	<?php if ( has_post_thumbnail() ) : ?>
 		<?php the_post_thumbnail( '', array('class' => 'th mar-b-30') ); ?>

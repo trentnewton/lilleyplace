@@ -3,40 +3,42 @@
 Template Name: FAQ's
 */
 get_header(); ?>
+	<?php get_template_part( 'parts/banner' ); ?>
+</header>
 <?php while ( have_posts() ) : the_post(); ?>
-<?php get_template_part( 'parts/banner' ); ?>
 <main <?php post_class('page-content') ?> id="post-<?php the_ID(); ?>">
 	<?php if ( is_page() && $post->post_parent > 0 ) { ?>
-   	<header class="row">
+   	<div class="row">
 	   	<div class="column">
 	   		<nav class="breadcrumbs-container">
 				<?php if (function_exists('site_breadcrumbs')) site_breadcrumbs(); ?>
 			</nav>
 	   	</div>
-   	</header>
+   	</div>
 	<?php } ?>
 	<?php if ( has_post_thumbnail() ) : ?>
 	<div class="row">
-		<div class="column mar-b-30">
+		<figure class="column mar-b-30">
 			<?php the_post_thumbnail( '', array('class' => 'th') ); ?>
-		</div>
+		</figure>
 	</div>
 	<?php endif; ?>
-	<?php if($content = $post->post_content ) {
-	echo "<div class=\"row\">";
-		echo "<div class=\"column mar-b-30\">";
-		do_action( 'lilleyplace_page_before_entry_content' );
-			echo "<div class=\"entry-content\">";
-				the_content();
-			echo "</div>";
-		do_action( 'lilleyplace_page_after_entry_content' );
-		echo "</div>";
-	echo "</div>";
-	} ?>
+	<?php if ( $content = $post->post_content ) : ?>
 	<?php do_action( 'lilleyplace_before_content' ); ?>
+	<article class="row">
+		<div class="column mar-b-30">
+			<?php do_action( 'lilleyplace_page_before_entry_content' ); ?>
+			<div class="entry-content">
+				<?php the_content(); ?>
+			</div>
+			<?php do_action( 'lilleyplace_page_after_entry_content' ); ?>
+		</div>
+	</article>
+	<?php do_action( 'lilleyplace_after_content' ); ?>
+	<?php endif; ?>
 	<?php if( have_rows('add_a_faq_section') ): ?>
 	<article class="row">
-		<div class="column" role="main">
+		<div class="column">
 		<?php while( have_rows('add_a_faq_section') ): the_row();
 		// vars
 		$faq_section_title = get_sub_field('faq_section_title');
@@ -69,7 +71,6 @@ get_header(); ?>
 		<?php endwhile; ?>	
 		</div>
  	</article>
- 	<?php do_action( 'lilleyplace_after_content' ); ?>
  	<?php endif; ?>
 	<div class="shadow white-top"></div>
 </main>

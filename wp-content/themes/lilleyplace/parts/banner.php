@@ -8,10 +8,10 @@
  */
 
 ?>
-<header id="small-banner">
+<section id="small-banner">
     <div class="row">
 	    <div class="column">
-	        <div class="small-banner-container">
+	        <div class="small-banner-inner">
 		        <h1 class="entry-title">
 				<?php if( is_search() ) : ?>
 					<?php _e( 'Search Results', 'lilleyplace' ); ?>
@@ -39,4 +39,4 @@
     </div>
 	<div class="shadow top"></div>
 	<div class="shadow bottom"></div>
-</header>
+</section>

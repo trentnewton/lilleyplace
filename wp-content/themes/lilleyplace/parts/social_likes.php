@@ -5,7 +5,7 @@
  */
 ?>
 <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID, 'thumbnail') ); ?>
-<footer class="share">
+<div class="share">
     <div class="facebook">
         <div class="fb-like" data-href="<?php the_permalink() ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
     </div>
@@ -26,16 +26,16 @@
     </div>
     <div class="pinterest">    
         <?php if ( '' != get_the_post_thumbnail() ) { ?>
-        <a href="https://www.pinterest.com/pin/create/button/?url=<?php the_permalink() ?>&media=<?php echo $url ?>&description=<?php the_title(); ?>"
+        <a href="//www.pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&media=<?php echo $url; ?>&description=<?php rawurlencode(the_title()); ?>"
             data-pin-do="buttonPin"
             data-pin-config="above">
-            <img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" />
+            <img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" alt="Pin It" />
         </a>
         <?php } else { ?>
-        <a href="https://www.pinterest.com/pin/create/button/?url=<?php the_permalink() ?>&media=<?php echo get_template_directory_uri(); ?>/assets/img/images/blog_normal.jpg&description=<?php the_title(); ?>"
+        <a href="//www.pinterest.com/pin/create/button/?url=<?php the_permalink() ?>&media=<?php echo get_template_directory_uri(); ?>/assets/img/images/blog_normal.jpg&description=<?php rawurlencode(the_title()); ?>"
             data-pin-do="buttonPin"
             data-pin-config="above">
-            <img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" />
+            <img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" alt="Pin It" />
         </a>
         <?php } ?>
         <!-- Please call pinit.js only once per page -->
@@ -49,4 +49,4 @@
         }(document));
         </script>
     </div>
-</footer>
+</div>

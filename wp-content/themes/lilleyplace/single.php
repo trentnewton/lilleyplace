@@ -8,6 +8,8 @@
  */
 
 get_header(); ?>
+	<?php get_template_part( 'parts/banner' ); ?>
+</header>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
 	var js, fjs = d.getElementsByTagName(s)[0];
@@ -16,10 +18,9 @@ get_header(); ?>
 	js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.3";
 	fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<?php get_template_part( 'parts/banner' ); ?>
 <main class="page-content">
 	<div class="row">
-		<div class="columns medium-8" role="main">
+		<div class="columns medium-8">
 	   		<nav class="breadcrumbs-container">
 				<?php if (function_exists('blog_breadcrumbs')) blog_breadcrumbs(); ?>
 			</nav>

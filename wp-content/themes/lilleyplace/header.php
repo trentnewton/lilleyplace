@@ -35,17 +35,18 @@
 	<body <?php body_class(); ?>>
 	<?php do_action( 'lilleyplace_after_body' ); ?>
 	<?php get_template_part( 'parts/svg_icons' ); ?>
-		<header id="main-nav">
-			<div class="row">
-				<div id="medium-up-logo" class="columns">
-					<a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/images/Lilleyplace_Logo.png" width="400" height="155" alt="<?php bloginfo( 'name' ); ?>" /></a>
+		<header>
+			<div id="main-nav">
+				<div class="row">
+					<div id="medium-up-logo" class="columns">
+						<a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/images/Lilleyplace_Logo.png" width="400" height="155" alt="<?php bloginfo( 'name' ); ?>" /></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="column">
+						<?php get_template_part( 'parts/top-bar' ); ?>
+					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="column">
-					<?php get_template_part( 'parts/top-bar' ); ?>
-				</div>
-			</div>
-		</header>
 	<?php do_action( 'lilleyplace_layout_start' ); ?>
 	<?php do_action( 'lilleyplace_after_header' ); ?>

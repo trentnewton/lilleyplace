@@ -8,7 +8,8 @@
  */
 
 get_header(); ?>
-<?php get_template_part( 'parts/banner' ); ?>
+	<?php get_template_part( 'parts/banner' ); ?>
+</header>
 <main class="page-content">
 	<div class="row">
 		<div class="columns medium-8">

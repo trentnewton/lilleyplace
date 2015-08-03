@@ -3,8 +3,9 @@
 Template Name: Index Staff
 */
 get_header(); ?>
+	<?php get_template_part( 'parts/banner' ); ?>
+</header>
 <?php while ( have_posts() ) : the_post(); ?>
-<?php get_template_part( 'parts/banner' ); ?>
 <main id="post-<?php the_ID(); ?>" <?php post_class('page-content') ?>>
 <?php $child_pages = $wpdb->get_results("SELECT * FROM $wpdb->posts WHERE post_parent = ".$post->ID." AND post_type = 'page' ORDER BY menu_order DESC", 'OBJECT'); ?>
 	<div class="row">

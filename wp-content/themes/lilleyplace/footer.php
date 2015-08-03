@@ -63,7 +63,7 @@
 			</section>
 			<?php endif; wp_reset_postdata(); ?>
 			<?php // endif;?>
-			<figure class="footer-display">
+			<div class="footer-display">
 				<div class="row">
 					<div class="footer-content">
 						<div class="medium-5 large-6 columns">
@@ -100,7 +100,7 @@
 					</div>
 				</div>
 				<div class="shadow top"></div>
-			</figure>
+			</div>
 		</footer>
 		<script type="text/javascript">
 	        var templateUrl = '<?php echo get_stylesheet_directory_uri(); ?>';

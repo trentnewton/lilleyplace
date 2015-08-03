@@ -8,14 +8,13 @@
  */
 
 get_header(); ?>
-<?php get_template_part( 'parts/banner' ); ?>
+	<?php get_template_part( 'parts/banner' ); ?>
+</header>
 <main <?php post_class('page-content') ?> id="post-<?php the_ID(); ?>">
 	<div class="row">
 		<div class="four-o-four-container">
-			<article class="columns medium-6">
-				<div class="four-o-four-item">
-					<h2 class="four-o-four-text" title="404">404</h2>
-				</div>
+			<article class="columns medium-6 four-o-four-item">
+				<h2 class="four-o-four-text" title="404">404</h2>
 			</article>
 			<aside class="columns medium-6 sidebar-bg">
 				<div class="sidebar-container">
