@@ -131,48 +131,39 @@ class Lilleyplace_Comments extends Walker_Comment{
 		$GLOBALS['comment_depth'] = $depth;
 		$GLOBALS['comment'] = $comment;
 		$parent_class = ( empty( $args['has_children'] ) ? '' : 'parent' ); ?>
-         
         <li <?php comment_class( $parent_class ); ?> id="comment-<?php comment_ID() ?>">
             <article id="comment-body-<?php comment_ID() ?>" class="comment-body">
-	    
-	    	
-		
-		<header class="comment-author">	
-		
-			<?php echo get_avatar( $comment, $args['avatar_size'] ); ?>
-			
-			<div class="author-meta vcard author">  
-			
-			<?php printf( __( '<cite class="fn">%s</cite>', 'lilleyplace' ), get_comment_author_link() ) ?>
-			<time datetime="<?php echo comment_date( 'c' ) ?>"><a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ) ?>"><?php printf( __( '%1$s', 'lilleyplace' ), get_comment_date(),  get_comment_time() ) ?></a></time>
-			
-			</div><!-- /.comment-author -->
-			
-		</header>
- 
+				<header class="comment-author">
+					<?php echo get_avatar( $comment, $args['avatar_size'] ); ?>
+					<div class="author-meta vcard author">
+						<cite class="fn"><?php if ($comment->user_id) {
+						$user=get_userdata($comment->user_id);
+						echo $user->display_name;
+						} else { comment_author_link(); } ?></cite>
+						<time datetime="<?php echo comment_date( 'c' ) ?>">
+							<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ) ?>"><?php printf( __( '%1$s', 'lilleyplace' ), get_comment_date(),  get_comment_time() ) ?></a>
+						</time>
+					</div><!-- /.comment-author -->
+				</header>
                 <section id="comment-content-<?php comment_ID(); ?>" class="comment">
                     <?php if ( ! $comment->comment_approved ) : ?>
-                    		<div class="notice">
-					<p class="bottom"><?php $args['moderation']; ?></p>
-				</div>                     
+                    <div class="notice">
+						<p class="bottom"><?php $args['moderation']; ?></p>
+					</div>                     
                     <?php else : comment_text(); ?>
                     <?php endif; ?>
                 </section><!-- /.comment-content -->
- 
                 <div class="comment-meta comment-meta-data hide">
                     <a href="<?php echo htmlspecialchars( get_comment_link( get_comment_ID() ) ) ?>"><?php comment_date(); ?> at <?php comment_time(); ?></a> <?php edit_comment_link( '(Edit)' ); ?>
                 </div><!-- /.comment-meta -->
- 
                 <div class="reply">
                     <?php $reply_args = array(
 						'depth' => $depth,
 						'max_depth' => $args['max_depth'],
 						);
-
 					comment_reply_link( array_merge( $args, $reply_args ) );  ?>
                 </div><!-- /.reply -->
             </article><!-- /.comment-body -->
- 
     <?php }
 
 	function end_el(&$output, $comment, $depth = 0, $args = array() ) { ?>

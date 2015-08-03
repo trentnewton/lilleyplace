@@ -53,6 +53,24 @@ function lilleyplace_get_posts_page($info) {
 }
 endif;
 
+// Get author's full name
+
+function get_author_full_name() {
+	$fname = get_the_author_meta('first_name');
+	$lname = get_the_author_meta('last_name');
+	$full_name = '';
+
+	if( empty($fname)){
+	    $full_name = $lname;
+	} elseif( empty( $lname )){
+	    $full_name = $fname;
+	} else {
+	    //both first name and last name are present
+	    $full_name = "{$fname} {$lname}";
+	}
+
+	echo $full_name;
+}
 
 // Ajax contact form
 

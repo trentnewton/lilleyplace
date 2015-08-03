@@ -114,7 +114,7 @@ ol:not(.comment-list) {
 
 blockquote {
 	position: relative;
-	box-shadow: 0 0 18px rgba($black, 0.2);
+	box-shadow: 1px 0 4px #ccc;
 
 	&:before {
 		content: "\201C";
@@ -643,6 +643,12 @@ a {
 		padding: 0;
 		margin: 0;
 		border: 0;
+		box-shadow: none;
+
+		&:before {
+			content: '';
+		}
+
 	}
 
 	p {
