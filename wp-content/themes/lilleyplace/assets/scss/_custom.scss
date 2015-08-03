@@ -650,8 +650,7 @@ a {
 	&:before {
 		content: '';
 		position: absolute;
-		background-color: scale-color($tertiary-color, $lightness: -50%);
-		background-image: url("#{$imagePath}/landscape-nature-forest-trees.jpg") center top no-repeat;
+		background: scale-color($tertiary-color, $lightness: -50%) url("#{$imagePath}/landscape-nature-forest-trees.jpg") center top no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
 		z-index: -999;
