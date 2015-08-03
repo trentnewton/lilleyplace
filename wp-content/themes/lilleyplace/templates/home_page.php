@@ -22,16 +22,16 @@ get_header(); ?>
 <?php if( get_field('top_quote') ): ?>
 <section id="top-quote">
 	<div class="row">
-		<div class="column">
-			<h4>
+		<blockquote class="column">
+			<p>
 				<svg class="icon icon-quotes-left"><use xlink:href="#icon-quotes-left"></use></svg>
 				<?php the_field('top_quote'); ?>
 				<svg class="icon icon-quotes-right"><use xlink:href="#icon-quotes-right"></use></svg>
-			</h4>
+			</p>
 			<?php if( get_field('top_citation') ): ?>
-			<p role="citation"><?php the_field('top_citation'); ?></p>
+			<cite><?php the_field('top_citation'); ?></cite>
 			<?php endif; ?>
-		</div>
+		</blockquote>
 	</div>
 	<div class="shadow grey-top"></div>
 </section>
@@ -83,13 +83,9 @@ get_header(); ?>
 	<?php do_action( 'lilleyplace_before_content' ); ?>
 	<article class="column">
 	<?php if( get_field('banner_title') ): ?>
-		<header>
-			<h2><?php the_field('banner_title'); ?></h2>
-		</header>
+		<h2><?php the_field('banner_title'); ?></h2>
 		<?php else : ?>
-		<header>
-			<?php the_title(); ?>
-		</header>
+		<?php the_title(); ?>
 	<?php endif; ?>
 		<div class="entry-content">
 			<?php do_action( 'lilleyplace_page_before_entry_content' ); ?>
