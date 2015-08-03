@@ -5,7 +5,7 @@ Template Name: Home Page
 get_header(); ?>
 </header>
 <?php while ( have_posts() ) : the_post(); ?>
-<div role="main">
+<main>
 	<?php if( get_field('title') ): ?>
 	<section id="main-hero">
 		<div class="main-hero-inner">
@@ -131,5 +131,5 @@ get_header(); ?>
 		<?php do_action( 'lilleyplace_after_content' ); ?>
 	</section>
 	<?php endwhile;?>
-</div>
+</main>
 <?php get_footer(); ?>
