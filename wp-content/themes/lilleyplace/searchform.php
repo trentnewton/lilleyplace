@@ -8,7 +8,7 @@
  */
 
 do_action( 'lilleyplace_before_searchform' ); ?>
-<form role="search" method="get" id="searchform" action="<?php echo home_url('/'); ?>">
+<form method="get" id="searchform" action="<?php echo home_url('/'); ?>">
 	<div class="row">
 		<div class="column">
 			<div class="row collapse postfix-radius">
