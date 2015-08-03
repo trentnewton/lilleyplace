@@ -23,7 +23,7 @@ function breadcrumbs() {
 	$home_link    = lilleyplace_get_posts_page('url');
 	$link_before  = '<li typeof="v:Breadcrumb">';
 	$link_after   = '</li>';
-	$link_attr    = ' rel="v:url" property="v:title"';
+	$link_attr    = ' property="v:title"';
 	$link         = $link_before . '<a' . $link_attr . ' href="%1$s">%2$s</a>' . $link_after;
 	$parent_id    = $parent_id_2 = $post->post_parent;
 	$frontpage_id = get_option('page_on_front');
@@ -36,7 +36,7 @@ function breadcrumbs() {
 
 		echo '<ul class="breadcrumbs" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">';
 		if ($show_home_link == 1) {
-			echo '<li><a href="' . $home_link . '" rel="v:url" property="v:title">' . $text['home'] . '</a></li>';
+			echo '<li><a href="' . $home_link . '" property="v:title">' . $text['home'] . '</a></li>';
 			if ($frontpage_id == 0 || $parent_id != $frontpage_id) echo $delimiter;
 		}
 
@@ -188,7 +188,7 @@ function sitebreadcrumbs() {
 	$home_link    = home_url();
 	$link_before  = '<li typeof="v:Breadcrumb">';
 	$link_after   = '</li>';
-	$link_attr    = ' rel="v:url" property="v:title"';
+	$link_attr    = ' property="v:title"';
 	$link         = $link_before . '<a' . $link_attr . ' href="%1$s">%2$s</a>' . $link_after;
 	$parent_id    = $parent_id_2 = $post->post_parent;
 	$frontpage_id = get_option('page_on_front');
@@ -201,7 +201,7 @@ function sitebreadcrumbs() {
 
 		echo '<ul class="breadcrumbs" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">';
 		if ($show_home_link == 1) {
-			echo '<li><a href="' . $home_link . '" rel="v:url" property="v:title">' . $text['home'] . '</a></li>';
+			echo '<li><a href="' . $home_link . '" property="v:title">' . $text['home'] . '</a></li>';
 			if ($frontpage_id == 0 || $parent_id != $frontpage_id) echo $delimiter;
 		}
 

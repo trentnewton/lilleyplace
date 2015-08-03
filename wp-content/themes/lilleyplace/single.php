@@ -20,11 +20,9 @@ get_header(); ?>
 <main class="page-content">
 	<div class="row">
 		<div class="columns medium-8" role="main">
-			<header>
-		   		<nav class="breadcrumbs-container">
-					<?php if (function_exists('breadcrumbs')) breadcrumbs(); ?>
-				</nav>
-		   	</header>
+	   		<nav class="breadcrumbs-container">
+				<?php if (function_exists('breadcrumbs')) breadcrumbs(); ?>
+			</nav>
 		<?php do_action( 'lilleyplace_before_content' ); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 				<article <?php post_class('entry-content') ?> id="post-<?php the_ID(); ?>">

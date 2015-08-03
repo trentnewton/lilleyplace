@@ -791,16 +791,16 @@ class google_maps_widget extends WP_Widget {
    ?>
 		<a href="#" data-reveal-id="google-maps-modal" title="<?php _e('Click to open larger map','lilleyplace');?>">
          <div id='SGM'>
-            <img alt="<?php _e('Click to open larger map','lilleyplace');?>" title="<?php _e('Click to open larger map','lilleyplace');?>" src="//maps.googleapis.com/maps/api/staticmap?center=<?php echo $add; ?>+&amp;zoom=<?php echo $zoom; ?>&amp;size=250x250&amp;maptype=roadmap&amp;scale=2&amp;markers=size:default%7Ccolor:red%7Clabel:A%7C<?php echo $add; ?>+&amp;language=en&amp;visual_refresh=false">
+            <img alt="<?php _e('Click to open larger map','lilleyplace');?>" title="<?php _e('Click to open larger map','lilleyplace');?>" src="//maps.googleapis.com/maps/api/staticmap?center=<?php echo rawurlencode($add); ?>+&amp;zoom=<?php echo $zoom; ?>&amp;size=250x250&amp;maptype=roadmap&amp;scale=2&amp;markers=size:default%7Ccolor:red%7Clabel:A%7C<?php echo rawurlencode($add); ?>+&amp;language=en&amp;visual_refresh=false">
             <div class="SGM-overlay">
                <span><?php _e('Click to open larger map','lilleyplace');?></span>
             </div>
          </div>
       </a>
 		<div id="google-maps-modal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-		  <h2><?php echo $title; ?></h2>
+		  <h2 id="modalTitle"><?php echo $title; ?></h2>
 		  <p><?php echo $info; ?></p>
-		  <iframe src="//maps.google.com/maps?hl=en&amp;ie=utf8&amp;output=embed&amp;iwloc=addr&amp;iwd=1&amp;mrt=loc&amp;t=m&amp;q=<?php echo $add; ?>+&amp;z=14" frameborder="0"></iframe>
+		  <iframe src="//maps.google.com/maps?hl=en&amp;ie=utf8&amp;output=embed&amp;iwloc=addr&amp;iwd=1&amp;mrt=loc&amp;t=m&amp;q=<?php echo rawurlencode($add); ?>+&amp;z=14"></iframe>
 		  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 		</div>
    <?php
@@ -948,7 +948,7 @@ class tt_contact_widget extends WP_Widget
 	<li class="address"><?php echo $address.'<br />'.$city_state; ?></li>
    <?php endif; ?>
    <?php if( $phone ): ?>
-	<li class="phone"><strong><?php _e('phone:','lilleyplace'); ?></strong>&nbsp;<?php echo '<a href="tel:'.$phone.'">'.$phone.'</a>'; ?></li>
+	<li class="phone"><strong><?php _e('phone:','lilleyplace'); ?></strong>&nbsp;<?php echo '<a href="tel:'.rawurlencode($phone).'">'.$phone.'</a>'; ?></li>
    <?php endif; ?>
    <?php if( $fax ): ?>
 	<li class="fax"><strong><?php _e('fax:','lilleyplace'); ?></strong>&nbsp;<?php echo $fax; ?></li>

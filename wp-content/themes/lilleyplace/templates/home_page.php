@@ -5,7 +5,7 @@ Template Name: Home Page
 get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 <?php if( get_field('title') ): ?>
-<header id="main-hero" role="banner">
+<header id="main-hero">
 	<div class="main-hero-inner">
 		<div class="row">
 			<div class="column">
@@ -20,7 +20,7 @@ get_header(); ?>
 </header>
 <?php endif; ?>
 <?php if( get_field('top_quote') ): ?>
-<section id="top-quote">
+<figure id="top-quote">
 	<div class="row">
 		<blockquote class="column">
 			<p>
@@ -34,7 +34,7 @@ get_header(); ?>
 		</blockquote>
 	</div>
 	<div class="shadow grey-top"></div>
-</section>
+</figure>
 <?php endif; ?>
 <?php if(get_field('add_a_box')): $i = 0; ?>
 <section id="info-boxes">

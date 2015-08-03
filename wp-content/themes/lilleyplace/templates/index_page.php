@@ -24,9 +24,9 @@ get_header(); ?>
 							<a href="<?php echo get_permalink($pageChild->ID); ?>"><?php echo $pageChild->post_title; ?></a>
 						</h4>
 						<?php if ( 'post' == get_post_type() ) : ?>
-							<span class="date entry-meta">
-								<svg class="icon icon-calendar"><use xlink:href="#icon-calendar"></use></svg>&nbsp;<?php the_time( get_option( 'date_format' ) ); ?>
-							</span>
+						<span class="date entry-meta">
+							<svg class="icon icon-calendar"><use xlink:href="#icon-calendar"></use></svg>&nbsp;<?php the_time( get_option( 'date_format' ) ); ?>
+						</span>
 						<?php endif; ?>
 					</header>
 					<?php if ( has_post_thumbnail($pageChild->ID) ) : ?>

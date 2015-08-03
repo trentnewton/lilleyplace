@@ -48,7 +48,7 @@ get_header(); ?>
 	<?php if( $member_name ): ?>
 	<article class="row">
 		<div class="columns small-6 medium-3">
-			<p class="member-name"><?php echo $member_name ?></p>
+			<h4 class="member-name"><?php echo $member_name ?></h4>
 			<p class="member-title"><?php echo $member_title ?></p>
 			<?php if( have_rows('member_list') ): ?>
 			<ul class="member-list">

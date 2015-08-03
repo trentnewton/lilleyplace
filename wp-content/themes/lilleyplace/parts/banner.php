@@ -8,14 +8,14 @@
  */
 
 ?>
-<header id="small-banner" role="banner">
+<header id="small-banner">
     <div class="row">
 	    <div class="column">
 	        <div class="small-banner-container">
 		        <h1 class="entry-title">
 				<?php if( is_search() ) : ?>
 					<?php _e( 'Search Results', 'lilleyplace' ); ?>
-				<?php elseif( is_home() || is_archive() || is_single()) : ?>
+				<?php elseif( is_home() || is_archive() || is_single() ) : ?>
 					<?php echo lilleyplace_get_posts_page('title'); ?>
 				<?php elseif( is_404() ) : ?>
 					<?php _e( 'Page Not Found', 'lilleyplace' ); ?>

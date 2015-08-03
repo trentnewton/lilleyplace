@@ -11,11 +11,9 @@ get_header(); ?>
 		<?php do_action( 'lilleyplace_before_content' ); ?>
         <article class="columns medium-8 mar-b-30" role="main">
         	<?php if ( is_page() && $post->post_parent > 0 ) { ?>
-		   	<header>
-		   		<nav class="breadcrumbs-container">
-					<?php if (function_exists('sitebreadcrumbs')) sitebreadcrumbs(); ?>
-				</nav>
-		   	</header>
+	   		<nav class="breadcrumbs-container">
+				<?php if (function_exists('sitebreadcrumbs')) sitebreadcrumbs(); ?>
+			</nav>
 			<?php } ?>
 			<?php do_action( 'lilleyplace_page_before_entry_content' ); ?>
 				<?php if ( has_post_thumbnail() ) : ?>
