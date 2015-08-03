@@ -907,7 +907,10 @@ tr th {
 		height: 100%;
 		width: 96%;
 		left: 4%;
-		background: transparent radial-gradient(rgba($body-font-color, 0.2) 0%, transparent 70%) no-repeat scroll -7% 0 / 12% 100%;
+		background: radial-gradient(rgba($body-font-color, 0.2) 0%, transparent 70%);
+		background-size: 12% 100%;
+		background-repeat: no-repeat;
+		background-position: -7% 0;
 		top: rem-calc(-10);
 		z-index: -1;
 		
