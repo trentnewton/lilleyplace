@@ -112,6 +112,27 @@ ol:not(.comment-list) {
 
 }
 
+blockquote {
+	position: relative;
+	box-shadow: 0 0 18px rgba($black, 0.2);
+
+	&:before {
+		content: "\201C";
+		position: absolute;
+		left: rem-calc(10);
+		top: rem-calc(-5);
+		font-size: rem-calc(60);
+		font-weight: $font-weight-bold;
+		color: scale-color($tertiary-color, $lightness: 50%);
+	}
+
+	p {
+		font-size: $h5-font-size;
+		margin: 0;
+	}
+
+}
+
 .row {
 
 	.row {
