@@ -41,7 +41,7 @@ get_header(); ?>
 	</figure>
 	<?php endif; ?>
 	<?php if(get_field('add_a_box')): $i = 0; ?>
-	<div id="info-boxes">
+	<section id="info-boxes">
 		<div class="row">
 			<div class="column">
 				<h2><?php the_field('info_box_section_title'); ?></h2>
@@ -81,7 +81,7 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 	<?php endif; ?>
 	<section id="main-text" class="row">
 		<?php do_action( 'lilleyplace_before_content' ); ?>
