@@ -11,7 +11,7 @@ get_header(); ?>
         <article class="columns medium-8" role="main">
         	<?php if ( is_page() && $post->post_parent > 0 ) { ?>
 	   		<nav class="breadcrumbs-container">
-				<?php if (function_exists('sitebreadcrumbs')) sitebreadcrumbs(); ?>
+				<?php if (function_exists('site_breadcrumbs')) site_breadcrumbs(); ?>
 			</nav>
 			<?php } ?>
 			<?php do_action( 'lilleyplace_page_before_entry_content' ); ?>

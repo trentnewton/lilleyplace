@@ -21,7 +21,7 @@ get_header(); ?>
 	<div class="row">
 		<div class="columns medium-8" role="main">
 	   		<nav class="breadcrumbs-container">
-				<?php if (function_exists('breadcrumbs')) breadcrumbs(); ?>
+				<?php if (function_exists('blog_breadcrumbs')) blog_breadcrumbs(); ?>
 			</nav>
 		<?php do_action( 'lilleyplace_before_content' ); ?>
 		<?php while ( have_posts() ) : the_post(); ?>

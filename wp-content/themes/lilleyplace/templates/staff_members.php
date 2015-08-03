@@ -11,7 +11,7 @@ get_header(); ?>
    	<header class="row">
 	   	<div class="column">
 	   		<nav class="breadcrumbs-container">
-				<?php if (function_exists('sitebreadcrumbs')) sitebreadcrumbs(); ?>
+				<?php if (function_exists('site_breadcrumbs')) site_breadcrumbs(); ?>
 			</nav>
 	   	</div>
    	</header>

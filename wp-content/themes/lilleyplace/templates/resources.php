@@ -3,7 +3,6 @@
 Template Name: Resources
 */
 get_header(); ?>
-
 <?php while ( have_posts() ) : the_post(); ?>
 <?php get_template_part( 'parts/banner' ); ?>
 <main <?php post_class('page-content') ?> id="post-<?php the_ID(); ?>">
@@ -12,7 +11,7 @@ get_header(); ?>
         <article class="columns medium-8 mar-b-30" role="main">
         	<?php if ( is_page() && $post->post_parent > 0 ) { ?>
 	   		<nav class="breadcrumbs-container">
-				<?php if (function_exists('sitebreadcrumbs')) sitebreadcrumbs(); ?>
+				<?php if (function_exists('site_breadcrumbs')) site_breadcrumbs(); ?>
 			</nav>
 			<?php } ?>
 			<?php do_action( 'lilleyplace_page_before_entry_content' ); ?>

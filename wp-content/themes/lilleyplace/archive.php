@@ -23,7 +23,7 @@ get_header(); ?>
 		<div class="columns medium-8" role="main">
 			<header>
 		   		<nav class="breadcrumbs-container">
-					<?php if (function_exists('breadcrumbs')) breadcrumbs(); ?>
+					<?php if (function_exists('blog_breadcrumbs')) blog_breadcrumbs(); ?>
 				</nav>
 		   	</header>
 			<?php if ( have_posts() ) : ?>

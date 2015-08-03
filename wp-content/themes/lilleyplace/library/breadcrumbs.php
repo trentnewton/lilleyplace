@@ -1,6 +1,6 @@
 <?php
 
-function breadcrumbs() {
+function blog_breadcrumbs() {
 
 	/* === OPTIONS === */
 	$text['home']     = lilleyplace_get_posts_page('title');
@@ -165,7 +165,7 @@ function breadcrumbs() {
 	}
 } // end breadcrumbs()
 
-function sitebreadcrumbs() {
+function site_breadcrumbs() {
 
 	/* === OPTIONS === */
 	$text['home']     = __('Home','kbcyouth'); // text for a category page
