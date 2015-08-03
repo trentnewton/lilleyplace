@@ -8,12 +8,20 @@ get_header(); ?>
 </header>
 <?php while ( have_posts() ) : the_post(); ?>
 <main <?php post_class('page-content') ?> id="post-<?php the_ID(); ?>" style="height:600px;background:pink;">
-	<article class="entry-content row">
-		<div class="column">
-			<?php the_content(); ?>
-		</div>
-	</article>
-	<div class="shadow white-top"></div>
+	<div class="footer-display">
+				<div class="row">
+					<div class="footer-content">
+						<div class="medium-5 large-6 columns">
+							<?php dynamic_sidebar("First Footer Column"); ?>
+						</div>
+						<div class="medium-5 large-4 columns">
+							<?php dynamic_sidebar("Second Footer Column"); ?>
+						</div>
+						<div class="medium-2 columns">
+							<?php dynamic_sidebar("Third Footer Column"); ?>
+						</div>
+					</div>
+				</div>
 </main>
 <?php endwhile;?>
 <?php get_footer(); ?>
