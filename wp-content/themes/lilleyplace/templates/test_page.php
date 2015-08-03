@@ -28,7 +28,6 @@ get_header(); ?>
 		</div>
 	</article>
 	<?php do_action( 'lilleyplace_after_content' ); ?>
-	<div class="shadow white-top"></div>
 </main>
 <?php endwhile;?>
 <?php get_footer(); ?>
