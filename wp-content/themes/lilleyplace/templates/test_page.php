@@ -7,7 +7,7 @@ get_header(); ?>
 	<?php get_template_part( 'parts/banner' ); ?>
 </header>
 <?php while ( have_posts() ) : the_post(); ?>
-<main <?php post_class('page-content') ?> id="post-<?php the_ID(); ?>" style="height:600px;background:pink;">
+<div <?php post_class('page-content') ?> id="post-<?php the_ID(); ?>" style="height:600px;background:pink;">
 	<div class="footer-display">
 				<div class="row">
 					<div class="footer-content">
@@ -22,6 +22,6 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
-</main>
+</div>
 <?php endwhile;?>
 <?php get_footer(); ?>
