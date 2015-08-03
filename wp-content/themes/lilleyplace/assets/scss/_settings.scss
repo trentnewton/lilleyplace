@@ -290,7 +290,7 @@ $paragraph-line-height: 1.44;
 // $paragraph-aside-font-size: rem-calc(14);
 // $paragraph-aside-line-height: 1.35;
 // $paragraph-aside-font-style: italic;
-// $paragraph-text-rendering: optimizeLegibility;
+$paragraph-text-rendering: auto;
 
 // We use these to style <code> tags
 // $code-color: $oil;
