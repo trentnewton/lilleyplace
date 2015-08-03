@@ -26,27 +26,15 @@
     </div>
     <div class="pinterest">    
         <?php if ( '' != get_the_post_thumbnail() ) { ?>
-        <a href="//www.pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&media=<?php echo $url; ?>&description=<?php rawurlencode(the_title()); ?>"
-            data-pin-do="buttonPin"
-            data-pin-config="above">
-            <img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" alt="Pin It" />
+        <a href="//www.pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&media=<?php echo $url; ?>&description=<?php rawurlencode(the_title()); ?>" data-pin-do="buttonPin" data-pin-config="beside" data-pin-color="red">
+            <img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_20.png" alt="Pin It" />
         </a>
         <?php } else { ?>
-        <a href="//www.pinterest.com/pin/create/button/?url=<?php the_permalink() ?>&media=<?php echo get_template_directory_uri(); ?>/assets/img/images/blog_normal.jpg&description=<?php rawurlencode(the_title()); ?>"
-            data-pin-do="buttonPin"
-            data-pin-config="above">
-            <img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" alt="Pin It" />
+        <a href="//www.pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&media=<?php echo get_template_directory_uri(); ?>/assets/img/images/blog_normal.jpg&description=<?php rawurlencode(the_title()); ?>" data-pin-do="buttonPin" data-pin-config="beside" data-pin-color="red">
+            <img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_20.png" alt="Pin It" />
         </a>
         <?php } ?>
         <!-- Please call pinit.js only once per page -->
-        <script type="text/javascript">
-        (function(d){
-            var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');
-            p.type = 'text/javascript';
-            p.async = true;
-            p.src = '//assets.pinterest.com/js/pinit.js';
-            f.parentNode.insertBefore(p, f);
-        }(document));
-        </script>
+        <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
     </div>
 </div>
