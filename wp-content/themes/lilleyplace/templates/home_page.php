@@ -22,16 +22,18 @@ get_header(); ?>
 <?php if( get_field('top_quote') ): ?>
 <figure id="top-quote">
 	<div class="row">
-		<blockquote class="column">
-			<p>
-				<svg class="icon icon-quotes-left"><use xlink:href="#icon-quotes-left"></use></svg>
-				<?php the_field('top_quote'); ?>
-				<svg class="icon icon-quotes-right"><use xlink:href="#icon-quotes-right"></use></svg>
-			</p>
-			<?php if( get_field('top_citation') ): ?>
-			<cite><?php the_field('top_citation'); ?></cite>
-			<?php endif; ?>
-		</blockquote>
+		<div class="column">
+			<blockquote>
+				<p>
+					<svg class="icon icon-quotes-left"><use xlink:href="#icon-quotes-left"></use></svg>
+					<?php the_field('top_quote'); ?>
+					<svg class="icon icon-quotes-right"><use xlink:href="#icon-quotes-right"></use></svg>
+				</p>
+				<?php if( get_field('top_citation') ): ?>
+				<cite><?php the_field('top_citation'); ?></cite>
+				<?php endif; ?>
+			</blockquote>
+		</div>
 	</div>
 	<div class="shadow grey-top"></div>
 </figure>
