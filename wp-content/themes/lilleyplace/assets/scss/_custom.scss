@@ -647,7 +647,7 @@ a {
 	box-shadow: 0 3px 8px rgba($black, 0.5);
 	position: relative;
 
-	&:before {
+	.info-boxes-bg {
 		content: '';
 		position: absolute;
 		background-color: scale-color($tertiary-color, $lightness: -50%);
@@ -662,6 +662,11 @@ a {
 		bottom: 0;
 		left: 0;
 		width: 100%;
+
+		@media #{$small-only} {
+			background-attachment: scroll;
+		}
+
 	}
 
 	h2 {

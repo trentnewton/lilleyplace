@@ -81,6 +81,7 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
+		<div class="info-boxes-bg"></div>
 	</div>
 	<?php endif; ?>
 	<section id="main-text" class="row">
