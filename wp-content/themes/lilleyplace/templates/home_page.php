@@ -80,7 +80,8 @@ get_header(); ?>
 </section>
 <?php endif; ?>
 <main id="main-text" class="row">
-	<div class="column">
+	<?php do_action( 'lilleyplace_before_content' ); ?>
+	<article class="column">
 	<?php if( get_field('banner_title') ): ?>
 		<header>
 			<h2><?php the_field('banner_title'); ?></h2>
@@ -90,8 +91,7 @@ get_header(); ?>
 			<?php the_title(); ?>
 		</header>
 	<?php endif; ?>
-	<?php do_action( 'lilleyplace_before_content' ); ?>
-		<article class="entry-content">
+		<div class="entry-content">
 			<?php do_action( 'lilleyplace_page_before_entry_content' ); ?>
 			<?php the_content(); ?>
 			<?php do_action( 'lilleyplace_page_after_entry_content' ); ?>
@@ -126,9 +126,9 @@ get_header(); ?>
 				</div>
 			</div>
 			<?php endif; ?>
-		</article>
-		<?php do_action( 'lilleyplace_after_content' ); ?>
-	</div>
+		</div>
+	</article>
+	<?php do_action( 'lilleyplace_after_content' ); ?>
 </main>
 <?php endwhile;?>
 <?php get_footer(); ?>

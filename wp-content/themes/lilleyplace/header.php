@@ -38,7 +38,7 @@
 		<header id="main-nav">
 			<div class="row">
 				<div id="medium-up-logo" class="columns">
-					<a href="<?php echo home_url(); ?>"><img role="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/images/Lilleyplace_Logo.png" width="400" height="155" alt="<?php bloginfo( 'name' ); ?>" /></a>
+					<a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/images/Lilleyplace_Logo.png" width="400" height="155" alt="<?php bloginfo( 'name' ); ?>" /></a>
 				</div>
 			</div>
 			<div class="row">
