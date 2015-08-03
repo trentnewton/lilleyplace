@@ -650,12 +650,8 @@ a {
 	&:before {
 		content: '';
 		position: absolute;
-		background-color: scale-color($tertiary-color, $lightness: -50%);
 		background-image: url("#{$imagePath}/landscape-nature-forest-trees.jpg");
-		background-position: center top;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-attachment: fixed;
+
 		z-index: -999;
 		top: 0;
 		bottom: 0;
