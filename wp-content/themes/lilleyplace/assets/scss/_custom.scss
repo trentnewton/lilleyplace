@@ -647,7 +647,7 @@ a {
 	box-shadow: 0 3px 8px rgba($black, 0.5);
 	position: relative;
 
-	.info-boxes-bg {
+	&:before {
 		content: '';
 		position: absolute;
 		background-color: scale-color($tertiary-color, $lightness: -50%);
