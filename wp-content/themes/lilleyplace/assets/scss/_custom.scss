@@ -721,6 +721,11 @@ a {
 
 	h1 {
 		margin-bottom: 0;
+
+		@media #{$small-only} {
+			width: 60%;
+		}
+
 	}
 
 }
