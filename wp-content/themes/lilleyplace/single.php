@@ -18,7 +18,7 @@ get_header(); ?>
 	js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.3";
 	fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<main class="page-content">
+<div role="main" class="page-content">
 	<div class="row">
 		<div class="columns medium-8">
 	   		<nav class="breadcrumbs-container">
@@ -60,5 +60,5 @@ get_header(); ?>
 		</aside>
 	</div>
   <div class="shadow white-top"></div>
-</main>
+</div>
 <?php get_footer(); ?>

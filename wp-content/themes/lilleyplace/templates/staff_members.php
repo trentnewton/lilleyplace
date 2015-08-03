@@ -6,7 +6,7 @@ get_header(); ?>
 	<?php get_template_part( 'parts/banner' ); ?>
 </header>
 <?php while ( have_posts() ) : the_post(); ?>
-<main <?php post_class('page-content') ?> id="post-<?php the_ID(); ?>">
+<div role="main" <?php post_class('page-content') ?> id="post-<?php the_ID(); ?>">
 	<?php if ( is_page() && $post->post_parent > 0 ) { ?>
    	<header class="row">
 	   	<div class="column">
@@ -99,6 +99,6 @@ get_header(); ?>
 	<?php endwhile; ?>
 	<?php endif; ?>
 	<div class="shadow white-top"></div>
-</main>
+</div>
 <?php endwhile;?>
 <?php get_footer(); ?>

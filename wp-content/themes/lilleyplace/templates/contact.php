@@ -6,7 +6,7 @@ get_header(); ?>
 	<?php get_template_part( 'parts/banner' ); ?>
 </header>
 <?php while ( have_posts() ) : the_post(); ?>
-<main <?php post_class('page-content') ?> id="post-<?php the_ID(); ?>">
+<div role="main" <?php post_class('page-content') ?> id="post-<?php the_ID(); ?>">
 	<div class="row">
 		<?php do_action( 'lilleyplace_before_content' ); ?>
         <article class="columns medium-8">
@@ -32,6 +32,6 @@ get_header(); ?>
 		</aside>
 	</div>
 	<div class="shadow white-top"></div>
-</main>
+</div>
 <?php endwhile;?>
 <?php get_footer(); ?>

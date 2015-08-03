@@ -10,7 +10,7 @@
 get_header(); ?>
 	<?php get_template_part( 'parts/banner' ); ?>
 </header>
-<main <?php post_class('page-content') ?> id="post-<?php the_ID(); ?>">
+<div role="main" <?php post_class('page-content') ?> id="post-<?php the_ID(); ?>">
 	<div class="row">
 		<div class="four-o-four-container">
 			<article class="columns medium-6 four-o-four-item">
@@ -31,5 +31,5 @@ get_header(); ?>
 		</div>
 	</div>
   <div class="shadow white-top"></div>
-</main>
+</div>
 <?php get_footer(); ?>

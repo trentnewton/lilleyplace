@@ -10,7 +10,7 @@
 get_header(); ?>
 	<?php get_template_part( 'parts/banner' ); ?>
 </header>
-<main class="page-content">
+<div role="main" class="page-content">
 	<div class="row">
 		<div class="columns medium-8">
 			<?php do_action( 'lilleyplace_before_content' ); ?>
@@ -46,5 +46,5 @@ get_header(); ?>
 		</aside>
 	</div>
 	<div class="shadow white-top"></div>
-</main>
+</div>
 <?php get_footer(); ?>
