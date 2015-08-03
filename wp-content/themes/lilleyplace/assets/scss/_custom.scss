@@ -612,7 +612,7 @@ a {
 
 	&:after {
 		content: "";
-		background: url("#{$imagePath}/lilypad-287519.jpg") center no-repeat;
+		background: url("#{$imagePath}/lilypad-287519.jpg") center;
 		background-size: cover;
 		// background-attachment: fixed;
 		opacity: 0.2;
@@ -675,7 +675,6 @@ a {
 		position: absolute;
 		background-color: scale-color($tertiary-color, $lightness: -50%);
 		background-image: url("#{$imagePath}/landscape-nature-forest-trees.jpg");
-		background-repeat: no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
 		background-position: top;
@@ -1425,7 +1424,7 @@ body.coming-soon {
 	background: linear-gradient(
 		rgba($secondary-color, 0.6),
 		rgba($secondary-color, 0.6)),
-		url("#{$imagePath}/4507253146_8f724909b8_o.jpg") center no-repeat;
+		url("#{$imagePath}/4507253146_8f724909b8_o.jpg") center;
 	background-size: cover;
 	// background-attachment: fixed;
 	text-shadow: 1px 1px 8px rgba($black, 1);
