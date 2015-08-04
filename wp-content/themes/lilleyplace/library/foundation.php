@@ -50,12 +50,12 @@ endif;
 if ( ! function_exists( 'lilleyplace_menu_fallback' ) ) :
 function lilleyplace_menu_fallback() {
 	echo '<div class="alert-box secondary">';
-	// Translators 1: Link to Menus, 2: Link to Customize.
+	// Translators 1: Link to Menus, 2: Link to Customise.
 		printf( __( 'Please assign a menu to the primary menu location under %1$s or %2$s the design.', 'lilleyplace' ),
 			sprintf(  __( '<a href="%s">Menus</a>', 'lilleyplace' ),
 				get_admin_url( get_current_blog_id(), 'nav-menus.php' )
 			),
-			sprintf(  __( '<a href="%s">Customize</a>', 'lilleyplace' ),
+			sprintf(  __( '<a href="%s">Customise</a>', 'lilleyplace' ),
 				get_admin_url( get_current_blog_id(), 'customize.php' )
 			)
 		);

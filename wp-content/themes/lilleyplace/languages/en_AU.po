@@ -1,13 +1,14 @@
 msgid ""
 msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: Lilley Place\n"
-"POT-Creation-Date: 2015-07-29 14:17+1000\n"
-"PO-Revision-Date: 2015-07-29 14:18+1000\n"
+"POT-Creation-Date: 2015-08-04 14:37+1000\n"
+"PO-Revision-Date: 2015-08-04 14:37+1000\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.3\n"
+"X-Generator: Poedit 1.8.4\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -15,33 +16,32 @@ msgstr ""
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
 "_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "Last-Translator: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Language: en_AU\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: 404.php:23
+#: 404.php:22
 msgid "Oops! the page you are looking for could not be found."
 msgstr ""
 
-#: 404.php:24
+#: 404.php:23
 msgid "Here are some links that you might find useful:"
 msgstr ""
 
-#: 404.php:26
+#: 404.php:25
 #, php-format
 msgid "<a href=\"%s\">Home</a>"
 msgstr ""
 
-#: 404.php:27
+#: 404.php:26
 msgid "Contact Us"
 msgstr ""
 
-#: archive.php:42 index.php:40 search.php:34
+#: archive.php:44 index.php:40 search.php:34
 msgid "&larr; Older posts"
 msgstr ""
 
-#: archive.php:43 index.php:41 search.php:35
+#: archive.php:45 index.php:41 search.php:35
 msgid "Newer posts &rarr;"
 msgstr ""
 
@@ -169,15 +169,15 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: library/custom_post_types.php:88
+#: library/custom_post_types.php:106
 msgid "Change the text of the footer."
 msgstr ""
 
-#: library/custom_post_types.php:96
+#: library/custom_post_types.php:114
 msgid "Default copyright text"
 msgstr ""
 
-#: library/custom_post_types.php:104
+#: library/custom_post_types.php:122
 msgid "Copyright Text"
 msgstr ""
 
@@ -203,7 +203,7 @@ msgstr ""
 
 #: library/foundation.php:58
 #, php-format
-msgid "<a href=\"%s\">Customize</a>"
+msgid "<a href=\"%s\">Customise</a>"
 msgstr ""
 
 #: library/foundation.php:106
@@ -218,12 +218,7 @@ msgstr ""
 msgid "% Responses to"
 msgstr ""
 
-#: library/foundation.php:146
-#, php-format
-msgid "<cite class=\"fn\">%s</cite>"
-msgstr ""
-
-#: library/foundation.php:147
+#: library/foundation.php:144
 #, php-format
 msgid "%1$s"
 msgstr ""
@@ -484,11 +479,11 @@ msgstr ""
 msgid "Search Results"
 msgstr ""
 
-#: parts/banner.php:25
+#: parts/banner.php:21
 msgid "Page Not Found"
 msgstr ""
 
-#: parts/banner.php:37
+#: parts/banner.php:33
 msgid "Search"
 msgstr ""
 
@@ -496,19 +491,19 @@ msgstr ""
 msgid "Nothing Found"
 msgstr ""
 
-#: parts/content-none.php:20
+#: parts/content-none.php:19
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: parts/content-none.php:24
+#: parts/content-none.php:23
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
 
-#: parts/content-none.php:28
+#: parts/content-none.php:27
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
@@ -522,7 +517,7 @@ msgstr ""
 msgid "Menu"
 msgstr ""
 
-#: search.php:17
+#: search.php:18
 msgid "Search Results for"
 msgstr ""
 
@@ -534,11 +529,11 @@ msgstr ""
 msgid "Go"
 msgstr ""
 
-#: single.php:45 woocommerce.php:27
+#: single.php:46 woocommerce.php:27
 msgid "Pages:"
 msgstr ""
 
-#: templates/staff_members.php:74
+#: templates/staff_members.php:86
 msgid "Read More"
 msgstr ""
 
