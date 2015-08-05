@@ -26,10 +26,13 @@
 	        </h1>
 	        <?php if( is_search() ): ?>
 	        <?php else : ?>
-            <form class="search-box" method="get" class="searchform" action="<?php echo home_url('/'); ?>">
-	            <svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg>
-	            <input name="s" class="s" placeholder="<?php _e( 'Search', 'lilleyplace' ); ?>&hellip;" type="text">
-            </form>
+            <form class="search-box searchform" method="get" action="<?php echo home_url('/'); ?>">
+				<label>
+					<svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg>
+					<input type="search" class="s" placeholder="<?php _e( 'Search', 'lilleyplace' ); ?>&hellip;"  value="" name="s" title="<?php _e( 'Search', 'lilleyplace' ); ?>&hellip;">
+				</label>
+				<input type="submit" class="search-submit" value="<?php _e( 'Search', 'lilleyplace' ); ?>">
+			</form>
 	        <?php endif; ?>
 	    </div>
     </div>
