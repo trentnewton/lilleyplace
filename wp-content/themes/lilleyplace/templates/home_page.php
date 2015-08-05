@@ -83,7 +83,7 @@ get_header(); ?>
 		</div>
 	</section>
 	<?php endif; ?>
-	<section id="main-text" class="row">
+	<section id="main-text" <?php post_class('row') ?>>
 		<?php do_action( 'lilleyplace_before_content' ); ?>
 		<article class="column">
 		<?php if( get_field('banner_title') ): ?>

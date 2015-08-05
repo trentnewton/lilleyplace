@@ -11,9 +11,7 @@
 
 ?>
 <article>
-	<header class="page-header">
-		<h2 class="page-title"><?php _e( 'Nothing Found', 'lilleyplace' ); ?></h2>
-	</header>
+	<h2 class="page-title"><?php _e( 'Nothing Found', 'lilleyplace' ); ?></h2>
 	<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
 	<p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'lilleyplace' ), admin_url( 'post-new.php' ) ); ?></p>
