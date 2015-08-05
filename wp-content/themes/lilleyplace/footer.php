@@ -86,7 +86,7 @@
 							<?php } else { ?>
 								<?php _e('Copyright','lilleyplace');?>&nbsp;&copy;&nbsp;<?php echo date("Y"); ?>&nbsp;<?php bloginfo( 'name' ); ?>.&nbsp;<?php _e('All rights reserved.','lilleyplace');?>
 							<?php } ?>
-								&nbsp;Website by Happiness Design.
+								<br>Website by Happiness Design.
 							</p>
 						</div>
 						<div class="medium-6 columns">
