@@ -77,7 +77,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="footer-copyright">
+				<aside class="footer-copyright">
 					<div class="row">
 						<div class="medium-6 columns" role="contentinfo">
 							<p>
@@ -98,7 +98,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</aside>
 				<div class="shadow top"></div>
 			</div>
 		</footer>
