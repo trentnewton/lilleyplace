@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Lilley Place\n"
-"POT-Creation-Date: 2015-08-04 14:37+1000\n"
-"PO-Revision-Date: 2015-08-04 14:36+1000\n"
+"POT-Creation-Date: 2015-08-05 16:05+1000\n"
+"PO-Revision-Date: 2015-08-05 16:04+1000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -531,6 +531,10 @@ msgstr ""
 
 #: single.php:46 woocommerce.php:27
 msgid "Pages:"
+msgstr ""
+
+#: single.php:58
+msgid "About the Author:"
 msgstr ""
 
 #: templates/staff_members.php:86
