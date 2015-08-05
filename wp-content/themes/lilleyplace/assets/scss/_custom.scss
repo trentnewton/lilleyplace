@@ -1341,6 +1341,16 @@ body.coming-soon {
 
 }
 
+/* author bio */
+
+.author-info {
+	
+}
+
+.author-description {
+	margin-bottom: 0;
+}
+
 /* comments */
 
 #comments {
@@ -1372,14 +1382,12 @@ body.coming-soon {
 .comment-body {
 	@extend .mar-t-60;
 
-	img.avatar {
-		@extend .image-frame;
-		margin-bottom: rem-calc(20);
-		padding: rem-calc(3);
-	}
-
 	.vcard {
 		margin-left: rem-calc(30);
+	}
+
+	img.avatar {
+		margin-bottom: rem-calc(20);
 	}
 
 	cite.fn {
@@ -1401,6 +1409,15 @@ body.coming-soon {
 		margin-left: rem-calc(82);
 	}
 
+}
+
+.comment-reply-link {
+	font-size: 1rem;
+}
+
+img.avatar {
+	@extend .image-frame;
+	padding: rem-calc(3);
 }
 
 .content-excerpt {

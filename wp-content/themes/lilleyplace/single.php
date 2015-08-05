@@ -47,6 +47,20 @@ get_header(); ?>
 					<p><?php the_tags(); ?></p>
 					<?php get_template_part( 'parts/social_likes' ); ?>
 				</footer>
+				<hr>
+				<article class="author-bio">
+					<div class="row">
+						<div class="columns small-2">
+							<?php echo get_avatar( get_the_author_meta('email'), '90' ); ?>
+						</div>
+						<div class="columns small-10">
+							<div class="author-info">
+							<h4 class="author-title"><?php _e('About the Author:', 'lilleyplace'); ?> <?php the_author_link(); ?></h3>
+							<p class="author-description small"><?php the_author_meta('description'); ?></p>
+						</div>
+						</div>
+					</div>
+				</article>
 				<?php do_action( 'lilleyplace_post_before_comments' ); ?>
 				<?php comments_template(); ?>
 				<?php do_action( 'lilleyplace_post_after_comments' ); ?>
