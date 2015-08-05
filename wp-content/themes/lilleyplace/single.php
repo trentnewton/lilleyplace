@@ -50,10 +50,10 @@ get_header(); ?>
 				<hr>
 				<article class="author-bio">
 					<div class="row">
-						<div class="columns small-2">
+						<div class="columns small-3 medium-2">
 							<?php echo get_avatar( get_the_author_meta('email'), '90' ); ?>
 						</div>
-						<div class="columns small-10">
+						<div class="columns small-9 medium-10">
 							<div class="author-info">
 							<h4 class="author-title"><?php _e('About the Author:', 'lilleyplace'); ?> <?php the_author_link(); ?></h3>
 							<p class="author-description small"><?php the_author_meta('description'); ?></p>
