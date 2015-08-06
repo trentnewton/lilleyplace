@@ -2,11 +2,11 @@
 
 // Default Variables
 
-$slick-font-path: "#{$assetPath}/slick/slick/fonts/" !default;
+$slick-font-path: "./fonts/" !default;
 $slick-font-family: "slick" !default;
-$slick-loader-path: $assetPath;
-$slick-arrow-color: $white;
-$slick-dot-color: $black;
+$slick-loader-path: "./" !default;
+$slick-arrow-color: white !default;
+$slick-dot-color: black !default;
 $slick-dot-color-active: $slick-dot-color !default;
 $slick-prev-character: "←" !default;
 $slick-next-character: "→" !default;
@@ -38,7 +38,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-list {
     .slick-loading & {
-        background: #fff slick-image-url("preloader.gif") center center no-repeat;
+        background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
     }
 }
 

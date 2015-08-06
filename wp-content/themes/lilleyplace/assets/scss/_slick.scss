@@ -4,6 +4,7 @@
     position: relative;
     display: block;
     box-sizing: border-box;
+    -webkit-touch-callout: none;
     user-select: none;
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
@@ -20,7 +21,7 @@
     overflow: hidden;
     display: block;
     margin: 0;
-    padding: rem-calc(0 65);
+    padding: 0;
 
     &:focus {
         outline: none;
@@ -30,6 +31,7 @@
         cursor: pointer;
         cursor: hand;
     }
+
 }
 
 .slick-track {
@@ -51,20 +53,21 @@
     .slick-loading & {
         visibility: hidden;
     }
+
 }
 
 .slick-slide {
     float: left;
     height: 100%;
     min-height: 1px;
+    margin: 0 rem-calc(5);
 
-    [dir="rtl"] & {
-        float: right;
-    }
+    // [dir="rtl"] & {
+    //     float: right;
+    // }
 
     img {
         display: block;
-        padding: rem-calc(0 3);
     }
 
     &.slick-loading img {
@@ -90,6 +93,7 @@
         height: auto;
         border: 1px solid transparent;
     }
+
 }
 
 .slick-arrow.slick-hidden {

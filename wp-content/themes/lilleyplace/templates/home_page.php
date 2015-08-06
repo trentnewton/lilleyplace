@@ -100,22 +100,7 @@ get_header(); ?>
 					<div class="slider">
 					<?php while(has_sub_field('front_page_image_gallery')): $i++;
 						$front_page_image = get_sub_field('front_page_image');
-
-						  	if (isset($_GET['width'])) {
-							    $width = $_GET['width'];
-							    if ($width <= 640) { // small sizes
-							      	$front_page_image_resized = ($front_page_image['width'] / 4);
-							    } elseif ($width <= 1024){ // medium sizes
-							      	$front_page_image_resized = ($front_page_image['width'] / 2);
-							    } else { // large sizes
-							      	$front_page_image_resized = ($front_page_image['width'] / 2);
-							    }
-							} else {
-							    echo "<script>\n";
-							    echo "  location.href=\"?&width=\" + screen.width; \n";
-							    echo "</script>\n";
-							    exit();
-							}
+						$front_page_image_resized = ($front_page_image['width'] / 3);
 					?>
 						<?php if( $front_page_image ): ?>
 						<figure style="width:<?php echo $front_page_image_resized; ?>px;">
