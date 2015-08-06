@@ -943,18 +943,18 @@ class tt_contact_widget extends WP_Widget
          echo $before_title . $title . $after_title;
       // Display Opening Hours widget
 ?>
-<ul class="vcard">
+<ul class="vcard" itemscope itemtype="http://schema.org/Organization">
    <?php if( $address ): ?>
-	<li class="address"><?php echo $address.'<br />'.$city_state; ?></li>
+	<li class="address"><span itemprop="address"><?php echo $address.'<br />'.$city_state; ?></span></li>
    <?php endif; ?>
    <?php if( $phone ): ?>
-	<li class="phone"><strong><?php _e('phone:','lilleyplace'); ?></strong>&nbsp;<?php echo '<a href="tel:'.rawurlencode($phone).'">'.$phone.'</a>'; ?></li>
+	<li class="phone"><span itemprop="telephone"><strong><?php _e('phone:','lilleyplace'); ?></strong>&nbsp;<?php echo '<a href="tel:'.rawurlencode($phone).'">'.$phone.'</a>'; ?></span></li>
    <?php endif; ?>
    <?php if( $fax ): ?>
-	<li class="fax"><strong><?php _e('fax:','lilleyplace'); ?></strong>&nbsp;<?php echo $fax; ?></li>
+	<li class="fax"><span itemprop="faxNumber"><strong><?php _e('fax:','lilleyplace'); ?></strong>&nbsp;<?php echo $fax; ?></span></li>
    <?php endif; ?>
    <?php if( $email ): ?>
-	<li class="email"><strong><?php _e('email:','lilleyplace'); ?></strong>&nbsp;<?php echo '<a href="mailto:'.$email.'">'.$email.'</a>'; ?></li>
+	<li class="email"><span itemprop="email"><strong><?php _e('email:','lilleyplace'); ?></strong>&nbsp;<?php echo '<a href="mailto:'.$email.'">'.$email.'</a>'; ?></span></li>
    <?php endif; ?>
 </ul>
         <?php

@@ -23,6 +23,7 @@
  
 # ignore everything in the root except the "wp-content" directory.
 /*
+!favicon.ico
 !wp-content/
  
 # ignore everything in the "wp-content" directory, except:
