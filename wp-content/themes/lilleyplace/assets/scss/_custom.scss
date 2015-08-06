@@ -1795,6 +1795,18 @@ ul.footer-nav {
 
 }
 
-.link-top {
+@media print {
+
+	#medium-up-logo,
+	.menu-icon,
+	.top-bar-section,
+	.search-box,
+	.breadcrumbs-container,
+	aside,
+	#respond,
+	#latest-posts,
+	.footer-content {
+		display: none;
+	}
 
 }
