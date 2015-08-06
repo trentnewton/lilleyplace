@@ -19,7 +19,7 @@ get_header(); ?>
 </header>
 <div role="main" class="page-content">
 	<div class="entry-content row">
-		<div class="columns medium-8">
+		<div class="columns medium-8" itemscope itemtype="http://schema.org/Blog">
 			<?php if ( have_posts() ) : ?>
 
 				<?php do_action( 'lilleyplace_before_content' ); ?>

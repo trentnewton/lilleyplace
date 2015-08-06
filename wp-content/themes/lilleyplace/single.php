@@ -26,7 +26,7 @@ get_header(); ?>
 			</nav>
 		<?php do_action( 'lilleyplace_before_content' ); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
-				<article <?php post_class('entry-content') ?> id="post-<?php the_ID(); ?>">
+				<article <?php post_class('entry-content') ?> id="post-<?php the_ID(); ?>" itemscope itemtype="http://schema.org/BlogPosting">
 					<header class="mar-b-30">
 						<h2 class="entry-title"><?php the_title(); ?></h2>
 						<?php lilleyplace_entry_meta(); ?>

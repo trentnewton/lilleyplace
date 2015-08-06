@@ -48,7 +48,7 @@ get_header(); ?>
 			<h2><?php echo $faq_section_title ?></h2>
 			<?php endif; ?>
 			<?php if( get_sub_field('add_a_faq') ): ?>
-			<ul class="accordion" data-accordion>
+			<ul class="accordion" data-accordion itemscope itemtype="http://schema.org/Question">
 			<?php while(has_sub_field('add_a_faq')): $i++; 
 				// vars
 				$faq_question = get_sub_field('faq_question');
@@ -56,11 +56,13 @@ get_header(); ?>
 				?>
 				<?php if( $faq_question ): ?>
 				<li class="accordion-navigation">
-					<a href="#faq-<?php echo $i; ?>">
+					<a href="#faq-<?php echo $i; ?>" itemprop="name">
 						<?php echo $faq_question; ?>
 					</a>
-					<div id="faq-<?php echo $i; ?>" class="content">
-						<?php echo $faq_answer; ?>
+					<div id="faq-<?php echo $i; ?>" class="content" itemprop="suggestedAnswer acceptedAnswer" itemscope itemtype="http://schema.org/Answer">
+						<div itemprop="text">
+							<?php echo $faq_answer; ?>
+						</div>
 					</div>
 				</li>
 				<?php endif; ?>

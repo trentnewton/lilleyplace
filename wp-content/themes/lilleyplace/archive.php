@@ -21,7 +21,7 @@ get_header(); ?>
 </header>
 <div role="main" class="page-content">
 	<div class="entry-content row">
-		<div class="columns medium-8">
+		<div class="columns medium-8" itemscope itemtype="http://schema.org/Blog">
 	   		<nav class="breadcrumbs-container">
 				<?php if (function_exists('blog_breadcrumbs')) blog_breadcrumbs(); ?>
 			</nav>

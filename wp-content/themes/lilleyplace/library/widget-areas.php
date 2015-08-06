@@ -486,15 +486,80 @@ class tt_opening_widget extends WP_Widget
       if ($title)
          echo $before_title . $title . $after_title;
       // Display Opening Hours widget
+
+      $mon_opening    = substr($mon, 0, 7);
+      $mon_closing    = substr($mon, -7);
+      $tues_opening   = substr($tues, 0, 7);
+      $tues_closing   = substr($tues, -7);
+      $wed_opening    = substr($wed, 0, 7);
+      $wed_closing    = substr($wed, -7);
+      $thurs_opening  = substr($thurs, 0, 7);
+      $thurs_closing  = substr($thurs, -7);
+      $fri_opening    = substr($fri, 0, 7);
+      $fri_closing    = substr($fri, -7);
+      $sat_opening    = substr($sat, 0, 7);
+      $sat_closing    = substr($sat, -7);
+      $sun_opening    = substr($sun, 0, 7);
+      $sun_closing    = substr($sun, -7);
+
    ?>
-		<ul class="business-hours">
-			<li><span class="day"><?php _e('Monday:','lilleyplace');?></span><span class="hours"><?php echo $mon; ?></span></li>
-			<li><span class="day"><?php _e('Tuesday:','lilleyplace');?></span><span class="hours"><?php echo $tues; ?></span></li>
-			<li><span class="day"><?php _e('Wednesday:','lilleyplace');?></span><span class="hours"><?php echo $wed; ?></span></li>
-			<li><span class="day"><?php _e('Thursday:','lilleyplace');?></span><span class="hours"><?php echo $thurs; ?></span></li>
-			<li><span class="day"><?php _e('Friday:','lilleyplace');?></span><span class="hours"><?php echo $fri; ?></span></li>
-			<li><span class="day"><?php _e('Saturday:','lilleyplace');?></span><span class="hours"><?php echo $sat; ?></span></li>
-			<li><span class="day"><?php _e('Sunday:','lilleyplace');?></span><span class="hours"><?php echo $sun; ?></span></li>
+		<ul class="business-hours" itemscope itemtype="http://schema.org/LocalBusiness">
+      <?php if( $mon ): ?>
+      <li>
+        <data itemprop="openingHours" value="Mo <?php echo $time_in_24_hour_format  = date("H:i", strtotime($mon_opening)); ?>-<?php echo $time_in_24_hour_format  = date("H:i", strtotime($mon_closing)); ?>">
+          <span class="day"><?php _e('Monday:','lilleyplace');?></span>
+          <span class="hours"><?php echo $mon; ?></span>
+        </data>
+      </li>
+      <?php endif; ?>
+      <?php if( $tues ): ?>
+      <li>
+        <data itemprop="openingHours" value="Tu <?php echo $time_in_24_hour_format  = date("H:i", strtotime($tues_opening)); ?>-<?php echo $time_in_24_hour_format  = date("H:i", strtotime($tues_closing)); ?>">
+          <span class="day"><?php _e('Tuesday:','lilleyplace');?></span>
+          <span class="hours"><?php echo $tues; ?></span>
+        </data>
+      </li>
+      <?php endif; ?>
+      <?php if( $wed ): ?>
+      <li>
+        <data itemprop="openingHours" value="We <?php echo $time_in_24_hour_format  = date("H:i", strtotime($wed_opening)); ?>-<?php echo $time_in_24_hour_format  = date("H:i", strtotime($wed_closing)); ?>">
+          <span class="day"><?php _e('Wednesday:','lilleyplace');?></span>
+          <span class="hours"><?php echo $wed; ?></span>
+        </data>
+      </li>
+      <?php endif; ?>
+      <?php if( $thurs ): ?>
+      <li>
+        <data itemprop="openingHours" value="Th <?php echo $time_in_24_hour_format  = date("H:i", strtotime($thurs_opening)); ?>-<?php echo $time_in_24_hour_format  = date("H:i", strtotime($thurs_closing)); ?>">
+          <span class="day"><?php _e('Thursday:','lilleyplace');?></span>
+          <span class="hours"><?php echo $thurs; ?></span>
+        </data>
+      </li>
+      <?php endif; ?>
+      <?php if( $fri ): ?>
+      <li>
+        <data itemprop="openingHours" value="Fr <?php echo $time_in_24_hour_format  = date("H:i", strtotime($fri_opening)); ?>-<?php echo $time_in_24_hour_format  = date("H:i", strtotime($fri_closing)); ?>">
+          <span class="day"><?php _e('Friday:','lilleyplace');?></span>
+          <span class="hours"><?php echo $fri; ?></span>
+        </data>
+      </li>
+      <?php endif; ?>
+      <?php if( $sat ): ?>
+      <li>
+        <data itemprop="openingHours" value="Sa <?php echo $time_in_24_hour_format  = date("H:i", strtotime($sat_opening)); ?>-<?php echo $time_in_24_hour_format  = date("H:i", strtotime($sat_closing)); ?>">
+          <span class="day"><?php _e('Saturday:','lilleyplace');?></span>
+          <span class="hours"><?php echo $sat; ?></span>
+        </data>
+      </li>
+      <?php endif; ?>
+      <?php if( $sun ): ?>
+      <li>
+        <data itemprop="openingHours" value="Su <?php echo $time_in_24_hour_format  = date("H:i", strtotime($sun_opening)); ?>-<?php echo $time_in_24_hour_format  = date("H:i", strtotime($sun_closing)); ?>">
+          <span class="day"><?php _e('Sunday:','lilleyplace');?></span>
+          <span class="hours"><?php echo $sun; ?></span>
+        </data>
+      </li>
+      <?php endif; ?>
 		</ul>
    <?php
       // After widget
