@@ -321,18 +321,6 @@ p.no-space {
 
 	}
 
-	.has-dropdown {
-
-		> a {
-
-			&:after {
-
-			}
-
-		}
-
-	}
-
 	.dropdown {
 
 		@media #{$medium-up} {
@@ -1022,14 +1010,6 @@ tr th {
 
 .page-template-faq {
 
-	h2 {
-
-		// &:not(:first-child) {
-		// 	margin-top: rem-calc(45);
-		// }
-
-	}
-
 	.accordion-navigation {
 
 		&:nth-child(even) {
@@ -1366,10 +1346,6 @@ body.coming-soon {
 }
 
 /* author bio */
-
-.author-info {
-	
-}
 
 .author-description {
 	margin-bottom: 0;
