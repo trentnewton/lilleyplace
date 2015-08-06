@@ -128,4 +128,34 @@ function theme_customiser( $wp_customize ) {
 
 add_action( 'customize_register', 'theme_customiser' );
 
+function dtbaker_wp_nav_menu_objects($sorted_menu_items, $args){
+    // check if the current page is really a blog post.
+    global $wp_query;
+    if(!empty($wp_query->queried_object_id)){
+        $current_page = get_post($wp_query->queried_object_id);
+        if($current_page && $current_page->post_type=='post'){
+            //yes!
+        }else{
+            $current_page = false;
+        }
+    }else{
+        $current_page = false;
+    }
+
+    $home_page_id = (int) get_option( 'page_for_posts' );
+    foreach($sorted_menu_items as $id => $menu_item){
+        if ( ! empty( $home_page_id ) && 'post_type' == $menu_item->type && empty( $wp_query->is_page ) && $home_page_id == $menu_item->object_id ){
+            if(!$current_page){
+                foreach($sorted_menu_items[$id]->classes as $classid=>$classname){
+                    if($classname=='current_page_parent'){
+                        unset($sorted_menu_items[$id]->classes[$classid]);
+                    }
+                }
+            }
+        }
+    }
+    return $sorted_menu_items;
+}
+add_filter('wp_nav_menu_objects','dtbaker_wp_nav_menu_objects',10,2);
+
 ?>

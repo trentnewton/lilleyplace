@@ -61,11 +61,19 @@ ul {
 			&:before {
 				content: '\203A';
 				position: absolute;
-				top: rem-calc(-7);
+				top: rem-calc(-6);
 				left: rem-calc(-17);
 				font-size: rem-calc(25);
 				font-weight: $font-weight-bold;
 				color: scale-color($tertiary-color, $lightness: 50%);
+			}
+
+			ul {
+				list-style: none;
+			}
+
+			li:first-child {
+				margin-top: rem-calc(10);
 			}
 
 		}
@@ -1159,6 +1167,8 @@ div.wpcf7 {
 
 .four-o-four-item {
 	@extend .text-center;
+	display: flex;
+	align-items: center;
 }
 
 .four-o-four-text {
