@@ -35,10 +35,10 @@ function small_2_medium_1_sc( $atts, $content = null ) {
 }
 add_shortcode( 'small_2_medium_1', 'small_2_medium_1_sc' );
 
-function h4_subheader_sc( $atts, $content = null ) {
-    return '<h4 class="subheader">'.do_shortcode($content).'</h4>';
+function p_subheader_lead_sc( $atts, $content = null ) {
+    return '<p class="subheader lead">'.do_shortcode($content).'</p>';
 }
-add_shortcode( 'h4_subheader', 'h4_subheader_sc' );
+add_shortcode( 'p_subheader_lead', 'p_subheader_lead_sc' );
 
 function p_small_sc( $atts, $content = null ) {
     return '<p role="note" class="small">'.do_shortcode($content).'</p>';
