@@ -24,19 +24,6 @@
 				</div>
 			</section>
 			<?php endif; ?>
-			<?php // if ( is_home() ) : ?>
-			<!-- <section id="latest-posts">
-				<div class="row">
-					<div class="latest-posts-inner blog-index">
-						<div class="small-12 columns">
-							<a href="<?php bloginfo('rss2_url'); ?>" target="_blank">
-								<h3><?php _e( 'Subscribe for more', 'lilleyplace' ); ?>&hellip;</h3>
-							</a>
-						</div>
-					</div>
-				</div>
-			</section> -->
-			<?php // else : ?>
 			<?php $latest = new WP_Query( array( 'posts_per_page' => 2 )); if( $latest->have_posts() ) : ?>
 			<section id="latest-posts">
 				<div class="row latest-posts-inner">
