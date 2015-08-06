@@ -89,7 +89,7 @@ get_header(); ?>
 		<?php if( get_field('banner_title') ): ?>
 			<h2><?php the_field('banner_title'); ?></h2>
 			<?php else : ?>
-			<?php the_title(); ?>
+			<h2><?php the_title(); ?></h2>
 		<?php endif; ?>
 			<div class="entry-content">
 				<?php do_action( 'lilleyplace_page_before_entry_content' ); ?>
