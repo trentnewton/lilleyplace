@@ -794,6 +794,7 @@ a {
 		width: rem-calc(105);
 		float: right;
 		color: $white;
+		font-weight: normal;
 		border-radius: rem-calc(20);
 		
 		&:focus {
@@ -816,8 +817,6 @@ a {
 	.search-submit {
 		display: none;
 	}
-
-
 
 	::placeholder {
 		color: $white;
