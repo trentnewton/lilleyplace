@@ -25,17 +25,17 @@ table {
 	border-collapse: separate;
 	width: 100%;
 
-	thead tr th,
-	tr td {
-
-		@media #{$small-portrait} {
-			padding: rem-calc(12 8);
-		}
-
-	}
-
 	caption {
 		text-transform: capitalize;
+	}
+
+}
+
+thead tr th,
+tr td {
+
+	@media #{$small-portrait} {
+		padding: rem-calc(12 8);
 	}
 
 }
@@ -68,14 +68,14 @@ ul {
 				color: scale-color($tertiary-color, $lightness: 50%);
 			}
 
-			ul {
-				list-style: none;
-			}
-
 			li:first-child {
 				margin-top: rem-calc(10);
 			}
 
+		}
+
+		ul {
+			list-style: none;
 		}
 
 	}
@@ -1658,7 +1658,7 @@ img.avatar {
 	}
 
 	.hours {
-		@extend .right;
+		float: right;
 	}
 
 }
