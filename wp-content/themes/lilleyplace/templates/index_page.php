@@ -7,7 +7,7 @@ get_header(); ?>
 </header>
 <?php while ( have_posts() ) : the_post(); ?>
 <div role="main" id="post-<?php the_ID(); ?>" <?php post_class('page-content') ?>>
-<?php $child_pages = $wpdb->get_results("SELECT * FROM $wpdb->posts WHERE post_parent = ".$post->ID." AND post_type = 'page' ORDER BY menu_order DESC", 'OBJECT'); ?>
+<?php $child_pages = $wpdb->get_results("SELECT * FROM $wpdb->posts WHERE post_parent = ".$post->ID." AND post_type = 'page' ORDER BY menu_order ASC", 'OBJECT'); ?>
 	<div class="row">
 		<div class="column">
 		<?php if($content = $post->post_content ) {
