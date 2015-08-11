@@ -17,7 +17,7 @@ get_header(); ?>
 			<?php } ?>
 			<?php do_action( 'lilleyplace_page_before_entry_content' ); ?>
 				<?php if ( has_post_thumbnail() ) : ?>
-				<?php the_post_thumbnail( '', array('class' => 'th mar-b-30 image-frame') ); ?>
+				<?php the_post_thumbnail( '', array('class' => 'th mar-b-30') ); ?>
 				<?php endif; ?>
 				<div class="entry-content">
 					<?php the_content(); ?>

@@ -2,7 +2,6 @@
 /*
 Template Name: Sitemap Page
 */
-
 get_header(); ?>
 	<?php get_template_part( 'parts/banner' ); ?>
 </header>

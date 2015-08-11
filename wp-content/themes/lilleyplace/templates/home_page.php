@@ -12,7 +12,7 @@ get_header(); ?>
 			<div class="row">
 				<div class="column">
 					<h1><?php the_field('title'); ?></h1>
-					<p><?php the_field('sub-title'); ?></p>
+					<p class="lead"><?php the_field('sub-title'); ?></p>
 					<a href="<?php the_field('call_to_action_link'); ?>" class="button large"><?php the_field('call_to_action_name'); ?></a>
 				</div>
 			</div>
