@@ -15,7 +15,7 @@
 			<?php if( is_search() ) : ?>
 				<?php _e( 'Search Results', 'lilleyplace' ); ?>
 			<?php elseif( is_home() || is_archive() || is_single() ) : ?>
-				<?php echo lilleyplace_get_posts_page('title'); ?>
+				<?php if (function_exists('lilleyplace_get_posts_page')) echo lilleyplace_get_posts_page('title'); ?>
 			<?php elseif( is_404() ) : ?>
 				<?php _e( 'Page Not Found', 'lilleyplace' ); ?>
 			<?php elseif( get_field('banner_title') ): ?>
