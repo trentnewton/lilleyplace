@@ -1025,6 +1025,14 @@ tr th {
 
 		}
 
+		.hours {
+
+			@media #{$medium-portrait} {
+				float: none;
+			}
+
+		}
+
 	}
 
 	.vcard {
