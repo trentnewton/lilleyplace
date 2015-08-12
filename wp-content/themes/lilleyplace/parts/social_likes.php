@@ -30,7 +30,7 @@
             <img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_20.png" alt="Pin It" />
         </a>
         <?php } else { ?>
-        <a href="//www.pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&media=<?php echo get_template_directory_uri(); ?>/assets/img/images/blog_normal.jpg&description=<?php rawurlencode(the_title()); ?>" data-pin-do="buttonPin" data-pin-config="beside" data-pin-color="red">
+        <a href="//www.pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&media=<?php echo get_template_directory_uri(); ?>/assets/img/images/blog-normal.jpg&description=<?php rawurlencode(the_title()); ?>" data-pin-do="buttonPin" data-pin-config="beside" data-pin-color="red">
             <img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_20.png" alt="Pin It" />
         </a>
         <?php } ?>

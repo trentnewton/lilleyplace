@@ -103,6 +103,6 @@ add_shortcode( 'tr', 'tr_sc' );
 function td_sc( $atts, $content = null ) {
     return '<td>'.do_shortcode($content).'</td>';
 }
-add_shortcode( 'td', 'tr_sd' );
+add_shortcode( 'td', 'tr_sc' );
 
 ?>

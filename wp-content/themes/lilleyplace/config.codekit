@@ -292,6 +292,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/images\/bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 348182,
+		"inputAbbreviatedPath": "\/assets\/img\/images\/bg.png",
+		"outputAbbreviatedPath": "\/assets\/img\/images\/bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/images\/blog_normal.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -310,6 +321,17 @@
 		"initialSize": 176492,
 		"inputAbbreviatedPath": "\/assets\/img\/images\/front-about-img.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/images\/front-about-img.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/images\/halftone.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11412,
+		"inputAbbreviatedPath": "\/assets\/img\/images\/halftone.png",
+		"outputAbbreviatedPath": "\/assets\/img\/images\/halftone.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -358,6 +380,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/assets\/img\/images\/logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10081,
+		"inputAbbreviatedPath": "\/assets\/img\/images\/logo.png",
+		"outputAbbreviatedPath": "\/assets\/img\/images\/logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/images\/PhotoComing_large.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -368,6 +401,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
+		},
+	"\/assets\/img\/images\/sea-lake-leaves-pond.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.73192e+06,
+		"inputAbbreviatedPath": "\/assets\/img\/images\/sea-lake-leaves-pond.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/images\/sea-lake-leaves-pond.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/assets\/js\/app.js": {
 		"fileType": 64,

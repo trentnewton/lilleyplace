@@ -46,20 +46,21 @@ get_header(); ?>
 			<div class="column">
 				<h2><?php the_field('info_box_section_title'); ?></h2>
 				<div class="info-boxes-list" data-equalizer="foo" data-options="equalize_on_stack: true;" data-equalizer-mq="medium-up">
-					<ul id="info-box-accordion" class="small-block-grid-1 medium-block-grid-2 accordion" data-equalizer="bar" data-accordion data-options="equalize_on_stack: true;">
+					<ul id="info-box-accordion" class="small-block-grid-1 medium-block-grid-2 accordion" data-equalizer="bar" data-accordion data-options="equalize_on_stack: true;" itemscope itemtype="http://schema.org/Question">
 					<?php while(has_sub_field('add_a_box')): $i++;
 						$box_title = get_sub_field('box_title');
 						?>
 						<?php if( $box_title ): ?>
 						<li class="accordion-navigation">
-							<a href="#panel-<?php echo $i; ?>" data-equalizer-watch="bar"><?php the_sub_field('box_title'); ?></a>
+							<a href="#panel-<?php echo $i; ?>" data-equalizer-watch="bar" itemprop="name"><?php the_sub_field('box_title'); ?></a>
 							<div id="panel-<?php echo $i; ?>" class="content" data-equalizer-watch="foo">
-								<ul>
+								<ul itemprop="suggestedAnswer acceptedAnswer" itemscope itemtype="http://schema.org/Answer">
 								<?php while(has_sub_field('add_a_list_item')): $i++;
 									$list_item = get_sub_field('list_item');
 									?>
 									<?php if( $list_item ): ?>
-							  		<li><?php the_sub_field('list_item'); ?>
+							  		<li itemprop="text">
+							  		<?php the_sub_field('list_item'); ?>
 							  			<?php if(get_sub_field('add_a_sub_item')): ?>
 											<ul class="small-block-grid-2 medium-block-grid-3 list">
 											<?php while(has_sub_field('add_a_sub_item')): $i++;
@@ -83,9 +84,9 @@ get_header(); ?>
 		</div>
 	</section>
 	<?php endif; ?>
-	<section id="main-text" <?php post_class('row') ?>>
+	<article id="main-text" <?php post_class('row') ?>>
 		<?php do_action( 'lilleyplace_before_content' ); ?>
-		<article class="column">
+		<div class="column">
 		<?php if( get_field('banner_title') ): ?>
 			<h2><?php the_field('banner_title'); ?></h2>
 			<?php else : ?>
@@ -112,9 +113,9 @@ get_header(); ?>
 				</div>
 				<?php endif; ?>
 			</div>
-		</article>
+		</div>
 		<?php do_action( 'lilleyplace_after_content' ); ?>
-	</section>
+	</article>
 	<?php endwhile;?>
 </main>
 <?php get_footer(); ?>

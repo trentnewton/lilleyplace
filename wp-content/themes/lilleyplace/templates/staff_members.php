@@ -74,7 +74,7 @@ get_header(); ?>
 			</figure>
 			<?php else : ?>
 			<figure class="member-frame">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/images/PhotoComing_large.jpg" itemprop="image" alt="<?php echo $member_name ?>" />
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/images/PhotoComing-large.jpg" itemprop="image" alt="<?php echo $member_name ?>" />
 			</figure>
 			<?php endif; ?>
         </div>
