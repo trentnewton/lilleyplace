@@ -237,101 +237,68 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/assets\/img\/icons\/apple-touch-icon-114x114.png": {
+	"\/assets\/img\/icons\/touch-icon-ipad-retina.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/assets\/img\/icons\/apple-touch-icon-114x114.png",
-		"outputAbbreviatedPath": "\/assets\/img\/icons\/apple-touch-icon-114x114.png",
+		"initialSize": 18989,
+		"inputAbbreviatedPath": "\/assets\/img\/icons\/touch-icon-ipad-retina.png",
+		"outputAbbreviatedPath": "\/assets\/img\/icons\/touch-icon-ipad-retina.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
-	"\/assets\/img\/icons\/apple-touch-icon-144x144.png": {
+	"\/assets\/img\/icons\/touch-icon-ipad.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/assets\/img\/icons\/apple-touch-icon-144x144.png",
-		"outputAbbreviatedPath": "\/assets\/img\/icons\/apple-touch-icon-144x144.png",
+		"initialSize": 6822,
+		"inputAbbreviatedPath": "\/assets\/img\/icons\/touch-icon-ipad.png",
+		"outputAbbreviatedPath": "\/assets\/img\/icons\/touch-icon-ipad.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
-	"\/assets\/img\/icons\/apple-touch-icon-72x72.png": {
+	"\/assets\/img\/icons\/touch-icon-iphone-retina.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/assets\/img\/icons\/apple-touch-icon-72x72.png",
-		"outputAbbreviatedPath": "\/assets\/img\/icons\/apple-touch-icon-72x72.png",
+		"initialSize": 13799,
+		"inputAbbreviatedPath": "\/assets\/img\/icons\/touch-icon-iphone-retina.png",
+		"outputAbbreviatedPath": "\/assets\/img\/icons\/touch-icon-iphone-retina.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
-	"\/assets\/img\/icons\/apple-touch-icon-precomposed.png": {
+	"\/assets\/img\/icons\/touch-icon-iphone.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 19370,
-		"inputAbbreviatedPath": "\/assets\/img\/icons\/apple-touch-icon-precomposed.png",
-		"outputAbbreviatedPath": "\/assets\/img\/icons\/apple-touch-icon-precomposed.png",
+		"initialSize": 4876,
+		"inputAbbreviatedPath": "\/assets\/img\/icons\/touch-icon-iphone.png",
+		"outputAbbreviatedPath": "\/assets\/img\/icons\/touch-icon-iphone.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
-	"\/assets\/img\/images\/4507253146_8f724909b8_o.jpg": {
+	"\/assets\/img\/images\/4507253146_8f724909b8-o.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 695174,
-		"inputAbbreviatedPath": "\/assets\/img\/images\/4507253146_8f724909b8_o.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/images\/4507253146_8f724909b8_o.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/images\/4507253146_8f724909b8-o.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/images\/4507253146_8f724909b8-o.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/images\/bg.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 348182,
-		"inputAbbreviatedPath": "\/assets\/img\/images\/bg.png",
-		"outputAbbreviatedPath": "\/assets\/img\/images\/bg.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/images\/blog_normal.jpg": {
+	"\/assets\/img\/images\/blog-normal.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 45751,
-		"inputAbbreviatedPath": "\/assets\/img\/images\/blog_normal.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/images\/blog_normal.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/assets\/img\/images\/front-about-img.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 176492,
-		"inputAbbreviatedPath": "\/assets\/img\/images\/front-about-img.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/images\/front-about-img.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/images\/halftone.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 11412,
-		"inputAbbreviatedPath": "\/assets\/img\/images\/halftone.png",
-		"outputAbbreviatedPath": "\/assets\/img\/images\/halftone.png",
+		"initialSize": 9463,
+		"inputAbbreviatedPath": "\/assets\/img\/images\/blog-normal.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/images\/blog-normal.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -347,17 +314,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/assets\/img\/images\/Lilleyplace_Logo.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 25015,
-		"inputAbbreviatedPath": "\/assets\/img\/images\/Lilleyplace_Logo.png",
-		"outputAbbreviatedPath": "\/assets\/img\/images\/Lilleyplace_Logo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
 	"\/assets\/img\/images\/lilypad-287519.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -369,16 +325,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/images\/link_img.png": {
+	"\/assets\/img\/images\/logo-bg.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 14994,
-		"inputAbbreviatedPath": "\/assets\/img\/images\/link_img.png",
-		"outputAbbreviatedPath": "\/assets\/img\/images\/link_img.png",
+		"initialSize": 38725,
+		"inputAbbreviatedPath": "\/assets\/img\/images\/logo-bg.png",
+		"outputAbbreviatedPath": "\/assets\/img\/images\/logo-bg.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/assets\/img\/images\/logo.png": {
 		"fileType": 32768,
@@ -391,24 +347,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/images\/PhotoComing_large.jpg": {
+	"\/assets\/img\/images\/PhotoComing-large.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 21782,
-		"inputAbbreviatedPath": "\/assets\/img\/images\/PhotoComing_large.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/images\/PhotoComing_large.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/assets\/img\/images\/sea-lake-leaves-pond.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.73192e+06,
-		"inputAbbreviatedPath": "\/assets\/img\/images\/sea-lake-leaves-pond.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/images\/sea-lake-leaves-pond.jpg",
+		"initialSize": 9480,
+		"inputAbbreviatedPath": "\/assets\/img\/images\/PhotoComing-large.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/images\/PhotoComing-large.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

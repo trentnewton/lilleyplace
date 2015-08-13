@@ -105,4 +105,14 @@ function td_sc( $atts, $content = null ) {
 }
 add_shortcode( 'td', 'tr_sc' );
 
+function website_name_sc( $atts ) {
+    return bloginfo( 'name' );
+}
+add_shortcode( 'website_name', 'website_name_sc' );
+
+function website_address_sc( $atts ) {
+    return home_url();
+}
+add_shortcode( 'website_address', 'website_address_sc' );
+
 ?>
