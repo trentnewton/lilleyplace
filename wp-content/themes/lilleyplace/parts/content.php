@@ -10,11 +10,7 @@
  */
 
 ?>
-<?php if ( 'post' == get_post_type() ) : ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class('post-description'); ?> itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
-<?php else : ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class('post-description'); ?>>	
-<?php endif; ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class('post-description'); ?><?php if ( 'post' == get_post_type() ) : ?> itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting"<?php endif; ?>>
 	<header class="mar-b-15">
 		<h4 class="content-title">
 			<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
