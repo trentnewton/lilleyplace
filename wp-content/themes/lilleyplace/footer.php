@@ -50,19 +50,19 @@
 			<?php // endif;?>
 			<div class="footer-display">
 				<div class="row footer-content">
-					<div class="medium-5 large-6 columns">
+					<div class="columns medium-5 large-6">
 						<?php dynamic_sidebar("First Footer Column"); ?>
 					</div>
-					<div class="medium-5 large-4 columns">
+					<div class="columns medium-5 large-4">
 						<?php dynamic_sidebar("Second Footer Column"); ?>
 					</div>
-					<div class="medium-2 columns">
+					<div class="columns medium-2">
 						<?php dynamic_sidebar("Third Footer Column"); ?>
 					</div>
 				</div>
 				<aside class="footer-copyright">
 					<div class="row">
-						<div class="medium-6 columns" role="contentinfo">
+						<div class="columns medium-6" role="contentinfo">
 							<p>
 							<?php if (get_theme_mod( 'copyright_textbox' ) != '') {?>
 								<?php echo get_theme_mod( 'copyright_textbox', 'No copyright information has been saved yet.' ); ?>
@@ -72,7 +72,7 @@
 								<br>Website by Happiness Design.
 							</p>
 						</div>
-						<div class="medium-6 columns footer-nav-container">
+						<div class="columns medium-6 footer-nav-container">
 							<nav>
 								<?php lilleyplace_secondary(); ?>
 							</nav>
