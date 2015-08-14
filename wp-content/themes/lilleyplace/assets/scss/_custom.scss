@@ -1007,8 +1007,8 @@ tr th {
 		padding: rem-calc(30 0 0);
 	}
 
-	> div + div {
-		border-top: 1px solid $hr-border-color;
+	> article + article {
+		border-top: $hr-border-width $hr-border-style $hr-border-color;
 		padding-top: rem-calc(20);
 	}
 

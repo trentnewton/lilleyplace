@@ -17,30 +17,30 @@
 get_header(); ?>
 	<?php get_template_part( 'parts/banner' ); ?>
 </header>
-<div role="main" class="page-content">
+<section role="main" class="page-content">
 	<div class="entry-content row">
 		<div class="columns medium-8" itemscope itemtype="http://schema.org/Blog">
-			<?php if ( have_posts() ) : ?>
+		<?php if ( have_posts() ) : ?>
 
-				<?php do_action( 'lilleyplace_before_content' ); ?>
+			<?php do_action( 'lilleyplace_before_content' ); ?>
 
-				<?php while ( have_posts() ) : the_post(); ?>
-					<?php get_template_part( 'parts/content', get_post_format() ); ?>
-				<?php endwhile; ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+				<?php get_template_part( 'parts/content', get_post_format() ); ?>
+			<?php endwhile; ?>
 
-				<?php else : ?>
-					<?php get_template_part( 'parts/content', 'none' ); ?>
+			<?php else : ?>
+				<?php get_template_part( 'parts/content', 'none' ); ?>
 
-				<?php do_action( 'lilleyplace_before_pagination' ); ?>
+			<?php do_action( 'lilleyplace_before_pagination' ); ?>
 
-			<?php endif;?>
+		<?php endif;?>
 
-			<?php if ( function_exists( 'lilleyplace_pagination' ) ) { lilleyplace_pagination(); } else if ( is_paged() ) { ?>
-				<nav id="post-nav">
-					<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'lilleyplace' ) ); ?></div>
-					<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'lilleyplace' ) ); ?></div>
-				</nav>
-			<?php } ?>
+		<?php if ( function_exists( 'lilleyplace_pagination' ) ) { lilleyplace_pagination(); } else if ( is_paged() ) { ?>
+			<nav id="post-nav">
+				<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'lilleyplace' ) ); ?></div>
+				<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'lilleyplace' ) ); ?></div>
+			</nav>
+		<?php } ?>
 
 			<?php do_action( 'lilleyplace_after_content' ); ?>
 		</div>
@@ -51,5 +51,5 @@ get_header(); ?>
 		</aside>
 	</div>
   <div class="shadow white-top"></div>
-</div>
+</section>
 <?php get_footer(); ?>

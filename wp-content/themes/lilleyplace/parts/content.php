@@ -20,17 +20,15 @@
 			<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 		</h4>
 		<?php if ( 'post' == get_post_type() ) : ?>
-			<span class="date entry-meta">
-				<svg class="icon icon-calendar"><use xlink:href="#icon-calendar"></use></svg>&nbsp;<?php the_time( get_option( 'date_format' ) ); ?>
-			</span>
+		<span class="date entry-meta">
+			<svg class="icon icon-calendar"><use xlink:href="#icon-calendar"></use></svg>&nbsp;<?php the_time( get_option( 'date_format' ) ); ?>
+		</span>
 		<?php endif; ?>
 	</header>
 	<?php if ( has_post_thumbnail() ) : ?>
-	<div class="row">
-		<figure class="column">
-			<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'medium', array('class' => 'th') ); ?></a>
-		</figure>
-	</div>
+	<figure>
+		<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'medium', array('class' => 'th') ); ?></a>
+	</figure>
 	<?php endif; ?>
 	<div class="post-description-copy">
 		<?php the_excerpt(); ?>

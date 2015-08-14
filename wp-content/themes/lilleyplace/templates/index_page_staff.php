@@ -6,7 +6,7 @@ get_header(); ?>
 	<?php get_template_part( 'parts/banner' ); ?>
 </header>
 <?php while ( have_posts() ) : the_post(); ?>
-<div role="main" id="post-<?php the_ID(); ?>" <?php post_class('page-content') ?>>
+<section role="main" id="post-<?php the_ID(); ?>" <?php post_class('page-content') ?>>
 <?php $child_pages = $wpdb->get_results("SELECT * FROM $wpdb->posts WHERE post_parent = ".$post->ID." AND post_type = 'page' ORDER BY menu_order ASC", 'OBJECT'); ?>
 	<div class="row">
 		<?php do_action( 'lilleyplace_before_content' ); ?>
@@ -26,6 +26,6 @@ get_header(); ?>
 		<?php do_action( 'lilleyplace_after_content' ); ?>
 	</div>
 	<div class="shadow white-top"></div>
-</div>
+</section>
 <?php endwhile;?>
 <?php get_footer(); ?>

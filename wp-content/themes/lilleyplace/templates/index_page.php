@@ -6,7 +6,7 @@ get_header(); ?>
 	<?php get_template_part( 'parts/banner' ); ?>
 </header>
 <?php while ( have_posts() ) : the_post(); ?>
-<div role="main" id="post-<?php the_ID(); ?>" <?php post_class('page-content') ?>>
+<section role="main" id="post-<?php the_ID(); ?>" <?php post_class('page-content') ?>>
 <?php $child_pages = $wpdb->get_results("SELECT * FROM $wpdb->posts WHERE post_parent = ".$post->ID." AND post_type = 'page' ORDER BY menu_order ASC", 'OBJECT'); ?>
 	<div class="row">
 		<div class="column">
@@ -48,6 +48,6 @@ get_header(); ?>
 		</div>
 	</div>
 	<div class="shadow white-top"></div>
-</div>
+</section>
 <?php endwhile;?>
 <?php get_footer(); ?>

@@ -102,7 +102,7 @@ Thumbs.db
 # track these mu-plugins, plugins, and themes
 # add your own entries here
 !wp-content/wp-maintenance-mode.php
-!wp-content/uploads/
+wp-content/uploads/
 !wp-content/themes/lilleyplace/
 !.htaccess
 

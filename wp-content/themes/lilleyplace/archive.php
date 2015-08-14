@@ -19,29 +19,29 @@
 get_header(); ?>
 	<?php get_template_part( 'parts/banner' ); ?>
 </header>
-<div role="main" class="page-content">
+<section role="main" class="page-content">
 	<div class="entry-content row">
 		<div class="columns medium-8" itemscope itemtype="http://schema.org/Blog">
 	   		<nav class="breadcrumbs-container">
 				<?php if (function_exists('blog_breadcrumbs')) blog_breadcrumbs(); ?>
 			</nav>
 			<?php if ( have_posts() ) : ?>
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
-					<?php get_template_part( 'parts/content', get_post_format() ); ?>
-				<?php endwhile; ?>
+			<?php /* Start the Loop */ ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+				<?php get_template_part( 'parts/content', get_post_format() ); ?>
+			<?php endwhile; ?>
 
-				<?php else : ?>
-					<?php get_template_part( 'parts/content', 'none' ); ?>
+			<?php else : ?>
+				<?php get_template_part( 'parts/content', 'none' ); ?>
 
-				<?php endif; // End have_posts() check. ?>
+			<?php endif; // End have_posts() check. ?>
 
-				<?php /* Display navigation to next/previous pages when applicable */ ?>
-				<?php if ( function_exists( 'lilleyplace_pagination' ) ) { lilleyplace_pagination(); } else if ( is_paged() ) { ?>
-					<nav id="post-nav">
-						<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'lilleyplace' ) ); ?></div>
-						<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'lilleyplace' ) ); ?></div>
-					</nav>
+			<?php /* Display navigation to next/previous pages when applicable */ ?>
+			<?php if ( function_exists( 'lilleyplace_pagination' ) ) { lilleyplace_pagination(); } else if ( is_paged() ) { ?>
+			<nav id="post-nav">
+				<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'lilleyplace' ) ); ?></div>
+				<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'lilleyplace' ) ); ?></div>
+			</nav>
 			<?php } ?>
 		</div>
 		<aside class="columns medium-4 sidebar-bg">
@@ -51,5 +51,5 @@ get_header(); ?>
 		</aside>
 	</div>
   <div class="shadow white-top"></div>
-</div>
+</section>
 <?php get_footer(); ?>
