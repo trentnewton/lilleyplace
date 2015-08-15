@@ -110,6 +110,7 @@ Thumbs.db
 # -------------------------
 
 # disallow these
+wp-content/languages
 wp-content/plugins/advanced-custom-fields
 wp-content/plugins/flamingo
 wp-content/plugins/google-analytics-for-wordpress
