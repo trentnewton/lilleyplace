@@ -102,7 +102,6 @@ Thumbs.db
 # track these mu-plugins, plugins, and themes
 # add your own entries here
 !wp-content/wp-maintenance-mode.php
-wp-content/uploads/
 !wp-content/themes/lilleyplace/
 !.htaccess
 
@@ -111,12 +110,13 @@ wp-content/uploads/
 # -------------------------
 
 # disallow these
-wp-content/advanced-cache.php
-wp-content/cache/
-wp-content/ewww/
-wp-content/object-cache.php
-wp-content/plugins/ewww-image-optimizer/
+wp-content/plugins/advanced-custom-fields
+wp-content/plugins/flamingo
+wp-content/plugins/google-analytics-for-wordpress
+wp-content/plugins/really-simple-captcha
+wp-content/plugins/relevanssi
+wp-content/plugins/scalable-vector-graphics-svg
 wp-content/plugins/theme-check/
-wp-content/plugins/w3-total-cache/
-wp-content/uploads/wpcf7_captcha/
-wp-content/w3tc-config/
+wp-content/plugins/wordpress-seo
+wp-content/plugins/wp-maintenance-mode
+wp-content/uploads/
