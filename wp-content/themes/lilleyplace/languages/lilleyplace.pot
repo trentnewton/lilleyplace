@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Lilley Place\n"
-"POT-Creation-Date: 2015-08-05 16:05+1000\n"
-"PO-Revision-Date: 2015-08-05 16:04+1000\n"
+"POT-Creation-Date: 2015-08-15 11:57+1000\n"
+"PO-Revision-Date: 2015-08-15 11:57+1000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,28 +20,19 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: 404.php:22
+#: 404.php:21
 msgid "Oops! the page you are looking for could not be found."
 msgstr ""
 
-#: 404.php:23
+#: 404.php:22
 msgid "Here are some links that you might find useful:"
 msgstr ""
 
-#: 404.php:25
-#, php-format
-msgid "<a href=\"%s\">Home</a>"
-msgstr ""
-
-#: 404.php:26
-msgid "Contact Us"
-msgstr ""
-
-#: archive.php:44 index.php:40 search.php:34
+#: archive.php:42 index.php:40 search.php:34
 msgid "&larr; Older posts"
 msgstr ""
 
-#: archive.php:45 index.php:41 search.php:35
+#: archive.php:43 index.php:41 search.php:35
 msgid "Newer posts &rarr;"
 msgstr ""
 
@@ -116,23 +107,19 @@ msgstr ""
 msgid "Submit Comment"
 msgstr ""
 
-#: footer.php:33
-msgid "Subscribe for more"
-msgstr ""
-
-#: footer.php:45
+#: footer.php:31
 msgid "Latest Posts from the Blog"
 msgstr ""
 
-#: footer.php:87
+#: footer.php:70
 msgid "Copyright"
 msgstr ""
 
-#: footer.php:87
+#: footer.php:70
 msgid "All rights reserved."
 msgstr ""
 
-#: footer.php:97
+#: footer.php:79
 msgid "Top"
 msgstr ""
 
@@ -173,12 +160,8 @@ msgstr ""
 msgid "Change the text of the footer."
 msgstr ""
 
-#: library/custom_post_types.php:114
-msgid "Default copyright text"
-msgstr ""
-
 #: library/custom_post_types.php:122
-msgid "Copyright Text"
+msgid "Copyright Text (will override the default text)"
 msgstr ""
 
 #: library/foundation.php:25
@@ -283,9 +266,9 @@ msgid ""
 "field blank if you wish not to display that social media service."
 msgstr ""
 
-#: library/widget-areas.php:259 library/widget-areas.php:526
-#: library/widget-areas.php:731 library/widget-areas.php:825
-#: library/widget-areas.php:988
+#: library/widget-areas.php:259 library/widget-areas.php:591
+#: library/widget-areas.php:796 library/widget-areas.php:890
+#: library/widget-areas.php:1053
 msgid "Title:"
 msgstr ""
 
@@ -353,160 +336,172 @@ msgstr ""
 msgid "Business Hours"
 msgstr ""
 
-#: library/widget-areas.php:491 library/widget-areas.php:532
+#: library/widget-areas.php:510 library/widget-areas.php:597
 msgid "Monday:"
 msgstr ""
 
-#: library/widget-areas.php:492 library/widget-areas.php:538
+#: library/widget-areas.php:518 library/widget-areas.php:603
 msgid "Tuesday:"
 msgstr ""
 
-#: library/widget-areas.php:493 library/widget-areas.php:544
+#: library/widget-areas.php:526 library/widget-areas.php:609
 msgid "Wednesday:"
 msgstr ""
 
-#: library/widget-areas.php:494 library/widget-areas.php:550
+#: library/widget-areas.php:534 library/widget-areas.php:615
 msgid "Thursday:"
 msgstr ""
 
-#: library/widget-areas.php:495 library/widget-areas.php:556
+#: library/widget-areas.php:542 library/widget-areas.php:621
 msgid "Friday:"
 msgstr ""
 
-#: library/widget-areas.php:496 library/widget-areas.php:562
+#: library/widget-areas.php:550 library/widget-areas.php:627
 msgid "Saturday:"
 msgstr ""
 
-#: library/widget-areas.php:497 library/widget-areas.php:568
+#: library/widget-areas.php:558 library/widget-areas.php:633
 msgid "Sunday:"
 msgstr ""
 
-#: library/widget-areas.php:595
+#: library/widget-areas.php:660
 msgid "Use this widget to display your affiliate's logos."
 msgstr ""
 
-#: library/widget-areas.php:598 library/widget-areas.php:680
+#: library/widget-areas.php:663 library/widget-areas.php:745
 msgid "Affiliates"
 msgstr ""
 
-#: library/widget-areas.php:736
+#: library/widget-areas.php:801
 msgid "Image 1:"
 msgstr ""
 
-#: library/widget-areas.php:738 library/widget-areas.php:743
-#: library/widget-areas.php:748 library/widget-areas.php:753
+#: library/widget-areas.php:803 library/widget-areas.php:808
+#: library/widget-areas.php:813 library/widget-areas.php:818
 msgid "Upload Image"
 msgstr ""
 
-#: library/widget-areas.php:741
+#: library/widget-areas.php:806
 msgid "Image 2:"
 msgstr ""
 
-#: library/widget-areas.php:746
+#: library/widget-areas.php:811
 msgid "Image 3:"
 msgstr ""
 
-#: library/widget-areas.php:751
+#: library/widget-areas.php:816
 msgid "Image 4:"
 msgstr ""
 
-#: library/widget-areas.php:771
+#: library/widget-areas.php:836
 msgid "Google Maps Widget"
 msgstr ""
 
-#: library/widget-areas.php:792 library/widget-areas.php:794
-#: library/widget-areas.php:796
+#: library/widget-areas.php:857 library/widget-areas.php:859
+#: library/widget-areas.php:861
 msgid "Click to open larger map"
 msgstr ""
 
-#: library/widget-areas.php:833
+#: library/widget-areas.php:898
 msgid "Zoom Level:"
 msgstr ""
 
-#: library/widget-areas.php:836
+#: library/widget-areas.php:901
 msgid "entire world"
 msgstr ""
 
-#: library/widget-areas.php:865
+#: library/widget-areas.php:930
 msgid "Address:"
 msgstr ""
 
-#: library/widget-areas.php:873
+#: library/widget-areas.php:938
 msgid "Information:"
 msgstr ""
 
-#: library/widget-areas.php:917
+#: library/widget-areas.php:982
 msgid "Use this widget to display your contact details."
 msgstr ""
 
-#: library/widget-areas.php:926
+#: library/widget-areas.php:991
 msgid "Contact Details"
 msgstr ""
 
-#: library/widget-areas.php:951
+#: library/widget-areas.php:1016
 msgid "phone:"
 msgstr ""
 
-#: library/widget-areas.php:954
+#: library/widget-areas.php:1019
 msgid "fax:"
 msgstr ""
 
-#: library/widget-areas.php:957
+#: library/widget-areas.php:1022
 msgid "email:"
 msgstr ""
 
-#: library/widget-areas.php:1005
+#: library/widget-areas.php:1070
 msgid "Street Address:"
 msgstr ""
 
-#: library/widget-areas.php:1022
+#: library/widget-areas.php:1087
 msgid "City, State, Zipcode:"
 msgstr ""
 
-#: library/widget-areas.php:1039
+#: library/widget-areas.php:1104
 msgid "Phone:"
 msgstr ""
 
-#: library/widget-areas.php:1056
+#: library/widget-areas.php:1121
 msgid "Fax:"
 msgstr ""
 
-#: library/widget-areas.php:1073
+#: library/widget-areas.php:1138
 msgid "Email:"
 msgstr ""
 
-#: parts/banner.php:17
+#: parts/banner.php:16
 msgid "Search Results"
 msgstr ""
 
-#: parts/banner.php:21
+#: parts/banner.php:20
 msgid "Page Not Found"
 msgstr ""
 
-#: parts/banner.php:33
+#: parts/banner.php:32 parts/banner.php:34
 msgid "Search"
 msgstr ""
 
-#: parts/content-none.php:15
+#: parts/content-none.php:14
 msgid "Nothing Found"
 msgstr ""
 
-#: parts/content-none.php:19
+#: parts/content-none.php:17
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: parts/content-none.php:23
+#: parts/content-none.php:21
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
 
-#: parts/content-none.php:27
+#: parts/content-none.php:25
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
+msgstr ""
+
+#: parts/sitemap.php:9
+msgid "Pages"
+msgstr ""
+
+#: parts/sitemap.php:25
+msgid "Posts"
+msgstr ""
+
+#: parts/sitemap.php:49
+msgid "Authors"
 msgstr ""
 
 #: parts/social_likes.php:13
@@ -529,15 +524,15 @@ msgstr ""
 msgid "Go"
 msgstr ""
 
-#: single.php:46 woocommerce.php:27
+#: single.php:44 woocommerce.php:27
 msgid "Pages:"
 msgstr ""
 
-#: single.php:58
+#: single.php:54
 msgid "About the Author:"
 msgstr ""
 
-#: templates/staff_members.php:86
+#: templates/staff_members.php:84
 msgid "Read More"
 msgstr ""
 

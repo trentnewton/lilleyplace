@@ -111,7 +111,7 @@ function theme_customiser( $wp_customize ) {
     $wp_customize->add_setting(
 	    'copyright_textbox',
 	    array(
-	        'default' => __( '', 'lilleyplace' ),
+	        'default' => '',
 	        'sanitize_callback' => 'esc_url_raw'
 	    )
 	);
@@ -119,7 +119,7 @@ function theme_customiser( $wp_customize ) {
 	$wp_customize->add_control(
 	    'copyright_textbox',
 	    array(
-	        'label' => __( 'Copyright Text', 'lilleyplace' ),
+	        'label' => __( 'Copyright Text (will override the default text)', 'lilleyplace' ),
 	        'section' => 'section_one',
 	        'type' => 'text',
 	    )
