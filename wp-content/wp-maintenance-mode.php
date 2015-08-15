@@ -17,7 +17,7 @@
 		<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js'></script>
 	</head>
 	<body class="coming-soon">
-		<main id="main-nav">
+		<section role="main" id="main-nav">
 			<header class="row">
 				<div class="columns small-12 mar-b-30 mar-t-30 text-center">
 					<img src="https://rawgit.com/trentnewton/lilleyplace/master/wp-content/themes/lilleyplace/assets/img/images/logo.png" width="313" height="121" alt="Lilley Place" />
@@ -35,7 +35,7 @@
 	      	<div class="page-content">
 	        	<div class="shadow top"></div>
 	      	</div>
-		</main>
+		</section>
 		<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
       	<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
       	<script type='text/javascript' src='//cdn.rawgit.com/trentnewton/lilleyplace/master/wp-content/themes/lilleyplace/assets/js/min/app-min.js'></script>
