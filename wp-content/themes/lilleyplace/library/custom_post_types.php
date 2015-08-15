@@ -111,7 +111,7 @@ function theme_customiser( $wp_customize ) {
     $wp_customize->add_setting(
 	    'copyright_textbox',
 	    array(
-	        'default' => __( 'Default copyright text', 'lilleyplace' ),
+	        'default' => __( '', 'lilleyplace' ),
 	        'sanitize_callback' => 'esc_url_raw'
 	    )
 	);
