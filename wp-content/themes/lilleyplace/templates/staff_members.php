@@ -81,8 +81,8 @@ get_header(); ?>
 			<?php if( $member_bio_more ): ?>
 			<ul class="accordion" data-accordion>
 				<li class="accordion-navigation">
-					<a href="#read-more-<?php print custom_fields_to_classes( $member_name ); ?>"><?php _e('Read More','lilleyplace');?></a>
-					<div id="read-more-<?php print custom_fields_to_classes( $member_name ); ?>" class="content">
+					<a href="#read-more-<?php if (function_exists('custom_fields_to_classes')) print custom_fields_to_classes( $member_name ); ?>"><?php _e('Read More','lilleyplace');?></a>
+					<div id="read-more-<?php if (function_exists('custom_fields_to_classes')) print custom_fields_to_classes( $member_name ); ?>" class="content">
 						<?php echo $member_bio_more ?>
 					</div>
 				</li>

@@ -19,7 +19,7 @@ global $wpdb; $fields = $wpdb->get_col("SELECT DISTINCT(meta_key) FROM $wpdb->po
 foreach($fields as $key => $field){ $field_value = get_post_meta($post->ID, $field, TRUE); $content .= ' ' . ( is_array($field_value) ? implode(' ', $field_value) : $field_value ); }
 
 // Remove random terms from showing in the search. These are related to the names of the ACF field names
-$wordlist = array('acf_id_1', 'acf_id_2', 'acf_id_3', 'acf_id_4');
+$wordlist = array('');
 foreach ($wordlist as &$word) {
     $word = '/\b' . preg_quote($word, '/') . '\b/';
 }
@@ -29,10 +29,10 @@ $content = preg_replace($wordlist, '', $content);
 // The excerpt ready with bits removed from it
 return $content; }
 
-if ( ! function_exists( 'lilleyplace_get_posts_page' ) ) :
-
 
 // Finds out the name and url of the blog page
+
+if ( ! function_exists( 'lilleyplace_get_posts_page' ) ) :
 
 function lilleyplace_get_posts_page($info) {
 	if( get_option('show_on_front') == 'page') {
