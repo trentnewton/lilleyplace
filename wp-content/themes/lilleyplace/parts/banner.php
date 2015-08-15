@@ -14,12 +14,12 @@
 	        <h1 class="entry-title">
 			<?php if( is_search() ) : ?>
 				<?php _e( 'Search Results', 'lilleyplace' ); ?>
-			<?php elseif( is_home() || is_archive() || is_single() ) : ?>
+			<?php elseif (function_exists('lilleyplace_get_posts_page') || is_home() || is_archive() || is_single() ) : ?>
 				<?php if (function_exists('lilleyplace_get_posts_page')) echo lilleyplace_get_posts_page('title'); ?>
 			<?php elseif( is_404() ) : ?>
 				<?php _e( 'Page Not Found', 'lilleyplace' ); ?>
-			<?php elseif( get_field('banner_title') ): ?>
-				<?php the_field('banner_title'); ?>
+			<?php elseif (function_exists('get_field') || get_field('banner_title') ) : ?>
+				<?php if (function_exists('the_field')) the_field('banner_title'); ?>
 			<?php else : ?>
 				<?php the_title(); ?>
 			<?php endif; ?>
