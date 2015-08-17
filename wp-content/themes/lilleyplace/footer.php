@@ -35,9 +35,13 @@
 								<svg class="blog-post-icon blog-post"><use xlink:href="#blog-post"></use></svg>
 							</div>
 							<article class="columns small-10 medium-5" itemscope itemtype="http://schema.org/BlogPosting">
-								<figure itemprop="image">
+								<figure>
 									<?php if ( has_post_thumbnail() ) : ?>
-									<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'small', array('class' => 'th') ); ?></a>
+									<a href="<?php the_permalink(); ?>">
+										<?php the_post_thumbnail( 'small', array('class' => 'th', 'itemprop' => 'thumbnail') ); ?>
+									</a>
+									<?php else : ?>
+										<img src="" itemprop="thumbnail">
 									<?php endif; ?>
 								</figure>
 								<a href="<?php the_permalink(); ?>"><h4 itemprop="headline"><?php the_title(); ?></h4></a>
