@@ -34,7 +34,7 @@
 							<div class="columns small-2 medium-1">
 								<svg class="blog-post-icon blog-post"><use xlink:href="#blog-post"></use></svg>
 							</div>
-							<article class="columns small-10 medium-5" itemprop="liveBlogUpdate" itemscope itemtype="http://schema.org/BlogPosting">
+							<article class="columns small-10 medium-5" itemprop itemscope itemtype="http://schema.org/BlogPosting">
 								<?php if ( has_post_thumbnail() ) : ?>
 								<figure>
 									<a href="<?php the_permalink(); ?>">
