@@ -46,7 +46,8 @@ function blog_breadcrumbs() {
 				$cats = get_category_parents($this_cat->parent, TRUE, $delimiter);
 				if ($show_current == 0) $cats = preg_replace("#^(.+)$delimiter$#", "$1", $cats);
 				$cats = str_replace('<a', $link_before . '<a' . $link_attr, $cats);
-				$cats = str_replace('</a>', '</a>' . $link_after, $cats);
+				$cats = str_replace('">', '"><span itemprop="title">', $cats);
+				$cats = str_replace('</a>', '</span></a>' . $link_after, $cats);
 				if ($show_title == 0) $cats = preg_replace('/ title="(.*?)"/', '', $cats);
 				echo $cats;
 			}
@@ -78,7 +79,8 @@ function blog_breadcrumbs() {
 				$cats = get_category_parents($cat, TRUE, $delimiter);
 				if ($show_current == 0) $cats = preg_replace("#^(.+)$delimiter$#", "$1", $cats);
 				$cats = str_replace('<a', $link_before . '<a' . $link_attr, $cats);
-				$cats = str_replace('</a>', '</a>' . $link_after, $cats);
+				$cats = str_replace('">', '"><span itemprop="title">', $cats);
+				$cats = str_replace('</a>', '</span></a>' . $link_after, $cats);
 				if ($show_title == 0) $cats = preg_replace('/ title="(.*?)"/', '', $cats);
 				echo $cats;
 				if ($show_current == 1) echo $before . get_the_title() . $after;
@@ -94,7 +96,8 @@ function blog_breadcrumbs() {
 			if ($cat) {
 				$cats = get_category_parents($cat, TRUE, $delimiter);
 				$cats = str_replace('<a', $link_before . '<a' . $link_attr, $cats);
-				$cats = str_replace('</a>', '</a>' . $link_after, $cats);
+				$cats = str_replace('">', '"><span itemprop="title">', $cats);
+				$cats = str_replace('</a>', '</span></a>' . $link_after, $cats);
 				if ($show_title == 0) $cats = preg_replace('/ title="(.*?)"/', '', $cats);
 				echo $cats;
 			}
@@ -211,7 +214,8 @@ function site_breadcrumbs() {
 				$cats = get_category_parents($this_cat->parent, TRUE, $delimiter);
 				if ($show_current == 0) $cats = preg_replace("#^(.+)$delimiter$#", "$1", $cats);
 				$cats = str_replace('<a', $link_before . '<a' . $link_attr, $cats);
-				$cats = str_replace('</a>', '</a>' . $link_after, $cats);
+				$cats = str_replace('">', '"><span itemprop="title">', $cats);
+				$cats = str_replace('</a>', '</span></a>' . $link_after, $cats);
 				if ($show_title == 0) $cats = preg_replace('/ title="(.*?)"/', '', $cats);
 				echo $cats;
 			}
@@ -259,7 +263,8 @@ function site_breadcrumbs() {
 			if ($cat) {
 				$cats = get_category_parents($cat, TRUE, $delimiter);
 				$cats = str_replace('<a', $link_before . '<a' . $link_attr, $cats);
-				$cats = str_replace('</a>', '</a>' . $link_after, $cats);
+				$cats = str_replace('">', '"><span itemprop="title">', $cats);
+				$cats = str_replace('</a>', '</span></a>' . $link_after, $cats);
 				if ($show_title == 0) $cats = preg_replace('/ title="(.*?)"/', '', $cats);
 				echo $cats;
 			}
