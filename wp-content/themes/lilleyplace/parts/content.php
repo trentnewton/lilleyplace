@@ -21,12 +21,11 @@
 		</span>
 		<?php endif; ?>
 	</header>
-	
-	<figure itemprop="image">
-		<?php if ( has_post_thumbnail() ) : ?>
-		<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'medium', array('class' => 'th') ); ?></a>
-		<?php endif; ?>
+	<?php if ( has_post_thumbnail() ) : ?>
+	<figure>
+		<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'medium', array('class' => 'th', 'itemprop' => 'image') ); ?></a>
 	</figure>
+	<?php endif; ?>
 	<div class="post-description-copy" itemprop="text">
 		<?php the_excerpt(); ?>
 	</div>

@@ -34,7 +34,7 @@ get_header(); ?>
 				<?php do_action( 'lilleyplace_post_before_entry_content' ); ?>
 				<?php if ( has_post_thumbnail() ) : ?>
 				<figure>
-					<?php the_post_thumbnail( '', array('class' => 'th mar-b-30') ); ?>
+					<?php the_post_thumbnail( '', array('class' => 'th mar-b-30', 'itemprop' => 'image') ); ?>
 				</figure>
 				<?php endif; ?>
 				<div itemprop="text">
