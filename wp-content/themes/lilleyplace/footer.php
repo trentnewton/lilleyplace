@@ -34,16 +34,14 @@
 							<div class="columns small-2 medium-1">
 								<svg class="blog-post-icon blog-post"><use xlink:href="#blog-post"></use></svg>
 							</div>
-							<article class="columns small-10 medium-5" itemscope itemtype="http://schema.org/BlogPosting">
+							<article class="columns small-10 medium-5" itemprop="liveBlogUpdate" itemscope itemtype="http://schema.org/BlogPosting">
+								<?php if ( has_post_thumbnail() ) : ?>
 								<figure>
-									<?php if ( has_post_thumbnail() ) : ?>
 									<a href="<?php the_permalink(); ?>">
 										<?php the_post_thumbnail( 'small', array('class' => 'th', 'itemprop' => 'image') ); ?>
 									</a>
-									<?php else : ?>
-										<img src="" itemprop="image">
-									<?php endif; ?>
 								</figure>
+								<?php endif; ?>
 								<a href="<?php the_permalink(); ?>"><h4 itemprop="headline"><?php the_title(); ?></h4></a>
 								<span class="date entry-meta">
 									<time class="updated" datetime="<?php the_time('c') ?>" itemprop="datePublished"><svg class="icon icon-calendar"><use xlink:href="#icon-calendar"></use></svg>&nbsp;<?php the_time( get_option( 'date_format' ) ); ?></time>
