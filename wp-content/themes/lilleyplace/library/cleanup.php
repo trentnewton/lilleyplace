@@ -231,4 +231,16 @@ function remove_shortcode_from_excerpt($content) {
 	}
 add_filter('the_excerpt', 'remove_shortcode_from_excerpt');
 
+/*  Remove Hentry
+/* ------------------------------------ */
+function remove_hentry( $classes ) {
+	if( !is_single() ) {
+		$classes = array_diff($classes, array('hentry'));
+		return $classes;
+	} else {
+		return $classes;
+	}
+}
+add_filter( 'post_class', 'remove_hentry' );
+
 ?>

@@ -615,6 +615,7 @@ img.ajax-loader {
 	box-shadow: 1px 1px 2px #ccc;
 	border-radius: $global-radius;
 	padding: rem-calc(15);
+	background: rgba($white, 0.5);
 }
 
 a {
@@ -622,7 +623,6 @@ a {
 	&:hover {
 
 		.image-frame {
-			border-color: scale-color($primary-color, $lightness: 70%, $saturation: 50%);
 			box-shadow: 1px 1px 2px $primary-color;
 		}
 
@@ -1545,7 +1545,7 @@ img.avatar {
 
 		.row {
 
-			div:nth-child(2) {
+			article:nth-child(2) {
 				@extend .mar-b-30;
 			}
 
@@ -1572,6 +1572,11 @@ img.avatar {
 				right: -14px;
 			}
 
+		}
+
+		.wp-post-image {
+			width: 50%;
+			float: right;
 		}
 
 	}

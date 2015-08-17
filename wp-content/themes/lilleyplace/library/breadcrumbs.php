@@ -15,28 +15,28 @@ function blog_breadcrumbs() {
 	$show_home_link = 1; // 1 - show the 'Home' link, 0 - don't show
 	$show_title     = 1; // 1 - show the title for the links, 0 - don't show
 	$delimiter      = ''; // delimiter between crumbs
-	$before         = '<li class="current">'; // tag before the current crumb
-	$after          = '</li>'; // tag after the current crumb
+	$before         = '<li class="current" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><span itemprop="title">'; // tag before the current crumb
+	$after          = '</span></li>'; // tag after the current crumb
 	/* === END OF OPTIONS === */
 
 	global $post;
 	$home_link    = lilleyplace_get_posts_page('url');
-	$link_before  = '<li typeof="v:Breadcrumb">';
+	$link_before  = '<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">';
 	$link_after   = '</li>';
-	$link_attr    = ' property="v:title"';
-	$link         = $link_before . '<a' . $link_attr . ' href="%1$s">%2$s</a>' . $link_after;
+	$link_attr    = ' itemprop="url"';
+	$link         = $link_before . '<a' . $link_attr . ' href="%1$s"><span itemprop="title">%2$s</span></a>' . $link_after;
 	$parent_id    = $parent_id_2 = $post->post_parent;
 	$frontpage_id = get_option('page_on_front');
 
 	if (is_home() || is_front_page()) {
 
-		if ($show_on_home == 1) echo '<ul class="breadcrumbs"><a href="' . $home_link . '">' . $text['home'] . '</a></ul>';
+		if ($show_on_home == 1) echo '<ul class="breadcrumbs"><li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="' . $home_link . '" itemprop="url"><span itemprop="title">' . $text['home'] . '</span></a></li></ul>';
 
 	} else {
 
-		echo '<ul class="breadcrumbs" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">';
+		echo '<ul class="breadcrumbs">';
 		if ($show_home_link == 1) {
-			echo '<li><a href="' . $home_link . '" property="v:title">' . $text['home'] . '</a></li>';
+			echo '<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="' . $home_link . '" itemprop="url"><span itemprop="name">' . $text['home'] . '</span></a></li>';
 			if ($frontpage_id == 0 || $parent_id != $frontpage_id) echo $delimiter;
 		}
 
@@ -180,28 +180,28 @@ function site_breadcrumbs() {
 	$show_home_link = 1; // 1 - show the 'Home' link, 0 - don't show
 	$show_title     = 1; // 1 - show the title for the links, 0 - don't show
 	$delimiter      = ''; // delimiter between crumbs
-	$before         = '<li class="current">'; // tag before the current crumb
-	$after          = '</li>'; // tag after the current crumb
+	$before         = '<li class="current" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><span itemprop="title">'; // tag before the current crumb
+	$after          = '</span></li>'; // tag after the current crumb
 	/* === END OF OPTIONS === */
 
 	global $post;
 	$home_link    = home_url();
-	$link_before  = '<li typeof="v:Breadcrumb">';
+	$link_before  = '<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">';
 	$link_after   = '</li>';
-	$link_attr    = ' property="v:title"';
-	$link         = $link_before . '<a' . $link_attr . ' href="%1$s">%2$s</a>' . $link_after;
+	$link_attr    = ' itemprop="url"';
+	$link         = $link_before . '<a' . $link_attr . ' href="%1$s"><span itemprop="title">%2$s</span></a>' . $link_after;
 	$parent_id    = $parent_id_2 = $post->post_parent;
 	$frontpage_id = get_option('page_on_front');
 
 	if (is_home() || is_front_page()) {
 
-		if ($show_on_home == 1) echo '<ul class="breadcrumbs"><a href="' . $home_link . '">' . $text['home'] . '</a></ul>';
+		if ($show_on_home == 1) echo '<ul class="breadcrumbs"><li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="' . $home_link . '" itemprop="url"><span itemprop="title">' . $text['home'] . '</span></a></li></ul>';
 
 	} else {
 
-		echo '<ul class="breadcrumbs" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">';
+		echo '<ul class="breadcrumbs">';
 		if ($show_home_link == 1) {
-			echo '<li><a href="' . $home_link . '" property="v:title">' . $text['home'] . '</a></li>';
+			echo '<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="' . $home_link . '" itemprop="url"><span itemprop="title">' . $text['home'] . '</span></a></li>';
 			if ($frontpage_id == 0 || $parent_id != $frontpage_id) echo $delimiter;
 		}
 
@@ -307,7 +307,7 @@ function site_breadcrumbs() {
 
 		if ( get_query_var('paged') ) {
 			if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ' (';
-			echo __('Page', 'kbcyouth') . ' ' . get_query_var('paged');
+			echo __('Page', 'lilleyplace') . ' ' . get_query_var('paged');
 			if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ')';
 		}
 
