@@ -36,7 +36,7 @@ function blog_breadcrumbs() {
 
 		echo '<ul class="breadcrumbs">';
 		if ($show_home_link == 1) {
-			echo '<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="' . $home_link . '" itemprop="url"><span itemprop="name">' . $text['home'] . '</span></a></li>';
+			echo '<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="' . $home_link . '" itemprop="url"><span itemprop="title">' . $text['home'] . '</span></a></li>';
 			if ($frontpage_id == 0 || $parent_id != $frontpage_id) echo $delimiter;
 		}
 
