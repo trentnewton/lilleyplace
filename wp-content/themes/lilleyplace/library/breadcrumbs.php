@@ -15,8 +15,8 @@ function blog_breadcrumbs() {
 	$show_home_link = 1; // 1 - show the 'Home' link, 0 - don't show
 	$show_title     = 1; // 1 - show the title for the links, 0 - don't show
 	$delimiter      = ''; // delimiter between crumbs
-	$before         = '<li class="current" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><span itemprop="title">'; // tag before the current crumb
-	$after          = '</span></li>'; // tag after the current crumb
+	$before         = '<li class="current" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="#"><span itemprop="title">'; // tag before the current crumb
+	$after          = '</span></a></li>'; // tag after the current crumb
 	/* === END OF OPTIONS === */
 
 	global $post;
@@ -180,8 +180,8 @@ function site_breadcrumbs() {
 	$show_home_link = 1; // 1 - show the 'Home' link, 0 - don't show
 	$show_title     = 1; // 1 - show the title for the links, 0 - don't show
 	$delimiter      = ''; // delimiter between crumbs
-	$before         = '<li class="current" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><span itemprop="title">'; // tag before the current crumb
-	$after          = '</span></li>'; // tag after the current crumb
+	$before         = '<li class="current" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="#"><span itemprop="title">'; // tag before the current crumb
+	$after          = '</span></a></li>'; // tag after the current crumb
 	/* === END OF OPTIONS === */
 
 	global $post;
