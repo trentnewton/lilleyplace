@@ -38,10 +38,10 @@
 								<figure>
 									<?php if ( has_post_thumbnail() ) : ?>
 									<a href="<?php the_permalink(); ?>">
-										<?php the_post_thumbnail( 'small', array('class' => 'th', 'itemprop' => 'thumbnail') ); ?>
+										<?php the_post_thumbnail( 'small', array('class' => 'th', 'itemprop' => 'image') ); ?>
 									</a>
 									<?php else : ?>
-										<img src="" itemprop="thumbnail">
+										<img src="" itemprop="image">
 									<?php endif; ?>
 								</figure>
 								<a href="<?php the_permalink(); ?>"><h4 itemprop="headline"><?php the_title(); ?></h4></a>
