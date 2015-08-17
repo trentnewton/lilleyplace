@@ -19,7 +19,7 @@
 			<?php elseif( is_404() ) : ?>
 				<?php _e( 'Page Not Found', 'lilleyplace' ); ?>
 			<?php elseif( get_field('banner_title') ): ?>
-				<?php if (function_exists('the_field')) the_field('banner_title'); ?>
+				<?php the_field('banner_title'); ?>
 			<?php else : ?>
 				<?php the_title(); ?>
 			<?php endif; ?>
