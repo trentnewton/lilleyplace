@@ -252,7 +252,7 @@ $header-font-color: #513567;
 $header-line-height: 1.44;
 $header-top-margin: 0;
 // $header-bottom-margin: 0;
-// $header-text-rendering: optimizeLegibility;
+$header-text-rendering: auto;
 
 // We use these to control header font sizes
 $h1-font-size: 2.986rem;
