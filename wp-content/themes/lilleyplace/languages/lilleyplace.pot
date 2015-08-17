@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Lilley Place\n"
-"POT-Creation-Date: 2015-08-15 11:57+1000\n"
-"PO-Revision-Date: 2015-08-15 11:57+1000\n"
+"POT-Creation-Date: 2015-08-18 03:12+1000\n"
+"PO-Revision-Date: 2015-08-18 03:12+1000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -111,15 +111,15 @@ msgstr ""
 msgid "Latest Posts from the Blog"
 msgstr ""
 
-#: footer.php:70
+#: footer.php:77
 msgid "Copyright"
 msgstr ""
 
-#: footer.php:70
+#: footer.php:77
 msgid "All rights reserved."
 msgstr ""
 
-#: footer.php:79
+#: footer.php:86
 msgid "Top"
 msgstr ""
 
@@ -524,11 +524,11 @@ msgstr ""
 msgid "Go"
 msgstr ""
 
-#: single.php:44 woocommerce.php:27
+#: single.php:46 woocommerce.php:27
 msgid "Pages:"
 msgstr ""
 
-#: single.php:54
+#: single.php:56
 msgid "About the Author:"
 msgstr ""
 
