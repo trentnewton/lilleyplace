@@ -17,7 +17,7 @@
 get_header(); ?>
 	<?php get_template_part( 'parts/banner' ); ?>
 </header>
-<section role="main" class="page-content">
+<section role="main" class="page-content" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
 	<div class="entry-content row">
 		<div class="columns medium-8" itemscope itemtype="http://schema.org/Blog">
 		<?php if ( have_posts() ) : ?>
@@ -44,7 +44,7 @@ get_header(); ?>
 
 			<?php do_action( 'lilleyplace_after_content' ); ?>
 		</div>
-		<aside class="columns medium-4 sidebar-bg">
+		<aside class="columns medium-4 sidebar-bg" itemscope itemtype="http://schema.org/WPSideBar">
 			<div class="sidebar">
 				<?php dynamic_sidebar("Blog Sidebar"); ?>
 			</div>

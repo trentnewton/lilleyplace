@@ -11,7 +11,7 @@
 <section id="small-banner">
     <div class="row">
 	    <div class="column small-banner-inner">
-	        <h1 class="entry-title">
+	        <h1 class="entry-title" itemprop="headline">
 			<?php if( is_search() ) : ?>
 				<?php _e( 'Search Results', 'lilleyplace' ); ?>
 			<?php elseif( is_home() || is_archive() || is_single() ) : ?>

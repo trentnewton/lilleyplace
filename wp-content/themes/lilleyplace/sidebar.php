@@ -8,7 +8,7 @@
  */
 
 ?>
-<aside class="columns medium-4 sidebar-bg">
+<aside class="columns medium-4 sidebar-bg" itemscope itemtype="http://schema.org/WPSideBar">
 	<div class="sidebar">
 		<?php do_action( 'lilleyplace_before_sidebar' ); ?>
 		<?php dynamic_sidebar( 'sidebar-widgets' ); ?>

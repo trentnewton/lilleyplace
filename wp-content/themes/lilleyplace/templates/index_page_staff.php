@@ -6,13 +6,13 @@ get_header(); ?>
 	<?php get_template_part( 'parts/banner' ); ?>
 </header>
 <?php while ( have_posts() ) : the_post(); ?>
-<section role="main" id="post-<?php the_ID(); ?>" <?php post_class('page-content') ?>>
+<section role="main" id="post-<?php the_ID(); ?>" <?php post_class('page-content') ?> itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
 <?php $child_pages = $wpdb->get_results("SELECT * FROM $wpdb->posts WHERE post_parent = ".$post->ID." AND post_type = 'page' ORDER BY menu_order ASC", 'OBJECT'); ?>
 	<div class="row">
 		<?php do_action( 'lilleyplace_before_content' ); ?>
 		<article class="column text-center">
 		<?php if($content = $post->post_content ) {
-			echo "<h4 class=\"mar-b-30\">";
+			echo "<h4 class=\"mar-b-30\" itemprop=\"headline\">";
 					echo get_the_content();
 			echo "</h4>";
 		} ?>

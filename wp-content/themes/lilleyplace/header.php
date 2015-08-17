@@ -35,7 +35,7 @@
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
 	<?php do_action( 'lilleyplace_after_body' ); ?>
 	<?php get_template_part( 'parts/svg_icons' ); ?>
-		<header>
+		<header itemscope itemtype="http://schema.org/WPHeader">
 			<div id="logo">
 				<div class="row">
 					<div id="medium-up-logo" class="column">

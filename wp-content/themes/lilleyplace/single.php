@@ -18,7 +18,7 @@ get_header(); ?>
 	js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.3";
 	fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<section role="main" class="page-content">
+<section role="main" class="page-content" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
 	<div class="row">
 		<div class="columns medium-8">
 	   		<nav class="breadcrumbs-container">
@@ -28,7 +28,7 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<article <?php post_class('entry-content') ?> id="post-<?php the_ID(); ?>" itemscope itemtype="http://schema.org/BlogPosting">
 				<header class="mar-b-30">
-					<h2 class="entry-title"><?php the_title(); ?></h2>
+					<h2 class="entry-title" itemprop="headline"><?php the_title(); ?></h2>
 					<?php lilleyplace_entry_meta(); ?>
 				</header>
 				<?php do_action( 'lilleyplace_post_before_entry_content' ); ?>
@@ -37,7 +37,9 @@ get_header(); ?>
 					<?php the_post_thumbnail( '', array('class' => 'th mar-b-30') ); ?>
 				</figure>
 				<?php endif; ?>
-				<?php the_content(); ?>
+				<div itemprop="text">
+					<?php the_content(); ?>
+				</div>
 			</article>
 			<footer>
 				<?php wp_link_pages(); ?>

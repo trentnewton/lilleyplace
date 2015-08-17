@@ -8,7 +8,7 @@
  */
 
 ?>
-<nav class="top-bar" data-topbar>
+<nav class="top-bar" data-topbar itemscope itemtype="http://schema.org/SiteNavigationElement">
     <ul class="title-area">
 		<li class="name show-for-small-only">
 			<a href="<?php echo home_url(); ?>/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/images/logo.png" width="150" height="51" alt="<?php bloginfo( 'name' ); ?>" /></a>

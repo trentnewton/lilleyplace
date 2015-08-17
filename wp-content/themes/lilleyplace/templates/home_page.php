@@ -5,7 +5,7 @@ Template Name: Home Page
 get_header(); ?>
 </header>
 <?php while ( have_posts() ) : the_post(); ?>
-<main>
+<main itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
 	<?php if( get_field('title') ): ?>
 	<section id="main-hero">
 		<div class="main-hero-inner">
@@ -88,31 +88,31 @@ get_header(); ?>
 		<?php do_action( 'lilleyplace_before_content' ); ?>
 		<div class="column">
 		<?php if( get_field('banner_title') ): ?>
-			<h2><?php the_field('banner_title'); ?></h2>
+			<h2 itemprop="headline"><?php the_field('banner_title'); ?></h2>
 			<?php else : ?>
-			<h2><?php the_title(); ?></h2>
+			<h2 itemprop="headline"><?php the_title(); ?></h2>
 		<?php endif; ?>
-			<div class="entry-content">
+			<div class="entry-content" itemprop="text">
 				<?php do_action( 'lilleyplace_page_before_entry_content' ); ?>
 				<?php the_content(); ?>
 				<?php do_action( 'lilleyplace_page_after_entry_content' ); ?>
-				<?php if(get_field('front_page_image_gallery')): $i = 0; ?>
-				<div class="slider-container mar-t-60">
-					<div class="slider">
-					<?php while(has_sub_field('front_page_image_gallery')): $i++;
-						$front_page_image = get_sub_field('front_page_image');
-						$front_page_image_resized = ($front_page_image['width'] / 3);
-					?>
-						<?php if( $front_page_image ): ?>
-						<figure style="width:<?php echo $front_page_image_resized; ?>px;">
-							<img src="<?php echo $front_page_image['url']; ?>" width="<?php echo $front_page_image['width']; ?>" height="<?php echo $front_page_image['height']; ?>" alt="<?php echo $front_page_image['alt'] ?>" />
-						</figure>
-				 		<?php endif; ?>
-					<?php endwhile; ?>
-					</div>
-				</div>
-				<?php endif; ?>
 			</div>
+			<?php if(get_field('front_page_image_gallery')): $i = 0; ?>
+			<div class="slider-container mar-t-60">
+				<div class="slider">
+				<?php while(has_sub_field('front_page_image_gallery')): $i++;
+					$front_page_image = get_sub_field('front_page_image');
+					$front_page_image_resized = ($front_page_image['width'] / 3);
+				?>
+					<?php if( $front_page_image ): ?>
+					<figure style="width:<?php echo $front_page_image_resized; ?>px;">
+						<img src="<?php echo $front_page_image['url']; ?>" width="<?php echo $front_page_image['width']; ?>" height="<?php echo $front_page_image['height']; ?>" alt="<?php echo $front_page_image['alt'] ?>" />
+					</figure>
+			 		<?php endif; ?>
+				<?php endwhile; ?>
+				</div>
+			</div>
+			<?php endif; ?>
 		</div>
 		<?php do_action( 'lilleyplace_after_content' ); ?>
 	</article>

@@ -6,7 +6,7 @@ get_header(); ?>
 	<?php get_template_part( 'parts/banner' ); ?>
 </header>
 <?php while ( have_posts() ) : the_post(); ?>
-<section role="main" id="post-<?php the_ID(); ?>" <?php post_class('page-content') ?>>
+<section role="main" id="post-<?php the_ID(); ?>" <?php post_class('page-content') ?> itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
 	<?php if ( is_page() && $post->post_parent > 0 ) { ?>
    	<div class="row">
    		<nav class="column breadcrumbs-container">
@@ -26,7 +26,7 @@ get_header(); ?>
 	<article class="row">
 		<div class="column mar-b-30">
 			<?php do_action( 'lilleyplace_page_before_entry_content' ); ?>
-			<div class="entry-content">
+			<div class="entry-content" itemprop="text">
 				<?php the_content(); ?>
 			</div>
 			<?php do_action( 'lilleyplace_page_after_entry_content' ); ?>

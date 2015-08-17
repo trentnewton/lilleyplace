@@ -27,9 +27,9 @@ function lilleyplace_pagination() {
 		'type' => 'list',
 	) );
 
-	$paginate_links = str_replace( "<ul class='page-numbers'>", "<ul class='pagination'>", $paginate_links );
-	$paginate_links = str_replace( '<li><span class="page-numbers dots">', "<li><a href='#'>", $paginate_links );
-	$paginate_links = str_replace( "<li><span class='page-numbers current'>", "<li class='current'><a href='#'>", $paginate_links );
+	$paginate_links = str_replace( "<ul class='page-numbers'>", '<ul class="pagination" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">', $paginate_links );
+	$paginate_links = str_replace( '<li><span class="page-numbers dots">', "<li itemprop='url'><a href='#' itemprop='name'>", $paginate_links );
+	$paginate_links = str_replace( "<li><span class='page-numbers current'>", "<li itemprop='url' class='current'><a href='#' itemprop='name'>", $paginate_links );
 	$paginate_links = str_replace( '</span>', '</a>', $paginate_links );
 	$paginate_links = str_replace( "<li><a href='#'>&hellip;</a></li>", "<li><span class='dots'>&hellip;</span></li>", $paginate_links );
 	$paginate_links = preg_replace( '/\s*page-numbers/', '', $paginate_links );
@@ -132,20 +132,20 @@ class Lilleyplace_Comments extends Walker_Comment{
 		$GLOBALS['comment'] = $comment;
 		$parent_class = ( empty( $args['has_children'] ) ? '' : 'parent' ); ?>
         <li <?php comment_class( $parent_class ); ?> id="comment-<?php comment_ID() ?>">
-            <article id="comment-body-<?php comment_ID() ?>" class="comment-body">
-				<header class="comment-author">
+            <article id="comment-body-<?php comment_ID() ?>" class="comment-body" itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+				<header class="comment-author" itemprop="creator" itemscope itemtype="http://schema.org/Person">
 					<?php echo get_avatar( $comment, $args['avatar_size'] ); ?>
 					<div class="author-meta vcard author">
-						<cite class="fn"><?php if ($comment->user_id) {
+						<cite class="fn" itemprop="name"><?php if ($comment->user_id) {
 						$user=get_userdata($comment->user_id);
 						echo $user->display_name;
 						} else { comment_author_link(); } ?></cite>
-						<time datetime="<?php echo comment_date( 'c' ) ?>">
+						<time itemprop="commentTime" datetime="<?php echo comment_date( 'c' ) ?>">
 							<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ) ?>"><?php printf( __( '%1$s', 'lilleyplace' ), get_comment_date(),  get_comment_time() ) ?></a>
 						</time>
 					</div><!-- /.comment-author -->
 				</header>
-                <section id="comment-content-<?php comment_ID(); ?>" class="comment">
+                <section id="comment-content-<?php comment_ID(); ?>" class="comment" itemprop="commentText">
                     <?php if ( ! $comment->comment_approved ) : ?>
                     <div class="notice">
 						<p class="bottom"><?php $args['moderation']; ?></p>

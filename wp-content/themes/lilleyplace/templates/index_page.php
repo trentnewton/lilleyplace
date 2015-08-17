@@ -6,7 +6,7 @@ get_header(); ?>
 	<?php get_template_part( 'parts/banner' ); ?>
 </header>
 <?php while ( have_posts() ) : the_post(); ?>
-<section role="main" id="post-<?php the_ID(); ?>" <?php post_class('page-content') ?>>
+<section role="main" id="post-<?php the_ID(); ?>" <?php post_class('page-content') ?> itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
 <?php $child_pages = $wpdb->get_results("SELECT * FROM $wpdb->posts WHERE post_parent = ".$post->ID." AND post_type = 'page' ORDER BY menu_order ASC", 'OBJECT'); ?>
 	<div class="row">
 		<div class="column">
@@ -19,7 +19,7 @@ get_header(); ?>
 			<?php if ( $child_pages ) : foreach ( $child_pages as $pageChild ) : setup_postdata( $pageChild ); ?>
 			<article id="post-<?php echo $pageChild->ID; ?>" class="post-description">
 				<header class="mar-b-15">
-					<h4 class="content-title">
+					<h4 class="content-title" itemprop="headline">
 						<a href="<?php echo get_permalink($pageChild->ID); ?>"><?php echo $pageChild->post_title; ?></a>
 					</h4>
 					<?php if ( 'post' == get_post_type() ) : ?>
@@ -35,7 +35,7 @@ get_header(); ?>
 					</figure>
 				</div>
 				<?php endif; ?>
-				<div class="post-description-copy">
+				<div class="post-description-copy" itemprop="text">
 					<?php the_excerpt(); ?>
 				</div>
 				<footer>
