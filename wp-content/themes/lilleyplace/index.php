@@ -17,7 +17,7 @@
 get_header(); ?>
 	<?php get_template_part( 'parts/banner' ); ?>
 </header>
-<section role="main" class="page-content" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
+<main class="page-content" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
 	<div class="entry-content row">
 		<div class="columns medium-8" itemscope itemtype="http://schema.org/Blog">
 		<?php if ( have_posts() ) : ?>
@@ -51,5 +51,5 @@ get_header(); ?>
 		</aside>
 	</div>
   <div class="shadow white-top"></div>
-</section>
+</main>
 <?php get_footer(); ?>

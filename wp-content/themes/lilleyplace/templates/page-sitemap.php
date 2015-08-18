@@ -5,7 +5,7 @@ Template Name: Sitemap Page
 get_header(); ?>
 	<?php get_template_part( 'parts/banner' ); ?>
 </header>
-<section role="main" id="post-<?php the_ID(); ?>" <?php post_class('page-content') ?> itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
+<main id="post-<?php the_ID(); ?>" <?php post_class('page-content') ?> itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
 	<?php if ( is_page() && $post->post_parent > 0 ) { ?>
    	<div class="row">
    		<nav class="column breadcrumbs-container">
@@ -30,5 +30,5 @@ get_header(); ?>
 	</article>
 	<?php do_action( 'lilleyplace_after_content' ); ?>
 	<div class="shadow white-top"></div>
-</section>
+</main>
 <?php get_footer(); ?>
