@@ -39,6 +39,16 @@ tr td {
 
 }
 
+main,
+header,
+nav,
+section,
+article,
+aside,
+footer {
+   display: block;
+}
+
 figure {
 	margin: 0;
 }
