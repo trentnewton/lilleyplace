@@ -221,15 +221,24 @@ function add_header_styles() {
   <?php }
 }
 
-// Stop <br>s and <p> appearing in shortcodes
-remove_filter( 'the_content', 'wpautop' );
-add_filter( 'the_content', 'wpautop' , 12);
+// remove br's and p's from shortcodes
+add_filter('the_content', 'shortcode_empty_paragraph_fix');
 
-function remove_shortcode_from_excerpt($content) {
-	$content = strip_shortcodes( $content );
-		return $content;//always return $content
-	}
-add_filter('the_excerpt', 'remove_shortcode_from_excerpt');
+function shortcode_empty_paragraph_fix($content)
+{   
+    $array = array (
+        '<p>[' => '[', 
+        ']</p>' => ']', 
+        ']<br />' => ']',
+        '<p>      [' => '[',
+        '<p>  [' => '['
+    );
+
+    $content = strtr($content, $array);
+
+    return $content;
+}
+
 
 /*  Remove Hentry
 /* ------------------------------------ */
