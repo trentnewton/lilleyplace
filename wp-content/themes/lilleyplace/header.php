@@ -16,13 +16,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="application-name" content="<?php bloginfo( 'name' ); ?>">
-	    <meta name="msapplication-TileImage" content="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/touch-icon-iphone-retina.png">
 	    <meta name="msapplication-TileColor" content="#ffffff">
-	    <link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/favicon.ico" type="image/x-icon">
-	    <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/touch-icon-iphone.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/touch-icon-ipad.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/touch-icon-iphone-retina.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/touch-icon-ipad-retina.png">
 		<?php wp_head(); ?>
 		<?php if (get_header_image() != '') {?>
 		<style type="text/css">
