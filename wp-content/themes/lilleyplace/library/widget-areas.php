@@ -174,7 +174,7 @@ if (!empty($title)) {echo $after_title;}
             echo $networks[$network];
 ?>" class="<?php
             echo strtolower($network);
-?>" target="_blank"><svg class="icon icon-<?php
+?>" target="_blank" title="<?php echo $network; ?>"><svg class="icon icon-<?php
             echo strtolower($network);
 ?>"><use xlink:href="#icon-<?php
             echo strtolower($network);
@@ -189,12 +189,12 @@ if (!empty($title)) {echo $after_title;}
 <?php
       if (empty($networks['RSS'])):
 ?>
-<li><a href="<?php bloginfo('rss2_url'); ?>" target="_blank" class="rss">
+<li><a href="<?php bloginfo('rss2_url'); ?>" target="_blank" class="rss" title="RSS">
 <svg class="icon icon-feed"><use xlink:href="#icon-feed"></use></svg></a></li>
 <?php
       else:
 ?>
-<li><a href="<?php echo $networks['RSS']; ?>" target="_blank" class="rss">
+<li><a href="<?php echo $networks['RSS']; ?>" target="_blank" class="rss" title="RSS">
 <svg class="icon icon-feed"><use xlink:href="#icon-feed"></use></svg></a></li>
 <?php
       endif;
