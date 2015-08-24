@@ -1587,6 +1587,11 @@ img.avatar {
 		.wp-post-image {
 			width: 50%;
 			float: right;
+
+			@media #{$medium-portrait} {
+				width: 40%;
+			}
+
 		}
 
 	}
