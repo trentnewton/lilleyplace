@@ -47,7 +47,7 @@
 									<time class="updated" datetime="<?php the_time('c') ?>" itemprop="datePublished"><svg class="icon icon-calendar"><use xlink:href="#icon-calendar"></use></svg>&nbsp;<?php the_time( get_option( 'date_format' ) ); ?></time>
 								</span>
 								<p class="content-excerpt" itemprop="text">
-									<?php echo substr(get_the_excerpt(),0,170); ?>&hellip;
+									<?php echo substr(get_the_excerpt(),0,170); ?>&nbsp;[&hellip;]
 								</p>
 							</article>
 							<?php endwhile; ?>
