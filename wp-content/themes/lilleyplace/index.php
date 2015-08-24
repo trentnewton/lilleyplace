@@ -1,3 +1,4 @@
+<?php ini_set('display_errors', 0); ?>
 <?php
 /**
  * The main template file
@@ -13,8 +14,14 @@
  * @subpackage FoundationPress
  * @since FoundationPress 1.0
  */
-
-get_header(); ?>
+if (function_exists('get_header')) {
+	get_header();
+} else {
+    /* Redirect browser */
+    header("Location: http://" . $_SERVER['HTTP_HOST'] . "");
+    /* Make sure that code below does not get executed when we redirect. */
+    exit;
+}; ?>
 	<?php get_template_part( 'parts/banner' ); ?>
 </header>
 <main class="page-content" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
