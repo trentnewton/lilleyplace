@@ -588,50 +588,50 @@ class tt_opening_widget extends WP_Widget
  
       <!-- Widget Title -->
       <p>
-         <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', 'lilleyplace'); ?></label>
-         <input type="text" class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" value="<?php echo $instance['title']; ?>" />
+        <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', 'lilleyplace'); ?></label>
+        <input type="text" class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" value="<?php echo $instance['title']; ?>" />
       </p>
  
       <!-- Monday -->
       <p>
-         <label for="<?php echo $this->get_field_id('monday'); ?>"><?php _e('Monday:', 'lilleyplace'); ?></label>
-         <input type="text" class="widefat" id="<?php echo $this->get_field_id('monday'); ?>" name="<?php echo $this->get_field_name('monday'); ?>" value="<?php echo $instance['monday']; ?>" />
+        <label for="<?php echo $this->get_field_id('monday'); ?>"><?php _e('Monday:', 'lilleyplace'); ?></label>
+        <input type="text" class="widefat" id="<?php echo $this->get_field_id('monday'); ?>" name="<?php echo $this->get_field_name('monday'); ?>" value="<?php echo $instance['monday']; ?>" />
       </p>
  
       <!-- Tuesday -->
       <p>
-         <label for="<?php echo $this->get_field_id('tuesday'); ?>"><?php _e('Tuesday:', 'lilleyplace'); ?></label>
-         <input type="text" class="widefat" id="<?php echo $this->get_field_id('tuesday'); ?>" name="<?php echo $this->get_field_name('tuesday'); ?>" value="<?php echo $instance['tuesday']; ?>" />
+        <label for="<?php echo $this->get_field_id('tuesday'); ?>"><?php _e('Tuesday:', 'lilleyplace'); ?></label>
+        <input type="text" class="widefat" id="<?php echo $this->get_field_id('tuesday'); ?>" name="<?php echo $this->get_field_name('tuesday'); ?>" value="<?php echo $instance['tuesday']; ?>" />
       </p>
  
       <!-- Wednesday -->
       <p>
-         <label for="<?php echo $this->get_field_id('wednesday'); ?>"><?php _e('Wednesday:', 'lilleyplace'); ?></label>
-         <input type="text" class="widefat" id="<?php echo $this->get_field_id('wednesday'); ?>" name="<?php echo $this->get_field_name('wednesday'); ?>" value="<?php echo $instance['wednesday']; ?>" />
+        <label for="<?php echo $this->get_field_id('wednesday'); ?>"><?php _e('Wednesday:', 'lilleyplace'); ?></label>
+        <input type="text" class="widefat" id="<?php echo $this->get_field_id('wednesday'); ?>" name="<?php echo $this->get_field_name('wednesday'); ?>" value="<?php echo $instance['wednesday']; ?>" />
       </p>
  
       <!-- Thursday -->
       <p>
-         <label for="<?php echo $this->get_field_id('thursday'); ?>"><?php _e('Thursday:', 'lilleyplace'); ?></label>
-         <input type="text" class="widefat" id="<?php echo $this->get_field_id('thursday'); ?>" name="<?php echo $this->get_field_name('thursday'); ?>" value="<?php echo $instance['thursday']; ?>" />
+        <label for="<?php echo $this->get_field_id('thursday'); ?>"><?php _e('Thursday:', 'lilleyplace'); ?></label>
+        <input type="text" class="widefat" id="<?php echo $this->get_field_id('thursday'); ?>" name="<?php echo $this->get_field_name('thursday'); ?>" value="<?php echo $instance['thursday']; ?>" />
       </p>
  
       <!-- Friday -->
       <p>
-         <label for="<?php echo $this->get_field_id('friday'); ?>"><?php _e('Friday:', 'lilleyplace'); ?></label>
-         <input type="text" class="widefat" id="<?php echo $this->get_field_id('friday'); ?>" name="<?php echo $this->get_field_name('friday'); ?>" value="<?php echo $instance['friday']; ?>" />
+        <label for="<?php echo $this->get_field_id('friday'); ?>"><?php _e('Friday:', 'lilleyplace'); ?></label>
+        <input type="text" class="widefat" id="<?php echo $this->get_field_id('friday'); ?>" name="<?php echo $this->get_field_name('friday'); ?>" value="<?php echo $instance['friday']; ?>" />
       </p>
  
       <!-- Saturday -->
       <p>
-         <label for="<?php echo $this->get_field_id('saturday'); ?>"><?php _e('Saturday:', 'lilleyplace'); ?></label>
-         <input type="text" class="widefat" id="<?php echo $this->get_field_id('saturday'); ?>" name="<?php echo $this->get_field_name('saturday'); ?>" value="<?php echo $instance['saturday']; ?>" />
+        <label for="<?php echo $this->get_field_id('saturday'); ?>"><?php _e('Saturday:', 'lilleyplace'); ?></label>
+        <input type="text" class="widefat" id="<?php echo $this->get_field_id('saturday'); ?>" name="<?php echo $this->get_field_name('saturday'); ?>" value="<?php echo $instance['saturday']; ?>" />
       </p>
  
         <!-- Sunday -->
       <p>
-         <label for="<?php echo $this->get_field_id('sunday'); ?>"><?php _e('Sunday:', 'lilleyplace'); ?></label>
-         <input type="text" class="widefat" id="<?php echo $this->get_field_id('sunday'); ?>" name="<?php echo $this->get_field_name('sunday'); ?>" value="<?php echo $instance['sunday']; ?>" />
+        <label for="<?php echo $this->get_field_id('sunday'); ?>"><?php _e('Sunday:', 'lilleyplace'); ?></label>
+        <input type="text" class="widefat" id="<?php echo $this->get_field_id('sunday'); ?>" name="<?php echo $this->get_field_name('sunday'); ?>" value="<?php echo $instance['sunday']; ?>" />
       </p>
  
       <?php
@@ -705,18 +705,18 @@ class pu_media_upload_widget extends WP_Widget
       // Display Opening Hours widget
       ?>
       <ul class="small-block-grid-2 medium-block-grid-1 affiliates">
-         <?php if ($image1) { ?>
-         <li><img src="<?php echo $image1; ?>" width="141" height="60" alt="<?php if ($image1_name) { ?><?php echo $image1_name; ?><?php } ?>" /></li>
-         <?php } ?>
-         <?php if ($image2) { ?>
-         <li><img src="<?php echo $image2; ?>" width="141" height="60" alt="<?php if ($image2_name) { ?><?php echo $image2_name; ?><?php } ?>" /></li>
-         <?php } ?>
-         <?php if ($image3) { ?>
-         <li><img src="<?php echo $image3; ?>" width="141" height="60" alt="<?php if ($image3_name) { ?><?php echo $image3_name; ?><?php } ?>" /></li>
-         <?php } ?>
-         <?php if ($image4) { ?>
-         <li><img src="<?php echo $image4; ?>" width="141" height="60" alt="<?php if ($image4_name) { ?><?php echo $image4_name; ?><?php } ?>" /></li>
-         <?php } ?>
+        <?php if ($image1) { ?>
+        <li><img src="<?php echo $image1; ?>" width="141" height="60" alt="<?php if ($image1_name) { ?><?php echo $image1_name; ?><?php } ?>" <?php if ($image1_name) { ?>title="<?php echo $image1_name; ?>"<?php } ?>></li>
+        <?php } ?>
+        <?php if ($image2) { ?>
+        <li><img src="<?php echo $image2; ?>" width="141" height="60" alt="<?php if ($image2_name) { ?><?php echo $image2_name; ?><?php } ?>" <?php if ($image2_name) { ?>title="<?php echo $image2_name; ?>"<?php } ?>></li>
+        <?php } ?>
+        <?php if ($image3) { ?>
+        <li><img src="<?php echo $image3; ?>" width="141" height="60" alt="<?php if ($image3_name) { ?><?php echo $image3_name; ?><?php } ?>" <?php if ($image3_name) { ?>title="<?php echo $image3_name; ?>"<?php } ?>></li>
+        <?php } ?>
+        <?php if ($image4) { ?>
+        <li><img src="<?php echo $image4; ?>" width="141" height="60" alt="<?php if ($image4_name) { ?><?php echo $image4_name; ?><?php } ?>" <?php if ($image4_name) { ?>title="<?php echo $image4_name; ?>"<?php } ?>></li>
+        <?php } ?>
       </ul>
       <?php
       // After widget
@@ -794,68 +794,68 @@ class pu_media_upload_widget extends WP_Widget
       }
       ?>
       <script>
-         jQuery(document).ready(function($) {
-            $(document).on("click", ".upload_image_button", function() {
+        jQuery(document).ready(function($) {
+          $(document).on("click", ".upload_image_button", function() {
 
-               jQuery.data(document.body, 'prevElement', $(this).prev());
+             jQuery.data(document.body, 'prevElement', $(this).prev());
 
-               window.send_to_editor = function(html) {
-                  var imgurl = jQuery('img',html).attr('src');
-                  var inputText = jQuery.data(document.body, 'prevElement');
+             window.send_to_editor = function(html) {
+                var imgurl = jQuery('img',html).attr('src');
+                var inputText = jQuery.data(document.body, 'prevElement');
 
-                  if(inputText != undefined && inputText != '')
-                     {
-                        inputText.val(imgurl);
-                     }
+                if(inputText != undefined && inputText != '')
+                   {
+                      inputText.val(imgurl);
+                   }
 
-                     tb_remove();
-               };
+                   tb_remove();
+             };
 
-               tb_show('', 'media-upload.php?type=image&TB_iframe=true');
-               return false;
-            });
-         });
+             tb_show('', 'media-upload.php?type=image&TB_iframe=true');
+             return false;
+          });
+        });
       </script>
       <p>
-         <label for="<?php echo $this->get_field_name( 'title' ); ?>"><?php _e( 'Title:', 'lilleyplace' ); ?></label>
-         <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
+        <label for="<?php echo $this->get_field_name( 'title' ); ?>"><?php _e( 'Title:', 'lilleyplace' ); ?></label>
+        <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
       </p>
 
       <p>
-         <label for="<?php echo $this->get_field_name( 'image1' ); ?>"><?php _e( 'Image 1:', 'lilleyplace' ); ?></label>
-         <input name="<?php echo $this->get_field_name( 'image1' ); ?>" id="<?php echo $this->get_field_id( 'image1' ); ?>" class="widefat" type="text" size="36" value="<?php echo esc_url( $image1 ); ?>" />
-         <input class="upload_image_button" type="button" value="<?php _e( 'Upload Image', 'lilleyplace' ); ?>" />
+        <label for="<?php echo $this->get_field_name( 'image1' ); ?>"><?php _e( 'Image 1:', 'lilleyplace' ); ?></label>
+        <input name="<?php echo $this->get_field_name( 'image1' ); ?>" id="<?php echo $this->get_field_id( 'image1' ); ?>" class="widefat" type="text" size="36" value="<?php echo esc_url( $image1 ); ?>" />
+        <input class="upload_image_button" type="button" value="<?php _e( 'Upload Image', 'lilleyplace' ); ?>" />
       </p>
       <p>
-         <label for="<?php echo $this->get_field_name( 'image1_name' ); ?>"><?php _e( 'Image 1 Name:', 'lilleyplace' ); ?></label>
-         <input class="widefat" id="<?php echo $this->get_field_id( 'image1_name' ); ?>" name="<?php echo $this->get_field_name( 'image1_name' ); ?>" type="text" value="<?php echo esc_attr( $image1_name ); ?>" />
+        <label for="<?php echo $this->get_field_name( 'image1_name' ); ?>"><?php _e( 'Image 1 Name:', 'lilleyplace' ); ?></label>
+        <input class="widefat" id="<?php echo $this->get_field_id( 'image1_name' ); ?>" name="<?php echo $this->get_field_name( 'image1_name' ); ?>" type="text" value="<?php echo esc_attr( $image1_name ); ?>" />
       </p>
       <p>
-         <label for="<?php echo $this->get_field_name( 'image2' ); ?>"><?php _e( 'Image 2:', 'lilleyplace' ); ?></label>
-         <input name="<?php echo $this->get_field_name( 'image2' ); ?>" id="<?php echo $this->get_field_id( 'image2' ); ?>" class="widefat" type="text" size="36" value="<?php echo esc_url( $image2 ); ?>" />
-         <input class="upload_image_button" type="button" value="<?php _e( 'Upload Image', 'lilleyplace' ); ?>" />
+        <label for="<?php echo $this->get_field_name( 'image2' ); ?>"><?php _e( 'Image 2:', 'lilleyplace' ); ?></label>
+        <input name="<?php echo $this->get_field_name( 'image2' ); ?>" id="<?php echo $this->get_field_id( 'image2' ); ?>" class="widefat" type="text" size="36" value="<?php echo esc_url( $image2 ); ?>" />
+        <input class="upload_image_button" type="button" value="<?php _e( 'Upload Image', 'lilleyplace' ); ?>" />
       </p>
       <p>
-         <label for="<?php echo $this->get_field_name( 'image2_name' ); ?>"><?php _e( 'Image 2 Name:', 'lilleyplace' ); ?></label>
-         <input class="widefat" id="<?php echo $this->get_field_id( 'image2_name' ); ?>" name="<?php echo $this->get_field_name( 'image2_name' ); ?>" type="text" value="<?php echo esc_attr( $image2_name ); ?>" />
+        <label for="<?php echo $this->get_field_name( 'image2_name' ); ?>"><?php _e( 'Image 2 Name:', 'lilleyplace' ); ?></label>
+        <input class="widefat" id="<?php echo $this->get_field_id( 'image2_name' ); ?>" name="<?php echo $this->get_field_name( 'image2_name' ); ?>" type="text" value="<?php echo esc_attr( $image2_name ); ?>" />
       </p>
       <p>
-         <label for="<?php echo $this->get_field_name( 'image3' ); ?>"><?php _e( 'Image 3:', 'lilleyplace' ); ?></label>
-         <input name="<?php echo $this->get_field_name( 'image3' ); ?>" id="<?php echo $this->get_field_id( 'image3' ); ?>" class="widefat" type="text" size="36" value="<?php echo esc_url( $image3 ); ?>" />
-         <input class="upload_image_button" type="button" value="<?php _e( 'Upload Image', 'lilleyplace' ); ?>" />
+        <label for="<?php echo $this->get_field_name( 'image3' ); ?>"><?php _e( 'Image 3:', 'lilleyplace' ); ?></label>
+        <input name="<?php echo $this->get_field_name( 'image3' ); ?>" id="<?php echo $this->get_field_id( 'image3' ); ?>" class="widefat" type="text" size="36" value="<?php echo esc_url( $image3 ); ?>" />
+        <input class="upload_image_button" type="button" value="<?php _e( 'Upload Image', 'lilleyplace' ); ?>" />
       </p>
       <p>
-         <label for="<?php echo $this->get_field_name( 'image3_name' ); ?>"><?php _e( 'Image 3 Name:', 'lilleyplace' ); ?></label>
-         <input class="widefat" id="<?php echo $this->get_field_id( 'image3_name' ); ?>" name="<?php echo $this->get_field_name( 'image3_name' ); ?>" type="text" value="<?php echo esc_attr( $image3_name ); ?>" />
+        <label for="<?php echo $this->get_field_name( 'image3_name' ); ?>"><?php _e( 'Image 3 Name:', 'lilleyplace' ); ?></label>
+        <input class="widefat" id="<?php echo $this->get_field_id( 'image3_name' ); ?>" name="<?php echo $this->get_field_name( 'image3_name' ); ?>" type="text" value="<?php echo esc_attr( $image3_name ); ?>" />
       </p>
       <p>
-         <label for="<?php echo $this->get_field_name( 'image4' ); ?>"><?php _e( 'Image 4:', 'lilleyplace' ); ?></label>
-         <input name="<?php echo $this->get_field_name( 'image4' ); ?>" id="<?php echo $this->get_field_id( 'image4' ); ?>" class="widefat" type="text" size="36" value="<?php echo esc_url( $image4 ); ?>" />
-         <input class="upload_image_button" type="button" value="<?php _e( 'Upload Image', 'lilleyplace' ); ?>" />
+        <label for="<?php echo $this->get_field_name( 'image4' ); ?>"><?php _e( 'Image 4:', 'lilleyplace' ); ?></label>
+        <input name="<?php echo $this->get_field_name( 'image4' ); ?>" id="<?php echo $this->get_field_id( 'image4' ); ?>" class="widefat" type="text" size="36" value="<?php echo esc_url( $image4 ); ?>" />
+        <input class="upload_image_button" type="button" value="<?php _e( 'Upload Image', 'lilleyplace' ); ?>" />
       </p>
       <p>
-         <label for="<?php echo $this->get_field_name( 'image4_name' ); ?>"><?php _e( 'Image 4 Name:', 'lilleyplace' ); ?></label>
-         <input class="widefat" id="<?php echo $this->get_field_id( 'image4_name' ); ?>" name="<?php echo $this->get_field_name( 'image4_name' ); ?>" type="text" value="<?php echo esc_attr( $image4_name ); ?>" />
+        <label for="<?php echo $this->get_field_name( 'image4_name' ); ?>"><?php _e( 'Image 4 Name:', 'lilleyplace' ); ?></label>
+        <input class="widefat" id="<?php echo $this->get_field_id( 'image4_name' ); ?>" name="<?php echo $this->get_field_name( 'image4_name' ); ?>" type="text" value="<?php echo esc_attr( $image4_name ); ?>" />
       </p>
    <?php
    }
@@ -895,13 +895,13 @@ class google_maps_widget extends WP_Widget {
    // PART 2: The title and the text output
    ?>
 		<a href="#" data-reveal-id="google-maps-modal" title="<?php _e('Click to open larger map','lilleyplace');?>">
-         <div id='SGM'>
-            <img alt="<?php _e('Click to open larger map','lilleyplace');?>" title="<?php _e('Click to open larger map','lilleyplace');?>" src="//maps.googleapis.com/maps/api/staticmap?center=<?php echo rawurlencode($add); ?>+&amp;zoom=<?php echo $zoom; ?>&amp;size=250x250&amp;maptype=roadmap&amp;scale=2&amp;markers=size:default%7Ccolor:red%7Clabel:A%7C<?php echo rawurlencode($add); ?>+&amp;language=en&amp;visual_refresh=false">
-            <div class="SGM-overlay">
-               <span><?php _e('Click to open larger map','lilleyplace');?></span>
-            </div>
-         </div>
-      </a>
+      <div id='SGM'>
+        <img alt="<?php _e('Click to open larger map','lilleyplace');?>" title="<?php _e('Click to open larger map','lilleyplace');?>" src="//maps.googleapis.com/maps/api/staticmap?center=<?php echo rawurlencode($add); ?>+&amp;zoom=<?php echo $zoom; ?>&amp;size=250x250&amp;maptype=roadmap&amp;scale=2&amp;markers=size:default%7Ccolor:red%7Clabel:A%7C<?php echo rawurlencode($add); ?>+&amp;language=en&amp;visual_refresh=false">
+        <div class="SGM-overlay">
+          <span><?php _e('Click to open larger map','lilleyplace');?></span>
+        </div>
+      </div>
+    </a>
 		<div id="google-maps-modal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
 		  <h2 id="modalTitle"><?php echo $title; ?></h2>
 		  <p><?php echo $info; ?></p>
@@ -926,59 +926,59 @@ class google_maps_widget extends WP_Widget {
       // PART 2-3: Display the fields
    ?>
       <!-- PART 2: Widget Title field START -->
-         <p>
+          <p>
             <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', 'lilleyplace'); ?>
               <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" />
             </label>
-         </p>
+          </p>
       <!-- Widget Title field END -->
    
       <!-- PART 3: Zoom Level field START -->
-         <p>
+          <p>
             <label for="<?php echo $this->get_field_id('text'); ?>"><?php _e('Zoom Level:', 'lilleyplace'); ?>
               <select class='widefat' id="<?php echo $this->get_field_id('zoom_level'); ?>"
                       name="<?php echo $this->get_field_name('zoom_level'); ?>" type="text">
-                  <option value='0'<?php echo ($zoom=='0')?'selected':''; ?>>0 - <?php _e('entire world', 'lilleyplace'); ?></option>
-                  <option value='1'<?php echo ($zoom=='1')?'selected':''; ?>>1</option>
-                  <option value='2'<?php echo ($zoom=='2')?'selected':''; ?>>2</option>
-                  <option value='3'<?php echo ($zoom=='3')?'selected':''; ?>>3</option>
-                  <option value='4'<?php echo ($zoom=='4')?'selected':''; ?>>4</option>
-                  <option value='5'<?php echo ($zoom=='5')?'selected':''; ?>>5</option>
-                  <option value='6'<?php echo ($zoom=='6')?'selected':''; ?>>6</option>
-                  <option value='7'<?php echo ($zoom=='7')?'selected':''; ?>>7</option>
-                  <option value='8'<?php echo ($zoom=='8')?'selected':''; ?>>8</option>
-                  <option value='9'<?php echo ($zoom=='9')?'selected':''; ?>>9</option>
-                  <option value='10'<?php echo ($zoom=='10')?'selected':''; ?>>10</option>
-                  <option value='11'<?php echo ($zoom=='11')?'selected':''; ?>>11</option>
-                  <option value='12'<?php echo ($zoom=='12')?'selected':''; ?>>12</option>
-                  <option value='13'<?php echo ($zoom=='13')?'selected':''; ?>>13</option>
-                  <option value='14'<?php echo ($zoom=='14')?'selected':''; ?>>14</option>
-                  <option value='15'<?php echo ($zoom=='15')?'selected':''; ?>>15</option>
-                  <option value='16'<?php echo ($zoom=='16')?'selected':''; ?>>16</option>
-                  <option value='17'<?php echo ($zoom=='17')?'selected':''; ?>>17</option>
-                  <option value='18'<?php echo ($zoom=='18')?'selected':''; ?>>18</option>
-                  <option value='19'<?php echo ($zoom=='19')?'selected':''; ?>>19</option>
-                  <option value='20'<?php echo ($zoom=='20')?'selected':''; ?>>20</option>
-      	         <option value='21'<?php echo ($zoom=='21')?'selected':''; ?>>21</option>
-              	</select>
+                <option value='0'<?php echo ($zoom=='0')?'selected':''; ?>>0 - <?php _e('entire world', 'lilleyplace'); ?></option>
+                <option value='1'<?php echo ($zoom=='1')?'selected':''; ?>>1</option>
+                <option value='2'<?php echo ($zoom=='2')?'selected':''; ?>>2</option>
+                <option value='3'<?php echo ($zoom=='3')?'selected':''; ?>>3</option>
+                <option value='4'<?php echo ($zoom=='4')?'selected':''; ?>>4</option>
+                <option value='5'<?php echo ($zoom=='5')?'selected':''; ?>>5</option>
+                <option value='6'<?php echo ($zoom=='6')?'selected':''; ?>>6</option>
+                <option value='7'<?php echo ($zoom=='7')?'selected':''; ?>>7</option>
+                <option value='8'<?php echo ($zoom=='8')?'selected':''; ?>>8</option>
+                <option value='9'<?php echo ($zoom=='9')?'selected':''; ?>>9</option>
+                <option value='10'<?php echo ($zoom=='10')?'selected':''; ?>>10</option>
+                <option value='11'<?php echo ($zoom=='11')?'selected':''; ?>>11</option>
+                <option value='12'<?php echo ($zoom=='12')?'selected':''; ?>>12</option>
+                <option value='13'<?php echo ($zoom=='13')?'selected':''; ?>>13</option>
+                <option value='14'<?php echo ($zoom=='14')?'selected':''; ?>>14</option>
+                <option value='15'<?php echo ($zoom=='15')?'selected':''; ?>>15</option>
+                <option value='16'<?php echo ($zoom=='16')?'selected':''; ?>>16</option>
+                <option value='17'<?php echo ($zoom=='17')?'selected':''; ?>>17</option>
+                <option value='18'<?php echo ($zoom=='18')?'selected':''; ?>>18</option>
+                <option value='19'<?php echo ($zoom=='19')?'selected':''; ?>>19</option>
+                <option value='20'<?php echo ($zoom=='20')?'selected':''; ?>>20</option>
+                <option value='21'<?php echo ($zoom=='21')?'selected':''; ?>>21</option>
+            	</select>
             </label>
-         </p>
+          </p>
       <!-- Zoom Level field END -->
 
    	<!-- PART 5: Address field START -->
-         <p>
+          <p>
             <label for="<?php echo $this->get_field_id('address'); ?>"><?php _e('Address:', 'lilleyplace'); ?>
-               <input class="widefat" id="<?php echo $this->get_field_id('address'); ?>" name="<?php echo $this->get_field_name('address'); ?>" type="text" value="<?php echo esc_attr($add); ?>" />
+              <input class="widefat" id="<?php echo $this->get_field_id('address'); ?>" name="<?php echo $this->get_field_name('address'); ?>" type="text" value="<?php echo esc_attr($add); ?>" />
             </label>
-         </p>
+          </p>
       <!-- Address field END -->
 
       <!-- PART 6: Information field START -->
-         <p>
+          <p>
             <label for="<?php echo $this->get_field_id('information'); ?>"><?php _e('Information:', 'lilleyplace'); ?>
-            	<textarea name="<?php echo $this->get_field_name('information'); ?>" class="widefat" id="<?php echo $this->get_field_id('information'); ?>"><?php echo esc_attr($info); ?></textarea>
+              <textarea name="<?php echo $this->get_field_name('information'); ?>" class="widefat" id="<?php echo $this->get_field_id('information'); ?>"><?php echo esc_attr($info); ?></textarea>
             </label>
-         </p>
+          </p>
       <!-- Information field END -->
       <?php
    
@@ -1049,18 +1049,18 @@ class tt_contact_widget extends WP_Widget
       // Display Opening Hours widget
 ?>
 <ul class="vcard" itemscope itemtype="http://schema.org/Organization">
-   <?php if( $address ): ?>
-	<li class="address"><span itemprop="address"><?php echo $address.'<br />'.$city_state; ?></span></li>
-   <?php endif; ?>
-   <?php if( $phone ): ?>
-	<li class="phone"><span itemprop="telephone"><strong><?php _e('phone:','lilleyplace'); ?></strong>&nbsp;<?php echo '<a href="tel:'.rawurlencode($phone).'">'.$phone.'</a>'; ?></span></li>
-   <?php endif; ?>
-   <?php if( $fax ): ?>
-	<li class="fax"><span itemprop="faxNumber"><strong><?php _e('fax:','lilleyplace'); ?></strong>&nbsp;<?php echo $fax; ?></span></li>
-   <?php endif; ?>
-   <?php if( $email ): ?>
-	<li class="email"><span itemprop="email"><strong><?php _e('email:','lilleyplace'); ?></strong>&nbsp;<?php echo '<a href="mailto:'.antispambot($email).'">'.antispambot($email).'</a>'; ?></span></li>
-   <?php endif; ?>
+  <?php if( $address ): ?>
+  <li class="address"><span itemprop="address"><?php echo $address.'<br />'.$city_state; ?></span></li>
+  <?php endif; ?>
+  <?php if( $phone ): ?>
+  <li class="phone"><span itemprop="telephone"><strong><?php _e('phone:','lilleyplace'); ?></strong>&nbsp;<?php echo '<a href="tel:'.rawurlencode($phone).'">'.$phone.'</a>'; ?></span></li>
+  <?php endif; ?>
+  <?php if( $fax ): ?>
+  <li class="fax"><span itemprop="faxNumber"><strong><?php _e('fax:','lilleyplace'); ?></strong>&nbsp;<?php echo $fax; ?></span></li>
+  <?php endif; ?>
+  <?php if( $email ): ?>
+  <li class="email"><span itemprop="email"><strong><?php _e('email:','lilleyplace'); ?></strong>&nbsp;<?php echo '<a href="mailto:'.antispambot($email).'">'.antispambot($email).'</a>'; ?></span></li>
+  <?php endif; ?>
 </ul>
         <?php
       // After widget
