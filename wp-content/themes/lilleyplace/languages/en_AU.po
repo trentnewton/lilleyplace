@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: Lilley Place\n"
-"POT-Creation-Date: 2015-08-18 03:12+1000\n"
-"PO-Revision-Date: 2015-08-18 03:12+1000\n"
+"POT-Creation-Date: 2015-08-26 14:23+1000\n"
+"PO-Revision-Date: 2015-08-26 14:23+1000\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,11 +28,11 @@ msgstr ""
 msgid "Here are some links that you might find useful:"
 msgstr ""
 
-#: archive.php:42 index.php:40 search.php:34
+#: archive.php:42 index.php:47 search.php:34
 msgid "&larr; Older posts"
 msgstr ""
 
-#: archive.php:43 index.php:41 search.php:35
+#: archive.php:43 index.php:48 search.php:35
 msgid "Newer posts &rarr;"
 msgstr ""
 
@@ -111,48 +111,48 @@ msgstr ""
 msgid "Latest Posts from the Blog"
 msgstr ""
 
-#: footer.php:77
+#: footer.php:79
 msgid "Copyright"
 msgstr ""
 
-#: footer.php:77
+#: footer.php:79
 msgid "All rights reserved."
 msgstr ""
 
-#: footer.php:86
+#: footer.php:88
 msgid "Top"
 msgstr ""
 
-#: library/breadcrumbs.php:7 library/breadcrumbs.php:172
+#: library/breadcrumbs.php:7 library/breadcrumbs.php:175
 #, php-format
 msgid "Archive by Category &ldquo;%s&rdquo;"
 msgstr ""
 
-#: library/breadcrumbs.php:8 library/breadcrumbs.php:173
+#: library/breadcrumbs.php:8 library/breadcrumbs.php:176
 #, php-format
 msgid "&ldquo;%s&rdquo;"
 msgstr ""
 
-#: library/breadcrumbs.php:9 library/breadcrumbs.php:174
+#: library/breadcrumbs.php:9 library/breadcrumbs.php:177
 #, php-format
 msgid "Posts Tagged &ldquo;%s&rdquo;"
 msgstr ""
 
-#: library/breadcrumbs.php:10 library/breadcrumbs.php:175
+#: library/breadcrumbs.php:10 library/breadcrumbs.php:178
 #, php-format
 msgid "Articles Posted by %s"
 msgstr ""
 
-#: library/breadcrumbs.php:11 library/breadcrumbs.php:176
+#: library/breadcrumbs.php:11 library/breadcrumbs.php:179
 msgid "Error 404"
 msgstr ""
 
-#: library/breadcrumbs.php:159 library/breadcrumbs.php:310
+#: library/breadcrumbs.php:162 library/breadcrumbs.php:316
 #: library/navigation.php:215
 msgid "Page"
 msgstr ""
 
-#: library/breadcrumbs.php:171
+#: library/breadcrumbs.php:174
 msgid "Home"
 msgstr ""
 
@@ -267,8 +267,8 @@ msgid ""
 msgstr ""
 
 #: library/widget-areas.php:259 library/widget-areas.php:591
-#: library/widget-areas.php:796 library/widget-areas.php:890
-#: library/widget-areas.php:1053
+#: library/widget-areas.php:820 library/widget-areas.php:930
+#: library/widget-areas.php:1093
 msgid "Title:"
 msgstr ""
 
@@ -368,93 +368,109 @@ msgstr ""
 msgid "Use this widget to display your affiliate's logos."
 msgstr ""
 
-#: library/widget-areas.php:663 library/widget-areas.php:745
+#: library/widget-areas.php:663 library/widget-areas.php:749
 msgid "Affiliates"
 msgstr ""
 
-#: library/widget-areas.php:801
+#: library/widget-areas.php:825
 msgid "Image 1:"
 msgstr ""
 
-#: library/widget-areas.php:803 library/widget-areas.php:808
-#: library/widget-areas.php:813 library/widget-areas.php:818
+#: library/widget-areas.php:827 library/widget-areas.php:836
+#: library/widget-areas.php:845 library/widget-areas.php:854
 msgid "Upload Image"
 msgstr ""
 
-#: library/widget-areas.php:806
+#: library/widget-areas.php:830
+msgid "Image 1 Name:"
+msgstr ""
+
+#: library/widget-areas.php:834
 msgid "Image 2:"
 msgstr ""
 
-#: library/widget-areas.php:811
+#: library/widget-areas.php:839
+msgid "Image 2 Name:"
+msgstr ""
+
+#: library/widget-areas.php:843
 msgid "Image 3:"
 msgstr ""
 
-#: library/widget-areas.php:816
+#: library/widget-areas.php:848
+msgid "Image 3 Name:"
+msgstr ""
+
+#: library/widget-areas.php:852
 msgid "Image 4:"
 msgstr ""
 
-#: library/widget-areas.php:836
+#: library/widget-areas.php:857
+msgid "Image 4 Name:"
+msgstr ""
+
+#: library/widget-areas.php:876
 msgid "Google Maps Widget"
 msgstr ""
 
-#: library/widget-areas.php:857 library/widget-areas.php:859
-#: library/widget-areas.php:861
+#: library/widget-areas.php:897 library/widget-areas.php:899
+#: library/widget-areas.php:901
 msgid "Click to open larger map"
 msgstr ""
 
-#: library/widget-areas.php:898
+#: library/widget-areas.php:938
 msgid "Zoom Level:"
 msgstr ""
 
-#: library/widget-areas.php:901
+#: library/widget-areas.php:941
 msgid "entire world"
 msgstr ""
 
-#: library/widget-areas.php:930
+#: library/widget-areas.php:970
 msgid "Address:"
 msgstr ""
 
-#: library/widget-areas.php:938
+#: library/widget-areas.php:978
 msgid "Information:"
 msgstr ""
 
-#: library/widget-areas.php:982
+#: library/widget-areas.php:1022
 msgid "Use this widget to display your contact details."
 msgstr ""
 
-#: library/widget-areas.php:991
+#: library/widget-areas.php:1031
 msgid "Contact Details"
 msgstr ""
 
-#: library/widget-areas.php:1016
+#: library/widget-areas.php:1056
 msgid "phone:"
 msgstr ""
 
-#: library/widget-areas.php:1019
+#: library/widget-areas.php:1059
 msgid "fax:"
 msgstr ""
 
-#: library/widget-areas.php:1022
+#: library/widget-areas.php:1062
 msgid "email:"
 msgstr ""
 
-#: library/widget-areas.php:1070
+#: library/widget-areas.php:1110
 msgid "Street Address:"
 msgstr ""
 
-#: library/widget-areas.php:1087
+#: library/widget-areas.php:1127
 msgid "City, State, Zipcode:"
 msgstr ""
 
-#: library/widget-areas.php:1104
+#: library/widget-areas.php:1144
 msgid "Phone:"
 msgstr ""
 
-#: library/widget-areas.php:1121
+#: library/widget-areas.php:1161
 msgid "Fax:"
 msgstr ""
 
-#: library/widget-areas.php:1138
+#: library/widget-areas.php:1178
 msgid "Email:"
 msgstr ""
 

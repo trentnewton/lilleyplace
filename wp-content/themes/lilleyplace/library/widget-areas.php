@@ -689,9 +689,13 @@ class pu_media_upload_widget extends WP_Widget
       // The variables from the Widget settings
       $title   = apply_filters('widget_title', $instance['title']);
       $image1  = $instance['image1'];
+      $image1_name  = $instance['image1_name'];
       $image2  = $instance['image2'];
+      $image2_name  = $instance['image2_name'];
       $image3  = $instance['image3'];
+      $image3_name  = $instance['image3_name'];
       $image4  = $instance['image4'];
+      $image4_name  = $instance['image4_name'];
 
       // Before widget
       echo $before_widget;
@@ -702,16 +706,16 @@ class pu_media_upload_widget extends WP_Widget
       ?>
       <ul class="small-block-grid-2 medium-block-grid-1 affiliates">
          <?php if ($image1) { ?>
-         <li><img src="<?php echo $image1; ?>" width="141" height="60" alt="" /></li>
+         <li><img src="<?php echo $image1; ?>" width="141" height="60" alt="<?php if ($image1_name) { ?><?php echo $image1_name; ?><?php } ?>" /></li>
          <?php } ?>
          <?php if ($image2) { ?>
-         <li><img src="<?php echo $image2; ?>" width="141" height="60" alt="" /></li>
+         <li><img src="<?php echo $image2; ?>" width="141" height="60" alt="<?php if ($image2_name) { ?><?php echo $image2_name; ?><?php } ?>" /></li>
          <?php } ?>
          <?php if ($image3) { ?>
-         <li><img src="<?php echo $image3; ?>" width="141" height="60" alt="" /></li>
+         <li><img src="<?php echo $image3; ?>" width="141" height="60" alt="<?php if ($image3_name) { ?><?php echo $image3_name; ?><?php } ?>" /></li>
          <?php } ?>
          <?php if ($image4) { ?>
-         <li><img src="<?php echo $image4; ?>" width="141" height="60" alt="" /></li>
+         <li><img src="<?php echo $image4; ?>" width="141" height="60" alt="<?php if ($image4_name) { ?><?php echo $image4_name; ?><?php } ?>" /></li>
          <?php } ?>
       </ul>
       <?php
@@ -753,20 +757,40 @@ class pu_media_upload_widget extends WP_Widget
       {
          $image1 = $instance['image1'];
       }
+      $image1_name = '';
+      if(isset($instance['image1_name']))
+      {
+         $image1_name = $instance['image1_name'];
+      }
       $image2 = '';
       if(isset($instance['image2']))
       {
          $image2 = $instance['image2'];
+      }
+      $image2_name = '';
+      if(isset($instance['image2_name']))
+      {
+         $image2_name = $instance['image2_name'];
       }
       $image3 = '';
       if(isset($instance['image3']))
       {
          $image3 = $instance['image3'];
       }
+      $image3_name = '';
+      if(isset($instance['image3_name']))
+      {
+         $image3_name = $instance['image3_name'];
+      }
       $image4 = '';
       if(isset($instance['image4']))
       {
          $image4 = $instance['image4'];
+      }
+      $image4_name = '';
+      if(isset($instance['image4_name']))
+      {
+         $image4_name = $instance['image4_name'];
       }
       ?>
       <script>
@@ -799,23 +823,39 @@ class pu_media_upload_widget extends WP_Widget
 
       <p>
          <label for="<?php echo $this->get_field_name( 'image1' ); ?>"><?php _e( 'Image 1:', 'lilleyplace' ); ?></label>
-         <input name="<?php echo $this->get_field_name( 'image1' ); ?>" id="<?php echo $this->get_field_id( 'image1' ); ?>" class="widefat" type="text" size="36"  value="<?php echo esc_url( $image1 ); ?>" />
+         <input name="<?php echo $this->get_field_name( 'image1' ); ?>" id="<?php echo $this->get_field_id( 'image1' ); ?>" class="widefat" type="text" size="36" value="<?php echo esc_url( $image1 ); ?>" />
          <input class="upload_image_button" type="button" value="<?php _e( 'Upload Image', 'lilleyplace' ); ?>" />
+      </p>
+      <p>
+         <label for="<?php echo $this->get_field_name( 'image1_name' ); ?>"><?php _e( 'Image 1 Name:', 'lilleyplace' ); ?></label>
+         <input class="widefat" id="<?php echo $this->get_field_id( 'image1_name' ); ?>" name="<?php echo $this->get_field_name( 'image1_name' ); ?>" type="text" value="<?php echo esc_attr( $image1_name ); ?>" />
       </p>
       <p>
          <label for="<?php echo $this->get_field_name( 'image2' ); ?>"><?php _e( 'Image 2:', 'lilleyplace' ); ?></label>
-         <input name="<?php echo $this->get_field_name( 'image2' ); ?>" id="<?php echo $this->get_field_id( 'image2' ); ?>" class="widefat" type="text" size="36"  value="<?php echo esc_url( $image2 ); ?>" />
+         <input name="<?php echo $this->get_field_name( 'image2' ); ?>" id="<?php echo $this->get_field_id( 'image2' ); ?>" class="widefat" type="text" size="36" value="<?php echo esc_url( $image2 ); ?>" />
          <input class="upload_image_button" type="button" value="<?php _e( 'Upload Image', 'lilleyplace' ); ?>" />
+      </p>
+      <p>
+         <label for="<?php echo $this->get_field_name( 'image2_name' ); ?>"><?php _e( 'Image 2 Name:', 'lilleyplace' ); ?></label>
+         <input class="widefat" id="<?php echo $this->get_field_id( 'image2_name' ); ?>" name="<?php echo $this->get_field_name( 'image2_name' ); ?>" type="text" value="<?php echo esc_attr( $image2_name ); ?>" />
       </p>
       <p>
          <label for="<?php echo $this->get_field_name( 'image3' ); ?>"><?php _e( 'Image 3:', 'lilleyplace' ); ?></label>
-         <input name="<?php echo $this->get_field_name( 'image3' ); ?>" id="<?php echo $this->get_field_id( 'image3' ); ?>" class="widefat" type="text" size="36"  value="<?php echo esc_url( $image3 ); ?>" />
+         <input name="<?php echo $this->get_field_name( 'image3' ); ?>" id="<?php echo $this->get_field_id( 'image3' ); ?>" class="widefat" type="text" size="36" value="<?php echo esc_url( $image3 ); ?>" />
          <input class="upload_image_button" type="button" value="<?php _e( 'Upload Image', 'lilleyplace' ); ?>" />
       </p>
       <p>
+         <label for="<?php echo $this->get_field_name( 'image3_name' ); ?>"><?php _e( 'Image 3 Name:', 'lilleyplace' ); ?></label>
+         <input class="widefat" id="<?php echo $this->get_field_id( 'image3_name' ); ?>" name="<?php echo $this->get_field_name( 'image3_name' ); ?>" type="text" value="<?php echo esc_attr( $image3_name ); ?>" />
+      </p>
+      <p>
          <label for="<?php echo $this->get_field_name( 'image4' ); ?>"><?php _e( 'Image 4:', 'lilleyplace' ); ?></label>
-         <input name="<?php echo $this->get_field_name( 'image4' ); ?>" id="<?php echo $this->get_field_id( 'image4' ); ?>" class="widefat" type="text" size="36"  value="<?php echo esc_url( $image4 ); ?>" />
+         <input name="<?php echo $this->get_field_name( 'image4' ); ?>" id="<?php echo $this->get_field_id( 'image4' ); ?>" class="widefat" type="text" size="36" value="<?php echo esc_url( $image4 ); ?>" />
          <input class="upload_image_button" type="button" value="<?php _e( 'Upload Image', 'lilleyplace' ); ?>" />
+      </p>
+      <p>
+         <label for="<?php echo $this->get_field_name( 'image4_name' ); ?>"><?php _e( 'Image 4 Name:', 'lilleyplace' ); ?></label>
+         <input class="widefat" id="<?php echo $this->get_field_id( 'image4_name' ); ?>" name="<?php echo $this->get_field_name( 'image4_name' ); ?>" type="text" value="<?php echo esc_attr( $image4_name ); ?>" />
       </p>
    <?php
    }
