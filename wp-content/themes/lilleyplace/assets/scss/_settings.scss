@@ -1452,7 +1452,7 @@ $topbar-height: rem-calc(80);
 $topbar-link-color: $tertiary-color;
 $topbar-link-color-hover: $primary-color;
 $topbar-link-color-active: $primary-color;
-$topbar-link-color-active-hover: transparent;
+$topbar-link-color-active-hover: $primary-color;
 // $topbar-link-weight: $font-weight-normal;
 $topbar-link-font-size: 1.2rem;
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
