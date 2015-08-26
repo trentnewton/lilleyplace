@@ -17,6 +17,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="application-name" content="<?php bloginfo( 'name' ); ?>">
 	    <meta name="msapplication-TileColor" content="#ffffff">
+	    <link rel="profile" href="http://gmpg.org/xfn/11">
+		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 		<?php wp_head(); ?>
 		<?php if (get_header_image() != '') {?>
 		<style type="text/css">
