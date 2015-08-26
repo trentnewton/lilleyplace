@@ -29,6 +29,23 @@
 		<?php } ?>
 	</head>
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
+		<script>
+		  window.fbAsyncInit = function() {
+		    FB.init({
+		      appId      : '166062943727833',
+		      xfbml      : true,
+		      version    : 'v2.4'
+		    });
+		  };
+
+		  (function(d, s, id){
+		     var js, fjs = d.getElementsByTagName(s)[0];
+		     if (d.getElementById(id)) {return;}
+		     js = d.createElement(s); js.id = id;
+		     js.src = "//connect.facebook.net/en_US/sdk.js";
+		     fjs.parentNode.insertBefore(js, fjs);
+		   }(document, 'script', 'facebook-jssdk'));
+		</script>
 	<?php do_action( 'lilleyplace_after_body' ); ?>
 	<?php get_template_part( 'parts/svg_icons' ); ?>
 		<header itemscope itemtype="http://schema.org/WPHeader">
