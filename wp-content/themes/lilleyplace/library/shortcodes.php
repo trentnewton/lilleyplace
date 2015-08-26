@@ -113,4 +113,12 @@ function website_shortcode( $atts ) {
 }
 add_shortcode('website', 'website_shortcode');
 
+function email_shortcode( $atts ) {
+   extract(shortcode_atts(array(
+       'key' => '',
+   ), $atts));
+   return antispambot(get_option('admin_email'));
+}
+add_shortcode('email', 'email_shortcode');
+
 ?>
