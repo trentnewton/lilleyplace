@@ -1059,7 +1059,7 @@ class tt_contact_widget extends WP_Widget
 	<li class="fax"><span itemprop="faxNumber"><strong><?php _e('fax:','lilleyplace'); ?></strong>&nbsp;<?php echo $fax; ?></span></li>
    <?php endif; ?>
    <?php if( $email ): ?>
-	<li class="email"><span itemprop="email"><strong><?php _e('email:','lilleyplace'); ?></strong>&nbsp;<?php echo '<a href="mailto:'.$email.'">'.$email.'</a>'; ?></span></li>
+	<li class="email"><span itemprop="email"><strong><?php _e('email:','lilleyplace'); ?></strong>&nbsp;<?php echo '<a href="mailto:'.antispambot($email).'">'.antispambot($email).'</a>'; ?></span></li>
    <?php endif; ?>
 </ul>
         <?php
