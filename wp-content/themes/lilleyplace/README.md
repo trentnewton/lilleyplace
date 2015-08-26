@@ -1,29 +1,13 @@
-# Foundation Compass Template
+# Lilley Place Wordpress Theme
 
-The easiest way to get started with Foundation + Compass.
+This theme is built on [Foundation](http://foundation.zurb.com), check it out the docs while you are there to get a grasp of some of the features that are being used.
 
 ## Requirements
 
-  * Ruby 1.9+
-  * [Node.js](http://nodejs.org)
-  * [compass](http://compass-style.org/): `gem install compass`
-  * [bower](http://bower.io): `npm install bower -g`
+This theme is using Sass instead of normal CSS, so please don't edit style.css, there's nothing there but Wordpress theme info. Instead please look at /assets/scss instead if you want to make changes to the theme.
 
-## Quickstart
+The Sass has been compiled using [Codekit](https://incident57.com/codekit/) and outputs to /assets/css. Planning to move over to Gulp in the near future.
 
-  * [Download this starter compass project and unzip it](https://github.com/zurb/foundation-compass-template/archive/master.zip)
-  * Run `bower install` to install the latest version of Foundation
-  
-Then when you're working on your project, just run the following command:
+The Javascript has been concatenated using Codekit too and outputs to /assets/js/min.
 
-```bash
-bundle exec compass watch
-```
-
-## Upgrading
-
-If you'd like to upgrade to a newer version of Foundation down the road just run:
-
-```bash
-bower update
-```
+The language files have been made using [Poedit](https://poedit.net) and are in the /languages folder.
