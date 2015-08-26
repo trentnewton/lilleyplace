@@ -1,6 +1,6 @@
 # Lilley Place Wordpress Theme
 
-This theme is built on [Foundation](http://foundation.zurb.com), check it out the docs while you are there to get a grasp of some of the features that are being used.
+This theme is built on [Foundation](http://foundation.zurb.com), check out the docs while you are there to get a grasp of some of the features that are being used.
 
 ## Requirements
 
