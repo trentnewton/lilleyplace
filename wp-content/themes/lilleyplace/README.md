@@ -12,7 +12,7 @@ The Javascript has been concatenated using Codekit too and outputs to /assets/js
 
 The language files have been made using [Poedit](https://poedit.net) and are in the /languages folder.
 
-This theme has number of dependencies and they need to be installed and activaed as Wordpress plugins for it to function properly.
+This theme has number of dependencies and they need to be installed and activated as Wordpress plugins for it to function properly.
 The list is here:
 
 * [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/) - Also needs fields to be created as well, contact me for more information
