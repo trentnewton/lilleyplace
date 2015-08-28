@@ -121,4 +121,9 @@ function email_shortcode( $atts ) {
 }
 add_shortcode('email', 'email_shortcode');
 
+function tel_shortcode( $atts , $content = null ) {
+  return '<a href="tel:' . rawurlencode( $content ) . '">' . $content . '</a>';
+}
+add_shortcode( 'tel', 'tel_shortcode' );
+
 ?>
