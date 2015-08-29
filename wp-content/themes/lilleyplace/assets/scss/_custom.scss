@@ -127,7 +127,7 @@ ol:not(.comment-list) {
 
 blockquote {
 	position: relative;
-	box-shadow: 1px 0 4px #ccc;
+	box-shadow: 1px 0 4px $iron;
 	border-radius: $global-radius;
 
 	&:before {
@@ -418,14 +418,14 @@ input[type="submit"] {
 	text-shadow: 0 1px 0 rgba($white, 0.4);
 	box-shadow: 0 1px 1px rgba($black, 0.08);
 	background: linear-gradient(
-		rgba(202,226,133, 1) 0%,
-		rgba(154,196,83, 1) 100%);
+		rgba(scale-color($primary-color, $lightness: 60%, $saturation: -30%), 1) 0%,
+		rgba(scale-color($primary-color, $lightness: 32%, $saturation: -50%), 1) 100%);
 
 	&:hover {
 		background: linear-gradient(
-			rgba(154,196,83, 1) 0%,
-			rgba(154,196,83, 1) 100%);
-		border-color: #8BB14D;
+			rgba(scale-color($primary-color, $lightness: 32%, $saturation: -50%), 1) 0%,
+			rgba(scale-color($primary-color, $lightness: 32%, $saturation: -50%), 1) 100%);
+		border-color: scale-color($primary-color, $lightness: 27%, $saturation: -50%);
 	}
 
 	&.postfix {
@@ -470,7 +470,7 @@ img.ajax-loader {
 		margin-bottom: rem-calc(4) !important;
 
 		> a {
-			border: 1px solid #e9e9e9;
+			border: 1px solid $silver;
 			border-radius: 5px;
 			position: relative;
 
@@ -582,7 +582,7 @@ img.ajax-loader {
 #main-hero,
 .footer-display,
 #small-banner {
-	background: radial-gradient(circle, #8F4EC2, #513567);
+	background: radial-gradient(circle, $secondary-color, scale-color($secondary-color, $lightness: -50%, $saturation: -20%));
 	position: relative;
 	z-index: 1;
 	overflow: visible;
@@ -620,9 +620,9 @@ img.ajax-loader {
 }
 
 .image-frame {
-	border: 1px solid #ccc;
-	border-color: #f1f1f1 #ddd #bbb #ddd;
-	box-shadow: 1px 1px 2px #ccc;
+	border: 1px solid $iron;
+	border-color: $silver $gainsboro $iron $gainsboro;
+	box-shadow: 1px 1px 2px $iron;
 	border-radius: $global-radius;
 	padding: rem-calc(15);
 	background: rgba($white, 0.5);
@@ -757,7 +757,7 @@ a {
 			> a {
 				color: $white;
 				text-transform: uppercase;
-				border: 1px solid #AED613;
+				border: 1px solid scale-color($primary-color, $lightness: 32%, $saturation: -50%);
 				padding: rem-calc(12 12 12 56);
 				display: flex;
 				align-items: center;
@@ -765,13 +765,13 @@ a {
 				&:hover {
 
 					&:after {
-						background: linear-gradient(to bottom, #AED613, scale-color(#467612, $lightness: 10%));
+						background: linear-gradient(to bottom, scale-color($primary-color, $lightness: 32%, $saturation: -50%), scale-color($primary-color, $lightness: 2%, $saturation: -55%));
 					}
 
 				}
 
 				&:after {
-					background: linear-gradient(to bottom, #AED613, #467612);
+					background: linear-gradient(to bottom, scale-color($primary-color, $lightness: 32%, $saturation: -50%), scale-color($primary-color, $lightness: -12%, $saturation: -55%));
 				}
 
 			}
@@ -785,7 +785,7 @@ a {
 			}
 
 			.content {
-				border: 1px solid #AED613;
+				border: 1px solid scale-color($primary-color, $lightness: 32%, $saturation: -50%);
 				border-top: none;
 				border-radius: 0 0 $global-radius $global-radius;
 			}
@@ -818,7 +818,7 @@ a {
 	}
 
 	input.s {
-		background: #4e2f66;
+		background: scale-color($secondary-color, $lightness: -50%, $saturation: -20%);
 		border: none;
 		cursor: pointer;
 		height: rem-calc(27);
@@ -833,7 +833,7 @@ a {
 		border-radius: rem-calc(20);
 		
 		&:focus {
-			background-color: scale-color(#4e2f66, $lightness: -20%);
+			background-color: scale-color($secondary-color, $lightness: -60%, $saturation: -20%);
 			cursor: text;
 			max-width: rem-calc(230);
 
@@ -923,7 +923,7 @@ th {
 
 .tt-cb-title-lime-green,
 tr th {
-	background-image: linear-gradient(to bottom, #AED613, #467612);
+	background-image: linear-gradient(to bottom, scale-color($primary-color, $lightness: 32%, $saturation: -50%), scale-color($primary-color, $lightness: -12%, $saturation: -55%));
 }
 
 /* STAFF */
@@ -976,7 +976,7 @@ tr th {
 	line-height: rem-calc(42);
 	margin: rem-calc(1 10 30 0);
 	width: rem-calc(41);
-	background: linear-gradient(to bottom, #aed430 0%, #4b761c 100%);
+	background: linear-gradient(to bottom, scale-color($primary-color, $lightness: 32%, $saturation: -50%) 0%, scale-color($primary-color, $lightness: -12%, $saturation: -55%) 100%);
 	border-radius: 50%;
 }
 
@@ -1148,7 +1148,7 @@ tr th {
 	iframe {
 		width: 100%;
 		height: 40vh;
-		background: rgb(229,227,223);
+		background: $google-maps;
 
 		@media #{$small-landscape} {
 			height: 60vh;
@@ -1793,7 +1793,7 @@ img.avatar {
 
 }
 
-ul.footer-nav {
+.footer-nav {
 	margin: 0;
 	position: relative;
 	width: rem-calc(340);

@@ -25,17 +25,12 @@ div.wpcf7 {
 		display: none;
 	}
 
-	// .placeheld {
-	// 	color: #888;
-	// }
-
 }
 
 div.wpcf7-response-output {
 	@extend .mar-b-30;
 	border: 1px solid;
 	width: 100%;
-	border-bottom-width: 2px;
 	font-size: $paragraph-font-size;
 	line-height: $paragraph-line-height;
 	text-align: center;
@@ -65,39 +60,39 @@ div.wpcf7-response-output {
 	
 	&.wpcf7-mail-sent-ng,
 	&.wpcf7-spam-blocked {
-		border-color: #f7d5d6 #f1c8ca #f2b5b8;
-		background-image: linear-gradient(to bottom, #fbe2e3, #eeccce);
+		border-color: $alert-color;
+		background-image: linear-gradient(to bottom, scale-color($alert-color, $lightness: 65%, $saturation: 20%), scale-color($alert-color, $lightness: 35%, $saturation: 20%));
 
 		&:before {
 			background:
 			url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"><path fill="rgb(255,255,255)" d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z"></path></svg>') no-repeat center,
-			linear-gradient(to bottom, rgba(242,181,184, 1) 0%, rgba(247,213,214, 1) 100%);
+			linear-gradient(to bottom, rgba(scale-color($alert-color, $lightness: -10%, $saturation: -10%), 1) 0%, rgba($alert-color, 1) 100%);
 			background-size: rem-calc(15);
 		}
 
 	}
 
 	&.wpcf7-validation-errors {
-		border-color: #f7dc72 #f4d96c #eace61;
-		background-image: linear-gradient(to bottom, #ffffb9, #f0efae);
+		border-color: $warning-color;
+		background-image: linear-gradient(to bottom, scale-color($warning-color, $lightness: 65%, $saturation: 20%), scale-color($warning-color, $lightness: 35%, $saturation: 20%));
 
 		&:before {
 			background:
 			url('data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-409 165 32 32" enable-background="new -409 165 32 32" xml:space="preserve"><path fill="rgb(255,255,255)" d="M-389.5,195.5v-5.1c0-0.1,0-0.2-0.1-0.3c-0.1-0.3-0.4-0.5-0.8-0.5h-5.4c-0.3,0-0.6,0.2-0.8,0.5 c0,0.1-0.1,0.2-0.1,0.3v5.5h0v0.1c0,0.1,0,0.2,0.1,0.3c0.1,0.3,0.4,0.5,0.8,0.5h5.4c0.3,0,0.6-0.2,0.8-0.5c0-0.1,0.1-0.2,0.1-0.3 L-389.5,195.5L-389.5,195.5z"/><path fill="rgb(255,255,255)" d="M-389.5,165.6c-0.1-0.3-0.4-0.5-0.8-0.5h-5.4c-0.3,0-0.6,0.2-0.8,0.5c0,0.1-0.1,0.2-0.1,0.3v11.5h0v6.9 c0,0.1,0,0.2,0.1,0.3c0.1,0.3,0.4,0.5,0.8,0.5h5.4c0.3,0,0.6-0.2,0.8-0.5c0-0.1,0.1-0.2,0.1-0.3v-6.9v-2.6V166 C-389.5,165.8-389.5,165.7-389.5,165.6z"/></svg>') no-repeat center,
-			linear-gradient(to bottom, rgba(234,207,97, 1) 0%, rgba(247,220,114, 1) 100%);
+			linear-gradient(to bottom, rgba(scale-color($warning-color, $lightness: -10%, $saturation: -10%), 1) 0%, rgba($warning-color, 1) 100%);
 			background-size: rem-calc(15);
 		}
 
 	}
 
 	&.wpcf7-mail-sent-ok {
-		border-color: #d0e289 #c6d881 #b8cb71;	
-		background-image: linear-gradient(to bottom, #e6efc2, #d9e2b7);
+		border-color: $success-color;	
+		background-image: linear-gradient(to bottom, scale-color($success-color, $lightness: 65%, $saturation: 20%), scale-color($success-color, $lightness: 35%, $saturation: 20%));
 
 		&:before {
 			background:
 			url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"><path fill="rgb(255,255,255)" d="M27 4l-15 15-7-7-5 5 12 12 20-20z"></path></svg>') no-repeat center,
-			linear-gradient(to bottom, rgba(184,203,113, 1) 0%, rgba(208,226,137, 1) 100%);
+			linear-gradient(to bottom, rgba(scale-color($success-color, $lightness: -10%, $saturation: -10%), 1) 0%, rgba($success-color, 1) 100%);
 			background-size: rem-calc(15);
 		}
 
@@ -119,7 +114,7 @@ span.wpcf7-not-valid-tip {
 	top: 20%;
 	left: 20%;
 	z-index: 100;
-	border: 1px solid #ff0000;
+	border: 1px solid $alert-color;
 	background: $white;
 	padding: .2em .8em;
 }

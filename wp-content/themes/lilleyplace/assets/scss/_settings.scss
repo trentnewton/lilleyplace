@@ -107,7 +107,7 @@ $white       : #FFFFFF;
 // $white-smoke : #F5F5F5;
 // $silver      : #EFEFEF;
 $smoke       : #EEEEEE;
-// $gainsboro   : #DDDDDD;
+$gainsboro   : #DDDDDD;
 $iron        : #CCCCCC;
 // $base        : #AAAAAA;
 // $aluminum    : #999999;
@@ -128,34 +128,20 @@ $rss: #f26522;
 $instagram: #3f729b;
 $google-plus: #dd4b39;
 
+$google-maps: rgb(229,227,223);
+
 // We use these as default colors throughout
 $primary-color: #75b302;
 $secondary-color: #8F4EC2;
-// $alert-color: #f04124;
-// $success-color: #43AC6A;
-// $warning-color: #f08a24;
-// $info-color: #a0d3e8;
-
-// #f7f7f7;
-// #c3c3c3
-
-// #4e2f66
-
-// 229,229,229 #e5e5e5
-
-// 202,226,133 #cae285
-// 154,196,83
-
-// #8F4EC2, #513567
-
-// #ccc #f1f1f1 #ddd #bbb #ddd
-
 $tertiary-color: #707885;
-$tertiary-color2: #636b75;
+$alert-color: #f77272;
+$success-color: #b1f772;
+$warning-color: #f7dc72;
+$info-color: #72a1f7;
 
 // We use these to control various global styles
 // $body-bg: $white;
-$body-font-color: $tertiary-color2;
+$body-font-color: scale-color($tertiary-color, $lightness: -10%);
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -250,7 +236,7 @@ $small-medium-only: "#{$screen} and (max-width: #{upper-bound($medium-range)})";
 // $header-font-family: $body-font-family;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
-$header-font-color: #513567;
+$header-font-color: scale-color($secondary-color, $lightness: -50%, $saturation: -20%);
 $header-line-height: 1.44;
 $header-top-margin: 0;
 // $header-bottom-margin: 0;
@@ -486,7 +472,7 @@ $crumb-slash-color: scale-color($tertiary-color, $lightness: 50%);
 
 // We use these to control button text styles.
 // $button-font-family: $body-font-family;
-$button-font-color: #5D7731;
+$button-font-color: scale-color($primary-color, $lightness: -12%, $saturation: -55%);
 // $button-font-color-alt: $oil;
 // $button-font-tny: rem-calc(11);
 // $button-font-sml: rem-calc(13);
@@ -502,8 +488,8 @@ $button-font-weight: $font-weight-bold;
 $button-border-width: 1px;
 // $button-border-style: solid;
 // $button-bg-color: none;
-$button-bg-hover: #9ac453;
-$button-border-color: #D2D2D2;
+$button-bg-hover: scale-color($primary-color, $lightness: 32%, $saturation: -50%);
+$button-border-color: $gainsboro;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
 // $secondary-button-border-color: $secondary-button-bg-hover;
 // $success-button-bg-hover: scale-color($success-color, $lightness: $button-function-factor);
@@ -686,7 +672,7 @@ $input-font-color: rgba($body-font-color,0.75);
 // $input-font-size: rem-calc(14);
 // $input-bg-color: $white;
 // $input-focus-bg-color: scale-color($white, $lightness: -2%);
-$input-border-color: #D2D2D2;
+$input-border-color: $gainsboro;
 $input-focus-border-color: $primary-color;
 // $input-border-style: solid;
 // $input-border-width: 1px;
