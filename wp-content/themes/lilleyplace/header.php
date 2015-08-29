@@ -12,6 +12,11 @@
 ?>
 <!doctype html>
 <html class="no-js" <?php language_attributes(); ?>>
+	<?php
+		if (function_exists('orderStyleJS')) {
+			orderStyleJS( 'start' );
+		}
+	?>
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,6 +33,11 @@
 		</style>
 		<?php } ?>
 	</head>
+	<?php
+		if (function_exists('orderStyleJS')) {
+			orderStyleJS( 'end' );
+		}
+	?>
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
 	<?php get_template_part( 'parts/facebook_app' ); ?>
 	<?php do_action( 'lilleyplace_after_body' ); ?>
