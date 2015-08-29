@@ -6,7 +6,7 @@
 |___/_|_|\___|_|\_(_)/ |___/
                    |__/
 
- Version: 1.5.7
+ Version: 1.5.8
   Author: Ken Wheeler
  Website: http://kenwheeler.github.io
     Docs: http://kenwheeler.github.io/slick
@@ -827,33 +827,32 @@
             _.$dots.remove();
         }
 
-        if ( _.options.arrows === true ) {
 
-            if ( _.$prevArrow && _.$prevArrow.length ) {
+        if ( _.$prevArrow && _.$prevArrow.length ) {
 
-                _.$prevArrow
-                    .removeClass('slick-disabled slick-arrow slick-hidden')
-                    .removeAttr('aria-hidden aria-disabled tabindex')
-                    .css("display","");
+            _.$prevArrow
+                .removeClass('slick-disabled slick-arrow slick-hidden')
+                .removeAttr('aria-hidden aria-disabled tabindex')
+                .css("display","");
 
-                if ( _.htmlExpr.test( _.options.prevArrow )) {
-                    _.$prevArrow.remove();
-                }
+            if ( _.htmlExpr.test( _.options.prevArrow )) {
+                _.$prevArrow.remove();
             }
+        }
 
-            if ( _.$nextArrow && _.$nextArrow.length ) {
+        if ( _.$nextArrow && _.$nextArrow.length ) {
 
-                _.$nextArrow
-                    .removeClass('slick-disabled slick-arrow slick-hidden')
-                    .removeAttr('aria-hidden aria-disabled tabindex')
-                    .css("display","");
+            _.$nextArrow
+                .removeClass('slick-disabled slick-arrow slick-hidden')
+                .removeAttr('aria-hidden aria-disabled tabindex')
+                .css("display","");
 
-                if ( _.htmlExpr.test( _.options.nextArrow )) {
-                    _.$nextArrow.remove();
-                }
+            if ( _.htmlExpr.test( _.options.nextArrow )) {
+                _.$nextArrow.remove();
             }
 
         }
+
 
         if (_.$slides) {
 
@@ -1482,8 +1481,8 @@
 
     };
 
-    Slick.prototype.preventDefault = function(e) {
-        e.preventDefault();
+    Slick.prototype.preventDefault = function(event) {
+        event.preventDefault();
     };
 
     Slick.prototype.progressiveLazyLoad = function() {
@@ -1513,8 +1512,22 @@
 
     Slick.prototype.refresh = function( initializing ) {
 
-        var _ = this,
-            currentSlide = _.currentSlide;
+        var _ = this, currentSlide, firstVisible;
+
+        firstVisible = _.slideCount - _.options.slidesToShow;
+
+        // check that the new breakpoint can actually accept the
+        // "current slide" as the current slide, otherwise we need
+        // to set it to the closest possible value.
+        if ( !_.options.infinite ) {
+            if ( _.slideCount <= _.options.slidesToShow ) {
+                _.currentSlide = 0;
+            } else if ( _.currentSlide > firstVisible ) {
+                _.currentSlide = firstVisible;
+            }
+        }
+
+         currentSlide = _.currentSlide;
 
         _.destroy(true);
 
