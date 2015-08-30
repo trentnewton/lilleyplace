@@ -139,9 +139,18 @@ $success-color: #b1f772;
 $warning-color: #f7dc72;
 $info-color: #72a1f7;
 
+// rgb encoded
+$white-rgb: rgba($white, 0.99);
+$black-rgb: rgba($black, 0.99);
+$primary-color-rgb: rgba($primary-color, 0.99);
+$secondary-color-rgb: rgba($secondary-color, 0.99);
+$tertiary-color-rgb: rgba($tertiary-color, 0.99);
+$tertiary-color-80-rgb: rgba(scale-color($tertiary-color, $lightness: 80%), 0.99);
+
 // We use these to control various global styles
 // $body-bg: $white;
 $body-font-color: scale-color($tertiary-color, $lightness: -10%);
+$body-font-color-rgb: rgba($body-font-color, 0.99);
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -668,7 +677,7 @@ $form-label-font-color: $body-font-color;
 // $form-label-small-transform: capitalize;
 // $form-label-bottom-margin: 0;
 // $input-font-family: inherit;
-$input-font-color: rgba($body-font-color,0.75);
+$input-font-color: rgba($body-font-color, 0.75);
 // $input-font-size: rem-calc(14);
 // $input-bg-color: $white;
 // $input-focus-bg-color: scale-color($white, $lightness: -2%);
