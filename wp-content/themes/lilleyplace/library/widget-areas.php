@@ -1050,7 +1050,7 @@ class tt_contact_widget extends WP_Widget
 ?>
 <ul class="vcard" itemscope itemtype="http://schema.org/Organization">
   <?php if( $address ): ?>
-  <li class="address"><span itemprop="address"><?php echo $address.'<br />'.$city_state; ?></span></li>
+  <li class="address"><address itemprop="address"><?php echo $address.'<br />'.$city_state; ?></address></li>
   <?php endif; ?>
   <?php if( $phone ): ?>
   <li class="phone"><span itemprop="telephone"><strong><?php _e('phone:','lilleyplace'); ?></strong>&nbsp;<?php echo '<a href="tel:'.rawurlencode($phone).'">'.$phone.'</a>'; ?></span></li>

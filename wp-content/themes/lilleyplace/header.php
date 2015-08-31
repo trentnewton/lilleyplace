@@ -13,8 +13,8 @@
 <!doctype html>
 <html class="no-js" <?php language_attributes(); ?>>
 	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="<?php bloginfo( 'charset' ); ?>">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="application-name" content="<?php bloginfo( 'name' ); ?>">
 	    <meta name="msapplication-TileColor" content="#ffffff">
 	    <link rel="profile" href="http://gmpg.org/xfn/11">

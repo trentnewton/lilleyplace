@@ -30,6 +30,9 @@ function lilleyplace_theme_support() {
 	// Add the Wordpress Link Manager
 	add_filter( 'pre_option_link_manager_enabled', '__return_true' );
 
+	// Add custom background to Customizer
+	add_theme_support( 'custom-background', $args );
+
 	// Display the full TinyMCE text editor
 	function enable_more_buttons($buttons) {
 
@@ -55,6 +58,39 @@ function lilleyplace_theme_support() {
 if ( ! isset( $content_width ) ) {
 	$content_width = 1024;
 }
+
+/**
+ * Adds the individual sections, settings, and controls to the theme customizer
+ */
+function theme_customiser( $wp_customize ) {
+    $wp_customize->add_section(
+        'section_one',
+        array(
+            'title' => 'Footer',
+            'description' => __( 'Change the text of the footer.', 'lilleyplace' ),
+            'priority' => 999,
+        )
+    );
+
+    $wp_customize->add_setting(
+	    'copyright_textbox',
+	    array(
+	        'default' => '',
+	        'sanitize_callback' => 'esc_url_raw'
+	    )
+	);
+
+	$wp_customize->add_control(
+	    'copyright_textbox',
+	    array(
+	        'label' => __( 'Copyright Text (will override the default text)', 'lilleyplace' ),
+	        'section' => 'section_one',
+	        'type' => 'text',
+	    )
+	);
+}
+
+add_action( 'customize_register', 'theme_customiser' );
 
 add_action( 'after_setup_theme', 'lilleyplace_theme_support' );
 endif;

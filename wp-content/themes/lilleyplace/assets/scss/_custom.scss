@@ -19,7 +19,7 @@ svg {
 }
 
 table {
-	border-spacing: 0;   
+	border-spacing: 0;
 	border-radius: $global-radius;
 	border-collapse: separate;
 	width: 100%;
@@ -39,14 +39,21 @@ tr td {
 
 }
 
-main,
-header,
-nav,
-section,
 article,
 aside,
-footer {
-   display: block;
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+	display: block;
+}
+
+address {
+	font-style: normal;
 }
 
 figure {
@@ -111,7 +118,7 @@ ol:not(.comment-list) {
 		counter-increment: count-me;
 
 		&:before {
-			content: counter(count-me) ". ";
+			content: counter(count-me) '. ';
 		    display: block;
 		    position: relative;
 		    max-width: 0;
@@ -131,7 +138,7 @@ blockquote {
 	border-radius: $global-radius;
 
 	&:before {
-		content: "\201C";
+		content: '\201C';
 		position: absolute;
 		left: rem-calc(10);
 		top: rem-calc(-5);
@@ -658,7 +665,7 @@ a {
 	position: relative;
 
 	&:after {
-		content: "";
+		content: '';
 		background: url("#{$imagePath}/lilypad-287519.jpg") center;
 		background-size: cover;
 		// background-attachment: fixed;
@@ -983,7 +990,7 @@ tr th {
 	}
 
 	&:before {
-		content: "";
+		content: '';
 		position: absolute;
 		height: 100%;
 		width: 96%;
@@ -1252,7 +1259,7 @@ div.wpcf7 {
 		left: rem-calc(-142);
 		margin-left: 50%;
 	}
-	
+
 }
 
 /* INDEX PAGE / RESULTS */
@@ -1330,7 +1337,7 @@ body.coming-soon {
 
 .breadcrumbs-container {
 	position: relative;
-  
+
  	&:after{
     	position: absolute;
     	width: 15%;
@@ -1453,7 +1460,7 @@ img.avatar {
 				padding-left: rem-calc(10);
 
 				&:before {
-					content: "\21b3 \0020";
+					content: '\21b3 \0020';
 					margin: rem-calc(22 0 0 -29);
 					position: absolute;
 		    	}
@@ -1568,7 +1575,7 @@ img.avatar {
 		}
 
 		&:after {
-			content: "est 2003";
+			content: 'est 2003';
 			position: absolute;
 			bottom: -71px;
 			right: -71px;
@@ -1792,7 +1799,7 @@ img.avatar {
 	    	height: 100%;
 	    	right: 0;
 	    	top: 0;
-	    	content:'';
+	    	content: '';
 		}
 
 	}

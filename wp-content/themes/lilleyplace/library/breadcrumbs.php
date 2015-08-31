@@ -171,12 +171,12 @@ function blog_breadcrumbs() {
 function site_breadcrumbs() {
 
 	/* === OPTIONS === */
-	$text['home']     = __('Home','kbcyouth'); // text for a category page
-	$text['category'] = __('Archive by Category &ldquo;%s&rdquo;','kbcyouth'); // text for a category page
-	$text['search']   = __('&ldquo;%s&rdquo;','kbcyouth'); // text for a search results page
-	$text['tag']      = __('Posts Tagged &ldquo;%s&rdquo;','kbcyouth'); // text for a tag page
-	$text['author']   = __('Articles Posted by %s','kbcyouth'); // text for an author page
-	$text['404']      = __('Error 404','kbcyouth'); // text for the 404 page
+	$text['home']     = __('Home','lilleyplace'); // text for a category page
+	$text['category'] = __('Archive by Category &ldquo;%s&rdquo;','lilleyplace'); // text for a category page
+	$text['search']   = __('&ldquo;%s&rdquo;','lilleyplace'); // text for a search results page
+	$text['tag']      = __('Posts Tagged &ldquo;%s&rdquo;','lilleyplace'); // text for a tag page
+	$text['author']   = __('Articles Posted by %s','lilleyplace'); // text for an author page
+	$text['404']      = __('Error 404','lilleyplace'); // text for the 404 page
 
 	$show_current   = 1; // 1 - show current post/page/category title in breadcrumbs, 0 - don't show
 	$show_on_home   = 0; // 1 - show breadcrumbs on the homepage, 0 - don't show

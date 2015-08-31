@@ -95,39 +95,6 @@ function ajaxify_comments($comment_ID, $comment_status){
 	}
 }
 
-/**
- * Adds the individual sections, settings, and controls to the theme customizer
- */
-function theme_customiser( $wp_customize ) {
-    $wp_customize->add_section(
-        'section_one',
-        array(
-            'title' => 'Footer',
-            'description' => __( 'Change the text of the footer.', 'lilleyplace' ),
-            'priority' => 999,
-        )
-    );
-
-    $wp_customize->add_setting(
-	    'copyright_textbox',
-	    array(
-	        'default' => '',
-	        'sanitize_callback' => 'esc_url_raw'
-	    )
-	);
-
-	$wp_customize->add_control(
-	    'copyright_textbox',
-	    array(
-	        'label' => __( 'Copyright Text (will override the default text)', 'lilleyplace' ),
-	        'section' => 'section_one',
-	        'type' => 'text',
-	    )
-	);
-}
-
-add_action( 'customize_register', 'theme_customiser' );
-
 function dtbaker_wp_nav_menu_objects($sorted_menu_items, $args){
     // check if the current page is really a blog post.
     global $wp_query;

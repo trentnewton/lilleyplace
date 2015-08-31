@@ -168,13 +168,13 @@ function lilleyplace_breadcrumb($showhome = true, $separatorclass = false) {
 
             // Day archive
             // Year link
-            echo '<li class="item-year item-year-' . get_the_time('Y') . '"><a class="bread-year bread-year-' . get_the_time('Y') . '" href="' . get_year_link(get_the_time('Y')) . '" title="' . get_the_time('Y') . '">' . get_the_time('Y') . ' Archives</a></li>';
+            echo '<li class="item-year item-year-' . get_the_time('Y') . '"><a class="bread-year bread-year-' . get_the_time('Y') . '" href="' . get_year_link(get_the_time('Y')) . '" title="' . get_the_time('Y') . '">' . get_the_time('Y') . ' '.__('Archives', 'lilleyplace') . '</a></li>';
             if ( $separatorclass ) {
                 echo '<li class="separator separator-' . get_the_time('Y') . '"> ' . $separator . ' </li>';
             }
 
             // Month link
-            echo '<li class="item-month item-month-' . get_the_time('m') . '"><a class="bread-month bread-month-' . get_the_time('m') . '" href="' . get_month_link(get_the_time('Y'), get_the_time('m')) . '" title="' . get_the_time('M') . '">' . get_the_time('M') . ' Archives</a></li>';
+            echo '<li class="item-month item-month-' . get_the_time('m') . '"><a class="bread-month bread-month-' . get_the_time('m') . '" href="' . get_month_link(get_the_time('Y'), get_the_time('m')) . '" title="' . get_the_time('M') . '">' . get_the_time('M') . ' '.__('Archives', 'lilleyplace') . '</a></li>';
             if ( $separatorclass ) {
                 echo '<li class="separator separator-' . get_the_time('m') . '"> ' . $separator . ' </li>';
             }
@@ -186,7 +186,7 @@ function lilleyplace_breadcrumb($showhome = true, $separatorclass = false) {
 
             // Month Archive
             // Year link
-            echo '<li class="item-year item-year-' . get_the_time('Y') . '"><a class="bread-year bread-year-' . get_the_time('Y') . '" href="' . get_year_link(get_the_time('Y')) . '" title="' . get_the_time('Y') . '">' . get_the_time('Y') . ' Archives</a></li>';
+            echo '<li class="item-year item-year-' . get_the_time('Y') . '"><a class="bread-year bread-year-' . get_the_time('Y') . '" href="' . get_year_link(get_the_time('Y')) . '" title="' . get_the_time('Y') . '">' . get_the_time('Y') . ' '.__('Archives', 'lilleyplace') . '</a></li>';
             if ( $separatorclass ) {
                 echo '<li class="separator separator-' . get_the_time('Y') . '"> ' . $separator . ' </li>';
             }
@@ -207,22 +207,22 @@ function lilleyplace_breadcrumb($showhome = true, $separatorclass = false) {
             $userdata = get_userdata($author);
 
             // Display author name
-            echo '<li class="current item-current-' . $userdata->user_nicename . '">Author: ' . $userdata->display_name . '</li>';
+            echo '<li class="current item-current-' . $userdata->user_nicename . '">'.__('Author:', 'lilleyplace') . ' ' . $userdata->display_name . '</li>';
 
         } else if ( get_query_var('paged') ) {
 
             // Paginated archives
-            echo '<li class="current item-current-' . get_query_var('paged') . '">'.__('Page') . ' ' . get_query_var('paged') . '</li>';
+            echo '<li class="current item-current-' . get_query_var('paged') . '">'.__('Page', 'lilleyplace') . ' ' . get_query_var('paged') . '</li>';
 
         } else if ( is_search() ) {
 
             // Search results page
-            echo '<li class="current item-current-' . get_search_query() . '">Search results for: ' . get_search_query() . '</li>';
+            echo '<li class="current item-current-' . get_search_query() . '">'.__('Search results for:', 'lilleyplace') . ' ' . get_search_query() . '</li>';
 
         } elseif ( is_404() ) {
 
             // 404 page
-            echo '<li>Error 404</li>';
+            echo '<li>'.__('Error 404', 'lilleyplace') . '</li>';
         }
     } else {
         if ( $showhome ) {
