@@ -32,6 +32,7 @@
 	<?php get_template_part( 'parts/facebook_app' ); ?>
 	<?php do_action( 'lilleyplace_after_body' ); ?>
 	<?php get_template_part( 'parts/svg_icons' ); ?>
+		<!--[if lte IE 9]><p class="old-browser-notice">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> to experience this site.</p><![endif]-->
 		<header itemscope itemtype="http://schema.org/WPHeader">
 			<div id="logo">
 				<div class="row">
