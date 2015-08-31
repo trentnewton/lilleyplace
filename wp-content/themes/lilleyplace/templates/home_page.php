@@ -106,7 +106,7 @@ get_header(); ?>
 				?>
 					<?php if( $front_page_image ): ?>
 					<figure style="width:<?php echo $front_page_image_resized; ?>px;">
-						<img src="<?php echo $front_page_image['url']; ?>" width="<?php echo $front_page_image['width']; ?>" height="<?php echo $front_page_image['height']; ?>" alt="<?php echo $front_page_image['alt'] ?>" title="<?php echo $front_page_image['alt'] ?>" />
+						<img src="<?php echo $front_page_image['url']; ?>" width="<?php echo $front_page_image['width']; ?>" height="<?php echo $front_page_image['height']; ?>" alt="<?php echo $front_page_image['alt'] ?>" title="<?php echo $front_page_image['alt'] ?>">
 					</figure>
 			 		<?php endif; ?>
 				<?php endwhile; ?>

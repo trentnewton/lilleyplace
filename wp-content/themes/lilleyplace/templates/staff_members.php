@@ -58,7 +58,7 @@ get_header(); ?>
 				?>
 				<li>
 					<figure>
-						<img src="<?php echo $member_logo['url']; ?>" itemprop="affiliation" alt="<?php echo $member_logo['alt'] ?>" width="226" height="84" />
+						<img src="<?php echo $member_logo['url']; ?>" itemprop="affiliation" alt="<?php echo $member_logo['alt'] ?>" width="226" height="84">
 					</figure>
 				</li>
 			<?php endwhile; ?>
@@ -68,11 +68,11 @@ get_header(); ?>
         <div class="columns small-6 medium-3 medium-push-6">
         	<?php if( $member_photo ): ?>
 			<figure class="member-frame">
-				<img src="<?php echo $member_photo['url']; ?>" itemprop="image" width="<?php echo $member_photo['width'] ?>" height="<?php echo $member_photo['height'] ?>" alt="<?php echo $member_name ?>" />
+				<img src="<?php echo $member_photo['url']; ?>" itemprop="image" width="<?php echo $member_photo['width'] ?>" height="<?php echo $member_photo['height'] ?>" alt="<?php echo $member_name ?>">
 			</figure>
 			<?php else : ?>
 			<figure class="member-frame">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/images/PhotoComing-large.jpg" itemprop="image" alt="<?php echo $member_name ?>" />
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/images/PhotoComing-large.jpg" itemprop="image" alt="<?php echo $member_name ?>">
 			</figure>
 			<?php endif; ?>
         </div>

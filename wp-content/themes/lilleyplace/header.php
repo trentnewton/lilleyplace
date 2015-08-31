@@ -37,7 +37,7 @@
 				<div class="row">
 					<div id="medium-up-logo" class="column">
 						<a href="<?php echo home_url(); ?>/">
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/images/logo.png" width="400" height="156" alt="<?php bloginfo( 'name' ); ?>" title="<?php bloginfo( 'name' ); ?>" />
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/images/logo.png" width="400" height="156" alt="<?php bloginfo( 'name' ); ?>" title="<?php bloginfo( 'name' ); ?>">
 						</a>
 					</div>
 				</div>
