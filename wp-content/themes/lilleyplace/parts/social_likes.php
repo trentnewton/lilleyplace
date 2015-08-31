@@ -24,6 +24,8 @@
           })();
         </script>
     </div>
+    <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+    <script type="IN/Share" data-url="<?php the_permalink() ?>" data-counter="right"></script>
     <div class="pinterest">    
         <?php if ( '' != get_the_post_thumbnail() ) { ?>
         <a href="//www.pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&media=<?php echo $url; ?>&description=<?php rawurlencode(the_title()); ?>" data-pin-do="buttonPin" data-pin-config="beside" data-pin-color="red">
