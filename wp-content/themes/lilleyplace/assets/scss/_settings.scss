@@ -1484,7 +1484,7 @@ $topbar-dropdown-toggle-color: $tertiary-color;
 // Top menu icon styles
 // $topbar-menu-link-transform: uppercase;
 $topbar-menu-link-font-size: 1.44rem;
-$topbar-menu-link-weight: 0;
+$topbar-menu-link-weight: $font-weight-normal;
 $topbar-menu-link-color: $tertiary-color;
 $topbar-menu-icon-color: $tertiary-color;
 $topbar-menu-link-color-toggled: $primary-color;
