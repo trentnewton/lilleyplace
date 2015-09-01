@@ -897,7 +897,7 @@ class google_maps_widget extends WP_Widget {
 		<a href="#" data-reveal-id="google-maps-modal" title="<?php _e('Click to open larger map','lilleyplace');?>">
       <div id='SGM'>
         <img alt="<?php _e('Click to open larger map','lilleyplace');?>" title="<?php _e('Click to open larger map','lilleyplace');?>" src="//maps.googleapis.com/maps/api/staticmap?center=<?php echo rawurlencode($add); ?>+&amp;zoom=<?php echo $zoom; ?>&amp;size=250x250&amp;maptype=roadmap&amp;scale=2&amp;markers=size:default%7Ccolor:red%7Clabel:A%7C<?php echo rawurlencode($add); ?>+&amp;language=en&amp;visual_refresh=false">
-        <div class="SGM-overlay">
+        <div class="SGM-overlay" onclick="">
           <span><?php _e('Click to open larger map','lilleyplace');?></span>
         </div>
       </div>
