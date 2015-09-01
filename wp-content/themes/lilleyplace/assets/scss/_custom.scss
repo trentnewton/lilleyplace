@@ -1779,7 +1779,7 @@ img.avatar {
 	background: radial-gradient(rgba($black, 0.3) 0%,rgba($black, 0) 70%);
 	background-size: 80% 170%;
 	background-repeat: no-repeat;
-	background-position: 50% rem-calc(50);
+	background-position: 50% rem-calc(-50);
 
 	a {
 		color: $white;
