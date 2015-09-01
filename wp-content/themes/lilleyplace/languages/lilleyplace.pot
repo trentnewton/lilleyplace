@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Lilley Place\n"
-"POT-Creation-Date: 2015-08-31 21:40+1000\n"
-"PO-Revision-Date: 2015-08-31 21:40+1000\n"
+"POT-Creation-Date: 2015-09-01 14:56+1000\n"
+"PO-Revision-Date: 2015-09-01 14:53+1000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -15,8 +15,8 @@ msgstr ""
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
@@ -111,15 +111,19 @@ msgstr ""
 msgid "Latest Posts from the Blog"
 msgstr ""
 
-#: footer.php:79
+#: footer.php:76
+msgid "No copyright information has been saved yet."
+msgstr ""
+
+#: footer.php:78
 msgid "Copyright"
 msgstr ""
 
-#: footer.php:79
+#: footer.php:78
 msgid "All rights reserved."
 msgstr ""
 
-#: footer.php:88
+#: footer.php:89
 msgid "Top"
 msgstr ""
 

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: Lilley Place\n"
-"POT-Creation-Date: 2015-08-31 21:40+1000\n"
-"PO-Revision-Date: 2015-08-31 21:40+1000\n"
+"POT-Creation-Date: 2015-09-01 14:56+1000\n"
+"PO-Revision-Date: 2015-09-01 14:56+1000\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -111,15 +111,19 @@ msgstr ""
 msgid "Latest Posts from the Blog"
 msgstr ""
 
-#: footer.php:79
+#: footer.php:76
+msgid "No copyright information has been saved yet."
+msgstr ""
+
+#: footer.php:78
 msgid "Copyright"
 msgstr ""
 
-#: footer.php:79
+#: footer.php:78
 msgid "All rights reserved."
 msgstr ""
 
-#: footer.php:88
+#: footer.php:89
 msgid "Top"
 msgstr ""
 

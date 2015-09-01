@@ -73,7 +73,7 @@
 						<div class="columns medium-6" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 							<p>
 							<?php if (get_theme_mod( 'copyright_textbox' ) != '') {?>
-								<?php echo get_theme_mod( 'copyright_textbox', 'No copyright information has been saved yet.' ); ?>
+								<?php echo get_theme_mod( 'copyright_textbox', __( 'No copyright information has been saved yet.', 'lilleyplace' ) ); ?>
 							<?php } else { ?>
 								<?php _e('Copyright','lilleyplace');?>&nbsp;&copy;&nbsp;<?php echo date("Y"); ?>&nbsp;<?php bloginfo( 'name' ); ?>.&nbsp;<?php _e('All rights reserved.','lilleyplace');?>
 							<?php } ?>
