@@ -54,7 +54,7 @@ get_header(); ?>
 				?>
 				<?php if( $faq_question ): ?>
 				<li class="accordion-navigation">
-					<a href="#faq-<?php echo $i; ?>" itemprop="name">
+					<a href="#faq-<?php echo $i; ?>" itemprop="name" onclick="">
 						<?php echo $faq_question; ?>
 					</a>
 					<div id="faq-<?php echo $i; ?>" class="content" itemprop="suggestedAnswer acceptedAnswer" itemscope itemtype="http://schema.org/Answer">

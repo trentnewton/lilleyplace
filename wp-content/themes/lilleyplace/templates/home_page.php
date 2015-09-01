@@ -52,7 +52,7 @@ get_header(); ?>
 						?>
 						<?php if( $box_title ): ?>
 						<li class="accordion-navigation">
-							<a href="#panel-<?php echo $i; ?>" data-equalizer-watch="bar" itemprop="name"><?php the_sub_field('box_title'); ?></a>
+							<a href="#panel-<?php echo $i; ?>" data-equalizer-watch="bar" itemprop="name" onclick=""><?php the_sub_field('box_title'); ?></a>
 							<div id="panel-<?php echo $i; ?>" class="content" data-equalizer-watch="foo">
 								<ul itemprop="suggestedAnswer acceptedAnswer" itemscope itemtype="http://schema.org/Answer">
 								<?php while(has_sub_field('add_a_list_item')): $i++;
