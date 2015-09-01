@@ -78,7 +78,9 @@
 							<?php } else { ?>
 								<?php _e('Copyright','lilleyplace');?>&nbsp;&copy;&nbsp;<?php echo date("Y"); ?>&nbsp;<?php bloginfo( 'name' ); ?>.&nbsp;<?php _e('All rights reserved.','lilleyplace');?>
 							<?php } ?>
+							<!--googleoff: index-->
 								<br>Website by Happiness Design.
+							<!--googleon: index-->
 							</p>
 						</div>
 						<div class="columns medium-6 footer-nav-container">
