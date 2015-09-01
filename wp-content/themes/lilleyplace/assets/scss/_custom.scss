@@ -653,6 +653,10 @@ a {
 
 	}
 
+	&:focus {
+		color: $anchor-font-color-hover;
+	}
+
 }
 
 /* HOME PAGE */
