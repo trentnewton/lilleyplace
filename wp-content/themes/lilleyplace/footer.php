@@ -56,7 +56,6 @@
 				</div>
 			</section>
 			<?php endif; wp_reset_postdata(); ?>
-			<?php // endif;?>
 			<div class="footer-display">
 				<div class="row footer-content">
 					<div class="columns medium-5 large-6">
