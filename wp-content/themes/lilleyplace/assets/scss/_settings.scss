@@ -281,8 +281,8 @@ $h6-font-size: 1.2rem;
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: $font-weight-normal;
-$paragraph-font-size: 1.2rem;
-$paragraph-line-height: 1.44;
+$paragraph-font-size: $h6-font-size;
+$paragraph-line-height: $header-line-height;
 // $paragraph-margin-bottom: rem-calc(20);
 // $paragraph-aside-font-size: rem-calc(14);
 // $paragraph-aside-line-height: 1.35;
@@ -369,7 +369,7 @@ $accordion-navigation-bg-color: none;
 $accordion-navigation-hover-bg-color: none;
 $accordion-navigation-active-bg-color: none;
 $accordion-navigation-font-color: $body-font-color;
-$accordion-navigation-font-size: 1.2rem;
+$accordion-navigation-font-size: $h6-font-size;
 // $accordion-navigation-font-family: $body-font-family;
 
 // $accordion-content-padding: ($column-gutter/2);
@@ -1449,7 +1449,7 @@ $topbar-link-color-hover: $primary-color;
 $topbar-link-color-active: $primary-color;
 $topbar-link-color-active-hover: $primary-color;
 // $topbar-link-weight: $font-weight-normal;
-$topbar-link-font-size: 1.2rem;
+$topbar-link-font-size: $h6-font-size;
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 $topbar-link-bg: transparent;
 $topbar-link-bg-hover: transparent;
@@ -1459,7 +1459,7 @@ $topbar-link-bg-active-hover: transparent;
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
 $topbar-link-padding: rem-calc(20);
-$topbar-back-link-size: 1.44rem;
+$topbar-back-link-size: $h5-font-size;
 // $topbar-link-dropdown-padding: rem-calc(20);
 // $topbar-button-font-size: .75rem;
 // $topbar-button-top: 7px;
@@ -1483,7 +1483,7 @@ $topbar-dropdown-toggle-color: $tertiary-color;
 
 // Top menu icon styles
 // $topbar-menu-link-transform: uppercase;
-$topbar-menu-link-font-size: 1.44rem;
+$topbar-menu-link-font-size: $h5-font-size;
 $topbar-menu-link-weight: $font-weight-normal;
 $topbar-menu-link-color: $tertiary-color;
 $topbar-menu-icon-color: $tertiary-color;
