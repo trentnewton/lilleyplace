@@ -4028,7 +4028,7 @@
 		},
 	"\/bower_components\/modernizr\/modernizr.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/modernizr\/modernizr.js",
 		"outputAbbreviatedPath": "\/bower_components\/modernizr\/min\/modernizr-min.js",
@@ -4903,50 +4903,56 @@
 	"\/assets\/js\/app.js": [
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/bower_components\/foundation\/js\/foundation\/foundation.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/modernizr\/modernizr.js",
 			"position": 0,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/bower_components\/foundation\/js\/foundation\/foundation.accordion.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation\/js\/foundation\/foundation.js",
 			"position": 1,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/bower_components\/foundation\/js\/foundation\/foundation.equalizer.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation\/js\/foundation\/foundation.accordion.js",
 			"position": 2,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/bower_components\/foundation\/js\/foundation\/foundation.reveal.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation\/js\/foundation\/foundation.equalizer.js",
 			"position": 3,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/bower_components\/foundation\/js\/foundation\/foundation.topbar.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation\/js\/foundation\/foundation.reveal.js",
 			"position": 4,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/js\/vendor\/contact-form-7\/jquery.form.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation\/js\/foundation\/foundation.topbar.js",
 			"position": 5,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/slick\/slick\/slick.js",
+			"linkedFileAbbreviatedPath": "\/assets\/js\/vendor\/contact-form-7\/jquery.form.js",
 			"position": 6,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/js\/vendor\/contact-form-7\/scripts.js",
+			"linkedFileAbbreviatedPath": "\/assets\/slick\/slick\/slick.js",
 			"position": 7,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/assets\/js\/vendor\/contact-form-7\/scripts.js",
+			"position": 8,
 			"type": 1
 			}
 		]

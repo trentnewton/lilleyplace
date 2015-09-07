@@ -23,9 +23,6 @@ if ( ! function_exists( 'lilleyplace_scripts' ) ) :
 
 	wp_deregister_script( 'contact-form-7' );
 
-	// Modernizr is used for polyfills and feature detection. Must be placed in header. (Not required).
-	wp_register_script( 'modernizr', '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js', array(), '2.8.3', true );
-
 	// Fastclick removes the 300ms delay on click events in mobile environments. Must be placed in header. (Not required).
 	wp_register_script( 'fastclick', '//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js', array(), '1.0.6', false );
 
@@ -37,7 +34,6 @@ if ( ! function_exists( 'lilleyplace_scripts' ) ) :
 	wp_register_script( 'app-js', get_template_directory_uri() . '/assets/js/min/app-min.js', array('jquery'), '5.5.2', true );
 
 	// Enqueue all registered scripts.
-	wp_enqueue_script( 'modernizr' );
 	wp_enqueue_script( 'fastclick' );
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'app-js' );
