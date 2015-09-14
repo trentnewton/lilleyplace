@@ -50,6 +50,6 @@ get_header(); ?>
 			</div>
 		</aside>
 	</div>
-  <div class="shadow white-top"></div>
+  	<div class="shadow white-top"></div>
 </main>
 <?php get_footer(); ?>

@@ -30,6 +30,6 @@ get_header(); ?>
 			<?php get_template_part('parts/sitemap'); ?>
 		</div>
 	</article>
-  <div class="shadow white-top"></div>
+	<div class="shadow white-top"></div>
 </main>
 <?php get_footer(); ?>
