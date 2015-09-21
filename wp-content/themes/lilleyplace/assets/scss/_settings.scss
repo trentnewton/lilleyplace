@@ -1158,7 +1158,7 @@ $pagination-link-active-bg: scale-color($tertiary-color, $lightness: 80%);
 // $include-html-reveal-classes: $include-html-classes;
 
 // We use these to control the style of the reveal overlay.
-// $reveal-overlay-bg: rgba($black, .45);
+$reveal-overlay-bg: rgba($black, 0.4);
 // $reveal-overlay-bg-old: $black;
 
 // We use these to control the style of the modal itself.
