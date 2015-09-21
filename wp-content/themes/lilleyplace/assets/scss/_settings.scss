@@ -120,7 +120,7 @@ $iron        : #CCCCCC;
 // $jet         : #222222;
 $black       : #000000;
 
-$facebook: #3b5998;
+$facebook: #3a5795;
 $twitter: #55acee;
 $youtube: #e52d27;
 $linkedin: #0077b5;
@@ -139,7 +139,7 @@ $success-color: #b1f772;
 $warning-color: #f7dc72;
 $info-color: #72a1f7;
 
-// rgb encoded
+// rgb versions
 $white-rgb: rgba($white, 0.99);
 $black-rgb: rgba($black, 0.99);
 $primary-color-rgb: rgba($primary-color, 0.99);
@@ -677,10 +677,10 @@ $form-label-font-color: $body-font-color;
 // $form-label-small-transform: capitalize;
 // $form-label-bottom-margin: 0;
 // $input-font-family: inherit;
-$input-font-color: rgba($body-font-color, 0.75);
+$input-font-color: $primary-color;
 // $input-font-size: rem-calc(14);
 // $input-bg-color: $white;
-// $input-focus-bg-color: scale-color($white, $lightness: -2%);
+$input-focus-bg-color: scale-color($tertiary-color, $lightness: 95%);
 $input-border-color: $gainsboro;
 $input-focus-border-color: $primary-color;
 // $input-border-style: solid;
@@ -704,7 +704,7 @@ $input-border-radius: $global-radius;
 // $legend-padding: rem-calc(0 3);
 
 // We use these to style the prefix and postfix input elements
-// $input-prefix-bg: scale-color($white, $lightness: -5%);
+$input-prefix-bg: scale-color($tertiary-color, $lightness: 95%);
 // $input-prefix-border-color: scale-color($white, $lightness: -20%);
 // $input-prefix-border-size: 1px;
 // $input-prefix-border-type: solid;
@@ -734,8 +734,8 @@ $input-border-radius: $global-radius;
 // $input-transition-fade-timing-function: linear;
 
 // Select variables
-// $select-bg-color: $ghost;
-// $select-hover-bg-color: scale-color($select-bg-color, $lightness: -3%);
+$select-bg-color: scale-color($tertiary-color, $lightness: 95%);
+// $select-hover-bg-color: scale-color($select-bg-color, $lightness: -3%); //#f3f3f3
 
 
 // 12. Icon Bar
@@ -1325,7 +1325,7 @@ $reveal-close-color: scale-color($tertiary-color, $lightness: 50%);
 
 // These control the background color for the table and even rows
 // $table-bg: $white;
-$table-even-row-bg: scale-color($tertiary-color, $lightness: 90%);
+$table-even-row-bg: scale-color($tertiary-color, $lightness: 95%);
 
 // These control the table cell border style
 // $table-border-style: solid;
@@ -1469,7 +1469,7 @@ $topbar-dropdown-bg: transparent;
 $topbar-dropdown-link-color: $topbar-link-color;
 $topbar-dropdown-link-color-hover: $topbar-link-color-hover;
 $topbar-dropdown-link-bg: transparent;
-$topbar-dropdown-link-bg-hover: scale-color($tertiary-color, $lightness: 90%);
+$topbar-dropdown-link-bg-hover: scale-color($tertiary-color, $lightness: 95%);
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
 $topbar-dropdown-toggle-color: $tertiary-color;

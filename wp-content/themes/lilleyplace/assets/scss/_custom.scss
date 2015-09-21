@@ -230,8 +230,8 @@ p.no-space {
 		height: 100%;
 		background: linear-gradient(
 		rgba(scale-color($tertiary-color, $lightness: 50%), 1) 0%,
-		rgba(scale-color($tertiary-color, $lightness: 90%), 1) 17%,
-		rgba(scale-color($tertiary-color, $lightness: 90%), 1) 100%);
+		rgba(scale-color($tertiary-color, $lightness: 95%), 1) 17%,
+		rgba(scale-color($tertiary-color, $lightness: 95%), 1) 100%);
 	}
 
 	&.white-top {
@@ -289,20 +289,20 @@ p.no-space {
 		content: '';
 		top: 0;
 		height: rem-calc(15);
-		background: linear-gradient(
-			to bottom,
-			rgba($black, 0.1) 0%,
-			rgba($black, 0) 100%);
+		background:
+			linear-gradient(to bottom,
+				rgba($black, 0.1) 0%,
+				rgba($black, 0) 100%);
 	}
 
 	&:after {
 		content: '';
 		bottom: 0;
 		height: 30%;
-		background: linear-gradient(
-			to top,
-			rgba($black, 0.1) 0%,
-			rgba($black, 0) 100%);
+		background:
+			linear-gradient(to top,
+				rgba($black, 0.1) 0%,
+				rgba($black, 0) 100%);
 	}
 
 }
@@ -314,10 +314,11 @@ p.no-space {
 
 #main-nav {
 	margin-top: 2px;
-	background: linear-gradient(
-		rgba(scale-color($tertiary-color, $lightness: 80%), 1) 0%,
-		rgba($white, 1) 17%,
-		rgba($white, 1) 100%);
+	background:
+		linear-gradient(
+			rgba(scale-color($tertiary-color, $lightness: 80%), 1) 0%,
+			rgba($white, 1) 17%,
+			rgba($white, 1) 100%);
 }
 
 .top-bar {
@@ -442,14 +443,16 @@ input[type="submit"] {
 	border-radius: $button-radius;
 	text-shadow: 0 1px 0 rgba($white, 0.4);
 	box-shadow: 0 1px 1px rgba($black, 0.08);
-	background: linear-gradient(
-		rgba(scale-color($primary-color, $lightness: 60%, $saturation: -30%), 1) 0%,
-		rgba(scale-color($primary-color, $lightness: 32%, $saturation: -50%), 1) 100%);
+	background:
+		linear-gradient(
+			rgba(scale-color($primary-color, $lightness: 60%, $saturation: -30%), 1) 0%,
+			rgba(scale-color($primary-color, $lightness: 32%, $saturation: -50%), 1) 100%);
 
 	&:hover {
-		background: linear-gradient(
-			rgba(scale-color($primary-color, $lightness: 32%, $saturation: -50%), 1) 0%,
-			rgba(scale-color($primary-color, $lightness: 32%, $saturation: -50%), 1) 100%);
+		background:
+			linear-gradient(
+				rgba(scale-color($primary-color, $lightness: 32%, $saturation: -50%), 1) 0%,
+				rgba(scale-color($primary-color, $lightness: 32%, $saturation: -50%), 1) 100%);
 		border-color: scale-color($primary-color, $lightness: 27%, $saturation: -50%);
 	}
 
@@ -502,10 +505,11 @@ img.ajax-loader {
 			&:hover {
 
 				&:after {
-					background: linear-gradient(to bottom,
-					rgba($white, 1) 0%,
-					rgba($white, 1) 50%,
-					rgba(scale-color($tertiary-color, $lightness: 90%), 1) 100%);
+					background:
+						linear-gradient(to bottom,
+							rgba($white, 1) 0%,
+							rgba($white, 1) 50%,
+							rgba(scale-color($tertiary-color, $lightness: 95%), 1) 100%);
 				}
 
 			}
@@ -519,10 +523,11 @@ img.ajax-loader {
 				position: absolute;
 				width: 100%;
 				height: 100%;
-				background: linear-gradient(to bottom,
-					rgba($white, 1) 0%,
-					rgba($white, 1) 50%,
-					rgba(scale-color($tertiary-color, $lightness: 80%), 1) 100%);
+				background:
+					linear-gradient(to bottom,
+						rgba($white, 1) 0%,
+						rgba($white, 1) 50%,
+						rgba(scale-color($tertiary-color, $lightness: 80%), 1) 100%);
 				top: 0;
 				left: 0;
 				z-index: -1;
@@ -601,7 +606,10 @@ img.ajax-loader {
 #main-hero,
 .footer-display,
 #small-banner {
-	background: radial-gradient(circle, $secondary-color, scale-color($secondary-color, $lightness: -50%, $saturation: -20%));
+	background:
+		radial-gradient(circle,
+			$secondary-color,
+			scale-color($secondary-color, $lightness: -50%, $saturation: -20%));
 	position: relative;
 	z-index: 1;
 	overflow: visible;
@@ -703,9 +711,10 @@ a {
 }
 
 #top-quote {
-	background-image: linear-gradient(to bottom,
-		scale-color($tertiary-color, $lightness: 60%),
-		scale-color($tertiary-color, $lightness: 90%));
+	background-image:
+		linear-gradient(to bottom,
+			scale-color($tertiary-color, $lightness: 60%),
+			scale-color($tertiary-color, $lightness: 95%));
 	border-bottom: 1px solid scale-color($tertiary-color, $lightness: 80%);
 	box-shadow: 0 3px 8px rgba($black, 0.5);
 
@@ -788,13 +797,19 @@ a {
 				&:hover {
 
 					&:after {
-						background: linear-gradient(to bottom, scale-color($primary-color, $lightness: 32%, $saturation: -50%), scale-color($primary-color, $lightness: 2%, $saturation: -55%));
+						background:
+							linear-gradient(to bottom,
+								scale-color($primary-color, $lightness: 32%, $saturation: -50%),
+								scale-color($primary-color, $lightness: 2%, $saturation: -55%));
 					}
 
 				}
 
 				&:after {
-					background: linear-gradient(to bottom, scale-color($primary-color, $lightness: 32%, $saturation: -50%), scale-color($primary-color, $lightness: -12%, $saturation: -55%));
+					background:
+						linear-gradient(to bottom,
+							scale-color($primary-color, $lightness: 32%, $saturation: -50%),
+							scale-color($primary-color, $lightness: -12%, $saturation: -55%));
 				}
 
 			}
@@ -848,7 +863,9 @@ a {
 		margin: 0;
 		padding: rem-calc(0 0 0 25);
 		position: relative;
-		transition: max-width 400ms ease, background 400ms ease;
+		transition:
+			max-width 400ms ease,
+			background 400ms ease;
 		max-width: rem-calc(105);
 		float: right;
 		color: $white;
@@ -934,7 +951,10 @@ th {
 .tt-contentbox-content {
 	padding: rem-calc(15 15 25 15);
 	border: 1px solid $white;
-	background-image: linear-gradient(to bottom, $white, scale-color($tertiary-color, $lightness: 90%));
+	background-image:
+		linear-gradient(to bottom,
+			$white,
+			scale-color($tertiary-color, $lightness: 95%));
 	border-radius: 0 0 $global-radius $global-radius;
 
 	ul {
@@ -945,7 +965,10 @@ th {
 
 .tt-cb-title-lime-green,
 tr th {
-	background-image: linear-gradient(to bottom, scale-color($primary-color, $lightness: 32%, $saturation: -50%), scale-color($primary-color, $lightness: -12%, $saturation: -55%));
+	background-image:
+		linear-gradient(to bottom,
+			scale-color($primary-color, $lightness: 32%, $saturation: -50%),
+			scale-color($primary-color, $lightness: -12%, $saturation: -55%));
 }
 
 /* STAFF */
@@ -998,7 +1021,10 @@ tr th {
 	line-height: rem-calc(42);
 	margin: rem-calc(1 10 30 0);
 	width: rem-calc(41);
-	background: linear-gradient(to bottom, scale-color($primary-color, $lightness: 32%, $saturation: -50%) 0%, scale-color($primary-color, $lightness: -12%, $saturation: -55%) 100%);
+	background:
+		linear-gradient(to bottom,
+			scale-color($primary-color, $lightness: 32%, $saturation: -50%) 0%,
+			scale-color($primary-color, $lightness: -12%, $saturation: -55%) 100%);
 	border-radius: 50%;
 }
 
@@ -1017,7 +1043,10 @@ tr th {
 		height: 100%;
 		width: 96%;
 		left: 4%;
-		background: radial-gradient(rgba($body-font-color, 0.2) 0%, transparent 70%);
+		background:
+			radial-gradient(
+				rgba($body-font-color, 0.2) 0%,
+				transparent 70%);
 		background-size: 12% 100%;
 		background-repeat: no-repeat;
 		background-position: -7% 0;
@@ -1073,9 +1102,10 @@ tr th {
 	.vcard {
 		padding: rem-calc(15);
 		border-radius: $global-radius;
-		background-image: linear-gradient(to bottom,
-			scale-color($tertiary-color, $lightness: 90%),
-			scale-color($tertiary-color, $lightness: 80%));
+		background-image:
+			linear-gradient(to bottom,
+				scale-color($tertiary-color, $lightness: 95%),
+				scale-color($tertiary-color, $lightness: 80%));
     	box-shadow: 0 1px 4px rgba($black, 0.4);
     	width: 100%;
 	}
@@ -1101,19 +1131,21 @@ tr th {
 				&:hover {
 
 					&:after {
-						background: linear-gradient(to bottom,
-						rgba(scale-color($primary-color, $lightness: 90%, $saturation: -50%), 1) 0%,
-						rgba(scale-color($primary-color, $lightness: 90%, $saturation: -50%), 1) 50%,
-						rgba(scale-color($primary-color, $lightness: 80%, $saturation: -50%), 1) 100%);
+						background:
+							linear-gradient(to bottom,
+								rgba(scale-color($primary-color, $lightness: 95%, $saturation: -50%), 1) 0%,
+								rgba(scale-color($primary-color, $lightness: 95%, $saturation: -50%), 1) 50%,
+								rgba(scale-color($primary-color, $lightness: 80%, $saturation: -50%), 1) 100%);
 					}
 
 				}
 
 				&:after {
-					background: linear-gradient(to bottom,
-						rgba(scale-color($primary-color, $lightness: 90%, $saturation: -50%), 1) 0%,
-						rgba(scale-color($primary-color, $lightness: 90%, $saturation: -50%), 1) 50%,
-						rgba(scale-color($primary-color, $lightness: 70%, $saturation: -50%), 1) 100%);
+					background:
+						linear-gradient(to bottom,
+							rgba(scale-color($primary-color, $lightness: 95%, $saturation: -50%), 1) 0%,
+							rgba(scale-color($primary-color, $lightness: 95%, $saturation: -50%), 1) 50%,
+							rgba(scale-color($primary-color, $lightness: 70%, $saturation: -50%), 1) 100%);
 				}
 
 			}
@@ -1367,7 +1399,11 @@ body.coming-soon {
     	right: 0;
     	top: 0;
     	content:'';
-		background-image: linear-gradient(to left, $white, $white 30%, rgba($white, 0));
+		background-image:
+			linear-gradient(to left,
+				$white,
+				$white 30%,
+				rgba($white, 0));
     }
 
 }
@@ -1577,7 +1613,7 @@ img.avatar {
 #latest-posts {
 	border-top: 1px solid scale-color($tertiary-color, $lightness: 80%);
 	background-image: linear-gradient(to bottom,
-		scale-color($tertiary-color, $lightness: 90%),
+		scale-color($tertiary-color, $lightness: 95%),
 		scale-color($tertiary-color, $lightness: 70%));
 	text-shadow: 1px 1px 2px $white;
 	overflow: hidden;
@@ -1780,7 +1816,10 @@ img.avatar {
 
 .footer-copyright {
 	padding: rem-calc(15 0);
-	background: radial-gradient(rgba($black, 0.3) 0%,rgba($black, 0) 70%);
+	background:
+		radial-gradient(
+			rgba($black, 0.3) 0%,
+			rgba($black, 0) 70%);
 	background-size: 80% 170%;
 	background-repeat: no-repeat;
 	background-position: 50% rem-calc(-50);
