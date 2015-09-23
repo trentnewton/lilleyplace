@@ -1512,22 +1512,8 @@
 
     Slick.prototype.refresh = function( initializing ) {
 
-        var _ = this, currentSlide, firstVisible;
-
-        firstVisible = _.slideCount - _.options.slidesToShow;
-
-        // check that the new breakpoint can actually accept the
-        // "current slide" as the current slide, otherwise we need
-        // to set it to the closest possible value.
-        if ( !_.options.infinite ) {
-            if ( _.slideCount <= _.options.slidesToShow ) {
-                _.currentSlide = 0;
-            } else if ( _.currentSlide > firstVisible ) {
-                _.currentSlide = firstVisible;
-            }
-        }
-
-         currentSlide = _.currentSlide;
+        var _ = this,
+            currentSlide = _.currentSlide;
 
         _.destroy(true);
 
