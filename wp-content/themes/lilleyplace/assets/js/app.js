@@ -31,6 +31,7 @@ $('.slider').slick({
   autoplay: true,
   slidesToShow: 4,
   variableWidth: true,
+  lazyLoad: 'ondemand',
   responsive: [
     {
       breakpoint: 1024,
