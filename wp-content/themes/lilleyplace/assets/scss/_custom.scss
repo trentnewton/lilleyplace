@@ -524,7 +524,7 @@ img.ajax-loader {
 			}
 
 			&:before {
-				background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M224%20387.814V512L32%20320l192-192v126.912C447.375%20260.152%20437.794%20103.016%20380.93%200%20521.287%20151.707%20491.48%20394.785%20224%20387.814z%22%2F%3E%3C%2Fsvg%3E');
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='-409 165 32 32' enable-background='new -409 165 32 32' xml:space='preserve'%3E%3ClinearGradient id='SVGID_1_' gradientUnits='userSpaceOnUse' x1='-393' y1='165' x2='-393' y2='197'%3E%3Cstop offset='0' style='stop-color:#{$white-rgb}'/%3E%3Cstop offset='1' style='stop-color:#{$tertiary-color-80-rgb}'/%3E%3C/linearGradient%3E%3Cpath fill='url(%23SVGID_1_)' d='M-409,181c0,8.8,7.2,16,16,16s16-7.2,16-16s-7.2-16-16-16S-409,172.2-409,181z'/%3E%3Cpath fill='#{$body-font-color-rgb}' d='M-399.1,176.1l-2.8,2.8l8.9,8.9l8.9-8.9l-2.8-2.8l-6.1,6.1L-399.1,176.1z'/%3E%3C/svg%3E");
 			}
 
 			&:after {
