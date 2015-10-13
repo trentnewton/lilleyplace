@@ -524,7 +524,7 @@ img.ajax-loader {
 			}
 
 			&:before {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='-409 165 32 32' enable-background='new -409 165 32 32' xml:space='preserve'%3E%3ClinearGradient id='SVGID_1_' gradientUnits='userSpaceOnUse' x1='-393' y1='165' x2='-393' y2='197'%3E%3Cstop offset='0' style='stop-color:#{$white-rgb}'/%3E%3Cstop offset='1' style='stop-color:#{$tertiary-color-80-rgb}'/%3E%3C/linearGradient%3E%3Cpath fill='url(%23SVGID_1_)' d='M-409,181c0,8.8,7.2,16,16,16s16-7.2,16-16s-7.2-16-16-16S-409,172.2-409,181z'/%3E%3Cpath fill='#{$body-font-color-rgb}' d='M-399.1,176.1l-2.8,2.8l8.9,8.9l8.9-8.9l-2.8-2.8l-6.1,6.1L-399.1,176.1z'/%3E%3C/svg%3E");
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M224 387.814V512L32 320l192-192v126.912C447.375 260.152 437.794 103.016 380.93 0 521.287 151.707 491.48 394.785 224 387.814z'/%3E%3C/svg%3E");
 			}
 
 			&:after {
