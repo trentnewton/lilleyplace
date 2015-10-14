@@ -479,7 +479,7 @@ select {
 #{text-inputs(all, 'input')} {
 
     &::placeholder {
-		color: $primary-color;
+		color: $input-placeholder-font-color;
 		opacity: 1;
     }
 
