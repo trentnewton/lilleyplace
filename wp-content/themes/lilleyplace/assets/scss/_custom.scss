@@ -1424,6 +1424,7 @@ body.coming-soon {
 	white-space: nowrap;
 	overflow-x: scroll;
 	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: none;
 
 	> * {
 		float: none;
@@ -1882,6 +1883,7 @@ img.avatar {
 	width: rem-calc(340);
 	white-space: nowrap;
 	overflow-x: scroll;
+	-ms-overflow-style: none;
 	-webkit-overflow-scrolling: touch;
 
 	@media #{$small-only} {
