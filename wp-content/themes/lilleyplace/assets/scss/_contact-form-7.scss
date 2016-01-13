@@ -22,7 +22,7 @@ div.wpcf7 {
 	}
 
 	div.ajax-error {
-		display: none;
+		@extend .hide;
 	}
 
 }
