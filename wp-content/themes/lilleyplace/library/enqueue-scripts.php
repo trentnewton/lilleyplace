@@ -23,6 +23,10 @@ if ( ! function_exists( 'lilleyplace_scripts' ) ) :
 
 	wp_deregister_script( 'contact-form-7' );
 
+	// do not load the file: wp-embed.min.js (used since WordPress 4.4)
+
+    wp_dequeue_script( 'wp-embed' );
+
 	// If you'd like to cherry-pick the foundation components you need in your project, head over to Gruntfile.js and see lines 67-88.
 	// It's a good idea to do this, performance-wise. No need to load everything if you're just going to use the grid anyway, you know :)
 	wp_register_script( 'app-js', get_template_directory_uri() . '/assets/js/min/app-min.js', array(), '5.5.2', true );
