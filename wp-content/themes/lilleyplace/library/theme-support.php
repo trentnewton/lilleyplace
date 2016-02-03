@@ -93,5 +93,28 @@ function theme_customiser( $wp_customize ) {
 add_action( 'customize_register', 'theme_customiser' );
 
 add_action( 'after_setup_theme', 'lilleyplace_theme_support' );
+
+/**
+ * Prevent certain plugins from receiving automatic updates, and auto-update the rest.
+ *
+ * To auto-update certain plugins and exclude the rest, simply remove the "!" operator
+ * from the function.
+ *
+ * Also, by using the 'auto_update_theme' or 'auto_update_core' filter instead, certain
+ * themes or Wordpress versions can be included or excluded from updates.
+ *
+ * auto_update_$type filter: applied on line 1772 of /wp-admin/includes/class-wp-upgrader.php
+ *
+ * @since 3.8.2
+ *
+ * @param bool   $update Whether to update (not used for plugins)
+ * @param object $item   The plugin's info
+ */
+function exclude_plugins_from_auto_update( $update, $item ) {
+    return ( ! in_array( $item->slug, array(
+        'contact-form-7',
+    ) ) );
+}
+add_filter( 'auto_update_plugin', 'exclude_plugins_from_auto_update', 10, 2 );
+
 endif;
-?>
